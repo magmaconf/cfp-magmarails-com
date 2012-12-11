@@ -11,7 +11,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121211000227) do
+ActiveRecord::Schema.define(:version => 20121211023944) do
+
+  create_table "cfp_comments", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "proposal_id"
+    t.text     "body"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "cfp_profiles", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "title"
+    t.string   "company"
+    t.text     "bio"
+    t.string   "locale"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "cfp_proposals", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.string   "level"
+    t.text     "abstract"
+    t.string   "tags"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "cfp_ranks", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "proposal_id"
+    t.integer  "value"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.datetime "created_at",                             :null => false
@@ -26,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20121211000227) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.text     "roles"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
