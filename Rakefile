@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-CfpTest::Application.load_tasks
+CfpMagmaCom::Application.load_tasks

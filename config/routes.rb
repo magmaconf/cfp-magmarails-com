@@ -1,5 +1,5 @@
-CfpTest::Application.routes.draw do
+CfpMagmaCom::Application.routes.draw do
   devise_for :users
 
-  mount Cfp::Engine => 'cfp'
+  mount Cfp::Engine => '/'
 end
