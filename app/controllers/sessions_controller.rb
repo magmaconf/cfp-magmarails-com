@@ -19,12 +19,12 @@ class SessionsController < ApplicationController
     end
   end
 
-  def failure
+  def destroy
   	reset_session
     redirect_to "/", :notice => 'Signed out!'
   end
 
-  def destroy
+  def failure
   	redirect_to "/", :alert => "Authentication error: #{params[:message].humanize}"
   end
 end
