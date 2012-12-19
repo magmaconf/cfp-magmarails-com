@@ -47,3 +47,6 @@ gem 'haml-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
