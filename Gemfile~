@@ -32,8 +32,6 @@ gem 'jquery-rails'
 gem 'cfp', :git => "git://github.com/crowdint/cfp.git"
 gem 'devise'
 gem 'haml-rails'
-gem 'omniauth'
-gem 'omniauth-github'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -49,6 +47,3 @@ gem 'omniauth-github'
 
 # To use debugger
 # gem 'debugger'
-
-gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
