@@ -1,0 +1,17 @@
+@mixin gradient($colorFrom, $colorTo) {
+  background: -webkit-linear-gradient($colorFrom, $colorTo);
+  background: -moz-linear-gradient($colorFrom, $colorTo);
+  background: -o-linear-gradient($colorFrom, $colorTo);
+}
+
+@mixin arrow-top($top) {
+  content: ' ';
+  position: absolute;
+  top:$top;
+  left:20px;
+  border-color: transparent transparent white transparent;
+  border-style: solid;
+  border-width: 16px;
+  width: 0;
+  height: 0;
+}

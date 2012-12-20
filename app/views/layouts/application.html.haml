@@ -2,13 +2,27 @@
 %html
   %head
     %title MagmaRails : Call For Papers
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag    "cfp/application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
   %body
-    .row.header
-      .span11.offset1
-        %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-        %img{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
-    .row.container
-      = yield
+    .wrapper
+      %header.row
+        .container
+          .span10.offset1
+            %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
+            %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
+      .container
+        .row
+          .span10.offset1
+            .row
+              = yield
+      .push
+    .container
+      .span12
+        .row
+          %footer
+            %p
+              %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}
+              %span &copy; 2012, This site is protected by Copyright. Under U.S and international law. All rights reserved.

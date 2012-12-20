@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+  background-image: url('/assets/bkg.png');
+}
+
+header {
+  background-color: white;
+  height: 45px;
+  padding-top: 10px;
+}
+
+.magma_conferences_logo {
+  margin-left: 10px;
+}
+
+header ul {
+  list-style: none;
+  line-height: 32px;
+  float: right;
+}
+
+header ul li {
+  display: inline;
+  margin-left:25px;
+}
+
+header ul li a {
+  font-weight: 600;
+  color: #577092;
+}
+
+header ul li:last-child a {
+  font-style: italic;
+  color: #717171;
+}
+
+header ul li a:hover {
+  color: #BBCBE2;
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -45px;
+}
+
+.push {
+  height: 30px;
+}
+
+footer {
+  height: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #b2c4de;
+}
+
+footer p {
+  color: #627b9d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  text-align: center;
+}
+
+footer p img {
+  margin-top:-8px;
+}

@@ -1,0 +1,8 @@
+.span6.offset2
+  %h3= t('profile.profile')
+  .white_background.new_profile
+    = form_for @profile, :url => profile_path do |form|
+      = render 'form', :form => form
+
+      = form.submit :class => 'btn-cfp'
+      .clearfix<

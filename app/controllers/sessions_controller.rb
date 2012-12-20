@@ -10,12 +10,9 @@ class SessionsController < ApplicationController
     user = User.where(:provider => auth['provider'],
                       :uid => auth['uid'].to_s).first || User.create_with_omniauth(auth)
     session[:user_id] = user.id
-    if user.email.blank?
-      redirect_to edit_user_path(user), :alert => "Please enter your email address."
-    else
+    if user
       url = params[:request_path] ? params[:request_path] : root_url
       sign_in_and_redirect(:user, user)
-      #redirect_to url, :notice => 'Signed in!'
     end
   end
 
