@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+
+body {
+	background-image: url('bkg.png');
+}
+
+.header{
+	background-color: white;
+	height: 45px;
+	padding-top: 10px
+}
+
+.octo-login{
+	background-color: white;
+}

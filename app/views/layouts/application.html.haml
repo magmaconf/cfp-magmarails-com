@@ -6,4 +6,9 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container= yield
+    .row.header
+      .span11.offset1
+        %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
+        %img{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
+    .row.container
+      = yield
