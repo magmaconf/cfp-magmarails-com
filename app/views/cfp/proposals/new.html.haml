@@ -1,0 +1,6 @@
+.row
+  = form_for @proposal do |form|
+    %fieldset
+      = render 'form', :form => form
+
+    .form-actions= form.submit :class => 'btn btn-primary'

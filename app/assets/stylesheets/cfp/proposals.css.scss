@@ -1,0 +1,42 @@
+@import "mixins";
+
+.btn-proposals {
+  @include gradient(#f48d5d, #d97246);
+  border: 0px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px 15px;
+  float: right;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.proposal-abstract{
+
+}
+
+.ready-to-speak{
+  font-size: 45px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 110px 0 45px;
+}
+
+.speak-wrapper {
+  text-align: center;
+}
+
+.your-proposal{
+	color: #20353B;
+	font-size: 26px;
+	font-weight: lighter;
+}
+
+
+.btn-big-proposals{
+	@extend .btn-proposals;
+  font-size: 26px;
+  padding: 9px 29px;
+  float: none;
+}

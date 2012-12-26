@@ -1,0 +1,22 @@
+-if @proposals.count > 0
+  .span3
+    %h3.your-proposal Your proposals
+  .span2.offset5
+    - if cfp_open?
+      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
+  .row
+    .span10
+      %table.table.table-striped
+        %thead
+          %tr.row
+            %th{scope: 'col'} Title
+            %th{scope: 'col'} Date
+            %th{scope: 'col'} Options
+        %tbody
+          =render @proposals
+-else
+  .span6.offset2
+    .speak-wrapper
+      %p.ready-to-speak Ready to speak?
+      - if cfp_open?
+        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-big-proposals'

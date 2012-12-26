@@ -1,6 +1,7 @@
 .octo-login {
   background-color: white;
   position: relative;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
 }
 
 .octo-login:before {
@@ -34,8 +35,7 @@
 .octo-login p a {
   text-decoration: none;
   color: #20353b;
-}
-
-.octo-login p a:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
