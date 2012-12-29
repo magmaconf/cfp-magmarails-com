@@ -50,5 +50,5 @@ gem 'omniauth-github'
 # To use debugger
 # gem 'debugger'
 
-gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
+#gem 'execjs'
+#gem 'therubyracer', :platforms => :ruby
