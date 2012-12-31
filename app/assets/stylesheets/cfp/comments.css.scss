@@ -1,0 +1,13 @@
+.comment_list{
+  font-size: 12px;
+  padding: 5px;
+  background: #CFD2D6;
+  .comment {
+    margin-bottom: 5px;
+    .body {
+      padding: 5px;
+      background: white;
+    }
+  }
+
+}

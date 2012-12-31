@@ -1,0 +1,26 @@
+.row
+  .span3
+    %h3 Discuss
+.row
+  .span4
+    %ul.nav.nav-list
+      %li
+        = label_tag :rank, t('proposals.rank')
+        #ranking
+          = select_tag "rank", options_for_select(Cfp::Proposal::RANK_SCALE, @score.value)
+      %li= link_to t('actions.comment'), new_proposal_comment_path(@proposal)
+
+      %li
+        .comments
+          %h4= t('actions.comment')
+          .comment_list= render @comments
+
+
+  .span6.discuss
+    = render :partial => "formatted_proposal", :object => @proposal
+
+- content_for :scripts do
+  :javascript
+    $(document).ready(function () {
+      window.app = new Cfp.Views.RankingView();
+    });

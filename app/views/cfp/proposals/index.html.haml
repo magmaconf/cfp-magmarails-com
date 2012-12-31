@@ -13,6 +13,11 @@
             %th{scope: 'col'} Title
             %th{scope: 'col'} Date
             %th{scope: 'col'} Options
+            - if current_user.can_review?
+              %th{scope: 'col'} Author
+              %th{scope: 'col'} Ranking
+              %th{scope: 'col'} Discuss
+
         %tbody
           =render @proposals
 -else
