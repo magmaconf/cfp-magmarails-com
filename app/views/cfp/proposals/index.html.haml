@@ -1,9 +1,10 @@
 -if @proposals.count > 0
-  .span3
-    %h3.your-proposal Your proposals
-  .span2.offset5
-    - if cfp_open?
-      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
+  .header-proposals.row
+    .span3
+      %h3.your-proposal Your proposals
+    .span2.offset5
+      - if cfp_open?
+        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
   .row
     .span10
       %table.table.table-striped

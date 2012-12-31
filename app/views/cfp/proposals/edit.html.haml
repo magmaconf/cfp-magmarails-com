@@ -1,9 +1,10 @@
 .row
   .span6
-    %h3 Submit Proposal
+    %h3 Update Proposal
 .row
   = form_for @proposal do |form|
     %fieldset
       = render 'form', :form => form
 
     .form-actions= form.submit :class => 'btn-proposals pull-right'
+

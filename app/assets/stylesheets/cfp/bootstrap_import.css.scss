@@ -1,1 +1,16 @@
 @import "bootstrap";
+
+table.table-striped tbody tr:nth-child(odd) td, table.table-striped tbody tr:nth-child(odd) th {
+  background-color: transparent !important;
+}
+
+.table th, .table td {
+  border-top: none;
+}
+
+.table th {
+  border-bottom: 1px solid #9B9EA7;
+}
+.table td {
+  border-bottom: 1px dashed #C0C3CE;
+}

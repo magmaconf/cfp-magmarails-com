@@ -5,6 +5,7 @@
     %td
       = link_to t('actions.edit'), edit_proposal_path(proposal)
       = link_to t('actions.delete'), proposal_path(proposal), :method => :delete, :confirm => t('actions.sure')
+
   - else
     %td
   - if current_user.can_review?
