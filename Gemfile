@@ -30,6 +30,7 @@ end
 gem 'jquery-rails'
 
 gem 'cfp', :git => "git://github.com/crowdint/cfp.git"
+#gem 'cfp', :path => "../cfp"
 gem 'devise'
 gem 'haml-rails'
 gem 'omniauth'
