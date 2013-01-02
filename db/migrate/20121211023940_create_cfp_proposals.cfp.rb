@@ -6,6 +6,8 @@ class CreateCfpProposals < ActiveRecord::Migration
       t.string  :title
       t.string  :level
       t.text    :abstract
+      t.text    :description
+      t.string  :language
       t.string  :tags
 
 
