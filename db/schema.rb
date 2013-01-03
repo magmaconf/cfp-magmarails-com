@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20121219185057) do
 
-  create_table "authorizations", :force => true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "cfp_comments", :force => true do |t|
     t.integer  "user_id"
     t.integer  "proposal_id"
@@ -50,9 +42,11 @@ ActiveRecord::Schema.define(:version => 20121219185057) do
     t.string   "title"
     t.string   "level"
     t.text     "abstract"
+    t.text     "description"
+    t.string   "language"
     t.string   "tags"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "cfp_ranks", :force => true do |t|
