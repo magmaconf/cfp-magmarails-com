@@ -1,0 +1,10 @@
+- [:name, :title, :company, :email].each do |field|
+  = form.label field
+  = form.text_field field, :class => "input-block-level title"
+
+= form.label :locale
+= form.select :locale, Cfp::Profile::LOCALES
+
+= form.label :bio
+= form.text_area :bio, :rows => 6, :class => "input-block-level title"
+
