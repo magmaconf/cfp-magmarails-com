@@ -34,6 +34,7 @@ gem 'cfp', :git => "git://github.com/crowdint/cfp.git"
 #gem 'cfp', :path => "../cfp"
 gem 'devise'
 gem 'haml-rails'
+gem 'newrelic_rpm'
 gem 'omniauth'
 gem 'omniauth-github'
 
