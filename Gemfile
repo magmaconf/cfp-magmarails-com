@@ -29,6 +29,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'airbrake', '~> 3.1.6'
 gem 'cfp', :git => "git://github.com/crowdint/cfp.git"
 #gem 'cfp', :path => "../cfp"
 gem 'devise'
