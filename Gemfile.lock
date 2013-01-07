@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/cfp.git
-  revision: 0e929a97a473bc96701fb7efff7ed0dd38e38c94
+  revision: 7cb16697862fd9d56bccfd20c5d83c1ea07148c7
   specs:
     cfp (0.0.1)
       coffee-script
@@ -55,7 +55,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
-    connection_pool (0.9.3)
+    connection_pool (1.0.0)
     daemons (1.1.9)
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
@@ -68,8 +68,8 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
-    girl_friday (0.11.1)
-      connection_pool (~> 0.9.0)
+    girl_friday (0.11.2)
+      connection_pool (~> 1.0)
       rubinius-actor
     haml (3.1.7)
     haml-rails (0.3.5)
@@ -146,7 +146,7 @@ GEM
     rubinius-actor (0.0.2)
       rubinius-core-api
     rubinius-core-api (0.0.1)
-    sass (3.2.4)
+    sass (3.2.5)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
