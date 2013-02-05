@@ -1,4 +1,10 @@
 .row
+  %ul.breadcrumb
+    %li
+      = link_to t('proposals.proposals'), proposals_path()
+      %span.divider /
+    %li.active= t('actions.comment')
+.row
   .span3
     %h3 Discuss
 .row
@@ -8,12 +14,13 @@
         = label_tag :rank, t('proposals.rank')
         #ranking
           = select_tag "rank", options_for_select(Cfp::Proposal::RANK_SCALE, @score.value)
-      %li= link_to t('actions.comment'), new_proposal_comment_path(@proposal)
+      %li= link_to t('comments.new'), new_proposal_comment_path(@proposal), remote: true
+      %li.new-comment
 
       %li
         .comments
           %h4= t('actions.comment')
-          .comment_list= render @comments
+          .comment_list= render @comments.reverse
 
 
   .span6.discuss
