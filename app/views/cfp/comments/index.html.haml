@@ -13,7 +13,10 @@
       %li
         = label_tag :rank, t('proposals.rank')
         #ranking
-          = select_tag "rank", options_for_select(Cfp::Proposal::RANK_SCALE, @score.value)
+          - Cfp::Proposal::RANK_SCALE.each do |rank|
+            %label.checkbox.inline
+              = radio_button_tag rank, rank, (@score ? rank == @score.value : false), id: 'rank', name: 'rank'
+              = rank
       %li= link_to t('comments.new'), new_proposal_comment_path(@proposal), remote: true
       %li.new-comment
 
