@@ -6,14 +6,11 @@ module ApplicationHelper
     end
   end
 
-  def prev_help(id)
-    prev_proposal = Cfp::Proposal.where(id: id - 1)
-    link_to(raw("<i class='icon-arrow-left'></i> Prev"), proposal_comments_path(prev_proposal.first.id), class: 'pull-left' )  if prev_proposal.first
-  end
 
   def next_help(id)
-    next_proposal = Cfp::Proposal.where(id: id + 1)
-    link_to(raw("Next <i class='icon-arrow-right'></i>"), proposal_comments_path(next_proposal.first.id), class: 'pull-right' )  if next_proposal.first
+    ids = Cfp::Rank.where(:user_id => current_user.id).map(&:proposal_id) << id
+    next_proposal = Cfp::Proposal.where('id NOT IN (?)', ids).first
+    link_to(raw("Continue <i class='icon-arrow-right'></i>"), proposal_comments_path(next_proposal.id), class: 'btn btn-orange pull-right' )  if next_proposal
   end
 
 end
