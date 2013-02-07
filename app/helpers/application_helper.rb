@@ -13,4 +13,10 @@ module ApplicationHelper
     link_to(raw("Continue <i class='icon-arrow-right'></i>"), proposal_comments_path(next_proposal.id), class: 'btn btn-orange pull-right' )  if next_proposal
   end
 
+  def counter
+    ready = Cfp::Rank.where(:user_id => current_user.id).count
+    proposals = Cfp::Proposal.all.count
+    raw "<h3 class='total span2 offset5'>#{ready} / #{proposals}</h3>"
+  end
+
 end
