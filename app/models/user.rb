@@ -5,11 +5,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :provider, :uid, :email, :password, :password_confirmation, :remember_me, :roles
-  # attr_accessible :title, :body
-  #
-
   include Cfp::User
 
   def self.create_with_omniauth(auth)
