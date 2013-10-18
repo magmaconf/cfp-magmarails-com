@@ -231,5 +231,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 
   # There is an issue at Devise, please refer to: https://github.com/plataformatec/devise/issues/2554
-  config.secret_key = "#{ENV['DEVISE_SECRET_KEY']}"
+  config.secret_key = ENV['DEVISE_SECRET_KEY']
 end
