@@ -1,0 +1,35 @@
+// Layout
+.main-menu {
+  text-decoration: none;
+  text-align: right;
+
+  li {
+    display: inline;
+  }
+
+  li + li:before {
+    content: " | ";
+    color: $anchor;
+  }
+}
+
+.magma_conferences_logo {
+  margin-left: 10px;
+}
+
+footer {
+  height: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #b2c4de;
+}
+
+footer p {
+  color: #627b9d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  text-align: center;
+}
+
+footer p img {
+  margin-top:-8px;
+}

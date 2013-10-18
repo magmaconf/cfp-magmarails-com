@@ -1,0 +1,37 @@
+.comment_list{
+  font-size: 12px;
+  padding: 5px;
+  background: #CFD2D6;
+  .comment {
+    margin-bottom: 5px;
+    .body {
+      padding: 5px;
+      background: white;
+    }
+  }
+
+}
+.new-comment {
+  .form-actions {
+    padding: 0;
+    margin: 0;
+    .btn {
+      @include gradient(#f48d5d, #d97246);
+      border: 0px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      padding: 8px 15px;
+      float: right;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.checkbox.inline {
+  input {
+    margin-top: -3px;
+  }
+}

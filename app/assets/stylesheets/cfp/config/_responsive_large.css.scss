@@ -1,0 +1,7 @@
+@media screen and (min-width: 1200px) {
+  @include grid_generator($width-column, $width-gutter);
+
+  @include grid_offset($width-column, $width-gutter);
+
+  @include grid_centered($width-column, $width-gutter)
+}

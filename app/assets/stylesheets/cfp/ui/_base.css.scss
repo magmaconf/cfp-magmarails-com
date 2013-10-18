@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+  background-image: url('/assets/bkg.png');
+}
+
+a {
+  color: $anchor;
+  text-decoration: underline;
+  font-size: 0.9em;
+
+  &:hover {
+    color: $anchor-hover;
+  }
+}

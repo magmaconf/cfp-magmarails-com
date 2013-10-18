@@ -1,0 +1,63 @@
+.easy {
+  span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px 20px;
+    background: #eee;
+    border-radius: 50%;
+    color: #c4c4c4;
+  }
+
+  .active {
+    background: #ccc;
+    color: $white;
+    padding: 10px
+  }
+}
+
+
+
+
+
+.octo-login {
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+
+.octo-login:before {
+  content: ' ';
+  position: absolute;
+  top:-11%;
+  left:20px;
+  border-color: transparent transparent white transparent;
+  border-style: solid;
+  border-width: 16px;
+  width: 0;
+  height: 0;
+}
+
+.octocat_image {
+  display: block;
+  margin: 0 auto;
+}
+
+.legend {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.octo-login p {
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -100px;
+  padding-bottom: 65px;
+}
+
+.octo-login p a {
+  text-decoration: none;
+  color: #20353b;
+  &:hover {
+    text-decoration: none;
+  }
+}

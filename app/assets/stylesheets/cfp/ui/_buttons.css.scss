@@ -1,0 +1,12 @@
+.sign-in {
+  display: inline-block;
+  background: $btn-ios-bkg;
+  padding: 10px;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    background: $btn-ios-hover;
+    color: $white;
+  }
+}
