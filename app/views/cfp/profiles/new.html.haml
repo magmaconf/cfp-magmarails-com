@@ -1,8 +1,16 @@
-.span6.offset2
-  %h3= t('profile.profile')
-  .white_background.new_profile
-    = form_for @profile, :url => profile_path do |form|
-      = render 'form', :form => form
+.three-columns
+  %h3= t('devise.profiles.profile')
+  %p
+    an image here
+.nine-columns
+  %h4= t('devise.profiles.complete')
+  = form_for @profile, :url => profile_path do |form|
+    = render 'form', :form => form
 
-      = form.submit :class => 'btn-cfp'
-      .clearfix<
+    = form.submit :class => 'btn-cfp'
+
+.centered-five.easy
+  %p= t('devise.easy.two')
+  %span 1
+  %span.active 2
+  %span 3

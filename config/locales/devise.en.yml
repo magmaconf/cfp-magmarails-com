@@ -22,6 +22,9 @@ en:
       timeout: 'Your session expired, please sign in again to continue.'
       inactive: 'Your account was not activated yet.'
     sessions:
+      sign_up: 'Sign up with Github'
+      terms: 'Terms of participation'
+      sign_out: 'Sign out'
       signed_in: 'Signed in successfully.'
       signed_out: 'Signed out successfully.'
     passwords:
@@ -56,3 +59,10 @@ en:
         subject: 'Reset password instructions'
       unlock_instructions:
         subject: 'Unlock Instructions'
+    profiles:
+      profile: 'My profile'
+      complete: 'Complete your profile*'
+    easy:
+      one: 'As easy as'
+      two: "You're almost ready"
+      trhee: "Easy, isn't it?"

@@ -2,26 +2,25 @@
 %html
   %head
     %title MagmaConf : Call For Papers
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0'}
     = stylesheet_link_tag    "cfp/application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
     %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
   %body
-    .wrapper
-      %header.row
-        .container
-          .span10.offset1
-            %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-            %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
-      .container
-        .row
-          .span10.offset1
-            .row
-              = yield
-      .push
+    %section.container
+      .row
+        .centered-seven
+          %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
+          %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
+      .row
+        .centered-seven
+          an image here
+      = yield
+
     .container
-      .span12
-        .row
+      .row
+        .twelve-columns
           %footer
             %p
               %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}

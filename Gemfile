@@ -17,7 +17,6 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'bootstrap-sass'
   gem 'sass-rails',   '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
 
@@ -28,6 +27,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'cactu', '~> 0.0.16'
 
 gem 'airbrake', '~> 3.1.6'
 #gem 'cfp', path: "../cfp", :branch => 'mailer'

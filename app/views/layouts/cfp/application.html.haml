@@ -2,6 +2,7 @@
 %html
   %head
     %title MagmaConf: Call For Papers
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0'}
     = stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"
@@ -15,28 +16,25 @@
     = yield :scripts
 
   %body
-    .wrapper
-      %header.row
-        .container
-          .span10.offset1
-            .row
-              .span4
-                %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-                %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
-              .span6
-                %ul
-                  %li= link_to t('proposals.proposals'), proposals_path
-                  %li= link_to t('profile.profile'), profile_path
-                  %li= link_to "Sign out", "/signout"
-      .container
-        .row
-          .span10.offset1
-            .row
-              = yield
-      .push
+    %section.container
+      .row
+        .centered-seven
+          %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
+          %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
+      .row
+        .four-columns.offset-eight
+          %ul.main-menu
+            -#%li= link_to t('proposals.proposals'), proposals_path
+            -#%li= link_to t('profile.profile'), profile_path
+            %li= link_to t('devise.sessions.terms'), "#"
+            %li= link_to t('devise.sessions.sign_out'), "/signout"
+    %section.container
+      .row
+        = yield
+
     .container
-      .span12
-        .row
+      .row
+        .twelve-columns
           %footer
             %p
               %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}
