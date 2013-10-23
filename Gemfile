@@ -30,7 +30,10 @@ gem 'jquery-rails'
 
 gem 'cactu', '~> 0.0.16'
 
+gem 'rails_12factor'
+
 gem 'airbrake', '~> 3.1.6'
+
 #gem 'cfp', path: "../cfp", :branch => 'mailer'
 gem 'cfp', git: 'git://github.com/crowdint/cfp.git', branch: 'mailer'
 #gem 'cfp', :path => "../cfp"
