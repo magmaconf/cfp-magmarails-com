@@ -1,15 +1,95 @@
+.profile {
+  text-align: center;
+  background: $profile-bkg;
+
+  .profile-in {
+    width: 95%;
+    margin: auto;
+    border-left: 1px solid $line;
+    border-right: 1px solid $line;
+    line-height: 2em;
+
+    .logo-magma {
+      padding-bottom: 5px;
+      margin-top: 35px;
+    }
+
+    .line {
+      width: 90%;
+      height: 2px;
+      background: $line;
+      margin: 5px 5% 20px 5%;
+    }
+
+    .pic {
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border: 3px solid $white;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+
+      img { width: 100%; }
+    }
+
+    .cfp-logo {
+      margin-top: 100px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.titles {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0 10px 0;
+  border-bottom: 2px solid $line;
+  margin-bottom: 20px;
+
+  .left-section {
+    width: 70%;
+    float: left;
+    text-shadow: 1px 2px $white;
+  }
+
+  .right-section {
+    width: 30%;
+    float: left;
+    margin-top: 18px;
+  }
+}
+
 .left {
   overflow: hidden;
-  width: 50%;
+  width: 47%;
   float: left;
+  margin-right: 3%;
+
+  input {
+    width: 96%;
+  }
 }
 
 .right {
+  margin-right: 0;
+  margin-left: 3%;
   @extend .left;
+
+  input {
+    width: 90%;
+  }
+}
+
+.section {
+  padding: 10px 0;
+  border-bottom: 2px solid #c5c1bd;
+  text-shadow: 2px 2px 1px $white;
 }
 
 .name {
-  width: 90%;
+  width: 45%;
 }
 
 form {

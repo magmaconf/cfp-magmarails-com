@@ -3,7 +3,7 @@
   %head
     %title MagmaConf: Call For Papers
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0'}
-    = stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
+    -#= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"
@@ -12,22 +12,13 @@
     = javascript_include_tag "cfp/application"
     = csrf_meta_tags
     %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
+    %link{rel: 'stylesheet', href: "http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin"}
 
     = yield :scripts
 
   %body
     %section.container
-      .row
-        .centered-seven
-          %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-          %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
-      .row
-        .four-columns.offset-eight
-          %ul.main-menu
-            -#%li= link_to t('proposals.proposals'), proposals_path
-            -#%li= link_to t('profile.profile'), profile_path
-            %li= link_to t('devise.sessions.terms'), "#"
-            %li= link_to t('devise.sessions.sign_out'), "/signout"
+      .top
     %section.container
       .row
         = yield
@@ -37,5 +28,5 @@
         .twelve-columns
           %footer
             %p
-              %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}
+              %img{src: '/assets/crowd.png', alt: 'Crowd Interactive Logo'}
               %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.

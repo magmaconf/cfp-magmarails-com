@@ -1,21 +1,12 @@
 .row
   .centered-four
-    = link_to t('devise.sessions.sign_up'), '/auth/github', class: 'sign-in'
-    %br
-    = link_to t('devise.sessions.terms'), '#'
-
-.row
-  .centered-five.easy
-    %p= t('devise.easy.one')
-    %span.active 1
-    %span 2
-    %span 3
-
-
--#.span4.offset3
-  %h3.legend Sign in
-  .octo-login
-    = link_to image_tag('octocat_login.png', class: 'octocat_image'), '/auth/github'
-    %br
-    %p
-      = link_to 'Sign up with Github', '/auth/github'
+    %p.ready= t('devise.home.ready')
+    %p.you= t('devise.home.you')
+    %img.magma_logo{src: '/assets/magma.svg', alt: 'Magma Conferences'}
+    .circle
+      .login-up
+        %a{href: "/auth/github", class: "sign-in"}
+          = t('devise.sessions.sign_up')
+          %br
+          %img{src: "/assets/github.svg"}
+      = link_to t('devise.sessions.terms'), '#'

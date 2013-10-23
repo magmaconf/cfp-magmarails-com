@@ -1,3 +1,14 @@
+.login-up {
+  width: 200px;
+  height: 200px;
+  background: $white;
+  margin: auto auto 15px auto;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+}
+
 .easy {
   span {
     display: inline-block;

@@ -6,22 +6,22 @@
     = stylesheet_link_tag    "cfp/application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
+    %link{rel: 'stylesheet', href: "http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin"}
   %body
-    %section.container
+    %section#home-top.container
       .row
         .centered-seven
-          %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-          %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
+          %img{src: '/assets/cfp.svg', alt: 'Call for papers'}
+          %img.mask{src: '/assets/mask.svg', alt: 'Mask of magma'}
       .row
         .centered-seven
           an image here
       = yield
 
-    .container
+    #home-down.container
       .row
         .twelve-columns
           %footer
             %p
-              %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}
+              %img{src: '/assets/crowd.svg', alt: 'Crowd Interactive Logo'}
               %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
