@@ -2,11 +2,11 @@
   .centered-four
     %p.ready= t('devise.home.ready')
     %p.you= t('devise.home.you')
-    %img.magma_logo{src: '/assets/magma.svg', alt: 'Magma Conferences'}
+    = image_tag '/assets/magma.svg', class: 'magma_logo', alt: 'Magma Conference'
     .circle
       .login-up
         %a{href: "/auth/github", class: "sign-in"}
           = t('devise.sessions.sign_up')
           %br
-          %img{src: "/assets/github.svg"}
+          = image_tag '/assets/github.svg'
       = link_to t('devise.sessions.terms'), '#'
