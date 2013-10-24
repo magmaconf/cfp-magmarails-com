@@ -1,9 +1,13 @@
-.row
-  .span6
-    %h3 Submit Proposal
-.row
+- content_for :header_title do
+  Are you ready to speak?
+.eight-columns
   = form_for @proposal do |form|
-    %fieldset
+    %fieldset.new-proposal
       = render 'form', :form => form
 
-    .form-actions= form.submit :class => 'btn-proposals pull-right'
+    .btn-aro.upper
+      = form.submit 'Create', class: 'aro'
+
+.one-column.days-left
+  %p= t('devise.proposals.num')
+  %span= t('devise.proposals.days')

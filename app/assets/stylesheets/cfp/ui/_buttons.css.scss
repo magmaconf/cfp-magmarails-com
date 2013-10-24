@@ -58,6 +58,11 @@
       color: $white;
     }
   }
+
+  &.upper {
+    top: -65px;
+    position: relative;
+  }
 }
 
 .btn-circle {

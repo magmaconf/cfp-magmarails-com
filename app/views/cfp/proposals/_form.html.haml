@@ -1,14 +1,18 @@
-.span5
+.nine-columns
   = form.label :title
-  = form.text_field :title, :class => "input-block-level title"
+  = form.text_field :title
+.four-columns
   = form.label :level
   = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t("level.#{l}"), l]}
+.four-columns
   = form.label :language
   = form.select :language, Cfp::Proposal::LANGUAGE
+.four-columns
   = form.label :tags
-  = form.text_field :tags, :class => "input-block-level", :placeholder => t('helpers.placeholder.proposal.tags')
-.span5
+  = form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
+.seven-columns
   = form.label :description
-  = form.text_area :description, :class => "input-block-level", :rows => 8, :placeholder => t('helpers.placeholder.proposal.description')
+  = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description')
+.five-columns
   = form.label :abstract
-  = form.text_area :abstract, :class => "input-block-level proposal-abstract", :rows => 8, :placeholder => t('helpers.placeholder.proposal.abstract')
+  = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract')
