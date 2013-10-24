@@ -1,28 +1,3 @@
-.three-columns.profile
-  .profile-in
-    = image_tag '/assets/magma-2.svg', class: 'logo-magma'
-    .line
-    %h4= t('devise.profiles.profile')
-    .pic
-      = image_tag '/assets/gio.jpg'
-    .company
-      Crowd Interactive
-    .location
-      Colima, Col
-    .email
-      mendozagioo@gmail.com
-    .complete
-      Complete my profile
-    .cfp-logo
-      = image_tag '/assets/cfp-2.svg'
-
-.nine-columns
-  .titles
-    .left-section
-      %h3= t('devise.profiles.complete')
-    .right-section
-      = render :partial => '/cfp/menu', class: 'cfp2'
-
 .forms
 .eight-columns
   = form_for @profile, :url => profile_path do |form|
