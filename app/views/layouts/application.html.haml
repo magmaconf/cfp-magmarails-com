@@ -3,16 +3,16 @@
   %head
     %title MagmaConf : Call For Papers
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0'}
-    = stylesheet_link_tag    "cfp/application", :media => "all"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag    'cfp/application', :media => 'all'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
-    %link{rel: 'stylesheet', href: "http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin"}
+    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
   %body
     %section#home-top.container
       .row
         .centered-seven
-          %img{src: '/assets/cfp.svg', alt: 'Call for papers'}
-          %img.mask{src: '/assets/mask.svg', alt: 'Mask of magma'}
+          = image_tag '/assets/cfp.svg', alt: 'Call for papers'
+          = image_tag '/assets/mask.svg', alt: 'Mask of magma', class: 'mask'
       .row
         .centered-seven
           an image here
@@ -23,5 +23,5 @@
         .twelve-columns
           %footer
             %p
-              %img{src: '/assets/crowd.svg', alt: 'Crowd Interactive Logo'}
+              = image_tag '/assets/crowd.svg', alt: 'Crowd Interactive Logo'
               %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.

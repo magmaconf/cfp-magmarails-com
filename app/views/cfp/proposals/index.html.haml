@@ -1,10 +1,8 @@
 -if @proposals.count > 0
-  .header-proposals.row
-    .span3
-      %h3.your-proposal Your proposals
-    .span2.offset5
-      - if cfp_open?
-        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
+  .three-columns
+    %h3.your-proposal Your proposals
+    - if cfp_open?
+      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
   .row
     .span10
       %table.table.table-striped
@@ -21,8 +19,13 @@
         %tbody
           =render @proposals
 -else
-  .span6.offset2
-    .speak-wrapper
-      %p.ready-to-speak Ready to speak?
-      - if cfp_open?
-        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-big-proposals'
+  .eight-columns
+    - if cfp_open?
+      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-big-proposals'
+      %a.btn-circle{href: new_proposal_path}
+        %span +
+        Add proposal
+
+.one-column
+  %p= t('devise.proposals.num')
+  %span= t('devise.proposals.days')

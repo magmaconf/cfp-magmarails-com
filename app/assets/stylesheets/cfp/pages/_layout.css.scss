@@ -9,6 +9,15 @@
     left: 50%;
     margin-left: -100px;
     z-index: 2;
+    a:hover {
+      text-decoration: none;
+    }
+    & > a {
+      text-decoration: underline;
+    }
+    /*a.login-up {*/
+      /*text-decoration: underline;*/
+    /*}*/
   }
 
   img {

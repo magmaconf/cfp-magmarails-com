@@ -1,8 +1,10 @@
-.span6.offset2
-  %h3= t('devise.profiles.profile')
-  .white_background.new_profile
-    = form_for @profile, :url => profile_path do |form|
-      = render 'form', :form => form
+- content_for :header_title do
+  = t('devise.profiles.profile')
 
-      = form.submit :class => 'btn-cfp'
-      .clearfix<
+.eight-columns
+  = form_for @profile, :url => profile_path do |form|
+    = render 'form', :form => form
+
+    .btn-aro
+      = form.submit class: 'aro', value: 'Update'
+.one-colum

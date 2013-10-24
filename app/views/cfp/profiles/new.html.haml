@@ -1,9 +1,7 @@
-.forms
 .eight-columns
   = form_for @profile, :url => profile_path do |form|
     = render 'form', :form => form
 
-    -#= form.submit class: 'btn-cfp'
     .btn-aro
       = form.submit class: 'aro', value: 'Next'
 .one-colum

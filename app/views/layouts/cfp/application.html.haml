@@ -22,11 +22,12 @@
         %section.nine-columns
           %header.titles
             .left-section
-              %h3= t('devise.profiles.complete')
+              %h3
+                = content_for?(:header_title) ? yield(:header_title) : t('devise.profiles.complete')
             .right-section
               = render 'cfp/application/menu'
 
-          = yield
+        = yield
 
     = render 'cfp/application/javascripts'
     = yield :scripts

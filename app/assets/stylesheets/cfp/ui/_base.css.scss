@@ -10,11 +10,12 @@ html, body {
 
 a {
   color: $anchor;
-  text-decoration: underline;
-  font-size: 0.9em;
+  font: 100 1.3em/1.3em 'Roboto';
+  text-decoration: none;
 
   &:hover {
     color: $anchor-hover;
+    text-decoration: underline;
   }
 }
 
