@@ -11,37 +11,22 @@
   %body
     .container
       .top
-      %aside.three-columns.profile
-        %header
-          = image_tag '/assets/magma-2.svg', class: 'logo-magma'
-          .line
-        .profile-in
-          %h4= t('devise.profiles.profile')
-          .pic
-            = image_tag '/assets/gio.jpg'
-          .company
-            Crowd Interactive
-          .location
-            Colima, Col
-          .email
-            mendozagioo@gmail.com
-          .complete
-            Complete my profile
-          .cfp-logo
-            = image_tag '/assets/cfp-2.svg'
-        %footer
-          %p
-            %img{src: '/assets/crowd.png', alt: 'Crowd Interactive Logo'}
-            %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+      .row
+        %aside.three-columns.profile
+          = render 'cfp/profiles/profile'
+          %footer.prof
+            %p
+              = image_tag '/assets/crowd.png', alt: 'Crowd Interactive Logo'
+              %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
 
-      %section.nine-columns
-        %header.titles
-          .left-section
-            %h3= t('devise.profiles.complete')
-          .right-section
-            = render :partial => '/cfp/menu', class: 'cfp2'
-        
-        = yield
+        %section.nine-columns
+          %header.titles
+            .left-section
+              %h3= t('devise.profiles.complete')
+            .right-section
+              = render 'cfp/application/menu'
 
-    = render 'cfp/javascripts'
+          = yield
+
+    = render 'cfp/application/javascripts'
     = yield :scripts

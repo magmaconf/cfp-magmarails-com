@@ -71,7 +71,6 @@
 }
 
 footer {
-  height: 30px;
   padding-top: 200px;
 
   p {
@@ -85,5 +84,11 @@ footer {
     position: relative;
     top: -6px;
     margin-left: 10px;
+  }
+
+  &.prof {
+    padding-top: 100px;
+    img { margin: 0 auto 25px }
+    img, span { display: block }
   }
 }

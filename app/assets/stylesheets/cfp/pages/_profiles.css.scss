@@ -1,13 +1,14 @@
 .profile {
   text-align: center;
-  background: $profile-bkg;
 
   .profile-in {
-    width: 95%;
-    margin: auto;
+    background: $profile-bkg;
     border-left: 1px solid $line;
     border-right: 1px solid $line;
     line-height: 2em;
+    margin: auto;
+    outline: 6px solid $profile-bkg;
+    width: 95%;
 
     .logo-magma {
       padding-bottom: 5px;
