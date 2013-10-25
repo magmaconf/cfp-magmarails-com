@@ -149,3 +149,23 @@
     }
   }
 }
+
+.btn-rank {
+  @extend .btn-aro;
+  background: $anchor-hover;
+  height: 110px;
+  width: 110px;
+
+  .aro {
+    height: 95px;
+    width: 95px;
+    background: $anchor-hover;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      background: $white;
+      color: $anchor-hover;
+    }
+  }
+}

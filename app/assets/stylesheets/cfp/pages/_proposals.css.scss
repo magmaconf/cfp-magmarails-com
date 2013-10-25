@@ -64,6 +64,7 @@
 .new-proposal, .gray-background {
   background: $profile-bkg;
   padding: 10px 0 100px;
+  margin-bottom: 20px;
 
   #proposal_title { width: 90% }
 
@@ -169,6 +170,32 @@
           color: $anchor;
         }
       }
+    }
+  }
+}
+
+#ranking {
+  padding-bottom: 10px;
+
+  h3 {
+    font: 100 1.2em/1.1em 'Oswald';
+  }
+
+  [class *="-column"] {
+    padding-top: 4%;
+
+    &:last-child {
+      padding-top: 0;
+    }
+  }
+
+  #rank-list {
+    font-size: 0.8em;
+
+    label {
+      font-family: 'Roboto';
+      font-weight: 300;
+      padding-left: 10px;
     }
   }
 }

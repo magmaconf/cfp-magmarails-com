@@ -4,27 +4,35 @@
 = render 'cfp/application/formatted_proposal'
 
 .nine-columns.gray-background#ranking
-  %h3= t('comments.proposals.rate')
-  %span= t('comments.proposals.worst')
-  #rank-list
-    - Cfp::Proposal::RANK_SCALE.each do |rank|
-      %label{ style: 'display:inline' }
-        = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
-        = rank
-  %span= t('comments.proposals.best')
-  .btn-aro
-    = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
+  .three-columns
+    %h3= t('comments.proposals.rate')
+  .one-column
+    %span= t('comments.proposals.worst')
+
+  .four-columns
+    #rank-list
+      - Cfp::Proposal::RANK_SCALE.each do |rank|
+        %label{ style: 'display:inline' }
+          = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
+          = rank
+  .two-columns
+    %span= t('comments.proposals.best')
+  .two-columns
+    .btn-rank
+      = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
 
 .nine-columns.gray-background
-  %h3= "#{@comments.size} Comments"
-  %ul
-    = render @comments.reverse
+  .twelve-columns
+    %h3= "#{@comments.size} Comments"
+    %ul
+      = render @comments.reverse
 
-.nine-columns.gray-background
-  = form_for [@proposal, Cfp::Comment.new] do |form|
-    = form.text_area :body, rows: '5'
-    .btn-aro
-      = form.submit t('comments.new'), class: 'aro'
+.nine-columns.gray-background.offset-three
+  .twelve-columns
+    = form_for [@proposal, Cfp::Comment.new] do |form|
+      = form.text_area :body, rows: '5'
+      .btn-aro
+        = form.submit t('comments.new'), class: 'aro'
 
 - content_for :scripts do
   :javascript
