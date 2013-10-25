@@ -19,4 +19,8 @@ module ApplicationHelper
     raw "<h3 class='total span2 offset5'>#{ready} / #{proposals}</h3>"
   end
 
+  def user_based_proposal_path(proposal)
+    current_user.can_review? ? proposal_comments_path(proposal) : proposal_path(proposal)
+  end
+
 end
