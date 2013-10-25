@@ -70,6 +70,12 @@
   textarea { resize: none }
 }
 
+.lists {
+  ul li {
+    margin-bottom: 20px;
+  }
+}
+
 .days-left {
   font: 300 3.6em/1.1em 'Oswald';
   color: $days;
@@ -87,5 +93,82 @@
     font-size: 0.34em;
     position: relative;
     top: -25px;
+  }
+}
+
+.menu {
+  text-align: right;
+
+  a {
+    padding: 0 10px;
+    color: $anchor-hover;
+
+    &:hover {
+      color: $anchor;
+    }
+
+    &:last-child {
+      font-size: 2em;
+      color: $days;
+      font-weight: 300;
+
+      &:hover { text-decoration: none; }
+    }
+  }
+}
+
+.proposal-show {
+  padding-bottom: 10px;
+
+  h3 {
+    font: 100 1.2em/1.1em 'Oswald';
+  }
+
+  p {
+    padding: 10px 0 30px 20px;
+  }
+
+  .title {
+    font: 300 1.6em/1.1em 'Roboto';
+    padding-bottom: 0;
+  }
+
+  .tags {
+    font: 300 1.2em/1.1em 'Roboto';
+    color: $anchor + 50;
+  }
+
+  footer {
+    padding-top: 0;
+
+    .image {
+      width: 8%;
+      float: left;
+      padding: 2% 0 2% 2%;
+    }
+
+    .info {
+      @extend .image;
+      width: 88%;
+
+      p {
+        padding: 0;
+        text-align: left;
+        font-size: 1.2em;
+
+      }
+
+      .name {
+        color: #000;
+      }
+
+      a {
+        color: $anchor-hover;
+
+        &:hover {
+          color: $anchor;
+        }
+      }
+    }
   }
 }
