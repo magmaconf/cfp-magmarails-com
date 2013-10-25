@@ -1,31 +1,20 @@
--if @proposals.count > 0
-  .three-columns
-    %h3.your-proposal Your proposals
-    - if cfp_open?
-      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
-  .row
-    .span10
-      %table.table.table-striped
-        %thead
-          %tr.row
-            %th{scope: 'col'} Title
-            %th{scope: 'col'} Date
-            %th{scope: 'col'} Options
-            - if current_user.can_review?
-              %th{scope: 'col'} Author
-              %th{scope: 'col'} Ranking
-              %th{scope: 'col'} Discuss
+- content_for :header_title do
+  My Proposals
 
-        %tbody
-          =render @proposals
--else
-  .eight-columns
+.eight-columns
+  %ul
+    =render @proposals
     - if cfp_open?
-      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-big-proposals'
-      %a.btn-circle{href: new_proposal_path}
-        %span +
-        Add proposal
+      %li.three-columns
+        = link_to new_proposal_path, class: 'btn-ring' do
+          .aro
+            %span +
+            %span
+              Add
+              %br
+              proposal
 
-.one-column
+
+.one-column.days-left
   %p= t('devise.proposals.num')
   %span= t('devise.proposals.days')

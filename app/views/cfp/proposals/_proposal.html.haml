@@ -1,22 +1,6 @@
-= content_tag_for :tr, proposal, :class => "row" do
-  %td
-    = already_reviewed proposal
-    = proposal.title
-
-  %td= proposal.updated_at.to_s :human
-  - if proposal.can_be_edited_by?(current_user)
-    %td
-      = link_to t('actions.edit'), edit_proposal_path(proposal)
-      = link_to t('actions.delete'), proposal_path(proposal), :method => :delete, :confirm => t('actions.sure')
-      - if proposal.can_be_seen_by?(current_user)
-        = link_to t('actions.show'), proposal_path(proposal)
-
-  - else
-    %td
-  - if current_user.can_review?
-    %td
-      = proposal.user_name
-    %td
-      = proposal.average_ranking
-    %td
-      = link_to t('actions.discuss'), proposal_comments_path(proposal)
+%li.three-columns
+  -#= link_to proposal.title, proposal_path(proposal)
+  = link_to proposal_path(proposal), class: 'btn-proposal' do
+    .aro
+      %span
+        #{proposal.title}

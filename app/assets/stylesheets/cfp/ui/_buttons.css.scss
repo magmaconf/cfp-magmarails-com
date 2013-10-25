@@ -83,3 +83,69 @@
     color: $white;
   }
 }
+
+.btn-ring {
+  @extend .btn-aro;
+  width: 145px;
+  height: 145px;
+  background: $anchor-hover;
+  display: block;
+  padding: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .aro {
+    @extend .btn-aro.aro;
+    width: 130px;
+    height: 130px;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      background: $white;
+      color: $anchor-hover;
+    }
+
+    span {
+      display: block;
+      font-size: 2em;
+
+      &:nth-child(1) {
+        margin-top: 17px;
+      }
+
+      &:nth-child(2) {
+        font-size: 0.7em;
+        line-height: 0.9em;
+      }
+    }
+  }
+}
+
+.btn-proposal {
+  @extend .btn-ring;
+  background: $profile-bkg;
+
+  .aro {
+    @extend .btn-ring.aro;
+    border: 1px solid $line;
+    color: $anchor;
+
+    &:hover {
+      background: $line;
+      color: $white;
+    }
+
+    span {
+      font-size: 0.7em;
+      line-height: 1em;
+      padding: 10px;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
