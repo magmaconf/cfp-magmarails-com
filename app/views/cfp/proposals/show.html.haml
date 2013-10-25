@@ -1,9 +1,27 @@
-.header-proposals.row
-  .span3
-    %h3.your-proposal
-  .span2.offset5
-    - if cfp_open?
-      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
-.row
-  .span10
-    = render :partial => "formatted_proposal", :object => @proposal
+- content_for :header_title do
+  = @proposal.title
+
+.nine-columns.gray-background
+  %menu.menu
+    = link_to 'Edit', edit_proposal_path(@proposal)
+    = link_to 'Delete', proposal_path(@proposal), method: 'delete'
+    = link_to 'X', proposals_path
+
+  .twelve-columns
+    .speaker
+      = @proposal.user_name
+    .bio
+      = @proposal.user_bio
+    .level
+      = @proposal.level
+    .tags
+      = @proposal.tags
+    %hr
+    %h3 Abstract
+    .abstract
+      = @proposal.abstract_html
+    %hr
+    %h3 Notes
+    .description
+      = @proposal.description_html
+
