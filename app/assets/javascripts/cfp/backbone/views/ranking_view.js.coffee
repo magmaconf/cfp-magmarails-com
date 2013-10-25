@@ -2,7 +2,7 @@ class Cfp.Views.RankingView extends Backbone.View
   el: '#ranking'
 
   events:
-    'change #rank' : 'changeRank'
+    'click #submit-rank' : 'changeRank'
 
   changeRank: ->
     rank = new Cfp.Models.Rank
@@ -10,4 +10,4 @@ class Cfp.Views.RankingView extends Backbone.View
       value: @selectedRank()
 
   selectedRank: =>
-    @$('#rank:checked').val()
+    @$('input[name="rank"]:checked').val()

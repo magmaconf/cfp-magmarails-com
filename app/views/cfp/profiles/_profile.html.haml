@@ -6,12 +6,13 @@
   .pic
     = image_tag '/assets/github.svg'
   .company
-    Crowd Interactive
+    = current_user.profile.company
   .location
-    Colima, Col
+    Location
   .email
-    mendozagioo@gmail.com
+    = current_user.email
   .complete
-    Complete my profile
+    - if current_user.should_create_profile?
+      = link_to 'Complete my profile', edit_profile_path
   .cfp-logo
     = image_tag '/assets/cfp-2.svg'

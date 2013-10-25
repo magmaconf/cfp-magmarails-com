@@ -1,3 +1,3 @@
-.comment
-  .email= "#{comment.user.profile.name} (#{comment.user.profile.email})"
+%li.comment
   .body= comment.body
+  .email= "#{comment.created_at} By #{comment.user.profile.name}"
