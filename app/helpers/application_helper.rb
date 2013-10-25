@@ -28,4 +28,8 @@ module ApplicationHelper
     date_to_go.to_s.rjust(2, '0')
   end
 
+  def user_company
+    current_user.profile && current_user.profile.company
+  end
+
 end
