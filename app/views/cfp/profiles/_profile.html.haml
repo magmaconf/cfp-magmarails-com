@@ -1,10 +1,10 @@
 .profile-in
   %header
-    = image_tag '/assets/magma-2.svg', class: 'logo-magma'
+    = image_tag 'magma-2.svg', class: 'logo-magma'
   .line
   %h4= t('profiles.profile')
   .pic
-    = image_tag '/assets/github.svg'
+    = image_tag 'github.svg'
   .company
     = current_user.profile.company
   .location
@@ -15,4 +15,4 @@
     - if current_user.should_create_profile?
       = link_to t('prodiles.complete'), edit_profile_path
   .cfp-logo
-    = image_tag '/assets/cfp-2.svg'
+    = image_tag 'cfp-2.svg'
