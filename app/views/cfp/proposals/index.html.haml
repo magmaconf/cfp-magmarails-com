@@ -1,7 +1,13 @@
 - content_for :header_title do
   = t('proposals.mine')
 
-.eight-column.lists
+- if current_user.can_review?
+  .nine-columns.sub-titles
+    %span Rank
+    %span Comment
+    %span Rated
+
+.eight-columns.lists
   %ul
     =render @proposals
     - if cfp_open?
