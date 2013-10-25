@@ -1,8 +1,8 @@
 .eight-columns
-  = form_for @profile, :url => profile_path do |form|
-    = render 'form', :form => form
+  = form_for @profile, url:profile_path do |form|
+    = render 'form', form: form
 
     .btn-aro
-      = form.submit 'Next', class: 'aro'
+      = form.submit t('profiles.new'), class: 'aro'
 
 .one-colum

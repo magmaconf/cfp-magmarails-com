@@ -1,5 +1,5 @@
 - content_for :header_title do
-  My Proposals
+  = t('proposals.mine')
 
 .eight-column.lists
   %ul
@@ -10,11 +10,9 @@
           .aro
             %span +
             %span
-              Add
-              %br
-              proposal
+              = t('proposals.add_html')
 
 
 .one-column.days-left
-  %p= t('devise.proposals.num')
-  %span= t('devise.proposals.days')
+  %p= t('proposals.num')
+  %span= t('proposals.days')

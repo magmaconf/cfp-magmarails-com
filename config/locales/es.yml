@@ -1,5 +1,28 @@
 
 es:
-
+  profiles:
+    profile: Mi perfil
+    complete: Completa tu perfil
+    new: Siguiente
+    update: Actualizar
+  home:
+    ready: '¿Estás listo?'
+    you: TU MÁSCARA TE ESTÁ ESPERANDO EN
+  proposals:
+    num: 50
+    days: DÍAS RESTANTES
+    update: Actualizar
+    title: 'Actualizar: %{title}'
+    mine: Mis Propuestas
+    add_html: 'Añadir<br/>Propuesta'
+    new_title: '¿Estás listo para hablar?'
+    create: Crear
   comments:
-    new: 'Nuevo comentario'
+    title: Calificar Propuesta
+    new: Commentar
+    proposals:
+      rate: Calificar esta propuesta
+      worst: Puede mejorar
+      best: Debe estar en magmaconf
+      rank: Calificar
+  copyright: 2013, Éste sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.

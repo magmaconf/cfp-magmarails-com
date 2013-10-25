@@ -2,7 +2,7 @@
   %header
     = image_tag '/assets/magma-2.svg', class: 'logo-magma'
   .line
-  %h4= t('devise.profiles.profile')
+  %h4= t('profiles.profile')
   .pic
     = image_tag '/assets/github.svg'
   .company
@@ -13,6 +13,6 @@
     = current_user.email
   .complete
     - if current_user.should_create_profile?
-      = link_to 'Complete my profile', edit_profile_path
+      = link_to t('prodiles.complete'), edit_profile_path
   .cfp-logo
     = image_tag '/assets/cfp-2.svg'

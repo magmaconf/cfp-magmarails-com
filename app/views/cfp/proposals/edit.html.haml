@@ -1,14 +1,14 @@
 - content_for :header_title do
-  = "Update Proposal: #{@proposal.title}"
+  = t('proposals.title', title: @proposal.title)
 
 .eight-columns
   = form_for @proposal do |form|
-    %fieldset.blue-background
+    %fieldset.gray-background
       = render 'form', form: form
 
     .btn-aro.upper
-      = form.submit 'Update', class: 'aro'
+      = form.submit t('proposals.update'), class: 'aro'
 
 .one-column.days-left
-  %p= t('devise.proposals.num')
-  %span= t('devise.proposals.days')
+  %p= t('proposals.num')
+  %span= t('proposals.days')

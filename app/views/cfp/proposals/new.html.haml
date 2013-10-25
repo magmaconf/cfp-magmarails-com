@@ -1,13 +1,14 @@
 - content_for :header_title do
-  Are you ready to speak?
+  = t('proposals.new_title')
+
 .eight-columns
   = form_for @proposal do |form|
     %fieldset.new-proposal
-      = render 'form', :form => form
+      = render 'form', form: form
 
     .btn-aro.upper
-      = form.submit 'Create', class: 'aro'
+      = form.submit t('proposals.create'), class: 'aro'
 
 .one-column.days-left
-  %p= t('devise.proposals.num')
-  %span= t('devise.proposals.days')
+  %p= t('proposals.num')
+  %span= t('proposals.days')

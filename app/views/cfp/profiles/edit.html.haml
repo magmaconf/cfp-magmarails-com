@@ -1,11 +1,11 @@
 - content_for :header_title do
-  = t('devise.profiles.profile')
+  = t('profiles.profile')
 
 .eight-columns
-  = form_for @profile, :url => profile_path do |form|
-    = render 'form', :form => form
+  = form_for @profile, url: profile_path do |form|
+    = render 'form', form: form
 
     .btn-aro
-      = form.submit 'Update', class: 'aro'
+      = form.submit t('profiles.update'), class: 'aro'
 
 .one-column

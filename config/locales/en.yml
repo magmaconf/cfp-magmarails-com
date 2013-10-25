@@ -2,7 +2,29 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
-
+  profiles:
+    profile: My profile
+    complete: Complete your profile
+    new: Next
+    update: Update
+  home:
+    ready: ARE YOU READY?
+    you: YOUR MASK IS WAITING AT!
+  proposals:
+    num: 50
+    days: DAYS LEFT
+    title: 'Update: %{title}'
+    update: Update
+    mine: My Proposals
+    add_html: 'Add<br/>proposal'
+    new_title: Are you ready to speak?
+    create: Create
   comments:
-    new: 'New comment'
+    title: Rate Proposal
+    new: Comment
+    proposals:
+      rate: Rate this proposal
+      worst: It can be better
+      best: Must be at magmaconf
+      rank: Rate
+  copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
