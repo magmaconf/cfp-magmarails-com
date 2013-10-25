@@ -26,3 +26,7 @@ es:
       best: Debe estar en magmaconf
       rank: Calificar
   copyright: 2013, Éste sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
+  terms: 'Términos de participación'
+  sessions:
+    sign_up: Entrar con
+    sign_out: Salir

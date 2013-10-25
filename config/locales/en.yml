@@ -28,3 +28,7 @@ en:
       best: Must be at magmaconf
       rank: Rate
   copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+  terms: Terms of participation
+  sessions:
+    sign_up: Sign up with
+    sign_out: Sign out
