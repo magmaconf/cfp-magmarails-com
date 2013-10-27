@@ -4,34 +4,37 @@
 = render 'cfp/application/formatted_proposal'
 
 .nine-columns.gray-background#ranking
-  .three-columns
+  .grid-com-one.tit
     %h3= t('comments.proposals.rate')
-  .one-column
-    %span= t('comments.proposals.worst')
+  .grid-com-two
+    .less
+      %span= t('comments.proposals.worst')
 
-  .four-columns
-    #rank-list
-      - Cfp::Proposal::RANK_SCALE.each do |rank|
-        %label{ style: 'display:inline' }
-          = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
-          = rank
-  .two-columns
-    %span= t('comments.proposals.best')
-  .two-columns
+    .rank
+      #rank-list
+        - Cfp::Proposal::RANK_SCALE.each do |rank|
+          %label{ style: 'display:inline' }
+            = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
+            = rank
+    .more
+      %span= t('comments.proposals.best')
+  .grid-com-one
     .btn-rank
       = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
 
-.nine-columns.gray-background
+.nine-columns.gray-background#comments
   .twelve-columns
-    %h3= "#{@comments.size} Comments"
+    %h3.com-h3= "#{@comments.size} Comments"
     %ul
       = render @comments.reverse
 
-.nine-columns.gray-background.offset-three
-  .twelve-columns
+.nine-columns.gray-background.offset-three.leave-comment
+  .com-one
+    %h3.com-h3 Leave your thoughts
+  .com-three
     = form_for [@proposal, Cfp::Comment.new] do |form|
       = form.text_area :body, rows: '5'
-      .btn-aro
+      .btn-comment
         = form.submit t('comments.new'), class: 'aro'
 
 - content_for :scripts do

@@ -3,5 +3,31 @@
 
   @include grid_offset($width-column, $width-gutter);
 
-  @include grid_centered($width-column, $width-gutter)
+  @include grid_centered($width-column, $width-gutter);
+
+  .grid-com-one {
+    //abox-sizing: border-box;
+    float: left;
+    width: 15%;
+    margin: 0 1.25%
+  }
+
+  .grid-com-two {
+    @extend .grid-com-one;
+    width: 62.5%;
+  }
+
+  .com-one {
+    @extend .grid-com-one;
+    width: 17%;
+  }
+
+  .com-three {
+    @extend .grid-com-one;
+    width: 78%;
+  }
+
+  .prof {
+    padding-top: 100px;
+  }
 }
