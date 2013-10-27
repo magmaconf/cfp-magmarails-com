@@ -5,7 +5,7 @@
 html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif !important;
-  background-image: url('/assets/bkg.png');
+  background-image: asset-url('bkg.png');
 }
 
 a {
