@@ -32,4 +32,8 @@ module ApplicationHelper
     current_user.profile && current_user.profile.company
   end
 
+  def user_email
+    current_user.profile && current_user.profile.email
+  end
+
 end

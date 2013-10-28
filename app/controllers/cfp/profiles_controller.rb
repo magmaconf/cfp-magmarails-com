@@ -22,7 +22,6 @@ Cfp::ProfilesController.class_eval do
 
   private
   def profile_params
-    new_params = params.require(:profile).permit(:name, :title, :company, :locale, :bio)
-    new_params.merge! email: current_user.email
+    params.require(:profile).permit(:name, :title, :company, :locale, :bio, :email)
   end
 end
