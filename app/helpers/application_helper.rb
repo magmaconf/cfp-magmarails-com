@@ -41,7 +41,7 @@ module ApplicationHelper
   end
 
   def user_name
-    current_user.name
+    current_user.profile && current_user.profile.name
   end
 
 end
