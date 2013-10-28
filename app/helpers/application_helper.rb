@@ -36,4 +36,8 @@ module ApplicationHelper
     current_user.profile && current_user.profile.email
   end
 
+  def comments_count(proposal)
+    proposal.comments.count
+  end
+
 end

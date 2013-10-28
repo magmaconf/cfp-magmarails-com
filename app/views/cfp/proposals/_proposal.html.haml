@@ -3,9 +3,10 @@
     .aro
       %span
       %span.tit-prop= truncate(proposal.title, separator: ' ')
-      %span.gold
-        %i.fa.fa-star
-        5
-      %span.silver
-        %i.fa.fa-comment
-        3
+      - if current_user.can_review?
+        %span.gold
+          %i.fa.fa-star
+          = proposal.average_ranking
+        %span.silver
+          %i.fa.fa-comment
+          = comments_count(proposal)
