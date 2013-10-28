@@ -5,6 +5,13 @@ es:
     complete: Completa tu perfil
     new: Siguiente
     update: Actualizar
+    attributes:
+      name: Tu nombre
+      title: Tu puesto de trabajo
+      email: Tu email
+      company: Tu empresa
+      language: Tu idioma
+      bio: Tu bio
   home:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN

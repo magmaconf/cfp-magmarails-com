@@ -7,6 +7,13 @@ en:
     complete: Complete your profile
     new: Next
     update: Update
+    attributes:
+      name: Your Name
+      title: Your Job Position
+      email: Your E-mail
+      company: Your Company
+      language: Your Language
+      bio: Your Bio
   home:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
