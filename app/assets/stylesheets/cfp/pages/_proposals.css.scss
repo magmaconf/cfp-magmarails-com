@@ -71,6 +71,14 @@
   textarea { resize: none }
 }
 
+.sub-titles {
+  color: $line - 50;
+
+  span {
+    margin-left: 30px;
+  }
+}
+
 .lists {
   ul li {
     margin-bottom: 20px;

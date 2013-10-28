@@ -24,7 +24,9 @@
 
 .nine-columns.gray-background#comments
   .twelve-columns
-    %h3.com-h3= "#{@comments.size} Comments"
+    %h3.com-h3
+      %i.fa.fa-comment
+      = "#{@comments.size} Comments"
     %ul
       = render @comments.reverse
 
