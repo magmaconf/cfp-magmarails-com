@@ -40,4 +40,8 @@ module ApplicationHelper
     proposal.comments.count
   end
 
+  def user_name
+    current_user.name
+  end
+
 end
