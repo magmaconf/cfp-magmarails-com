@@ -2,7 +2,7 @@
 es:
   profiles:
     profile: Mi perfil
-    complete: Completa tu perfil
+    edit: Edita tu perfil
     new: Siguiente
     update: Actualizar
     attributes:

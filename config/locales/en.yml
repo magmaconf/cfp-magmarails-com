@@ -4,7 +4,7 @@
 en:
   profiles:
     profile: My profile
-    complete: Complete your profile
+    edit: Edit your profile
     new: Next
     update: Update
     attributes:
