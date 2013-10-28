@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
 
   include Cfp::User
 
+  delegate :company, to: :profile
+
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']
