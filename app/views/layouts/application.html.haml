@@ -8,6 +8,7 @@
     = csrf_meta_tags
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
   %body
+    = render 'cfp/application/popup'
     %section#home-top.container
       .row
         .centered-seven
@@ -25,3 +26,8 @@
               %span
                 &copy;
                 = t('copyright')
+
+    :javascript
+      $(function() {
+        $('#my_modal').popup();
+      });
