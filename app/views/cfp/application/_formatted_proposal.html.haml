@@ -4,7 +4,7 @@
       - if @proposal.can_be_edited_by? current_user and !current_user.can_review?
         = link_to 'Edit', edit_proposal_path(@proposal)
         = link_to 'Delete', proposal_path(@proposal), method: 'delete', confirm: t('delete_confirm')
-      = link_to 'X', proposals_path
+        = link_to 'X', proposals_path
 
   .twelve-columns
     %header

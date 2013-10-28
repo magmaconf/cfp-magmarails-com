@@ -1,5 +1,6 @@
 - content_for :header_title do
-  = t('comments.title')
+  %h3= t('comments.title')
+  = link_to t('comments.back_to_proposals'), proposals_path
 
 = render 'cfp/application/formatted_proposal'
 
