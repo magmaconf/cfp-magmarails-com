@@ -2,7 +2,7 @@
   = link_to user_based_proposal_path(proposal), class: 'btn-proposal' do
     .aro
       %span
-      %span.tit-prop #{proposal.title}
+      %span.tit-prop= truncate(proposal.title, separator: ' ')
       %span.gold
         %i.fa.fa-star
         5
