@@ -10,6 +10,7 @@ en:
       rank: Rate
       rate: Rate this proposal
       worst: It can be better
+    created_by: '%{date} By %{author}'
   copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
   delete_confirm: Are you sure?
   home:
@@ -46,3 +47,7 @@ en:
     sign_out: Sign out
     sign_up: Sign up with
   terms: Terms of participation
+  time:
+    formats:
+      small: "%b/%d/%y"
+

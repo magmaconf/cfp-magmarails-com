@@ -8,6 +8,7 @@ es:
       rate: Calificar esta propuesta
       worst: Puede mejorar
     title: Calificar Propuesta
+    created_by: '%{date} Por %{author}'
   copyright: 2013, Este sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
   delete_confirm: ¿Estás seguro?
   home:
@@ -44,3 +45,7 @@ es:
     sign_out: Salir
     sign_up: Entrar con
   terms: 'Términos de participación'
+  time:
+    formats:
+      small: "%b/%d/%y"
+
