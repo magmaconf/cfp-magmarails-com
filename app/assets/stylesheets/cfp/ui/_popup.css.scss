@@ -1,0 +1,54 @@
+// Popup
+#my_modal {
+  width: 38%;
+  padding: 50px;
+  background: asset-url('bkg.png');
+  border: 0;
+  outline: 0;
+
+  h2 {
+    text-align: center;
+    border-bottom: 2px solid $line;
+    padding: 20px 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-top: 5%;
+  }
+
+  .btn-aro {
+    position: relative;
+    top: 85px;
+
+    .aro {
+      background: $white;
+
+      &:hover {
+        background: $anchor-hover;
+      }
+    }
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.popup_background {
+  z-index: 2000; /* any number */
+}
+
+.popup_wrapper {
+  z-index: 2001; /* any number + 1 */
+}
+
+/* Add inline-block support for IE7 */
+.popup_align,
+.popup_content {
+  *display: inline;
+  *zoom: 1;
+}

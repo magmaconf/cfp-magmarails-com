@@ -1,0 +1,15 @@
+.popup_background
+.popup_wrapper
+  #my_modal
+    %h2= t('popup.title')
+    %p
+      %span= t('popup.body.one.bold_1')
+      = t('popup.body.one.plus')
+      %span= t('popup.body.one.bold_2')
+      = t('popup.body.one.during')
+      %span= t('popup.body.one.bold_3')
+    %p= t('popup.body.two')
+    %p= t('popup.body.three')
+    .btn-aro
+      %button.my_modal_close.aro
+        = t('popup.button')
