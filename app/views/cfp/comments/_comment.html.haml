@@ -1,6 +1,9 @@
 %li.comment
-  .image= image_tag 'github.svg'
-  .body= comment.body
-  .email= t('comments.created_by',
+  .image
+    = image_tag 'github.svg'
+  .body
+    = comment.body
+  .email
+    = t('comments.created_by',
     date: l(comment.created_at, format: :small),
     author: comment.user.profile.name)
