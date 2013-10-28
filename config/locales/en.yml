@@ -32,3 +32,4 @@ en:
   sessions:
     sign_up: Sign up with
     sign_out: Sign out
+  delete_confirm: Are you sure?

@@ -30,3 +30,4 @@ es:
   sessions:
     sign_up: Entrar con
     sign_out: Salir
+  delete_confirm: ¿Estás seguro?
