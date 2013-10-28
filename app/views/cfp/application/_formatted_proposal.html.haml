@@ -8,22 +8,22 @@
 
   .twelve-columns
     %header
-      %h3 Title
+      %h3= t('proposals.attributes.title')
       %p.title= @proposal.title
       %p.tags= "Tags: #{@proposal.tags}"
     .content
-      %h3 Description
+      %h3= t('proposals.attributes.description')
       = @proposal.abstract_html
 
-      %h3 Notes
+      %h3= t('proposals.attributes.notes')
       = @proposal.description_html
     - if current_user.can_review?
       %footer
-        %h3 About the author
+        %h3= t('proposals.about_author')
         .image
           = image_tag '/assets/github.svg'
         .info
-          %p.name Fulano de tal
-          %p From Crowd Interactive
+          %p.name= user_name
+          %p=  t('proposals.from_company', company: user_company)
           =link_to 'Github profile', '#'
 
