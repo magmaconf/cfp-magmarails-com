@@ -1,5 +1,5 @@
 - content_for :header_title do
-  = t('profiles.profile')
+  %h3= t('profiles.profile')
 
 .eight-columns
   = form_for @profile, url: profile_path do |form|

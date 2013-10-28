@@ -1,16 +1,17 @@
-# Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Sample localization file for English. Add more files in this directory for other locales.
 
 en:
   comments:
-    title: Rate Proposal
+    back_to_proposals: '<< Back to all proposals'
+    created_by: '%{date} By %{author}'
     new: Comment
     proposals:
       best: Must be at magmaconf
       rank: Rate
       rate: Rate this proposal
       worst: It can be better
-    created_by: '%{date} By %{author}'
+    title: Rate Proposal
   copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
   delete_confirm: Are you sure?
   home:
@@ -41,6 +42,7 @@ en:
     mine: My Proposals
     new_title: Are you ready to speak?
     num: 50
+    rate: Rate proposals
     title: 'Update: %{title}'
     update: Update
   sessions:

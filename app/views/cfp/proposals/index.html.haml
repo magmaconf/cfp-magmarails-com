@@ -1,5 +1,5 @@
 - content_for :header_title do
-  = t('proposals.mine')
+  %h3= current_user.can_review? ? t('proposals.rate') : t('proposals.rate')
 
 - if current_user.can_review?
   .nine-columns.sub-titles

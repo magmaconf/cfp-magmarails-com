@@ -26,8 +26,7 @@
         .nine-columns
           .titles
             .left-section
-              %h3
-                = content_for?(:header_title) ? yield(:header_title) : t('devise.profiles.complete')
+              = content_for?(:header_title) ? yield(:header_title) : content_tag('h3', t('devise.profiles.complete'))
             .right-section
               = render 'cfp/application/menu'
 
