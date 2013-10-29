@@ -85,6 +85,13 @@
       .image {
         float: left;
         width: 11%;
+
+        img {
+          border: 2px solid $line;
+          -webkit-border-radius: 50%;
+             -moz-border-radius: 50%;
+                  border-radius: 50%;
+        }
       }
 
       .body {

@@ -162,6 +162,13 @@
       width: 8%;
       float: left;
       padding: 2% 0 2% 2%;
+
+      img {
+        border: 2px solid $line;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+      }
     }
 
     .info {
