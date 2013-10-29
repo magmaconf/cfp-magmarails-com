@@ -18,6 +18,10 @@ class Cfp.Views.RankingView extends Backbone.View
     request.success =>
       @setRankedState()
 
+  #Have selected value?
+  haveSelection: ->
+    $('input[name="rank"]:checked', '#rank-list').length
+
   #Choose the new label according current button label
   newLabel: ->
     @button.html().match(/rate|update/i) && 'Update' || 'Actualizar'
@@ -28,15 +32,14 @@ class Cfp.Views.RankingView extends Backbone.View
 
   #Add btn-rated class to btn
   setRankedState: =>
-    @btn.addClass('btn-rated')
+    @btn.addClass('btn-rated ranked')
 
   #Set default class to btn
   setDefaultState: ->
-    @setRankedState() if $('input[name="rank"]:checked', '#rank-list').length
+    @setRankedState() if @haveSelection()
 
   #Remove btn-rated and change label when updating rate
   unsetChecked: ->
     @btn.removeClass('btn-rated')
-    @button.html @newLabel()
-
+    @button.html @newLabel() if @btn.hasClass('ranked')
 
