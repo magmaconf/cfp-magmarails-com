@@ -6,8 +6,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable
 
   include Cfp::User
+  include Gravtastic
 
   delegate :company, to: :profile
+  delegate :email, to: :profile, prefix: true
+
+  gravtastic :profile_email
 
   def self.create_with_omniauth(auth)
     create! do |user|
