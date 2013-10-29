@@ -27,7 +27,7 @@
   .twelve-columns
     %h3.com-h3
       %i.fa.fa-comment
-        = "#{@comments.size} #{t('comments.new')}"
+      = "#{@comments.size} #{t('comments.new')}"
     %ul
       = render @comments.reverse
 
