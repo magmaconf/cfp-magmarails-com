@@ -20,7 +20,7 @@
     .more
       %span= t('comments.proposals.best')
   .grid-com-one
-    .btn-rank.btn-rated
+    .btn-rank
       = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
 
 .nine-columns.gray-background#comments
@@ -43,5 +43,5 @@
 - content_for :scripts do
   :javascript
     $(document).ready(function () {
-      window.app = new Cfp.Views.RankingView();
+      window.app = new Cfp.Views.RankingView($('#submit-rank'));
     });
