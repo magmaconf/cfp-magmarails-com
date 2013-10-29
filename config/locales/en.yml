@@ -5,7 +5,7 @@ en:
   comments:
     back_to_proposals: '<< Back to all proposals'
     created_by: '%{date} By %{author}'
-    new: 'Comments'
+    new: 'Comment'
     proposals:
       best: Must be at magmaconf
       rank: Rate
