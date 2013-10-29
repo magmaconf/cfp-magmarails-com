@@ -6,11 +6,11 @@
   .pic
     = image_tag current_user.gravatar_url(size: 150)
   .user_name
-    = user_name
+    = current_user.name
   .company
-    = user_company
+    = current_user.company
   .email
-    = user_email
+    = current_user.profile_email
   .complete
     = link_to t('profiles.edit'), edit_profile_path
   .cfp-logo

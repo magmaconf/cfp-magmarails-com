@@ -8,8 +8,8 @@ class User < ActiveRecord::Base
   include Cfp::User
   include Gravtastic
 
-  delegate :company, to: :profile
-  delegate :email, to: :profile, prefix: true
+  delegate :company, :name, to: :profile, allow_nil: true
+  delegate :email, to: :profile, prefix: true, allow_nil: true
 
   gravtastic :profile_email
 

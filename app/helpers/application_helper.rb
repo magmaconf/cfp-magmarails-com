@@ -26,20 +26,8 @@ module ApplicationHelper
     date_to_go.to_s.rjust(2, '0')
   end
 
-  def user_company
-    current_user.profile && current_user.profile.company
-  end
-
-  def user_email
-    current_user.profile && current_user.profile.email
-  end
-
   def comments_count(proposal)
     proposal.comments.count
-  end
-
-  def user_name
-    current_user.profile && current_user.profile.name
   end
 
 end
