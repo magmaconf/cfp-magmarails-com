@@ -12,6 +12,7 @@ en:
       rate: Rate this proposal
       worst: It can be better
     title: Rate Proposal
+    thoughts: Leave your thoughts
   copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
   delete_confirm: Are you sure?
   home:
@@ -33,16 +34,27 @@ en:
     about_author: About the author
     add_html: 'Add<br/>proposal'
     attributes:
+      abstract: Abstract
       description: Description
+      language: Language
+      level: Level
       notes: Notes
+      tags: Tags
       title: Title
     create: Create
+<<<<<<< HEAD
     days: DAYS LEFtau
+=======
+    comments: Comments
+    days: DAYS LEFT
+>>>>>>> Add missing translations
     from_company: 'From %{company}'
     mine: My Proposals
     new_title: Are you ready to speak?
     num: 50
+    rank: Rank
     rate: Rate proposals
+    rated: Rated
     title: 'Update: %{title}'
     update: Update
     edit: 'Edit'

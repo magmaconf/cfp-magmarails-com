@@ -33,7 +33,7 @@
 
 .nine-columns.gray-background.offset-three.leave-comment
   .com-one
-    %h3.com-h3 Leave your thoughts
+    %h3.com-h3= t('comments.thoughts')
   .com-three
     = form_for [@proposal, Cfp::Comment.new] do |form|
       = form.text_area :body, rows: '5'

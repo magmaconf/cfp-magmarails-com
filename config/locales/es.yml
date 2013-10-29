@@ -10,6 +10,7 @@ es:
       rate: Calificar esta propuesta
       worst: Puede mejorar
     title: Calificar Propuesta
+    thoughts: Deja tus comentarios
   copyright: 2013, Este sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
   delete_confirm: ¿Estás seguro?
   home:
@@ -31,16 +32,23 @@ es:
     about_author: Acerca del autor
     add_html: 'Añadir<br/>Propuesta'
     attributes:
+      abstract: Resumen
       description: Descripción
+      language: Idioma
+      level: Nivel
       notes: Notas
+      tags: Etiquetas
       title: Titulo
+    comments: Comentarios
     create: Crear
     days: DÍAS RESTANTES
     from_company: 'De %{company}'
     mine: Mis Propuestas
     new_title: '¿Estás listo para hablar?'
     num: 50
+    rank: Calificación
     rate: Calificar Propuestas
+    rated: Calificado
     title: 'Actualizar: %{title}'
     update: Actualizar
   sessions:

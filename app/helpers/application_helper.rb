@@ -4,7 +4,6 @@ module ApplicationHelper
     content_tag 'i','', class: 'fa fa-check raked' if Cfp::Rank.for_proposal_user(proposal, current_user)
   end
 
-
   def next_help(id)
     ids = Cfp::Rank.where(:user_id => current_user.id).map(&:proposal_id) << id
     next_proposal = Cfp::Proposal.where('id NOT IN (?)', ids).first

@@ -1,18 +1,18 @@
 .nine-columns
-  = form.label :title
+  = form.label :title, t('proposals.attributes.title')
   = form.text_field :title
 .four-columns
-  = form.label :level
+  = form.label :level, t('proposals.attributes.level')
   = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t("level.#{l}"), l]}
 .four-columns
-  = form.label :language
+  = form.label :language, t('proposals.attributes.language')
   = form.select :language, Cfp::Proposal::LANGUAGE
 .four-columns
-  = form.label :tags
+  = form.label :tags, t('proposals.attributes.tags')
   = form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
 .seven-columns
-  = form.label :description
+  = form.label :description, t('proposals.attributes.description')
   = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description')
 .five-columns
-  = form.label :abstract
+  = form.label :abstract, t('proposals.attributes.abstract')
   = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract')
