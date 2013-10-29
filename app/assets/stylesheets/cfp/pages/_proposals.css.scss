@@ -82,6 +82,13 @@
 .lists {
   ul li {
     margin-bottom: 20px;
+
+    i {
+      position: absolute;
+      background: $checked;
+      border: 0;
+      color: $white;
+    }
   }
 }
 
