@@ -55,6 +55,18 @@ es:
     sign_out: Salir
     sign_up: Entrar con
   terms: 'Términos de participación'
+  popup:
+    title: 'Términos de participación'
+    body:
+      one:
+        bold_1: 'MagmaConf dará un boleto'
+        plus: 'más'
+        bold_2: '3 comidas por día'
+        during: 'durante el evento a todos los ponentes. Sin embargo,'
+        bold_3: 'el transporte y hospedaje no están incluidos.'
+      two: 'En caso de que un ponente no pueda asistir a la conferencia, escogeremos a otro del resto de los aplicantes -quién haya tenido un puntaje alto acorde al sistema de calificaciones usado por el Comité de Elección. Si hubiera un empate, el comité tomará la decisión final y ésta será irrevocable.'
+      three: 'Todos los ponentes tendrán un espacio de 40 minutos para su plática, incluyendo la sesión de Preguntas y Respuestas. Te sugerimos a que hagas tu plática lo más interesante, entretenida, divertida y si es posible, interactiva.'
+    button: 'Entendido'
   time:
     formats:
       small: "%b/%d/%y"
