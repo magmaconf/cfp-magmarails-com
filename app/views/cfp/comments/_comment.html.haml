@@ -1,6 +1,6 @@
 %li.comment
   .image
-    = image_tag comment.user.gravatar_url(size: 65, default: image_tag('github.svg'))
+    = image_tag avatar_url(comment.user, size: 65)
   .body
     = comment.body
   .email
