@@ -1,6 +1,6 @@
 %li.three-columns
   = link_to user_based_proposal_path(proposal), class: 'btn-proposal' do
-    %i.fa.fa-check.raked
+    = already_reviewed(proposal)
     .aro
       %span
       %span.tit-prop= truncate(proposal.title, separator: ' ')

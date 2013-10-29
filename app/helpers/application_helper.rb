@@ -1,9 +1,7 @@
 module ApplicationHelper
 
   def already_reviewed(proposal)
-    if Cfp::Rank.for_proposal_user(proposal, current_user)
-      raw "<i class='icon-ok'></i>"
-    end
+    content_tag 'i','', class: 'fa fa-check raked' if Cfp::Rank.for_proposal_user(proposal, current_user)
   end
 
 
