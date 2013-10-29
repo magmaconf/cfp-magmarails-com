@@ -13,5 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.popupoverlay
-//= require cfp/application
 //= require_tree .
