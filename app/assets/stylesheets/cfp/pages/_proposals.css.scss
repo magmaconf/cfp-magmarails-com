@@ -94,12 +94,14 @@
 }
 
 .days-left {
-  font: 300 3.6em/1.1em 'Oswald';
+  font: 300 3.6em/0.4 'Oswald';
   color: $days;
   text-align: center;
 
   p {
     padding: 7px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
     border: 1px solid $days;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
