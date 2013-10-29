@@ -45,6 +45,8 @@ en:
     rate: Rate proposals
     title: 'Update: %{title}'
     update: Update
+    edit: 'Edit'
+    delete: 'Delete'
   sessions:
     sign_out: Sign out
     sign_up: Sign up with
