@@ -4,11 +4,14 @@
 - if current_user.can_review?
   .nine-columns.sub-titles
     %span
-      %i.fa.fa-star= t('proposals.rank')
+      %i.fa.fa-star
+      = t('proposals.rank')
     %span
-      %i.fa.fa-comment= t('proposals.comments')
+      %i.fa.fa-comment
+      = t('proposals.comments')
     %span
-      %i.fa.fa-check= t('proposals.rated')
+      %i.fa.fa-check
+      = t('proposals.rated')
 
 .eight-columns.lists
   %ul
