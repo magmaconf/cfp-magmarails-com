@@ -35,6 +35,11 @@
       img { width: 100%; }
     }
 
+    .complete a {
+      color: $anchor-hover;
+      font-size: 1.2em;
+    }
+
     .cfp-logo {
       margin-top: 100px;
       padding-bottom: 20px;
