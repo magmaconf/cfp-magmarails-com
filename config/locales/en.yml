@@ -42,12 +42,8 @@ en:
       tags: Tags
       title: Title
     create: Create
-<<<<<<< HEAD
-    days: DAYS LEFtau
-=======
     comments: Comments
     days: DAYS LEFT
->>>>>>> Add missing translations
     from_company: 'From %{company}'
     mine: My Proposals
     new_title: Are you ready to speak?
