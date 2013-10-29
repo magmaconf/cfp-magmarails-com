@@ -21,7 +21,7 @@
       %footer
         %h3= t('proposals.about_author')
         .image
-          = image_tag @proposal.user.gravatar_url(size: 65, default: 'github.svg')
+          = image_tag @proposal.user.gravatar_url(size: 65, default: image_tag('github.svg'))
         .info
           %p.name= @proposal.user_name
           %p=  t('proposals.from_company', company: @proposal.user.company)

@@ -4,7 +4,7 @@
   .line
   %h4= t('profiles.profile')
   .pic
-    = image_tag current_user.gravatar_url(size: 150, default: 'github.svg')
+    = image_tag current_user.gravatar_url(size: 150, default: image_tag('github.svg'))
   .user_name
     = user_name
   .company
