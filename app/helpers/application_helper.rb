@@ -42,10 +42,4 @@ module ApplicationHelper
     current_user.profile && current_user.profile.name
   end
 
-  def avatar_url(user, options ={})
-    url = user.gravatar_url(options.merge!(default: 'identicon'))
-    url = image_url('github.svg') if url.match(/458a2a7e6a40d4d8536410ca74a15365/)
-    url
-  end
-
 end
