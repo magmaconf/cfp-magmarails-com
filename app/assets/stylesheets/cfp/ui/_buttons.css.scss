@@ -171,6 +171,23 @@
   }
 }
 
+.btn-rated {
+  background: $white;
+
+  .aro {
+    border: 1px solid $anchor-hover;
+    background: asset-url('rated.svg') no-repeat center center;
+    color: transparent;
+    transition: none;
+    cursor: auto;
+
+    &:hover {
+      color: transparent;
+      background: asset-url('rated.svg') no-repeat center center;
+    }
+  }
+}
+
 .btn-comment {
   @extend .btn-aro;
   height: 110px;
