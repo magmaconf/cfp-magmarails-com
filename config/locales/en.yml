@@ -20,12 +20,12 @@ en:
     you: YOUR MASK IS WAITING AT
   profiles:
     attributes:
-      bio: Your Bio
-      company: Your Company
-      email: Your E-mail
-      language: Your Language
-      name: Your Name
-      title: Your Job Position
+      bio: Bio
+      company: Company
+      email: E-mail
+      language: Language
+      name: Name
+      title: Job Position
     edit: Edit your profile
     new: Next
     profile: My profile

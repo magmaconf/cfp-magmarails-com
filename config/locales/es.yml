@@ -3,7 +3,7 @@ es:
   comments:
     back_to_proposals: '<< Regresar a propuestas'
     created_by: '%{date} Por %{author}'
-    new: Commentar
+    new: Comentar
     proposals:
       best: Debe estar en magmaconf
       rank: Calificar
@@ -18,12 +18,12 @@ es:
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
   profiles:
     attributes:
-      bio: Tu bio
-      company: Tu empresa
-      email: Tu email
-      language: Tu idioma
-      name: Tu nombre
-      title: Tu puesto de trabajo
+      bio: Bio
+      company: Empresa
+      email: E-mail
+      language: Idioma
+      name: Nombre
+      title: Puesto de trabajo
     edit: Edita tu perfil
     new: Siguiente
     profile: Mi perfil
