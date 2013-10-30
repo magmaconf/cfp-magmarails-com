@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/cfp.git
-  revision: 573315f67d51eea0fb0bbc3ba57c6daa028b0b53
+  revision: a5b7d8c6faf23fe9df8c3762e6afc374c83996f1
   branch: mailer
   specs:
     cfp (0.2.0)
@@ -167,9 +167,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.2.1)
+    uglifier (2.3.0)
       execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
+      json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
 
