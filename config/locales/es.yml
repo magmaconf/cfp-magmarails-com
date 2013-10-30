@@ -43,6 +43,7 @@ es:
     create: Crear
     days: DÍAS RESTANTES
     from_company: 'De %{company}'
+    github_profile: Perfil de Github
     mine: Mis Propuestas
     new_title: '¿Estás listo para hablar?'
     num: 50

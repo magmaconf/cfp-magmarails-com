@@ -45,6 +45,7 @@ en:
     comments: Comments
     days: DAYS LEFT
     from_company: 'From %{company}'
+    github_profile: Github profile
     mine: My Proposals
     new_title: Are you ready to speak?
     num: 50

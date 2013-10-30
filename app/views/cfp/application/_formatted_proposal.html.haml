@@ -25,4 +25,5 @@
         .info
           %p.name= @proposal.user_name
           %p=  t('proposals.from_company', company: @proposal.user.company)
+          =link_to t('proposals.github_profile'), "http://www.github.com/#{@proposal.user.nickname}"
 

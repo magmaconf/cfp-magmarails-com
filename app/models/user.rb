@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
       user.provider = auth['provider']
       user.uid      = auth['uid']
       user.email    = "#{user.uid}@github.com"
+      user.nickname = auth['info']['nickname']
     end
   end
 end
