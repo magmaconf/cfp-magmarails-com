@@ -2,43 +2,47 @@
   %h3= t('comments.title')
   = link_to t('comments.back_to_proposals'), proposals_path, class: 'no-shadow'
 
-= render 'cfp/application/formatted_proposal'
+.nine-columns.proposal-show
+  .container-rate
 
-.nine-columns.gray-background#ranking
-  .grid-com-one.tit
-    %h3= t('comments.proposals.rate')
-  .grid-com-two
-    .less
-      %span= t('comments.proposals.worst')
+    = render 'cfp/application/formatted_proposal'
 
-    .rank
-      #rank-list
-        - Cfp::Proposal::RANK_SCALE.each do |rank|
-          %label{ style: 'display:inline' }
-            = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
-            = rank
-    .more
-      %span= t('comments.proposals.best')
-  .grid-com-one
-    .btn-rank
-      = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
+    .gray-background.group
+      #ranking
+        .grid-com-one.tit
+          %h3= t('comments.proposals.rate')
+        .grid-com-two
+          .less
+            %span= t('comments.proposals.worst')
 
-.nine-columns.gray-background#comments
-  .twelve-columns
-    %h3.com-h3
-      %i.fa.fa-comment
-      = "#{@comments.size} #{t('proposals.comments')}"
-    %ul
-      = render @comments.reverse
+          .rank
+            #rank-list
+              - Cfp::Proposal::RANK_SCALE.each do |rank|
+                %label{ style: 'display:inline' }
+                  = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
+                  = rank
+          .more
+            %span= t('comments.proposals.best')
+        .grid-com-one
+          .btn-rank
+            = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
 
-.nine-columns.gray-background.offset-three.leave-comment
-  .com-one
-    %h3.com-h3= t('comments.thoughts')
-  .com-three
-    = form_for [@proposal, Cfp::Comment.new] do |form|
-      = form.text_area :body, rows: '5'
-      .btn-comment
-        = form.submit t('comments.new'), class: 'aro', disabled: true
+    .gray-background.group#comments
+      .twelve-columns
+        %h3.com-h3
+          %i.fa.fa-comment
+          = "#{@comments.size} #{t('proposals.comments')}"
+        %ul
+          = render @comments.reverse
+
+    .gray-background.leave-comment
+      .com-one
+        %h3.com-h3= t('comments.thoughts')
+      .com-three
+        = form_for [@proposal, Cfp::Comment.new] do |form|
+          = form.text_area :body, rows: '5'
+          .btn-comment
+            = form.submit t('comments.new'), class: 'aro', disabled: true
 
 - content_for :scripts do
   :javascript

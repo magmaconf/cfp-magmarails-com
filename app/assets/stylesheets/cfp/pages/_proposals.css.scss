@@ -71,6 +71,10 @@
   textarea { resize: none }
 }
 
+.gray-background {
+  overflow: hidden;
+}
+
 .sub-titles {
   color: $line - 50;
 
@@ -193,6 +197,7 @@
 
 #ranking {
   padding-bottom: 10px;
+  overflow: hidden;
 
   h3 {
     font: 100 1.2em/1.1em 'Oswald';
