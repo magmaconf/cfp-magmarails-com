@@ -18,7 +18,7 @@
 = form.label :bio, t('profiles.attributes.bio')
 = form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'true'
 
-= link_to t('profiles.cancel'), proposals_path(current_user)
+= link_to t('profiles.cancel'), proposals_path
 
 - content_for :scripts do
   :javascript
