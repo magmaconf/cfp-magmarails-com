@@ -1,6 +1,10 @@
 GIT
   remote: git://github.com/crowdint/cfp.git
+<<<<<<< HEAD
   revision: a5b7d8c6faf23fe9df8c3762e6afc374c83996f1
+=======
+  revision: 70765bde015952fa4cd8eb335587dc1c747ffc90
+>>>>>>> Chance edit profile button
   branch: mailer
   specs:
     cfp (0.2.0)
