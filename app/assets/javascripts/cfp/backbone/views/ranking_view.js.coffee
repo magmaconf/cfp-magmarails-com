@@ -1,13 +1,45 @@
 class Cfp.Views.RankingView extends Backbone.View
+  #button = submit to control
+  #btn = submit circle parent
+  initialize: (@button)->
+    @button.on 'click', @changeRank
+    @btn = @button.parent()
+    @setDefaultState()
+
   el: '#ranking'
 
   events:
-    'change #rank' : 'changeRank'
+    'change input[name="rank"]' : 'unsetChecked'
 
-  changeRank: ->
-    rank = new Cfp.Models.Rank
-    rank.save
-      value: @selectedRank()
+  #Save the current selected value
+  changeRank: =>
+    rank = new Cfp.Models.Rank(value: @selectedRank())
+    request = rank.save()
+    request.success =>
+      @setRankedState()
 
+  #Have selected value?
+  haveSelection: ->
+    $('input[name="rank"]:checked', '#rank-list').length
+
+  #Choose the new label according current button label
+  newLabel: ->
+    @button.html().match(/rate|update/i) && 'Update' || 'Actualizar'
+
+  #Retrieve the current selected value
   selectedRank: =>
-    @$('#rank:checked').val()
+    @$('input[name="rank"]:checked').val()
+
+  #Add btn-rated class to btn
+  setRankedState: =>
+    @btn.addClass('btn-rated ranked')
+
+  #Set default class to btn
+  setDefaultState: ->
+    @setRankedState() if @haveSelection()
+
+  #Remove btn-rated and change label when updating rate
+  unsetChecked: ->
+    @btn.removeClass('btn-rated')
+    @button.html @newLabel() if @btn.hasClass('ranked')
+

@@ -1,3 +1,9 @@
-.comment
-  .email= "#{comment.user.profile.name} (#{comment.user.profile.email})"
-  .body= comment.body
+%li.comment
+  .image
+    = image_tag comment.user.gravatar_url(size: 65)
+  .body
+    = comment.body
+  .email
+    = t('comments.created_by',
+    date: l(comment.created_at, format: :small),
+    author: comment.user.profile.name)

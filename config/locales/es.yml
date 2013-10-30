@@ -1,5 +1,73 @@
 
 es:
-
   comments:
-    new: 'Nuevo comentario'
+    back_to_proposals: '<< Regresar a propuestas'
+    created_by: '%{date} Por %{author}'
+    new: Commentar
+    proposals:
+      best: Debe estar en magmaconf
+      rank: Calificar
+      rate: Calificar esta propuesta
+      worst: Puede mejorar
+    title: Calificar Propuesta
+    thoughts: Deja tus comentarios
+  copyright: 2013, Este sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
+  delete_confirm: ¿Estás seguro?
+  home:
+    ready: '¿Estás listo?'
+    you: TU MÁSCARA TE ESTÁ ESPERANDO EN
+  profiles:
+    attributes:
+      bio: Tu bio
+      company: Tu empresa
+      email: Tu email
+      language: Tu idioma
+      name: Tu nombre
+      title: Tu puesto de trabajo
+    edit: Edita tu perfil
+    new: Siguiente
+    profile: Mi perfil
+    update: Actualizar
+  proposals:
+    about_author: Acerca del autor
+    add_html: 'Añadir<br/>Propuesta'
+    attributes:
+      abstract: Resumen
+      description: Descripción
+      language: Idioma
+      level: Nivel
+      notes: Notas
+      tags: Etiquetas
+      title: Titulo
+    comments: Comentarios
+    create: Crear
+    days: DÍAS RESTANTES
+    from_company: 'De %{company}'
+    mine: Mis Propuestas
+    new_title: '¿Estás listo para hablar?'
+    num: 50
+    rank: Calificación
+    rate: Calificar Propuestas
+    rated: Calificado
+    title: 'Actualizar: %{title}'
+    update: Actualizar
+  sessions:
+    sign_out: Salir
+    sign_up: Entrar con
+  terms: 'Términos de participación'
+  popup:
+    title: 'Términos de participación'
+    body:
+      one:
+        bold_1: 'MagmaConf dará un boleto'
+        plus: 'más'
+        bold_2: '3 comidas por día'
+        during: 'durante el evento a todos los ponentes. Sin embargo,'
+        bold_3: 'el transporte y hospedaje no están incluidos.'
+      two: 'En caso de que un ponente no pueda asistir a la conferencia, escogeremos a otro del resto de los aplicantes -quién haya tenido un puntaje alto acorde al sistema de calificaciones usado por el Comité de Elección. Si hubiera un empate, el comité tomará la decisión final y ésta será irrevocable.'
+      three: 'Todos los ponentes tendrán un espacio de 40 minutos para su plática, incluyendo la sesión de Preguntas y Respuestas. Te sugerimos a que hagas tu plática lo más interesante, entretenida, divertida y si es posible, interactiva.'
+    button: 'Entendido'
+  time:
+    formats:
+      small: "%b/%d/%y"
+

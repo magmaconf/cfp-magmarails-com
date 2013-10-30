@@ -1,8 +1,11 @@
-.span6.offset2
-  %h3= t('profile.profile')
-  .white_background.new_profile
-    = form_for @profile, :url => profile_path do |form|
-      = render 'form', :form => form
+- content_for :header_title do
+  %h3= t('profiles.profile')
 
-      = form.submit :class => 'btn-cfp'
-      .clearfix<
+.eight-columns
+  = form_for @profile, url: profile_path do |form|
+    = render 'form', form: form
+
+    .btn-aro
+      = form.submit t('profiles.update'), class: 'aro'
+
+.one-column

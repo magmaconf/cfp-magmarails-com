@@ -1,7 +1,12 @@
-.span4.offset3
-  %h3.legend Sign in
-  .octo-login
-    = link_to image_tag('octocat_login.png', class: 'octocat_image'), '/auth/github'
-    %br
-    %p
-      = link_to 'Sign up with Github', '/auth/github'
+.row
+  .centered-six
+    %p.ready= t('home.ready')
+    %p.you= t('home.you')
+    = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
+    .circle
+      .login-up
+        %a{href: "/auth/github", class: "sign-in"}
+          = t('devise.sessions.sign_up')
+          %br
+          = image_tag 'github.svg'
+      = link_to t('devise.sessions.terms'), '#', class: 'my_modal_open'

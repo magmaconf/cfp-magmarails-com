@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+  @include grid_generator;
+
+  body {
+    padding: 0;
+  }
+
+  .prof {
+    padding-top: 10px;
+  }
+}

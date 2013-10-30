@@ -1,0 +1,158 @@
+.profile {
+  text-align: center;
+
+  .profile-in {
+    background: $profile-bkg;
+    border-left: 1px solid $line;
+    border-right: 1px solid $line;
+    line-height: 2em;
+    margin: auto;
+    outline: 6px solid $profile-bkg;
+    width: 95%;
+
+    .logo-magma {
+      margin-top: 35px;
+      padding-bottom: 5px;
+    }
+
+    .line {
+      background: $line;
+      height: 2px;
+      margin: 5px 5% 20px 5%;
+      width: 90%;
+    }
+
+    .pic {
+      border: 3px solid $white;
+      height: 150px;
+      margin: 20px auto;
+      overflow: hidden;
+      width: 150px;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+
+      img { width: 100%; }
+    }
+
+    .complete a {
+      color: $anchor-hover;
+      font-size: 1.2em;
+    }
+
+    .cfp-logo {
+      margin-top: 100px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .lath {
+    width: 100%;
+    position: relative;
+    top: -3px;
+  }
+}
+
+.titles {
+  border-bottom: 2px solid $line;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 40px 0 10px 0;
+  width: 100%;
+
+  .left-section {
+    float: left;
+    text-shadow: 1px 2px $white;
+    width: 70%;
+    h3 {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+
+  .right-section {
+    width: 30%;
+    float: left;
+    margin-top: 18px;
+  }
+}
+
+.sub-titles {
+  text-align: right;
+  border-bottom: 1px solid $line;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.left {
+  overflow: hidden;
+  width: 47%;
+  float: left;
+  margin-right: 3%;
+
+  input {
+    width: 96%;
+  }
+}
+
+.right {
+  margin-right: 0;
+  margin-left: 3%;
+  @extend .left;
+
+  input {
+    width: 90%;
+  }
+}
+
+.section {
+  padding: 10px 0;
+  border-bottom: 2px solid #c5c1bd;
+  text-shadow: 2px 2px 1px $white;
+}
+
+.name {
+  width: 45%;
+}
+
+form {
+  margin: 0px;
+}
+.white_background {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+
+.new_profile:before {
+  @include arrow-top(-5%);
+}
+
+.show_profile:before {
+  @include arrow-top(-15%);
+}
+
+a.btn-cfp:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-cfp {
+  @include gradient(#849dbd, #586c85);
+  border: 0px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px 25px;
+  float: right;
+}
+
+.profile_info th {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.profile_name {
+  margin-top: -10px;
+  font-weight: lighter !important;
+}

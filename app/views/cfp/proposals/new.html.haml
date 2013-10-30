@@ -1,9 +1,14 @@
-.row
-  .span6
-    %h3 Submit Proposal
-.row
-  = form_for @proposal do |form|
-    %fieldset
-      = render 'form', :form => form
+- content_for :header_title do
+  %h3= t('proposals.new_title')
 
-    .form-actions= form.submit :class => 'btn-proposals pull-right'
+.eight-columns
+  = form_for @proposal do |form|
+    %fieldset.new-proposal
+      = render 'form', form: form
+
+    .btn-aro.upper
+      = form.submit t('proposals.create'), class: 'aro'
+
+.one-column.days-left
+  %p= remaining_days
+  %span= t('proposals.days')

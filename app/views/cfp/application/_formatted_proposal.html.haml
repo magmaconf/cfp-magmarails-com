@@ -1,0 +1,28 @@
+.nine-columns.gray-background.proposal-show
+  .three-columns.offset-nine
+    %menu.menu
+      - if @proposal.can_be_edited_by? current_user and !current_user.can_review?
+        = link_to t('proposals.edit'), edit_proposal_path(@proposal)
+        = link_to t('proposals.delete'), proposal_path(@proposal), method: 'delete', confirm: t('delete_confirm')
+        = link_to 'X', proposals_path
+
+  .twelve-columns
+    %header
+      %h3= t('proposals.attributes.title')
+      %p.title= @proposal.title
+      %p.tags= "Tags: #{@proposal.tags}"
+    .content
+      %h3= t('proposals.attributes.description')
+      = @proposal.abstract_html
+
+      %h3= t('proposals.attributes.notes')
+      = @proposal.description_html
+    - if current_user.can_review?
+      %footer
+        %h3= t('proposals.about_author')
+        .image
+          = image_tag @proposal.user.gravatar_url(size: 65)
+        .info
+          %p.name= @proposal.user_name
+          %p=  t('proposals.from_company', company: @proposal.user.company)
+

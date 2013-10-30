@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+  background-image: asset-url('bkg.png');
+}
+
+a {
+  color: $anchor;
+  font: 100 1.3em/1.3em 'Roboto';
+  text-decoration: none;
+
+  &:hover {
+    color: $anchor-hover;
+    text-decoration: underline;
+  }
+}
+
+a, button, input[type="submit"] {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 100 3.5em/1.1em 'Oswald' Helvetica 'Arial';
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+h2 { font-size: 3em; }
+h3 { font-size: 2.5em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1em; }
+
+label {
+  font: 100 1.5em/1.1em 'Oswald' Helvetica 'Arial';
+  text-transform: uppercase;
+}
+
+.fa {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid $line - 50;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.tit-prop {
+  height: 55px;
+  display: inline-block;
+}
+
+.silver {
+  font-size: 10px !important;
+  width: 40%;
+  float: left;
+  padding: 0 !important;
+  font-weight: 300;
+  position: relative;
+  bottom: 1px;
+
+  i {
+    border: 0;
+  }
+}
+
+.gold {
+  @extend .silver;
+  margin-left: 9px;
+  border-right: 1px solid $silver;
+
+  i {
+    color: $gold;
+  }
+}
+
+.no-shadow {
+  text-shadow: 0 0 0;
+}

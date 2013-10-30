@@ -1,28 +1,30 @@
--if @proposals.count > 0
-  .header-proposals.row
-    .span3
-      %h3.your-proposal Your proposals
-    .span2.offset5
-      - if cfp_open?
-        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
-  .row
-    .span10
-      %table.table.table-striped
-        %thead
-          %tr.row
-            %th{scope: 'col'} Title
-            %th{scope: 'col'} Date
-            %th{scope: 'col'} Options
-            - if current_user.can_review?
-              %th{scope: 'col'} Author
-              %th{scope: 'col'} Ranking
-              %th{scope: 'col'} Discuss
+- content_for :header_title do
+  %h3= current_user.can_review? ? t('proposals.rate') : t('proposals.rate')
 
-        %tbody
-          =render @proposals
--else
-  .span6.offset2
-    .speak-wrapper
-      %p.ready-to-speak Ready to speak?
-      - if cfp_open?
-        = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-big-proposals'
+- if current_user.can_review?
+  .nine-columns.sub-titles
+    %span
+      %i.fa.fa-star
+      = t('proposals.rank')
+    %span
+      %i.fa.fa-comment
+      = t('proposals.comments')
+    %span
+      %i.fa.fa-check
+      = t('proposals.rated')
+
+.eight-columns.lists
+  %ul
+    =render @proposals
+    - if cfp_open? and !current_user.can_review?
+      %li.three-columns
+        = link_to new_proposal_path, class: 'btn-ring' do
+          .aro
+            %span +
+            %span
+              = t('proposals.add_html')
+
+
+.one-column.days-left
+  %p= remaining_days
+  %span= t('proposals.days')

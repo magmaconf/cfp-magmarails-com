@@ -5,12 +5,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :provider, :uid, :email, :password, :password_confirmation, :remember_me, :roles
-  # attr_accessible :title, :body
-  #
-
   include Cfp::User
+  include Gravtastic
+
+  delegate :company, :name, to: :profile, allow_nil: true
+  delegate :email, to: :profile, prefix: true, allow_nil: true
+
+  gravtastic :profile_email
 
   def self.create_with_omniauth(auth)
     create! do |user|

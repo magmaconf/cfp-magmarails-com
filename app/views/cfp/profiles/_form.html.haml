@@ -1,10 +1,19 @@
-- [:name, :title, :company, :email].each do |field|
-  = form.label field
-  = form.text_field field, :class => "input-block-level title"
+= form.label :name, t('profiles.attributes.name')
+= form.text_field :name, class: 'name'
 
-= form.label :locale
-= form.select :locale, Cfp::Profile::LOCALES
+.left
+  = form.label :title, t('profiles.attributes.title')
+  = form.text_field :title
 
-= form.label :bio
-= form.text_area :bio, :rows => 6, :class => "input-block-level title"
+  = form.label :email, t('profiles.attributes.email')
+  = form.text_field :email
 
+.right
+  = form.label :company, t('profiles.attributes.company')
+  = form.text_field :company
+
+  = form.label :language, t('profiles.attributes.language')
+  = form.select :locale, Cfp::Profile::LOCALES
+
+= form.label :bio, t('profiles.attributes.bio')
+= form.text_area :bio, rows: 6, class: 'input-block-level title'

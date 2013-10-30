@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include grid_generator($width-column - 10, $width-gutter - 10);
+
+  @include grid_offset($width-column - 10, $width-gutter - 10);
+
+  @include grid_centered($width-column - 10, $width-gutter - 10);
+
+  .prof {
+    padding-top: 150px;
+  }
+}

@@ -1,0 +1,17 @@
+.profile-in
+  %header
+    = image_tag 'magma-2.svg', class: 'logo-magma'
+  .line
+  %h4= t('profiles.profile')
+  .pic
+    = image_tag current_user.gravatar_url(size: 150)
+  .user_name
+    = current_user.name
+  .company
+    = current_user.company
+  .email
+    = current_user.profile_email
+  .complete
+    = link_to t('profiles.edit'), edit_profile_path
+  .cfp-logo
+    = image_tag 'cfp-2.svg'

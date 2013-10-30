@@ -2,42 +2,55 @@
 %html
   %head
     %title MagmaConf: Call For Papers
-    = stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
-    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
-    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"
-    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"
-
-    = stylesheet_link_tag    "cfp/application", :media => "all"
-    = javascript_include_tag "cfp/application"
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0' }
+    %meta{name: "author", content: "Crowd Interactive - http://crowdint.com"}
+    %meta{content: ' MagmaConf: Call For Papers', property: 'og:title'}
+    %meta{content: 'http://cfp.magmaconf.com', property: 'og:url'}
+    %meta{content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico', property: 'og:description'}
+    %meta{content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico.', name: 'description'}
+    %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2014, june, junio, github, sinatra, design, conferencia, tecnologia"}
+    = stylesheet_link_tag 'cfp/application', media: 'all'
     = csrf_meta_tags
-    %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
+    %link{ href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css' }
+    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
 
-    = yield :scripts
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22515126-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
   %body
-    .wrapper
-      %header.row
-        .container
-          .span10.offset1
-            .row
-              .span4
-                %img{src: '/assets/call_for_papers.png', alt: 'Call for papers'}
-                %img.magma_conferences_logo{src: '/assets/magma_conferences.png', alt: 'Magma Conferences'}
-              .span6
-                %ul
-                  %li= link_to t('proposals.proposals'), proposals_path
-                  %li= link_to t('profile.profile'), profile_path
-                  %li= link_to "Sign out", "/signout"
-      .container
-        .row
-          .span10.offset1
-            .row
-              = yield
-      .push
     .container
-      .span12
-        .row
-          %footer
+      .row
+        %aside.three-columns.profile
+          = render 'cfp/profiles/profile'
+          = image_tag 'liston_bg.png', class: 'lath'
+          %footer.prof
             %p
-              %img{src: '/assets/crowd_logo_footer.png', alt: 'Crowd Interactive Logo'}
-              %span &copy; 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+              = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo'
+              %span
+                &copy;
+                = t('copyright')
+
+        .nine-columns
+          .titles
+            .left-section
+              = content_for?(:header_title) ? yield(:header_title) : content_tag('h3', t('devise.profiles.complete'))
+            .right-section
+              = render 'cfp/application/menu'
+
+        = yield
+
+    = render 'cfp/application/javascripts'
+    = yield :scripts
+    = render 'cfp/application/popup'
+    :javascript
+      $(function() {
+        $('#my_modal').popup();
+      });

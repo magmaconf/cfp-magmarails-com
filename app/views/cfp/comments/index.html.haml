@@ -1,41 +1,47 @@
-.row
-  %ul.breadcrumb
-    %li
-      = link_to t('proposals.proposals'), proposals_path()
-      %span.divider /
-    %li.active= t('actions.comment')
-.row
-  .span12
-    = counter
-    = next_help(@proposal.id)
+- content_for :header_title do
+  %h3= t('comments.title')
+  = link_to t('comments.back_to_proposals'), proposals_path, class: 'no-shadow'
 
-.row
-  .span3
-    %h3 Discuss
-.row
-  .span4
-    %ul.nav.nav-list
-      %li
-        = label_tag :rank, t('proposals.rank')
-        #ranking
-          - Cfp::Proposal::RANK_SCALE.each do |rank|
-            %label.checkbox.inline
-              = radio_button_tag rank, rank, (@score ? rank == @score.value : false), id: 'rank', name: 'rank'
-              = rank
-      %li= link_to t('comments.new'), new_proposal_comment_path(@proposal), remote: true
-      %li.new-comment
+= render 'cfp/application/formatted_proposal'
 
-      %li
-        .comments
-          %h4= t('actions.comment')
-          .comment_list= render @comments.reverse
+.nine-columns.gray-background#ranking
+  .grid-com-one.tit
+    %h3= t('comments.proposals.rate')
+  .grid-com-two
+    .less
+      %span= t('comments.proposals.worst')
 
+    .rank
+      #rank-list
+        - Cfp::Proposal::RANK_SCALE.each do |rank|
+          %label{ style: 'display:inline' }
+            = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
+            = rank
+    .more
+      %span= t('comments.proposals.best')
+  .grid-com-one
+    .btn-rank
+      = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank'
 
-  .span6.discuss
-    = render :partial => "formatted_proposal", :object => @proposal
+.nine-columns.gray-background#comments
+  .twelve-columns
+    %h3.com-h3
+      %i.fa.fa-comment
+      = "#{@comments.size} #{t('proposals.comments')}"
+    %ul
+      = render @comments.reverse
+
+.nine-columns.gray-background.offset-three.leave-comment
+  .com-one
+    %h3.com-h3= t('comments.thoughts')
+  .com-three
+    = form_for [@proposal, Cfp::Comment.new] do |form|
+      = form.text_area :body, rows: '5'
+      .btn-comment
+        = form.submit t('comments.new'), class: 'aro'
 
 - content_for :scripts do
   :javascript
     $(document).ready(function () {
-      window.app = new Cfp.Views.RankingView();
+      window.app = new Cfp.Views.RankingView($('#submit-rank'));
     });

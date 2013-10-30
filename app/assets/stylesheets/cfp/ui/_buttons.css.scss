@@ -1,0 +1,201 @@
+.sign-in {
+          border-radius: 50%;
+       -o-border-radius: 50%;
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: $white;
+  border: 1px solid #bcb1a2;
+  color: #554a45;
+  display: inline-block;
+  font-size: 16px;
+  height: 118px;
+  margin-top: 10px;
+  padding: 40px 0 20px 0;
+  text-decoration: none;
+  transition: background .5s;
+  width: 178px;
+
+  &:hover {
+    background: #e7e4df;
+    border: 1px solid #e7e4df;
+    color: #554a45;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    margin-top: 25px;
+  }
+}
+
+.btn-aro {
+          border-radius: 50%;
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: $white;
+  height: 130px;
+  overflow: hidden;
+  margin: auto;
+  width: 130px;
+
+  .aro {
+            border-radius: 50%;
+       -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid $anchor-hover;
+    color: $anchor-hover;
+    cursor: pointer;
+    font: 100 1.6em/1.1em 'Roboto' Helvetica;
+    height: 115px;
+    margin: 7px;
+    text-align: center;
+    transition: .5s background, color;
+    width: 115px;
+
+    &:hover {
+      background: $anchor-hover;
+      color: $white;
+    }
+  }
+
+  &.upper {
+    top: -65px;
+    position: relative;
+  }
+}
+
+.btn-circle {
+          border-radius: 50%;
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid $anchor-hover;
+  color: $anchor-hover;
+  font: 100 1.6em/1.1em 'Roboto' Helvetica;
+  height: 115px;
+  margin: 7px;
+  text-align: center;
+  transition: .5s background, color;
+  width: 115px;
+
+  &:hover {
+    background: $anchor-hover;
+    color: $white;
+  }
+}
+
+.btn-ring {
+  @extend .btn-aro;
+  width: 145px;
+  height: 145px;
+  background: $anchor-hover;
+  display: block;
+  padding: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .aro {
+    @extend .btn-aro.aro;
+    width: 130px;
+    height: 130px;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      background: $white;
+      color: $anchor-hover;
+    }
+
+    span {
+      display: block;
+      font-size: 2em;
+
+      &:nth-child(1) {
+        margin-top: 17px;
+      }
+
+      &:nth-child(2) {
+        font-size: 0.7em;
+        line-height: 0.9em;
+      }
+    }
+  }
+}
+
+.btn-proposal {
+  @extend .btn-ring;
+  background: $profile-bkg;
+
+  .aro {
+    @extend .btn-ring.aro;
+    border: 1px solid $line;
+    color: $anchor;
+
+    &:hover {
+      background: $line;
+      color: $white;
+    }
+
+    span {
+      font-size: 0.7em;
+      line-height: 1em;
+      padding: 10px;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.btn-rank {
+  @extend .btn-aro;
+  background: $anchor-hover;
+  height: 100px;
+  width: 100px;
+
+  .aro {
+    height: 85px;
+    width: 85px;
+    background: $anchor-hover;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      background: $white;
+      color: $anchor-hover;
+    }
+  }
+}
+
+.btn-rated {
+  background: $white;
+
+  .aro {
+    border: 1px solid $anchor-hover;
+    background: asset-url('rated.svg') no-repeat center center;
+    color: transparent;
+    transition: none;
+    cursor: auto;
+
+    &:hover {
+      color: transparent;
+      background: asset-url('rated.svg') no-repeat center center;
+    }
+  }
+}
+
+.btn-comment {
+  @extend .btn-aro;
+  height: 110px;
+  width: 110px;
+
+  .aro {
+    height: 95px;
+    width: 95px;
+    font-size: 1.3em;
+  }
+}

@@ -1,9 +1,5 @@
-.header-proposals.row
-  .span3
-    %h3.your-proposal
-  .span2.offset5
-    - if cfp_open?
-      = link_to t('proposals.submit'), new_proposal_path, :class => 'btn-proposals'
-.row
-  .span10
-    = render :partial => "formatted_proposal", :object => @proposal
+- content_for :header_title do
+  %h3= @proposal.title
+
+= render 'cfp/application/formatted_proposal'
+

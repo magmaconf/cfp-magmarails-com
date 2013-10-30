@@ -1,8 +1,77 @@
-# Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Sample localization file for English. Add more files in this directory for other locales.
 
 en:
-  hello: "Hello world"
-
   comments:
-    new: 'New comment'
+    back_to_proposals: '<< Back to all proposals'
+    created_by: '%{date} By %{author}'
+    new: 'Comment'
+    proposals:
+      best: Must be at magmaconf
+      rank: Rate
+      rate: Rate this proposal
+      worst: It can be better
+    title: Rate Proposal
+    thoughts: Leave your thoughts
+  copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+  delete_confirm: Are you sure?
+  home:
+    ready: ARE YOU READY?
+    you: YOUR MASK IS WAITING AT
+  profiles:
+    attributes:
+      bio: Your Bio
+      company: Your Company
+      email: Your E-mail
+      language: Your Language
+      name: Your Name
+      title: Your Job Position
+    edit: Edit your profile
+    new: Next
+    profile: My profile
+    update: Update
+  proposals:
+    about_author: About the author
+    add_html: 'Add<br/>proposal'
+    attributes:
+      abstract: Abstract
+      description: Description
+      language: Language
+      level: Level
+      notes: Notes
+      tags: Tags
+      title: Title
+    create: Create
+    comments: Comments
+    days: DAYS LEFT
+    from_company: 'From %{company}'
+    mine: My Proposals
+    new_title: Are you ready to speak?
+    num: 50
+    rank: Rank
+    rate: Rate proposals
+    rated: Rated
+    title: 'Update: %{title}'
+    update: Update
+    edit: 'Edit'
+    delete: 'Delete'
+  sessions:
+    sign_out: Sign out
+    sign_up: Sign up with
+  terms: Terms of participation
+  popup:
+    title: 'Terms of participation'
+    body:
+      one:
+        bold_1: 'MagmaConf will grant one entrance'
+        plus: 'plus'
+        bold_2: '3 meals a day'
+        during: 'during the event to all speakers. However,'
+        bold_3: 'transportation and housing will not be included.'
+      two: 'In the case of a speaker not being able to to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
+      three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
+    button: 'Got it'
+  time:
+    formats:
+      small: "%b/%d/%y"
+

@@ -1,0 +1,125 @@
+.comment_list{
+  font-size: 12px;
+  padding: 5px;
+  background: #CFD2D6;
+  .comment {
+    margin-bottom: 5px;
+    .body {
+      padding: 5px;
+      background: white;
+    }
+  }
+
+}
+.new-comment {
+  .form-actions {
+    padding: 0;
+    margin: 0;
+    .btn {
+      @include gradient(#f48d5d, #d97246);
+      border: 0px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      padding: 8px 15px;
+      float: right;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.checkbox.inline {
+  input {
+    margin-top: -3px;
+  }
+}
+
+.com-h3 {
+  font: $comments-h3;
+}
+
+#ranking {
+  .tit {
+    margin-top: 37px;
+  }
+
+  .less {
+    float: left;
+    width: 19%;
+    margin-top: 37px;
+  }
+
+  .rank {
+    @extend .less;
+    width: 50%;
+    text-align: center;
+  }
+
+  .more {
+    @extend .less;
+    width: 30%;
+  }
+}
+
+#comments {
+  padding-bottom: 54px;
+
+  h3 {
+    padding-bottom: 10px;
+
+    i { border: 0; }
+  }
+
+  ul {
+    padding: 10px 0;
+
+    li {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      border-top: 1px solid $line;
+      padding: 10px 0;
+
+      .image {
+        float: left;
+        width: 11%;
+
+        img {
+          border: 2px solid $line;
+          -webkit-border-radius: 50%;
+             -moz-border-radius: 50%;
+                  border-radius: 50%;
+        }
+      }
+
+      .body {
+        @extend .image;
+        width: 89%;
+      }
+
+      .email {
+        @extend .body;
+        font: 100 1em/1.1em 'Roboto';
+      }
+    }
+  }
+}
+
+.leave-comment {
+  padding-bottom: 0 !important;
+
+  h3 {
+    margin-top: 45px;
+  }
+
+  textarea {
+    width: 77%;
+    float: left;
+  }
+
+  input[type="submit"] {
+    float: left;
+  }
+}

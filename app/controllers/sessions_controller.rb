@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
                       :uid => auth['uid'].to_s).first || User.create_with_omniauth(auth)
     session[:user_id] = user.id
     if user
-      url = params[:request_path] ? params[:request_path] : root_url
+      url = request_path_params || root_url
       sign_in_and_redirect(:user, user)
     end
   end
@@ -23,5 +23,10 @@ class SessionsController < ApplicationController
 
   def failure
   	redirect_to "/", :alert => "Authentication error: #{params[:message].humanize}"
+  end
+
+  private
+  def request_path_params
+    params[:request_path] && params.require(:request_path).permit(:provider, :uid, :email, :password, :password_confirmation, :remember_me, :roles)
   end
 end

@@ -1,0 +1,103 @@
+// Layout
+#home-top {
+  background: asset-url('bkg.jpg') no-repeat top center fixed $top;
+  border-bottom: 10px solid $white;
+
+  .circle {
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 2;
+    a:hover {
+      text-decoration: none;
+    }
+    & > a {
+      text-decoration: underline;
+    }
+    /*a.login-up {*/
+      /*text-decoration: underline;*/
+    /*}*/
+  }
+
+  img {
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  .mask {
+    margin-bottom: 20px;
+  }
+
+  .ready {
+    display: block;
+    color: $white;
+    font: 400 3.5em/1.1em 'Oswald' Helvetica 'Arial';
+  }
+
+  .you {
+    @extend .ready;
+    font: 100 1.5em/1.1em 'Oswald' Helvetica 'Arial';
+    letter-spacing: 3px;
+    color: #b3a797;
+    padding: 5px 0;
+  }
+
+  .magma_logo {
+    display: block;
+    margin: auto;
+    padding: 5px 0 110px 0;
+  }
+}
+
+.top {
+  width: 100%;
+  height: 50px;
+  background: $top;
+  border-bottom: 10px solid $white;
+}
+
+.main-menu {
+  text-decoration: none;
+  text-align: right;
+
+  li {
+    display: inline;
+  }
+
+  li + li:before {
+    content: " | ";
+    color: $anchor;
+  }
+}
+
+.magma_conferences_logo {
+  margin-left: 10px;
+}
+
+#home-down {
+  background-image: url('/assets/bkg.png');
+}
+
+footer {
+  padding-top: 200px;
+
+  p {
+    color: $anchor + 60;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    text-align: center;
+  }
+
+  span {
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+  }
+
+  &.prof {
+    //padding-top: 100px;
+    img { margin: 0 auto 25px }
+    img, span { display: block }
+  }
+}
