@@ -16,6 +16,9 @@ es:
   home:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
+  languages:
+    en: Inglés
+    es: Español
   profiles:
     attributes:
       bio: Bio

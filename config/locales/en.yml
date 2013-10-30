@@ -18,6 +18,9 @@ en:
   home:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
+  languages:
+    en: English
+    es: Spanish
   profiles:
     attributes:
       bio: Bio
