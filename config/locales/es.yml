@@ -24,6 +24,7 @@ es:
       language: Idioma
       name: Nombre
       title: Puesto de trabajo
+    cancel: Cancelar
     edit: Edita tu perfil
     new: Siguiente
     profile: Mi perfil

@@ -26,6 +26,7 @@ en:
       language: Language
       name: Name
       title: Job Position
+    cancel: Cancel
     edit: Edit your profile
     new: Next
     profile: My profile
