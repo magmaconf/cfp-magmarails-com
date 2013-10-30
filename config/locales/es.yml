@@ -52,6 +52,8 @@ es:
     rated: Calificado
     title: 'Actualizar: %{title}'
     update: Actualizar
+    edit: 'Editar'
+    delete: 'Eliminar'
   sessions:
     sign_out: Salir
     sign_up: Entrar con
