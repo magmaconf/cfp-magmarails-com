@@ -38,10 +38,12 @@
     = form_for [@proposal, Cfp::Comment.new] do |form|
       = form.text_area :body, rows: '5'
       .btn-comment
-        = form.submit t('comments.new'), class: 'aro'
+        = form.submit t('comments.new'), class: 'aro', disabled: true
 
 - content_for :scripts do
   :javascript
     $(document).ready(function () {
-      window.app = new Cfp.Views.RankingView($('#submit-rank'));
+      new Cfp.Views.RankingView($('#submit-rank'));
+      new Cfp.Views.SubmitComment({ el: $('#new_comment') });
+
     });
