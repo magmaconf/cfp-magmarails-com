@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def already_reviewed(proposal)
-    content_tag 'i','', class: 'fa fa-check raked' if Cfp::Rank.for_proposal_user(proposal, current_user)
+    content_tag 'i','', class: 'fa fa-check raked' if Cfp::Rank.for_proposal_user(proposal, current_user) && current_user.can_review?
   end
 
   def user_based_proposal_path(proposal)

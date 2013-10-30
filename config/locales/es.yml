@@ -26,7 +26,7 @@ es:
       title: Puesto de trabajo
     cancel: Cancelar
     continue: Continuar
-    edit: Edita tu perfil
+    edit: Editar mi perfil
     new: Siguiente
     profile: Mi perfil
     update: Actualizar
@@ -40,13 +40,15 @@ es:
       level: Nivel
       notes: Notas
       tags: Etiquetas
-      title: Titulo
+      title: Título
+    back_to_proposals: '<< Regresar a propuestas'
     comments: Comentarios
     create: Crear
     days: DÍAS RESTANTES
     from_company: 'De %{company}'
     github_profile: Perfil de Github
     mine: Mis Propuestas
+    my: Mi Propuesta
     new_title: '¿Estás listo para hablar?'
     num: 50
     rank: Calificación

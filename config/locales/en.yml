@@ -28,7 +28,7 @@ en:
       title: Job Position
     cancel: Cancel
     continue: Continue
-    edit: Edit your profile
+    edit: Edit my profile
     new: Next
     profile: My profile
     update: Update
@@ -43,12 +43,14 @@ en:
       notes: Notes
       tags: Tags
       title: Title
+    back_to_proposals: '<< Back to proposals'
     create: Create
     comments: Comments
     days: DAYS LEFT
     from_company: 'From %{company}'
     github_profile: Github profile
     mine: My Proposals
+    my: My Proposal
     new_title: Are you ready to speak?
     num: 50
     rank: Rank
