@@ -16,4 +16,13 @@
   = form.select :locale, Cfp::Profile::LOCALES
 
 = form.label :bio, t('profiles.attributes.bio')
-= form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'trua'
+= form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'true'
+
+= link_to t('profiles.cancel'), proposals_path(current_user)
+
+- content_for :scripts do
+  :javascript
+    $(document).ready(function() {
+      form = $('#edit_profile');
+      new Cfp.Views.FormEditView({el: $('#edit_profile'), scope: 'profiles'})
+    });

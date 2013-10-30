@@ -26,6 +26,8 @@ en:
       language: Language
       name: Name
       title: Job Position
+    cancel: Cancel
+    continue: Continue
     edit: Edit your profile
     new: Next
     profile: My profile
@@ -69,7 +71,7 @@ en:
         bold_2: '3 meals a day'
         during: 'during the event to all speakers. However,'
         bold_3: 'transportation and housing will not be included.'
-      two: 'In the case of a speaker not being able to to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
+      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
       three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     button: 'Got it'
   time:

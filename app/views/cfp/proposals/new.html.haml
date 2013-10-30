@@ -3,8 +3,7 @@
 
 .eight-columns
   = form_for @proposal do |form|
-    %fieldset.new-proposal
-      = render 'form', form: form
+    = render 'form', form: form, klass: 'new-proposal'
 
     .btn-aro.upper
       = form.submit t('proposals.create'), class: 'aro'

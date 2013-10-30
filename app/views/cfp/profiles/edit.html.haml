@@ -2,10 +2,10 @@
   %h3= t('profiles.profile')
 
 .eight-columns
-  = form_for @profile, url: profile_path do |form|
+  = form_for @profile, url: profile_path, html: { id: 'edit_profile' } do |form|
     = render 'form', form: form
 
     .btn-aro
-      = form.submit t('profiles.update'), class: 'aro'
+      = form.submit t('profiles.continue'), class: 'aro'
 
 .one-column

@@ -17,4 +17,7 @@ module ApplicationHelper
     proposal.comments.count
   end
 
+  def profile_new?
+    controller.action_name == 'new'
+  end
 end
