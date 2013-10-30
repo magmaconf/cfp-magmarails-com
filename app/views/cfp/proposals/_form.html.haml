@@ -1,6 +1,6 @@
 .nine-columns
   = form.label :title, t('proposals.attributes.title')
-  = form.text_field :title
+  = form.text_field :title, required: 'trua'
 .four-columns
   = form.label :level, t('proposals.attributes.level')
   = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t("level.#{l}"), l]}
@@ -12,7 +12,7 @@
   = form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
 .seven-columns
   = form.label :description, t('proposals.attributes.description')
-  = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description')
+  = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description'), required: 'trua'
 .five-columns
   = form.label :abstract, t('proposals.attributes.abstract')
-  = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract')
+  = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract'), required: 'trua'
