@@ -36,6 +36,7 @@ class Cfp.Views.RankingView extends Backbone.View
 
   #Remove btn-rated and change label when updating rate
   unsetChecked: ->
+    @button.attr 'disabled', false
     @btn.removeClass('btn-rated')
     @button.html I18n.t('proposals.update') if @btn.hasClass('ranked')
 
