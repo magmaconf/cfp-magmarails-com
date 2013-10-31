@@ -1,10 +1,9 @@
 - content_for :header_title do
-  %h3= t('proposals.title', title: @proposal.title)
+  %h3= t('proposals.my')
 
 .eight-columns
   = form_for @proposal do |form|
-    %fieldset.gray-background
-      = render 'form', form: form
+    = render 'form', form: form, klass: 'gray-background'
 
     .btn-aro.upper
       = form.submit t('proposals.update'), class: 'aro'

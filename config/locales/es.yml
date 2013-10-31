@@ -3,7 +3,7 @@ es:
   comments:
     back_to_proposals: '<< Regresar a propuestas'
     created_by: '%{date} Por %{author}'
-    new: Commentar
+    new: Comentar
     proposals:
       best: Debe estar en magmaconf
       rank: Calificar
@@ -16,15 +16,20 @@ es:
   home:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
+  languages:
+    en: Inglés
+    es: Español
   profiles:
     attributes:
-      bio: Tu bio
-      company: Tu empresa
-      email: Tu email
-      language: Tu idioma
-      name: Tu nombre
-      title: Tu puesto de trabajo
-    edit: Edita tu perfil
+      bio: Bio
+      company: Empresa
+      email: E-mail
+      language: Idioma
+      name: Nombre
+      title: Puesto de trabajo
+    cancel: Cancelar
+    continue: Continuar
+    edit: Editar mi perfil
     new: Siguiente
     profile: Mi perfil
     update: Actualizar
@@ -38,13 +43,15 @@ es:
       level: Nivel
       notes: Notas
       tags: Etiquetas
-      title: Titulo
+      title: Título
+    back_to_proposals: '<< Regresar a propuestas'
     comments: Comentarios
     create: Crear
     days: DÍAS RESTANTES
     from_company: 'De %{company}'
     github_profile: Perfil de Github
     mine: Mis Propuestas
+    my: Mi Propuesta
     new_title: '¿Estás listo para hablar?'
     num: 50
     rank: Calificación
@@ -52,6 +59,8 @@ es:
     rated: Calificado
     title: 'Actualizar: %{title}'
     update: Actualizar
+    edit: 'Editar'
+    delete: 'Eliminar'
   sessions:
     sign_out: Salir
     sign_up: Entrar con

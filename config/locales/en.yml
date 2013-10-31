@@ -18,15 +18,20 @@ en:
   home:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
+  languages:
+    en: English
+    es: Spanish
   profiles:
     attributes:
-      bio: Your Bio
-      company: Your Company
-      email: Your E-mail
-      language: Your Language
-      name: Your Name
-      title: Your Job Position
-    edit: Edit your profile
+      bio: Bio
+      company: Company
+      email: E-mail
+      language: Language
+      name: Name
+      title: Job Position
+    cancel: Cancel
+    continue: Continue
+    edit: Edit my profile
     new: Next
     profile: My profile
     update: Update
@@ -41,12 +46,14 @@ en:
       notes: Notes
       tags: Tags
       title: Title
+    back_to_proposals: '<< Back to proposals'
     create: Create
     comments: Comments
     days: DAYS LEFT
     from_company: 'From %{company}'
     github_profile: Github profile
     mine: My Proposals
+    my: My Proposal
     new_title: Are you ready to speak?
     num: 50
     rank: Rank
@@ -69,7 +76,7 @@ en:
         bold_2: '3 meals a day'
         during: 'during the event to all speakers. However,'
         bold_3: 'transportation and housing will not be included.'
-      two: 'In the case of a speaker not being able to to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
+      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
       three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     button: 'Got it'
   time:

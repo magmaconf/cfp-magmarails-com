@@ -11,7 +11,8 @@
     = current_user.company
   .email
     = current_user.profile_email
-  .complete
-    = link_to t('profiles.edit'), edit_profile_path
+  - unless profile_new?
+    .complete
+      = link_to t('profiles.edit'), edit_profile_path
   .cfp-logo
     = image_tag 'cfp-2.svg'

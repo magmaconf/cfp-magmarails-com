@@ -5,5 +5,5 @@
     = comment.body
   .email
     = t('comments.created_by',
-    date: l(comment.created_at, format: :small),
+    date: comment.created_at.strftime('%b/%d/%y'),
     author: comment.user.profile.name)

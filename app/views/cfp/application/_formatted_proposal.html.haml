@@ -1,10 +1,9 @@
-.nine-columns.gray-background.proposal-show
+.gray-background.group
   .three-columns.offset-nine
     %menu.menu
       - if @proposal.can_be_edited_by? current_user and !current_user.can_review?
         = link_to t('proposals.edit'), edit_proposal_path(@proposal)
         = link_to t('proposals.delete'), proposal_path(@proposal), method: 'delete', confirm: t('delete_confirm')
-        = link_to 'X', proposals_path
 
   .twelve-columns
     %header
@@ -26,4 +25,3 @@
           %p.name= @proposal.user_name
           %p=  t('proposals.from_company', company: @proposal.user.company)
           =link_to t('proposals.github_profile'), "http://www.github.com/#{@proposal.user.nickname}"
-
