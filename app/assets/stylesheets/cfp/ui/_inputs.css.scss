@@ -117,3 +117,14 @@ input[type="text"], textarea {
   vertical-align: middle;
 }
 
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  background: $white asset-url('3.svg') no-repeat 95% center;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
