@@ -94,3 +94,11 @@ label {
 .group {
   padding-bottom: 0 !important;
 }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 135px solid transparent;
+  border-right: 135px solid transparent;
+  border-bottom: 50px solid red;
+}
