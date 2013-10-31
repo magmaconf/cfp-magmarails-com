@@ -52,6 +52,11 @@
     = yield :scripts
     = render 'cfp/application/popup'
     :javascript
-      $(function() {
-        $('#my_modal').popup();
+
+      $(document).ready(function() {
+        $(function() {
+          $('#my_modal').popup();
+        });
+
+        $('#profile_locale').attr('tabindex', 5);
       });
