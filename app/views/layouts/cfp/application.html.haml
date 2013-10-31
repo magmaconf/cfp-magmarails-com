@@ -31,7 +31,7 @@
       .row
         %aside.three-columns.profile
           = render 'cfp/profiles/profile'
-          = image_tag 'liston_bg.png', class: 'lath'
+          .lath-image
           %footer.prof
             %p
               = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo'
@@ -47,6 +47,14 @@
               = render 'cfp/application/menu'
 
         = yield
+
+        .five-columns
+          %footer.bottom
+            %p
+              = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo'
+              %span
+                &copy;
+                = t('copyright')
 
     = render 'cfp/application/javascripts'
     = yield :scripts

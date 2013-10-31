@@ -79,6 +79,14 @@
   background-image: url('/assets/bkg.png');
 }
 
+.lath-image {
+  width: 100%;
+  height: 60px;
+  background: asset-url('liston_bg.png') no-repeat center;
+  position: relative;
+  top: -37px;
+}
+
 footer {
   padding-top: 200px;
 
@@ -99,5 +107,9 @@ footer {
     //padding-top: 100px;
     img { margin: 0 auto 25px }
     img, span { display: block }
+  }
+
+  &.bottom {
+    display: none;
   }
 }

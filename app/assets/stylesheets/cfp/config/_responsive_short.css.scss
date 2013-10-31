@@ -8,4 +8,17 @@
   .prof {
     padding-top: 10px;
   }
+
+  .lath-image {
+    background: asset-url('liston_bg_2.png') no-repeat center !important;
+  }
+
+  .prof {
+    display: none;
+  }
+
+  .bottom {
+    display: block !important;
+    padding-top: 50px;
+  }
 }
