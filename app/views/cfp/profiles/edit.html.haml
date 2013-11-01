@@ -5,7 +5,13 @@
   = form_for @profile, url: profile_path, html: { id: 'edit_profile' } do |form|
     = render 'form', form: form
 
-    .btn-aro
-      = form.submit t('profiles.continue'), class: 'aro'
+    -#.btn-aro
+      -#= form.submit t('profiles.continue'), class: 'aro'
+    .three-columns
+      .btn-aro
+        = link_to t('profiles.cancel'), proposals_path, class: 'aro'
+    .four-columns
+      .btn-aro
+        = form.submit t('profiles.new'), class: 'aro'
 
 .one-column

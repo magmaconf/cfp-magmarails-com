@@ -2,7 +2,10 @@
   = form_for @profile, url:profile_path do |form|
     = render 'form', form: form
 
-    .btn-aro
-      = form.submit t('profiles.new'), class: 'aro'
+    .three-columns
+      = link_to t('profiles.cancel'), proposals_path, class: 'cancel'
+    .three-columns
+      .btn-aro
+        = form.submit t('profiles.new'), class: 'aro'
 
 .one-colum
