@@ -70,9 +70,9 @@ en:
   sessions:
     sign_out: Sign out
     sign_up: Sign up with
-  terms: Terms of participation
+  terms: Important information
   popup:
-    title: 'Terms of participation'
+    title: 'Important information'
     body:
       one:
         bold_1: 'MagmaConf will grant one entrance'

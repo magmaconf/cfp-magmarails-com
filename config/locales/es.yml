@@ -68,9 +68,9 @@ es:
   sessions:
     sign_out: Salir
     sign_up: Entrar con
-  terms: 'Términos de participación'
+  terms: 'Información imporntante'
   popup:
-    title: 'Términos de participación'
+    title: 'Información imporntante'
     body:
       one:
         bold_1: 'MagmaConf dará un boleto'

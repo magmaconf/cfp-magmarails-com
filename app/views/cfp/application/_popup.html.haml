@@ -5,11 +5,15 @@
     #tabs
       %ul
         %li
-          = link_to 'Terms', '#tabs-1'
+          = link_to 'MagmaConf', '#tabs-1'
         %li
-          = link_to 'Page 2', '#tabs-2'
+          = link_to 'Topics', '#tabs-2'
         %li
-          = link_to 'Page 3', '#tabs-3'
+          = link_to 'Sponsors', '#tabs-3'
+        %li
+          = link_to 'Judges', '#tabs-4'
+        %li
+          = link_to 'Terms', '#tabs-5'
       #tabs-1
         %p
           %span= t('popup.body.one.bold_1')
@@ -23,6 +27,10 @@
         %p content for page 2
       #tabs-3
         %p content for page 3
+      #tabs-4
+        %p content for page 4
+      #tabs-5
+        %p content for page 5
     .btn-aro
       %button.my_modal_close.aro
         = t('popup.button')
