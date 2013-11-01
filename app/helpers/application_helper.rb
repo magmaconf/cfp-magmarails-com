@@ -13,11 +13,11 @@ module ApplicationHelper
   end
 
   def profile_new?
-    controller.action_name == 'new'
+    controller.action_name == 'new' && controller.controller_name == 'profiles'
   end
 
   def remaining_days
-    date_to_go = (Date.new(2013, 11, 5) - Date.today).to_i
+    date_to_go = (Date.new(2013, 12, 31) - Date.today).to_i
     date_to_go.to_s.rjust(2, '0')
   end
 

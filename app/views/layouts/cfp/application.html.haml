@@ -57,14 +57,5 @@
                 = t('copyright')
 
     = render 'cfp/application/javascripts'
-    = yield :scripts
     = render 'cfp/application/popup'
-    :javascript
-
-      $(document).ready(function() {
-        $(function() {
-          $('#my_modal').popup();
-        });
-
-        $('#profile_locale').attr('tabindex', 5);
-      });
+    = yield :scripts
