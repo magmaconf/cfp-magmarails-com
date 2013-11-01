@@ -199,3 +199,24 @@
     font-size: 1.3em;
   }
 }
+
+.btn-cancel {
+  @extend .btn-aro;
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+
+  .aro {
+    display: block;
+    width: 65px;
+    height: 43px;
+    font-size: 1em;
+    padding-top: 22px;
+    color: $line;
+    border: 1px solid $line;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
