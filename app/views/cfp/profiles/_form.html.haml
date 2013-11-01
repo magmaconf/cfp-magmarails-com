@@ -1,12 +1,12 @@
 = form.label :name, t('profiles.attributes.name')
-= form.text_field :name, class: 'name'
+= form.text_field :name, class: 'name', required: 'true'
 
 .left
   = form.label :title, t('profiles.attributes.title')
   = form.text_field :title
 
   = form.label :email, t('profiles.attributes.email')
-  = form.text_field :email
+  = form.text_field :email, required: 'true'
 
 .right
   = form.label :company, t('profiles.attributes.company')
@@ -16,7 +16,7 @@
   = form.select :locale, languages
 
 = form.label :bio, t('profiles.attributes.bio')
-= form.text_area :bio, rows: 6, class: 'input-block-level title'
+= form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'true'
 
 = link_to t('profiles.cancel'), proposals_path, class: 'cancel'
 
