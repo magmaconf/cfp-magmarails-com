@@ -73,13 +73,40 @@ en:
   terms: Important information
   popup:
     title: 'Important information'
-    body:
-      one:
-        bold_1: 'MagmaConf will grant one entrance'
-        plus: 'plus'
-        bold_2: '3 meals a day'
-        during: 'during the event to all speakers. However,'
-        bold_3: 'transportation and housing will not be included.'
+    magma:
+      title: MagmaConf
+      one: What are we looking for?
+      two: Magma Conf is a community organized web development and design conference that focuses on cutting edge technologies, mostly revolving around Ruby and Rails.  However, if you feel that there is an interesting talk that you would like to present that is not related to it, please go ahead and submit it. We’re open to hear about testing, scaling, API design and implementation, entrepreneurship in the tech sphere, startups that are awesome, development communities that are growing and focused in particular subjects… you get the point.
+    topics:
+      title: Topics
+      one: Topics to base your proposals on.
+      two: Interesting and useful technical talks. Modern, new, scalable, game-changing technologies or strategies.
+      three: Design, UX and UI focused talks.  We can all benefit from knowing how to integrate the products of a designer with the work of a developer.  This can help us all!
+      four: Business strategies that a startup has used and has been successful with.  We’re all looking to grow our expertise in that area, so please enlighten us!
+      five: Development community efforts that have changed things positively. Come talk to us about your local community’s events and projects that have raised the bar.
+      six: Startups that use technology in a very interesting way, solving a difficult problem or changing the way things are currently done.
+      seven: Fun stuff. Show us how you have fun while working, and you remain productive.  Show your code or the way you program to achieve results.
+      eight: 'Interesting hacks. We are suckers for innovative ways to hack stuff. If you work with code that does something different: show us!'
+      nine: Got a different subject you’d like to talk about?  Go ahead! We’ll look into it and evaluate it with an open mind.
+    speakers:
+      title: Speakers
+      one: What do speakers get?
+      two: Unfortunately, we cannot sponsor your traveling costs or hosting. However, we are prepared to grant all chosen speakers a free entrance to the event, and 3 meals per day, during the event.
+      three: If your company can support your travel and hosting costs, we are more than glad to add them as Sponsors of the event.  We can assist on the arrival/departure to Manzanillo’s airport, and housing logistics.
+    sponsors:
+      title: Sponsors
+      one: Want to sponsor the event?
+      two: Shoot us an email at info@magmaconf.com and we’ll send you the prospectus, and work out a way to expose your company in an original and effective way with the attendees; not only at the event, but also before and after it.
+    judges:
+      title: Judges
+      one: Who will choose the talks?
+      two: We’re inviting Dev Community leaders and Entrepreneurs that have experience with conferences.  We want to have an inclusive jury, so we are still awaiting for confirmation on many peeps that we’ve invited to be part of it. Oh, and yes, we’re including females and males in the group.
+      three: If you have any more questions, would like more feedback about your submissions or the event, please contact us at info@magmaconf.com
+      four: Best of luck!
+      five: The Magma Conf Committee.
+    terms:
+      title: Terms
+      one: '<span>MagmaConf will grant one entrance</span> plus <span>3 meals a day</span> during the event to all speakers. However, <span>transportation and housing will not be included.</span>'
       two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
       three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     button: 'Got it'
