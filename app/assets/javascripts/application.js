@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery.popupoverlay
+//= require jquery.ui.tabs
 //= require i18n
 //= require i18n/translations
 //= require_tree .

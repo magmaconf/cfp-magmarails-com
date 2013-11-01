@@ -2,14 +2,32 @@
 .popup_wrapper
   #my_modal
     %h2= t('popup.title')
-    %p
-      %span= t('popup.body.one.bold_1')
-      = t('popup.body.one.plus')
-      %span= t('popup.body.one.bold_2')
-      = t('popup.body.one.during')
-      %span= t('popup.body.one.bold_3')
-    %p= t('popup.body.two')
-    %p= t('popup.body.three')
+    #tabs
+      %ul
+        %li
+          = link_to 'Terms', '#tabs-1'
+        %li
+          = link_to 'Page 2', '#tabs-2'
+        %li
+          = link_to 'Page 3', '#tabs-3'
+      #tabs-1
+        %p
+          %span= t('popup.body.one.bold_1')
+          = t('popup.body.one.plus')
+          %span= t('popup.body.one.bold_2')
+          = t('popup.body.one.during')
+          %span= t('popup.body.one.bold_3')
+        %p= t('popup.body.two')
+        %p= t('popup.body.three')
+      #tabs-2
+        %p content for page 2
+      #tabs-3
+        %p content for page 3
     .btn-aro
       %button.my_modal_close.aro
         = t('popup.button')
+
+:javascript
+  $(document).ready(function(){
+    $('#tabs').tabs();
+  });
