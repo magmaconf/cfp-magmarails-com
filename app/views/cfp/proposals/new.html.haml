@@ -5,8 +5,12 @@
   = form_for @proposal do |form|
     = render 'form', form: form, klass: 'new-proposal'
 
-    .btn-aro.upper
-      = form.submit t('proposals.create'), class: 'aro'
+    .three-columns.offset-five.move-buttons
+      .btn-cancel
+        = link_to t('profiles.cancel'), proposals_path, class: 'aro'
+    .four-columns.move-buttons
+      .btn-aro
+        = form.submit t('proposals.create'), class: 'aro'
 
 .one-column.days-left
   %p= remaining_days

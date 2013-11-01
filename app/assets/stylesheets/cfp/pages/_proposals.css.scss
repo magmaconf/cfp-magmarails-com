@@ -103,9 +103,12 @@
   text-align: center;
 
   p {
+    width: 50px;
+    height: 50px;
     padding: 7px;
     line-height: 1.1em;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    line-height: 0.95;
     border: 1px solid $days;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
@@ -226,4 +229,9 @@
   position: relative;
   left: 150px;
   top: -42px;
+}
+
+.move-buttons {
+  top: -88px;
+  position: relative;
 }

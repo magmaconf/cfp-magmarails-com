@@ -2,14 +2,51 @@
 .popup_wrapper
   #my_modal
     %h2= t('popup.title')
-    %p
-      %span= t('popup.body.one.bold_1')
-      = t('popup.body.one.plus')
-      %span= t('popup.body.one.bold_2')
-      = t('popup.body.one.during')
-      %span= t('popup.body.one.bold_3')
-    %p= t('popup.body.two')
-    %p= t('popup.body.three')
+    #tabs
+      %ul
+        %li
+          = link_to t('popup.magma.title'), '#magma'
+        %li
+          = link_to t('popup.topics.title'), '#topics'
+        %li
+          = link_to t('popup.speakers.title'), '#sponsors'
+        %li
+          = link_to t('popup.judges.title'), '#judges'
+        %li
+          = link_to t('popup.terms.title'), '#terms'
+      #magma
+        %p= t('popup.magma.one')
+        %p= t('popup.magma.two')
+        %p= t('popup.magma.three')
+      #topics
+        %p= t('popup.topics.one')
+        %p= t('popup.topics.two')
+        %p= t('popup.topics.three')
+        %p= t('popup.topics.four')
+        %p= t('popup.topics.five')
+        %p= t('popup.topics.six')
+        %p= t('popup.topics.seven')
+        %p= t('popup.topics.eight')
+        %p= t('popup.topics.nine')
+      #sponsors
+        %p= t('popup.sponsors.one')
+        %p= t('popup.sponsors.two')
+      #judges
+        %p= t('popup.judges.one')
+        %p= t('popup.judges.two')
+        %p= t('popup.judges.three')
+        %p= t('popup.judges.four')
+        %p= t('popup.judges.five')
+      #terms
+        %p= raw t('popup.terms.one')
+        %p= t('popup.terms.two')
+        %p= t('popup.terms.three')
+
     .btn-aro
       %button.my_modal_close.aro
         = t('popup.button')
+
+:javascript
+  $(document).ready(function(){
+    $('#tabs').tabs();
+  });

@@ -1,19 +1,17 @@
 // Popup
 #my_modal {
   width: 38%;
-  padding: 50px;
+  padding: 30px 50px 10px;
   background: asset-url('bkg.png');
   border: 0;
   outline: 0;
 
   h2 {
     text-align: center;
-    border-bottom: 2px solid $line;
-    padding: 20px 0;
+    padding: 0 0 30px;
   }
 
   p {
-    text-align: center;
     font-size: 1.3em;
     font-family: 'Roboto';
     font-weight: 300;
@@ -22,7 +20,7 @@
 
   .btn-aro {
     position: relative;
-    top: 85px;
+    top: 40px;
 
     .aro {
       background: $white;
@@ -51,4 +49,40 @@
 .popup_content {
   *display: inline;
   *zoom: 1;
+}
+
+.ui-tabs-nav {
+  text-align: center;
+
+  li {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 22px;
+    margin: 0;
+
+    a {
+      font-weight: 400;
+      color: $line;
+
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .ui-state-active {
+    background: $line;
+
+    a {
+      color: #333;
+    }
+  }
+}
+
+.ui-tabs-panel {
+  height: 280px;
+  overflow: auto;
+  margin-top: 10px;
 }

@@ -48,6 +48,20 @@
                 = t('copyright')
 
     :javascript
-      $(function() {
+      $(document).ready(function() {
+        var height = $(window).height();
+
         $('#my_modal').popup();
+
+        I18n.defaultLocale = "#{I18n.default_locale}";
+        I18n.locale = "#{I18n.locale}";
+
+        if (height > 727 && height < 897) {
+          $('#home-top').css('height', 560);
+          $('.mask').css({
+            'width': '30%',
+            'margin-top': '10px'
+          });
+          $('.circle').css('top','470px');
+        }
       });

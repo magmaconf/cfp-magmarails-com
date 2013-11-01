@@ -3,3 +3,11 @@
 = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js'
 = javascript_include_tag 'cfp/application'
 = javascript_include_tag 'application'
+
+:javascript
+  $(document).ready(function() {
+    $('#profile_locale').attr('tabindex', 5);
+    $('#my_modal').popup();
+    I18n.defaultLocale = "#{I18n.default_locale}";
+    I18n.locale = "#{I18n.locale}";
+  });

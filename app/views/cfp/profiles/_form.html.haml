@@ -1,24 +1,22 @@
 = form.label :name, t('profiles.attributes.name')
-= form.text_field :name, class: 'name', required: 'true'
+= form.text_field :name, class: 'name', required: 'true', tabindex: '1', maxlength: 40
 
 .left
   = form.label :title, t('profiles.attributes.title')
-  = form.text_field :title
+  = form.text_field :title, tabindex: '2', maxlength: 40
 
   = form.label :email, t('profiles.attributes.email')
-  = form.text_field :email, required: 'true'
+  = form.text_field :email, type: 'email', required: 'true', tabindex: '4'
 
 .right
   = form.label :company, t('profiles.attributes.company')
-  = form.text_field :company
+  = form.text_field :company, tabindex: '3', maxlength: 40
 
   = form.label :language, t('profiles.attributes.language')
   = form.select :locale, languages
 
 = form.label :bio, t('profiles.attributes.bio')
-= form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'true'
-
-= link_to t('profiles.cancel'), proposals_path, class: 'cancel'
+= form.text_area :bio, rows: 6, class: 'input-block-level title', required: 'true', tabindex: '6'
 
 - content_for :scripts do
   :javascript

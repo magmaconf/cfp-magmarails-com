@@ -3,17 +3,17 @@
   %head
     %title MagmaConf: Call For Papers
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0' }
-    %meta{name: "author", content: "Crowd Interactive - http://crowdint.com"}
-    %meta{content: ' MagmaConf: Call For Papers', property: 'og:title'}
-    %meta{content: 'http://cfp.magmaconf.com', property: 'og:url'}
-    %meta{content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico', property: 'og:description'}
-    %meta{content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico.', name: 'description'}
-    %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2014, june, junio, github, sinatra, design, conferencia, tecnologia"}
+    %meta{ name: "author", content: "Crowd Interactive - http://crowdint.com" }
+    %meta{ content: ' MagmaConf: Call For Papers', property: 'og:title' }
+    %meta{ content: 'http://cfp.magmaconf.com', property: 'og:url' }
+    %meta{ content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico', property: 'og:description' }
+    %meta{ content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico.', name: 'description' }
+    %meta{ name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2014, june, junio, github, sinatra, design, conferencia, tecnologia" }
     = stylesheet_link_tag 'cfp/application', media: 'all'
     = csrf_meta_tags
     %link{ href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css' }
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
-    %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}"}
+    %link{ rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}" }
 
     :javascript
       var _gaq = _gaq || [];
@@ -31,7 +31,7 @@
       .row
         %aside.three-columns.profile
           = render 'cfp/profiles/profile'
-          = image_tag 'liston_bg.png', class: 'lath'
+          .lath-image
           %footer.prof
             %p
               = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo'
@@ -48,10 +48,14 @@
 
         = yield
 
+        .five-columns
+          %footer.bottom
+            %p
+              = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo'
+              %span
+                &copy;
+                = t('copyright')
+
     = render 'cfp/application/javascripts'
-    = yield :scripts
     = render 'cfp/application/popup'
-    :javascript
-      $(function() {
-        $('#my_modal').popup();
-      });
+    = yield :scripts

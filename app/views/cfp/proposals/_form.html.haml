@@ -4,7 +4,7 @@
     = form.text_field :title, required: 'true'
   .four-columns
     = form.label :level, t('proposals.attributes.level')
-    = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t("level.#{l}"), l]}
+    = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t(l, scope: 'proposals.levels'), l]}
   .four-columns
     = form.label :language, t('proposals.attributes.language')
     = form.select :language, Cfp::Proposal::LANGUAGE
@@ -17,5 +17,3 @@
   .five-columns
     = form.label :abstract, t('proposals.attributes.abstract')
     = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract'), required: 'true'
-
-= link_to t('profiles.cancel'), proposals_path, class: 'cancel-new-proposal'

@@ -11,8 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
 //= require jquery.popupoverlay
+//= require jquery.ui.tabs
 //= require i18n
 //= require i18n/translations
 //= require_tree .

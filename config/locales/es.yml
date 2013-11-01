@@ -50,6 +50,10 @@ es:
     days: DÍAS RESTANTES
     from_company: 'De %{company}'
     github_profile: Perfil de Github
+    levels:
+      beginner: Principiante
+      intermediate: Intermedio
+      advanced: Avanzado
     mine: Mis Propuestas
     my: Mi Propuesta
     new_title: '¿Estás listo para hablar?'
@@ -64,18 +68,46 @@ es:
   sessions:
     sign_out: Salir
     sign_up: Entrar con
-  terms: 'Términos de participación'
+  terms: Información importante
   popup:
-    title: 'Términos de participación'
-    body:
-      one:
-        bold_1: 'MagmaConf dará un boleto'
-        plus: 'más'
-        bold_2: '3 comidas por día'
-        during: 'durante el evento a todos los ponentes. Sin embargo,'
-        bold_3: 'el transporte y hospedaje no están incluidos.'
-      two: 'En caso de que un ponente no pueda asistir a la conferencia, escogeremos a otro del resto de los aplicantes -quién haya tenido un puntaje alto acorde al sistema de calificaciones usado por el Comité de Elección. Si hubiera un empate, el comité tomará la decisión final y ésta será irrevocable.'
-      three: 'Todos los ponentes tendrán un espacio de 40 minutos para su plática, incluyendo la sesión de Preguntas y Respuestas. Te sugerimos a que hagas tu plática lo más interesante, entretenida, divertida y si es posible, interactiva.'
+    title: Información importante
+    magma:
+      title: MagmaConf
+      one: Lo que buscamos.
+      two: Magma Conf es un evento organizado para las comunidades de desarrollo, enfocado en la programación y diseño web, centrado tecnología innovadoras.  Sobre todo alrededor de Ruby y Ruby on Rails, sin embargo, si crees que hay un tema interesante que quisieras presentar que se relaciona con otra parte del desarrollo web, por favor regístralo.
+      three: Estamos abiertos a escuchar sobre pruebas, escalabilidad, diseño e implementación de APIs, emprendedurismo en la esfera tecnológica, startups que son grandiosas, desarrollo de comunidades que están creciendo y están orientadas en temas particulares… creo que ya tienes la idea.
+    topics:
+      title: Temas
+      one: Temas para basar tus propuestas.
+      two: Pláticas técnicas, interesantes y útiles. Sobre tecnologías modernas, nuevas, escalables, o estrategias que cambian la forma de hacer las cosas.
+      three: Charlas enfocadas a Diseño, UX y UI. El saber cómo integrar productos de diseñadores con el trabajo de programadores nos puede ayudar ¡a todos!
+      four: Estrategias de negocios que una startup utiliza y le han ayudado en su proceso. Buscamos crecer nuestra experiencia en esta área, así que por favor, ¡ilústranos!
+      five: Esfuerzos de comunidades de desarrolladores que han cambiado las cosas positivamente. Ven y platícanos sobre cómo tu comunidad local a través de sus eventos y proyectos han elevado la barra.
+      six: Startups que utilizan tecnología de una manera muy interesante, resolviendo problemas difíciles o cambiando la forma de hacer las cosas.
+      seven: Temas divertidos. Muéstranos qué tan divertido es mientras trabajas y cómo te mantienes productivo. Muestra tu código o cómo logras conseguir tus resultados.
+      eight: 'Programación interesante. Nos emociona conocer formas creativas de programar. Si trabajas con código que hace algo diferente: ¡muéstranos!'
+      nine: ¿Tienes algún tema diferente que quieras hablar sobre? ¡Adelante! Lo veremos y revisaremos con una mente abierta.
+    speakers:
+      title: Ponentes
+      one: ¿Qué obtienen los ponentes?
+      two: Desafortunadamente, no podemos pagar los costos de transporte u hospedaje. Sin embargo, estamos dispuestos a darles a todos los ponentes seleccionados un boleto gratuito al evento y tres comidas por día, durante el evento.
+      three: Si tu compañía te puede pagar tus viáticos de transporte y hospedaje, estaríamos más que encantados de agregarlos como Patrocinadores del evento. Podemos ayudarte con la llegada/salida del aeropuerto de Manzanillo y la logística de hospedaje.
+    sponsors:
+      title: Patrocinadores
+      one: ¿Quieres patrocinar el evento?
+      two: Mándanos un email a info@magmaconf.com y te enviaremos el plan de patrocinios, podemos además diseñar una forma de promocionar tu compañía de una forma original y efectiva con los asistentes; no solo en el evento, si no también, antes y después de éste.
+    judges:
+      title: Jueces
+      one: ¿Quién escogerá las ponencias?
+      two: Estamos invitando personas que sean líderes de comunidades y emprendedores que tengan experiencia con conferencias. Queremos que sea un jurado inclusivo, por lo cual estamos esperando la confirmación de algunos que hemos invitado a ser parte del comité. ¡Ah! y sí, estamos incluyendo damas y caballeros en el grupo.
+      three: Si tienes más preguntas, darnos más retroalimentación sobre las propuestas o el evento, por favor contáctanos en info@magmaconf.com
+      four: ¡La mejor de las suertes!
+      five: Comité de MagmaConf
+    terms:
+      title: Terms
+      one: '<span>MagmaConf will grant one entrance</span> plus <span>3 meals a day</span> during the event to all speakers. However, <span>transportation and housing will not be included.</span>'
+      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
+      three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     button: 'Entendido'
   time:
     formats:

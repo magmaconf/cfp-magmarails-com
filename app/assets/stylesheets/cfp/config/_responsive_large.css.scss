@@ -31,3 +31,17 @@
     padding-top: 100px;
   }
 }
+
+@media screen and (min-width: 1555px) {
+
+  // Pop-up -----------------
+  .ui-tabs-nav {
+    li {
+      border-bottom: 2px solid $line;
+
+      a {
+        line-height: 2.2 !important;
+      }
+    }
+  }
+}
