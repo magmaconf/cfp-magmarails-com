@@ -22,8 +22,10 @@
     padding-top: 50px;
   }
 
-  .titles .right-section {
-    width: 100% !important;
+  .titles {
+    .left-section, .right-section {
+      width: 100% !important;
+    }
   }
 
   .sub-titles {
