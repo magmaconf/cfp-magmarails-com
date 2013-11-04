@@ -5,8 +5,58 @@
 
   @include grid_centered($width-column - 10, $width-gutter - 10);
 
-  .prof {
-    padding-top: 150px;
+  .profile-in .email {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .tit h3 {
+    text-align: center;
+  }
+
+  .eight-columns {
+    width: 62%;
+
+    ul li {
+      width: 31.2%;
+
+      a.btn-ring {
+        width: 142px;
+        height: 142px;
+
+        .aro {
+          width: 127px;
+          height: 127px;
+        }
+      }
+    }
+  }
+
+  .btn-rank {
+    position: relative;
+    left: -35%;
+    top: 5px;
+  }
+
+  .com-one h3, .com-three {
+    padding-left: 10px;
+  }
+
+  .titles {
+    .left-section, .right-section {
+      width: 100% !important;
+    }
+  }
+
+  .twelve-columns {
+    .image {
+      width: 14% !important;
+    }
+
+    .info, .body, .email {
+      width: 80% !important;
+    }
   }
 }
 
@@ -15,7 +65,6 @@
   // Pop-up -----------------
   .ui-tabs-nav {
     li {
-
       a {
         line-height: 2;
       }

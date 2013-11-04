@@ -21,4 +21,62 @@
     display: block !important;
     padding-top: 50px;
   }
+
+  .titles .right-section {
+    width: 100% !important;
+  }
+
+  .sub-titles {
+    text-align: center !important;
+
+    span:first-child { margin-left: 0; }
+  }
+
+  .twelve-columns header h3,
+  .twelve-columns .content h3,
+  .twelve-columns footer h3 {
+    padding-left: 8px;
+  }
+
+  .tit h3 {
+    text-align: center;
+  }
+
+  .btn-rank {
+    position: relative;
+    margin-top: 78px !important;
+  }
+
+  .less, .more {
+    display: none;
+  }
+
+  .rank {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .twelve-columns {
+    .image {
+      width: 22% !important;
+    }
+
+    .info, .body, .email {
+      width: 74% !important;
+    }
+  }
+
+  .com-one {
+    text-align: center;
+  }
+
+  .com-three textarea {
+    margin-left: 10%;
+  }
+
+  #my_modal {
+    width: 65% !important;
+
+    h2 { font-size: 2em; }
+  }
 }
