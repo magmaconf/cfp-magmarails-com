@@ -7,7 +7,7 @@ label {
 }
 
 input {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif, Helvetica, Arial;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -16,7 +16,6 @@ input {
   border: 2px inset;
   cursor: auto;
   margin: 0em;
-  font: -webkit-small-control;
   color: initial;
   letter-spacing: normal;
   word-spacing: normal;
@@ -25,7 +24,6 @@ input {
   text-shadow: none;
   display: inline-block;
   text-align: start;
-  -webkit-writing-mode: horizontal-tb;
 }
 
 select {
@@ -72,6 +70,12 @@ textarea {
 
 input:focus {
   outline: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 textarea:focus,
