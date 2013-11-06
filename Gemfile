@@ -21,6 +21,7 @@ gem 'rails_12factor'
 
 group :development do
   gem 'sqlite3'
+  gem 'pry-debugger'
 end
 
 group :production do

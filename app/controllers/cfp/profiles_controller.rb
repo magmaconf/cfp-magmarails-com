@@ -1,6 +1,12 @@
 require_dependency Cfp::Engine.root.join('app', 'controllers', 'cfp', 'profiles_controller').to_s
 
 Cfp::ProfilesController.class_eval do
+  def new
+    @profile = Cfp::Profile.new(
+                  name: session[:user_name],
+                  email: session[:user_email])
+  end
+
   def create
     @profile = Cfp::Profile.new profile_params
     if @profile.save
