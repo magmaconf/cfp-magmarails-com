@@ -8,6 +8,10 @@ class Cfp.Views.RankingView extends Backbone.View
 
   el: '#ranking'
 
+  update:
+    en: 'Update'
+    es: 'Actualizar'
+
   events:
     'change input[name="rank"]' : 'unsetChecked'
 
@@ -38,5 +42,10 @@ class Cfp.Views.RankingView extends Backbone.View
   unsetChecked: ->
     @button.attr 'disabled', false
     @btn.removeClass('btn-rated')
-    @button.html I18n.t('proposals.update') if @btn.hasClass('ranked')
+    @button.html @buttonLabel() if @btn.hasClass('ranked')
+
+  buttonLabel: ->
+    @update[currentLocale]
+
+
 
