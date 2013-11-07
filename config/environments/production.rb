@@ -78,4 +78,6 @@ CfpMagmaCom::Application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
+
+  config.action_controller.asset_host = "http://cfp%d.magmaconf.com"
 end
