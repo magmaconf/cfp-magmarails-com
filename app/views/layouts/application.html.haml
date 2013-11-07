@@ -53,8 +53,7 @@
 
         $('#my_modal').popup();
 
-        I18n.defaultLocale = "#{I18n.default_locale}";
-        I18n.locale = "#{I18n.locale}";
+        window.currentLocale = "#{I18n.locale}";
 
         if (height > 727 && height < 897) {
           $('#home-top').css('height', 560);
