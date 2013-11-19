@@ -97,7 +97,7 @@ en:
     sponsors:
       title: Sponsors
       one: Want to sponsor the event?
-      two: Shoot us an email at info@magmaconf.com and we’ll send you the prospectus, and work out a way to expose your company in an original and effective way with the attendees; not only at the event, but also before and after it.
+      two: 'Shoot us an email at <a href="mailto:info@magmaconf.com" target="_top">info@magmaconf.com</a> and we’ll send you the prospectus, and work out a way to expose your company in an original and effective way with the attendees; not only at the event, but also before and after it.'
     judges:
       title: Judges
       one: Who will choose the talks?
