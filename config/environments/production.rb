@@ -79,5 +79,5 @@ CfpMagmaCom::Application.configure do
     :enable_starttls_auto => true
   }
 
-  config.action_controller.asset_host = "http://cfp%d.magmaconf.com"
+  config.action_controller.asset_host = "http://cfp%d.magmaconf.com" unless ENV['DISABLE_ASSET_HOST']
 end
