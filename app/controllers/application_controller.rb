@@ -6,5 +6,8 @@ class ApplicationController < ActionController::Base
 
   def load_settings
     Cfp::Config.load_from_persistance if Rails.env.development?
+
+    @propos = Cfp::Proposal.all
+    @num = 0
   end
 end

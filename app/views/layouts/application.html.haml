@@ -37,6 +37,13 @@
 
       = yield
 
+    #lists.container
+      .row
+        .six-centered
+          = image_tag 'lists.svg', class: 'lists_open'
+          %p.lists_open= t('proposals-list.show')
+    = render 'cfp/application/lists'
+
     #home-down.container
       .row
         .twelve-columns
@@ -51,6 +58,8 @@
       $(document).ready(function() {
         var height = $(window).height();
 
+        console.log("hello");
+
         $('#my_modal').popup();
 
         window.currentLocale = "#{I18n.locale}";
@@ -62,5 +71,33 @@
             'margin-top': '10px'
           });
           $('.circle').css('top','470px');
+          $('#lists').css('margin-top', height - 610);
+        } else if (height > 897) {
+          $('#lists').css('margin-top', height - 700);
         }
+
+        $('#listss').popup();
+
+        // Popup
+        $('.lists_open').click(function(e) {
+          e.preventDefault();
+          $('#popup_back').fadeIn();
+          $('#cont_lists').slideToggle();
+        });
+
+        function close_popup() {
+          $('#popup_back').fadeOut();
+          $('#cont_lists').slideToggle();
+        };
+
+        $('.lists_close').click(function(e) {
+          e.preventDefault();
+          close_popup();
+        });
+
+        $(this).keyup(function(e) {
+          if ((event.which == 27) && ($('#cont_lists').is(':visible'))) {
+            close_popup();
+          }
+        });
       });

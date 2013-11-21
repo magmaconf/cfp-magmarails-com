@@ -75,6 +75,28 @@
   margin-left: 10px;
 }
 
+#lists {
+  background: $white;
+  margin-top: 200px;
+
+  img {
+    margin: -10px 0 0 -49px;
+    position: absolute;
+    cursor: pointer;
+    border: 10px solid $white;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+  }
+
+  p {
+    display: inline-block;
+    padding: 8px 0 10px 0;
+    cursor: pointer;
+    color: #4ca9a8;
+  }
+}
+
 #home-down {
   background-image: url('/assets/bkg.png');
 }
@@ -88,7 +110,7 @@
 }
 
 footer {
-  padding-top: 200px;
+  padding-top: 20px;
 
   p {
     color: $anchor + 60;
