@@ -125,3 +125,6 @@ es:
     content:
       proposal: 'Propuesta'
       tags: 'Etiquetas'
+  will_paginate:
+    previous_label: ''
+    next_label: ''

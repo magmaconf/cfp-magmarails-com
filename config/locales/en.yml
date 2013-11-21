@@ -127,3 +127,6 @@ en:
     content:
       proposal: 'Proposal'
       tags: 'Tags'
+  will_paginate:
+    previous_label: ''
+    next_label: ''

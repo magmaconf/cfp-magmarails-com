@@ -27,3 +27,13 @@
         .four-columns
           %span.tag= proposal.tags
         .twelve-columns.line
+    .row
+      %nav.centered-six
+        = will_paginate @propos
+    %footer.row
+      .centered-six
+        = image_tag 'crowd-1.svg'
+      .centered-five
+        %span
+          &copy;
+          = t('copyright')

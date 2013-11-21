@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def load_settings
     Cfp::Config.load_from_persistance if Rails.env.development?
 
-    @propos = Cfp::Proposal.all
+    @propos = Cfp::Proposal.paginate(page: params[:page], per_page: 8)
     @num = 0
   end
 end
