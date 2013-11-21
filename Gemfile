@@ -17,6 +17,7 @@ gem 'newrelic_rpm'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'rails_12factor'
+gem 'will_paginate'
 
 group :development do
   gem 'sqlite3'
