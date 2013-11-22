@@ -81,4 +81,12 @@
 
     h2 { font-size: 2em; }
   }
+
+  .direction {
+    top: -10px !important;
+
+    .a-left, .s-left {
+      margin-left: -53px;
+    }
+  }
 }

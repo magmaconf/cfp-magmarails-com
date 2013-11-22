@@ -40,6 +40,10 @@
   font: $comments-h3;
 }
 
+#rnk {
+  margin-top: -18px;
+}
+
 #ranking {
   .tit {
     margin-top: 37px;
@@ -129,7 +133,7 @@
   position: relative;
   top: -46px;
 
-  .a-right, .a-left {
+  .a-right {
     display: inline-block;
     position: absolute;
     width: 50px;
@@ -162,7 +166,7 @@
   .a-left {
     @extend .a-right;
     position: relative;
-    margin-right: 20px;
+    margin-right: 30px;
 
     i {
       background: asset-url('left-big.svg');
@@ -184,7 +188,7 @@
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 30px;
     line-height: 3.1;
 
     i {
@@ -198,6 +202,8 @@
 
   .s-right {
     @extend .s-left;
+    margin-right: 0;
+    position: absolute;
 
     i {
       background: asset-url('right-big-sp.svg');

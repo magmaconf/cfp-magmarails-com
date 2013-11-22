@@ -26,12 +26,3 @@
           %p.name= @proposal.user_name
           %p=  t('proposals.from_company', company: @proposal.user.company)
           =link_to t('proposals.github_profile'), "http://www.github.com/#{@proposal.user.nickname}"
-.eight-centered.direction
-  = link_to @proposal, class: 'a-left' do
-    %i
-  -#%span.s-left
-    %i
-  = link_to @proposal, class: 'a-right' do
-    %i
-  -#%span.s-right
-    %i
