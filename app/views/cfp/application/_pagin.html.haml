@@ -1,0 +1,12 @@
+- @propos.each do |proposal|
+  %main.row
+    .one-column
+      %span.num= @num = @num + 1
+    .seven-columns
+      %span.title= proposal.title
+    .four-columns
+      %span.tag= proposal.tags
+    .twelve-columns.line
+.row
+  %nav.centered-six
+    = will_paginate @propos

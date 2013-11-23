@@ -18,18 +18,10 @@
       .four-columns
         %h5= t('proposals-list.content.tags')
       .twelve-columns.line
-    - @propos.each do |proposal|
-      %main.row
-        .one-column
-          %span.num= @num = @num + 1
-        .seven-columns
-          %span.title= proposal.title
-        .four-columns
-          %span.tag= proposal.tags
-        .twelve-columns.line
-    .row
-      %nav.centered-six
-        = will_paginate @propos
+    :javascript
+      "pagination"
+    #pagination
+      = render 'cfp/application/pagin'
     %footer.row
       .centered-six
         = image_tag 'crowd-1.svg'

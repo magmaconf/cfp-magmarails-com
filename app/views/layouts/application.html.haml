@@ -101,6 +101,16 @@
           }
         });
 
-        $('.previous_page').append('<i class="prev"></i>')
-        $('.next_page').append('<i class="next"></i>')
+        // Pagination
+        $('.previous_page').append('<i class="prev"></i>');
+        $('.next_page').append('<i class="next"></i>');
+
+        function pagination() {
+          $('#pagination').html("= escape_javascript(render('cfp/application/pagin'))");
+        }
+
+        $(".pagination a").click(function() {
+          $.get(this.href, null, null, pagination());
+          return false;
+        });
       });
