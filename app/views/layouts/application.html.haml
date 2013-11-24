@@ -106,11 +106,11 @@
         $('.next_page').append('<i class="next"></i>');
 
         function pagination() {
-          $('#pagination').html("= escape_javascript(render('cfp/application/pagin'))");
+          $('#pagination').html(render("cfp/application/pagin"));
         }
 
         $(".pagination a").click(function() {
-          $.get(this.href, null, null, pagination());
+          $.get(this.href, null, null, "../script");
           return false;
         });
       });
