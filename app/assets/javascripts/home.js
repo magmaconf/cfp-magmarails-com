@@ -12,10 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require underscore.js
-//= require backbone.js
 //= require jquery.popupoverlay
 //= require jquery.ui.tabs
-//= require cfp/application
-//= require_tree .
 //

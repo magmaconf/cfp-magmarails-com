@@ -1,7 +1,7 @@
 - @propos.each do |proposal|
   %main.row
     .one-column
-      %span.num= @num = @num + 1
+      %span.num= proposal.id
     .seven-columns
       %span.title= proposal.title
     .four-columns
@@ -9,4 +9,16 @@
     .twelve-columns.line
 .row
   %nav.centered-six
-    = will_paginate @propos
+    .pagination
+      - if params[:page].to_i >= 2
+        = link_to talks_path((params[:page].to_i == 0 ? 1 : params[:page].to_i ) - 1), class: 'previous_page', rel: 'next', :remote => true do
+          %i.prev
+      - else
+        %span{class: "previous_page disabled"}
+          %i.prev
+      - if @propos.total_pages == @propos.current_page
+        %span{class: "next_page disabled"}
+          %i.next
+      - else
+        = link_to talks_path((params[:page].to_i == 0 ? 1 : params[:page].to_i ) + 1), class: 'next_page', rel: 'next', :remote => true do
+          %i.next

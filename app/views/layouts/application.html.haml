@@ -10,8 +10,7 @@
     %meta{content: 'Call for Papers of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico.', name: 'description'}
     %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2014, june, junio, github, sinatra, design, conferencia, tecnologia"}
     = stylesheet_link_tag    'cfp/application', :media => 'all'
-    = javascript_include_tag 'cfp/application'
-    = javascript_include_tag 'application'
+    = javascript_include_tag 'home'
     = csrf_meta_tags
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
     %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}"}
@@ -102,15 +101,8 @@
         });
 
         // Pagination
-        $('.previous_page').append('<i class="prev"></i>');
-        $('.next_page').append('<i class="next"></i>');
-
         function pagination() {
           $('#pagination').html(render("cfp/application/pagin"));
         }
 
-        $(".pagination a").click(function() {
-          $.get(this.href, null, null, "../script");
-          return false;
-        });
-      });
+       });
