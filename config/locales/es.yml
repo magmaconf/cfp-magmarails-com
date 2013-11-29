@@ -113,3 +113,18 @@ es:
     formats:
       small: "%b/%d/%y"
 
+  proposals-list:
+    show: 'Check out the submitted proposals so far.'
+    hide: 'Regresar a sign in'
+    header:
+      title: 'Complete su perfil'
+      sort: 'Ordenar por:'
+      all: 'Todos'
+      frontend: 'Frontend'
+      BACKEND: 'Backend'
+    content:
+      proposal: 'Propuesta'
+      tags: 'Etiquetas'
+  will_paginate:
+    previous_label: ''
+    next_label: ''

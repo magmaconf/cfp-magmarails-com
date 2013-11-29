@@ -8,6 +8,7 @@ CfpMagmaCom::Application.routes.draw do
   get "sessions/create"
   get "sessions/failure"
   get "sessions/destroy"
+  get "/talks/:page" => "talks#index", as: 'talks'
 
   devise_for :users
 

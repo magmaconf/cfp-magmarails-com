@@ -7,7 +7,7 @@
 
     = render 'cfp/application/formatted_proposal'
 
-    .gray-background.group
+    .gray-background.group#rnk
       #ranking
         .grid-com-one.tit
           %h3= t('comments.proposals.rate')
@@ -26,6 +26,19 @@
         .grid-com-one
           .btn-rank
             = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank', disabled: true
+    .eight-centered.direction
+      - if @prev == Cfp::Proposal.where(:id).first
+        %span.s-left
+          %i
+      - else
+        = link_to user_based_proposal_path(@prev), class: 'a-left' do
+          %i
+      - if @next == Cfp::Proposal.where(:id).last
+        %span.s-right
+          %i
+      - else
+        = link_to user_based_proposal_path(@next), class: 'a-right' do
+          %i
 
     .gray-background.group#comments
       .twelve-columns

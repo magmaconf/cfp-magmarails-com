@@ -1,0 +1,155 @@
+// Proposals lis
+
+#popup_back {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  display: block;
+  z-index: 3;
+  top: 0;
+  display: none;
+}
+
+#cont_lists {
+  width: 100%;
+  background: none repeat scroll 0 0 transparent;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  display: none;
+
+  .listss {
+    background: $white;
+
+    img {
+      margin: 0 0 -10px -49px;
+      position: absolute;
+      cursor: pointer;
+      border: 10px solid $white;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+    }
+
+    p {
+      display: inline-block;
+      padding: 8px 0;
+      cursor: pointer;
+      color: #4ca9a8;
+    }
+  }
+
+  .content {
+    background: asset-url('bkg.png');
+
+    .line {
+      height: 1px;
+      background: $line;
+    }
+
+    header {
+      padding: 40px 0 0;
+
+      h2 { padding-bottom: 10px; }
+
+      .lines {
+        height: 3px;
+        background: $line;
+      }
+    }
+
+    aside {
+      padding: 30px 0 0;
+
+      h5 {
+        padding-bottom: 10px;
+      }
+    }
+
+    main {
+      .num {
+        width: 20px;
+        height: 20px;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        padding: 5px;
+        border: 1px solid $line;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+      }
+
+      .title, .tag {
+        display: block;
+        margin: 15px 0 5px;
+      }
+    }
+
+    nav {
+      em, a { display: none; }
+
+      span, a.previous_page, a.next_page {
+        display: inline-block;
+      }
+
+      span, a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid $anchor-hover;
+        margin: 20px;
+        vertical-align: middle;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+
+        i {
+          margin: 9px auto;
+        }
+
+        .prev {
+          display: block;
+          width: 24px;
+          height: 23px;
+          background: asset-url('left-big.svg');
+        }
+
+        .next {
+          @extend .prev;
+          background: asset-url('right-big.svg');
+        }
+      }
+      a {
+        background: $white;
+        border: 1px solid $anchor-hover;
+        box-shadow: 0 0 0 5px $white;
+
+        &:hover {
+          background: $anchor-hover;
+          color: $white;
+
+          .prev {
+            display: block;
+            width: 24px;
+            height: 23px;
+            background: asset-url('left-on.svg');
+          }
+
+          .next {
+            @extend .prev;
+            background: asset-url('right-on-big.svg');
+          }
+        }
+      }
+    }
+
+    footer {
+      color: $gray;
+
+      .centered-five {margin-top: 20px; }
+    }
+  }
+}

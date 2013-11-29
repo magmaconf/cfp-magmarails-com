@@ -115,3 +115,18 @@ en:
     formats:
       small: "%b/%d/%y"
 
+  proposals-list:
+    show: 'Check out the submitted proposals so far.'
+    hide: 'Back to sign in'
+    header:
+      title: 'Complete your profile'
+      sort: 'Sort by:'
+      all: 'All'
+      frontend: 'Frontend'
+      BACKEND: 'Backend'
+    content:
+      proposal: 'Proposal'
+      tags: 'Tags'
+  will_paginate:
+    previous_label: ''
+    next_label: ''
