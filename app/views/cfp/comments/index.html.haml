@@ -27,17 +27,17 @@
           .btn-rank
             = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank', disabled: true
     .eight-centered.direction
-      - if @prev == Cfp::Proposal.where(:id).first
+      - unless @prev
         %span.s-left
           %i
       - else
-        = link_to user_based_proposal_path(@prev), class: 'a-left' do
+        = link_to proposal_comments_path(@prev), class: 'a-left' do
           %i
-      - if @next == Cfp::Proposal.where(:id).last
+      - unless @next
         %span.s-right
           %i
       - else
-        = link_to user_based_proposal_path(@next), class: 'a-right' do
+        = link_to proposal_comments_path(@next), class: 'a-right' do
           %i
 
     .gray-background.group#comments
