@@ -89,10 +89,13 @@
     }
 
     nav {
-      em, a { display: none; }
-
       span, a.previous_page, a.next_page {
         display: inline-block;
+      }
+
+      em {
+        font-style: normal;
+        color: $gray;
       }
 
       span, a {

@@ -16,6 +16,9 @@
       - else
         %span{class: "previous_page disabled"}
           %i.prev
+      %em= @propos.current_page
+      %em /
+      %em= @propos.total_pages
       - if @propos.total_pages == @propos.current_page
         %span{class: "next_page disabled"}
           %i.next
