@@ -117,7 +117,7 @@ es:
     show: 'Check out the submitted proposals so far.'
     hide: 'Regresar a sign in'
     header:
-      title: 'Complete su perfil'
+      title: 'Propuestas presentadas'
       sort: 'Ordenar por:'
       all: 'Todos'
       frontend: 'Frontend'

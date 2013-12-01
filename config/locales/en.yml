@@ -119,7 +119,7 @@ en:
     show: 'Check out the submitted proposals so far.'
     hide: 'Back to sign in'
     header:
-      title: 'Complete your profile'
+      title: 'Submitted proposals'
       sort: 'Sort by:'
       all: 'All'
       frontend: 'Frontend'
