@@ -10,7 +10,7 @@
   .content.container
     %header.row
       .twelve-columns
-        %h2= t('proposals-list.header.title')
+        %h2= "#{@propos.total_entries} #{t('proposals-list.header.title')}"
       .twelve-columns.lines
     %aside.row
       .eight-columns
