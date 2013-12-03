@@ -1,9 +1,9 @@
--# num = (@propos.total_pages + 1 - (params[:page] || 1).to_i) * 8 - (8 - (@propos.total_pages % 8))
-- num = @propos.total_entries
+- num = @propos.total_entries - ((params[:page] || 1).to_i - 1) * 8
 - @propos.each do |proposal|
   %main.row
     .one-column
-      %span.num= num = num - 1
+      %span.num= num
+      - num = num - 1
     .seven-columns
       %span.title= proposal.title
     .four-columns
