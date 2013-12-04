@@ -59,7 +59,6 @@
   }
 
   .important {
-    overflow: hidden;
     width: 200px;
     position: absolute;
 
@@ -74,7 +73,9 @@
       width: 30px;
       height: 30px;
       background: $white;
-      border: 1px solid #000;
+      border: 1px solid $radio;
+      box-shadow: 0 0 0 2px $white;
+      margin-top: -4px;
       @include border_radius(50%);
 
       img {
