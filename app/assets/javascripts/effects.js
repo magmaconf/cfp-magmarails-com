@@ -22,10 +22,15 @@ $(document).ready(function() {
     $('.counting').css('top','650px');
     $('#lists').css('margin-top', height - 690);
   } else if (height > 897) {
-    $('#lists').css('margin-top', height - 700);
+    $('#lists').css('margin-top', height - 740);
+    $('#home-top').css('height', 650);
+    $('.mask').css('width', '40%');
+    $('.important').css('top', 685);
+    $('.counting').css('top', 685);
   }
 
-  if (width == 753 && height == 896) {
+  if (width == 1024 && height == 768) {
+    alert('hello');
     $('.mask').css('width', '50%');
   }
 
