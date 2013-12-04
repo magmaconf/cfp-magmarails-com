@@ -70,9 +70,42 @@
   #cont_lists header {
     a { margin-left: 40px; }
   }
+
+  #home-top {
+    .important {
+      margin-left: -150px;
+    }
+
+    .counting {
+      margin-left: 40%;
+    }
+  }
 }
 
-@media screem and (min-width: 768px) and (max-width: 870px) {
+@media screen and (max-height: 801px) {
+  footer .centered-eight span {
+    color: transparent !important;
+  }
+
+  footer .centered-six img {
+    opacity: 0;;
+  }
+
+  .mask {
+    width: 30%;
+  }
+
+  #home-top {
+    height: 580px;
+
+    .important, .counting {
+      top: 610px;
+    }
+  }
+
+  .circle {
+    top: 510px !important;
+  }
 }
 
 @media screen and (max-width: 1554px) {

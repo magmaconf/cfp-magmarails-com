@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
   var height = $(window).height();
+  var width = $(window).width();
   var lst = 0;
 
   $('#my_modal').popup();
@@ -16,11 +17,16 @@ $(document).ready(function() {
       'width': '30%',
       'margin-top': '10px'
     });
-    $('.circle').css('top','510px');
+    $('.circle').css('top','535px');
     $('.important').css('top','650px');
-    $('#lists').css('margin-top', height - 610);
+    $('.counting').css('top','650px');
+    $('#lists').css('margin-top', height - 690);
   } else if (height > 897) {
     $('#lists').css('margin-top', height - 700);
+  }
+
+  if (width == 753 && height == 896) {
+    $('.mask').css('width', '50%');
   }
 
   $(this).keyup(function(e) {

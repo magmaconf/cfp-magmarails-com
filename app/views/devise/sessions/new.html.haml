@@ -12,3 +12,9 @@
         = link_to t('terms.show'), '#', class: 'my_modal_open'
       .cir
         = image_tag 'info.svg'
+    .counting
+      .cir
+        %span= @propos.total_entries
+      %p
+        = t('proposals-list.show')
+        = link_to t('proposals-list.link'), '#', class: 'lists_open'

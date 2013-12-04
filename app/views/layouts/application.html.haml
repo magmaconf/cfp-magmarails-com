@@ -41,21 +41,16 @@
       = yield
 
     #lists.container
-      .row
-        .six-centered
-          = image_tag 'lists.svg', class: 'lists_open'
-          %p.lists_open= t('proposals-list.show')
+      %footer.row
+        .centered-six
+          = image_tag 'crowd-1.svg'
+        .centered-eight
+          %span
+            &copy;
+            = t('copyright')
     = render 'cfp/application/lists'
 
     #home-down.container
-      .row
-        .twelve-columns
-          %footer
-            %p
-              = image_tag 'crowd.svg', alt: 'Crowd Interactive Logo'
-              %span
-                &copy;
-                = t('copyright')
 
     :javascript
       'effects'

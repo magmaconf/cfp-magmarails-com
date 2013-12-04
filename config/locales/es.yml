@@ -117,7 +117,8 @@ es:
       small: "%b/%d/%y"
 
   proposals-list:
-    show: 'Check out the submitted proposals so far.'
+    show: 'Propuestas y contando'
+    link: 'Checalas!'
     hide: 'Regresar a sign in'
     header:
       title: 'Propuestas presentadas'

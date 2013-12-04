@@ -36,6 +36,16 @@
 
     a { width: 60%; }
   }
+
+  #home-top {
+    .important {
+      margin-left: -60px;
+    }
+
+    .counting {
+      margin-left: 415px;
+    }
+  }
 }
 
 @media screen and (min-width: 1555px) {
