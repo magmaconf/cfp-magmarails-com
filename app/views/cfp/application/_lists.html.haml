@@ -1,23 +1,15 @@
 // LISTS
 
-#popup_back
 #cont_lists
   .listss.container
-    .row
-      .six-centered
-        = image_tag 'direction-top.svg', class: 'lists_close'
-        %p.lists_close= t('proposals-list.hide')
   .content.container
     %header.row
       .twelve-columns
         %h2= "#{@propos.total_entries} #{t('proposals-list.header.title')}"
+        = link_to '#', class: 'lists_close' do
+          = image_tag 'direction-left.svg'
+          %span= t('proposals-list.hide')
       .twelve-columns.lines
-    %aside.row
-      .eight-columns
-        %h5= t('proposals-list.content.proposal')
-      .four-columns
-        %h5= t('proposals-list.content.tags')
-      .twelve-columns.line
     #pagination
       = render 'cfp/application/pagin'
     %footer.row

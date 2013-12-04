@@ -15,30 +15,12 @@
 #cont_lists {
   width: 100%;
   background: none repeat scroll 0 0 transparent;
-  position: fixed;
+  position: absolute;
   z-index: 4;
-  bottom: 0;
-  display: none;
 
   .listss {
     background: $white;
-
-    img {
-      margin: 0 0 -10px -49px;
-      position: absolute;
-      cursor: pointer;
-      border: 10px solid $white;
-      -webkit-border-radius: 50%;
-         -moz-border-radius: 50%;
-              border-radius: 50%;
-    }
-
-    p {
-      display: inline-block;
-      padding: 8px 0;
-      cursor: pointer;
-      color: #4ca9a8;
-    }
+    height: 10px;
   }
 
   .content {
@@ -52,7 +34,27 @@
     header {
       padding: 40px 0 0;
 
-      h2 { padding-bottom: 10px; }
+      h2 {
+        padding-bottom: 10px;
+        float: left;
+      }
+
+      a {
+        float: left;
+        margin-top: 10px;
+        left: 7px;
+        color: #4ca9a8;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        span {
+          position: relative;
+          top: -9px;
+          font-family: sans-serif;
+        }
+      }
 
       .lines {
         height: 3px;
@@ -99,8 +101,8 @@
       }
 
       span, a {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
         padding: 10px;
         border: 1px solid $anchor-hover;
         margin: 20px;
@@ -108,10 +110,6 @@
         -webkit-border-radius: 50%;
            -moz-border-radius: 50%;
                 border-radius: 50%;
-
-        i {
-          margin: 9px auto;
-        }
 
         .prev {
           display: block;

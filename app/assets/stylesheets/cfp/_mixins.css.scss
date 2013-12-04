@@ -15,3 +15,9 @@
   width: 0;
   height: 0;
 }
+
+@mixin border_radius($perc) {
+  -webkit-border-radius: $perc;
+     -moz-border-radius: $perc;
+          border-radius: $perc;
+}

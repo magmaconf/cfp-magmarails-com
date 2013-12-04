@@ -15,9 +15,6 @@
     & > a {
       text-decoration: underline;
     }
-    /*a.login-up {*/
-      /*text-decoration: underline;*/
-    /*}*/
   }
 
   img {
@@ -33,6 +30,7 @@
     display: block;
     color: $white;
     font: 400 3.5em/1.1em 'Oswald' Helvetica 'Arial';
+    margin-top: 25px;
   }
 
   .you {
@@ -41,12 +39,48 @@
     letter-spacing: 3px;
     color: #b3a797;
     padding: 5px 0;
+    margin: 0 0 10px;
+  }
+
+  .wellcome {
+    @extend .you;
+    font-size: 1.3em;
   }
 
   .magma_logo {
     display: block;
     margin: auto;
-    padding: 5px 0 110px 0;
+    padding: 5px 0 10px 0;
+  }
+
+  .cfp {
+    width: 35%;
+    margin-top: 0;
+  }
+
+  .important {
+    overflow: hidden;
+    width: 200px;
+    position: absolute;
+
+    p {
+      float: left;
+      width: 160px;
+      text-align: right;
+    }
+
+    .cir {
+      float: left;
+      width: 30px;
+      height: 30px;
+      background: $white;
+      border: 1px solid #000;
+      @include border_radius(50%);
+
+      img {
+        margin: 0 auto;
+      }
+    }
   }
 }
 

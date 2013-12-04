@@ -31,8 +31,12 @@
     %section#home-top.container
       .row
         .centered-seven
-          = image_tag 'cfp.svg', alt: 'Call for papers'
+          %p.ready= t('home.ready')
+          %p.you= t('home.you')
+          = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
           = image_tag 'mask.svg', alt: 'Mask of magma', class: 'mask'
+          %p.wellcome= t('home.wellcome')
+          = image_tag 'cfp.svg', alt: 'Call for papers', class: 'cfp'
 
       = yield
 
@@ -54,55 +58,4 @@
                 = t('copyright')
 
     :javascript
-      $(document).ready(function() {
-        var height = $(window).height();
-
-        $('#my_modal').popup();
-
-        $('#my_modal').tabs();
-
-        window.currentLocale = "#{I18n.locale}";
-
-        if (height > 727 && height < 897) {
-          $('#home-top').css('height', 560);
-          $('.mask').css({
-            'width': '30%',
-            'margin-top': '10px'
-          });
-          $('.circle').css('top','470px');
-          $('#lists').css('margin-top', height - 610);
-        } else if (height > 897) {
-          $('#lists').css('margin-top', height - 700);
-        }
-
-        $('#listss').popup();
-
-        // Popup
-        $('.lists_open').click(function(e) {
-          e.preventDefault();
-          $('#popup_back').fadeIn();
-          $('#cont_lists').slideToggle();
-        });
-
-        function close_popup() {
-          $('#popup_back').fadeOut();
-          $('#cont_lists').slideToggle();
-        };
-
-        $('.lists_close').click(function(e) {
-          e.preventDefault();
-          close_popup();
-        });
-
-        $(this).keyup(function(e) {
-          if ((event.which == 27) && ($('#cont_lists').is(':visible'))) {
-            close_popup();
-          }
-        });
-
-        // Pagination
-        function pagination() {
-          $('#pagination').html(render("cfp/application/pagin"));
-        }
-
-       });
+      'effects'

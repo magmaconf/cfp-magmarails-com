@@ -18,6 +18,7 @@ en:
   home:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
+    wellcome: 'Wellcome to our'
   languages:
     en: English
     es: Spanish
@@ -70,7 +71,9 @@ en:
   sessions:
     sign_out: Sign out
     sign_up: Sign up with
-  terms: Important information
+  terms:
+    important: 'Important information'
+    show: 'You must know'
   popup:
     title: 'Important information'
     magma:
