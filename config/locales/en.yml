@@ -18,6 +18,7 @@ en:
   home:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
+    wellcome: 'Wellcome to our'
   languages:
     en: English
     es: Spanish
@@ -70,7 +71,9 @@ en:
   sessions:
     sign_out: Sign out
     sign_up: Sign up with
-  terms: Important information
+  terms:
+    important: 'Important information'
+    show: 'You must know'
   popup:
     title: 'Important information'
     magma:
@@ -116,10 +119,11 @@ en:
       small: "%b/%d/%y"
 
   proposals-list:
-    show: 'Check out the submitted proposals so far.'
+    show: 'Proposals and counting'
+    link: 'Check them out!'
     hide: 'Back to sign in'
     header:
-      title: 'Complete your profile'
+      title: 'Submitted proposals'
       sort: 'Sort by:'
       all: 'All'
       frontend: 'Frontend'

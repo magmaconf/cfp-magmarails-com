@@ -3,7 +3,7 @@ class TalksController < ActionController::Base
   respond_to :js, :html
 
   def index
-    @propos = Cfp::Proposal.paginate(page: params[:page], per_page: 8)
+    @propos = Cfp::Proposal.approved.paginate(page: params[:page], per_page: 10, :order => "created_at DESC")
     respond_with(@props) do |format|
       format.js { @propos }
     end

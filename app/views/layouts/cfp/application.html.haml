@@ -59,3 +59,7 @@
 
     = render 'cfp/application/popup'
     = yield :scripts
+    :javascript
+      $('document').ready(function() {
+        $('#my_modal').tabs();
+      });

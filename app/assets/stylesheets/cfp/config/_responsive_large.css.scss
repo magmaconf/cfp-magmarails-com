@@ -30,6 +30,22 @@
   .prof {
     padding-top: 100px;
   }
+
+  #cont_lists header {
+    h2 { width: 40%; }
+
+    a { width: 60%; }
+  }
+
+  #home-top {
+    .important {
+      margin-left: -60px;
+    }
+
+    .counting {
+      margin-left: 415px;
+    }
+  }
 }
 
 @media screen and (min-width: 1555px) {

@@ -16,6 +16,7 @@ es:
   home:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
+    wellcome: 'Bienvenido a nuestro'
   languages:
     en: Inglés
     es: Español
@@ -68,7 +69,9 @@ es:
   sessions:
     sign_out: Salir
     sign_up: Entrar con
-  terms: Información importante
+  terms:
+    important: 'Información importamte'
+    show: 'Tú debes saber'
   popup:
     title: Información importante
     magma:
@@ -114,10 +117,11 @@ es:
       small: "%b/%d/%y"
 
   proposals-list:
-    show: 'Check out the submitted proposals so far.'
+    show: 'Propuestas y contando'
+    link: 'Checalas!'
     hide: 'Regresar a sign in'
     header:
-      title: 'Complete su perfil'
+      title: 'Propuestas presentadas'
       sort: 'Ordenar por:'
       all: 'Todos'
       frontend: 'Frontend'

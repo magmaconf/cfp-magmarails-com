@@ -7,7 +7,7 @@
     position: absolute;
     top: 570px;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -85px;
     z-index: 2;
     a:hover {
       text-decoration: none;
@@ -15,14 +15,11 @@
     & > a {
       text-decoration: underline;
     }
-    /*a.login-up {*/
-      /*text-decoration: underline;*/
-    /*}*/
   }
 
   img {
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   .mask {
@@ -33,6 +30,7 @@
     display: block;
     color: $white;
     font: 400 3.5em/1.1em 'Oswald' Helvetica 'Arial';
+    margin-top: 25px;
   }
 
   .you {
@@ -41,12 +39,82 @@
     letter-spacing: 3px;
     color: #b3a797;
     padding: 5px 0;
+    margin: 0 0 10px;
+  }
+
+  .wellcome {
+    @extend .you;
+    font-size: 1.3em;
   }
 
   .magma_logo {
     display: block;
     margin: auto;
-    padding: 5px 0 110px 0;
+    padding: 5px 0 10px 0;
+  }
+
+  .cfp {
+    width: 35%;
+    margin-top: 0;
+  }
+
+  .important {
+    width: 220px;
+    position: absolute;
+
+    p {
+      float: left;
+      width: 165px;
+      text-align: right;
+      font: 300 1.2em/1.3em 'Roboto';
+
+      a {
+        color: $anchor-hover;
+        text-decoration: underline;
+        font: 300 1em/1em 'Roboto';
+
+        &:hover {
+          color: $anchor;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .cir {
+      float: left;
+      width: 35px;
+      height: 35px;
+      background: $white;
+      border: 1px solid $radio;
+      box-shadow: 0 0 0 2px $white;
+      margin: -7px 0 0 13px;
+      @include border_radius(50%);
+
+      img {
+        margin: 10px auto 0;
+      }
+
+      span {
+        display: block;
+        font: 300 1.5em/1 'Oswald';
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .counting {
+    @extend .important;
+    width: 250px;
+
+    p {
+      width: 200px;
+      text-align: left;
+    }
+
+    .cir {
+      margin: -7px 13px 0 0;
+      border: 1px solid #000;
+    }
   }
 }
 
@@ -76,7 +144,6 @@
 }
 
 #lists {
-  background: $white;
   margin-top: 200px;
 
   img {
@@ -94,6 +161,19 @@
     padding: 8px 0 10px 0;
     cursor: pointer;
     color: #4ca9a8;
+  }
+
+  footer {
+    img {
+      margin: 0 0 10px;
+      position: inherit;
+      cursor: normal;
+      border: 0;
+      @include border_radius(0);
+    }
+    span {
+      color: $footer-color;
+    }
   }
 }
 
@@ -126,7 +206,6 @@ footer {
   }
 
   &.prof {
-    //padding-top: 100px;
     img { margin: 0 auto 25px }
     img, span { display: block }
   }

@@ -1,7 +1,9 @@
+- num = @propos.total_entries - ((params[:page] || 1).to_i - 1) * 10
 - @propos.each do |proposal|
   %main.row
     .one-column
-      %span.num= proposal.id
+      %span.num= num
+      - num = num - 1
     .seven-columns
       %span.title= proposal.title
     .four-columns
@@ -16,6 +18,9 @@
       - else
         %span{class: "previous_page disabled"}
           %i.prev
+      %em= @propos.current_page
+      %em /
+      %em= @propos.total_pages
       - if @propos.total_pages == @propos.current_page
         %span{class: "next_page disabled"}
           %i.next
