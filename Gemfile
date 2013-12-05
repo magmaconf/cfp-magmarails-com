@@ -26,7 +26,7 @@ group :development do
   gem 'heroku_pull'
 end
 
-group :production do
+group :production, :stage do
   gem 'pg'
   gem 'rails_12factor'
   gem 'thin'
