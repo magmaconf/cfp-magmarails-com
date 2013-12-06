@@ -80,6 +80,8 @@
       margin-left: 40%;
     }
   }
+
+  #list_phone { display: none; }
 }
 
 @media screen and (max-height: 801px) {
@@ -104,7 +106,7 @@
   }
 
   .circle {
-    top: 510px !important;
+    top: 510px;
   }
 }
 

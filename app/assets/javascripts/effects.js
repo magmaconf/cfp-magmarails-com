@@ -3,6 +3,7 @@
 $(document).ready(function() {
   var height = $(window).height();
   var width = $(window).width();
+  var middle = height / 2;
   var lst = 0;
 
   $('#my_modal').popup();
@@ -25,8 +26,7 @@ $(document).ready(function() {
     $('#lists').css('margin-top', height - 740);
     $('#home-top').css('height', 650);
     $('.mask').css('width', '40%');
-    $('.important').css('top', 685);
-    $('.counting').css('top', 685);
+    $('.important, .counting').css('top', 685);
   }
 
   if (width == 1024 && height == 768) {
@@ -34,11 +34,15 @@ $(document).ready(function() {
     $('.mask').css('width', '50%');
   }
 
-  $(this).keyup(function(e) {
-    if ((event.which == 27) && ($('#cont_lists').is(':visible'))) {
-      close_popup();
-    }
-  });
+  // MOBILE VERSION
+  if (height > width) {
+    $('#cont_lists, #lists, .counting, .important, .ready, .you, .mask').css('display', 'none');
+    $('#home-top').css('height', middle);
+    $('.circle').css('top', middle - 80);
+    $('.magma_logo').css('margin', '10% auto 1%');
+    $('.cfp').css('width', '60%');
+    $('.wellcome').css('margin-bottom', 0);
+  }
 
   // Pagination
   function pagination() {

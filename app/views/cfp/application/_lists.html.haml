@@ -19,3 +19,9 @@
         %span
           &copy;
           = t('copyright')
+
+#list_phone
+  .numbers
+    %span= @propos.total_entries
+    %p= t('proposals-list.show')
+    = link_to t('proposals-list.link'), '#'
