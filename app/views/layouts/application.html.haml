@@ -28,9 +28,12 @@
 
   %body
     = render 'cfp/application/popup'
+    = render 'cfp/application/imp_info'
     %section#home-top.container
       .row
         .centered-seven
+          =link_to '#', class: 'info_phone' do
+            = image_tag 'info.svg'
           %p.ready= t('home.ready')
           %p.you= t('home.you')
           = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
