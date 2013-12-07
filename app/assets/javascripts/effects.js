@@ -35,7 +35,7 @@ $(document).ready(function() {
   }
 
   // MOBILE VERSION
-  if (height > width) {
+  if (height > width && width < 760) {
     $('#cont_lists, #lists, .counting, .important, .ready, .you, .mask').css('display', 'none');
     $('#home-top').css('height', middle);
     $('.circle').css('top', middle - 80);
@@ -43,6 +43,32 @@ $(document).ready(function() {
     $('.cfp').css('width', '60%');
     $('.wellcome').css('margin-bottom', 0);
   }
+
+  $('.open_propos_phone').click(function(e) {
+    e.preventDefault();
+    $('#proposals_phone').slideDown();
+  });
+
+  $('.close_propos_phone').click(function(e) {
+    e.preventDefault();
+    $('#proposals_phone').slideUp();
+  });
+
+  $('.info_phone').click(function(e) {
+    e.preventDefault();
+    $('#info_phone').fadeIn();
+  });
+
+  $('.close_info_phone').click(function(e) {
+    e.preventDefault();
+    $('#info_phone').fadeOut();
+  });
+
+  $('.show_info').click(function(e) {
+    e.preventDefault();
+    $(e.target).parents('article').find('.info_hidden').slideToggle();
+    $(this).addClass('hide_info');
+  });
 
   // Pagination
   function pagination() {
