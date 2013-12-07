@@ -12,6 +12,7 @@ class ApplicationController < ActionController::Base
 
   def load_talks
     @propos = Cfp::Proposal.approved.paginate(page: params[:page], per_page: 10, :order => "created_at DESC")
+    @propos_phone = Cfp::Proposal.approved.reverse
   end
 
 end
