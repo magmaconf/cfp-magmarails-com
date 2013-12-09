@@ -86,12 +86,12 @@
 }
 
 @media screen and (max-height: 801px) {
-  footer .centered-eight span {
+  #lists footer .centered-eight span {
     color: transparent !important;
   }
 
-  footer .centered-six img {
-    opacity: 0;;
+  #lists footer .centered-six img {
+    opacity: 0;
   }
 
   .mask {

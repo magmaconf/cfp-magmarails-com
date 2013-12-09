@@ -1,10 +1,11 @@
 // STYLES TO IMPORTANT INFORMATION ON PHONES VERSIONS
 
 #info_phone {
-  display: none;
   width: 100%;
   position: absolute;
   top: 0;
+  left: -100%;
+  opacity: 0;
   background: asset-url('bkg.png');
   z-index: 5;
 
@@ -45,6 +46,7 @@
       box-sizing: border-box;
       text-transform: uppercase;
       font-size: 1.3em;
+      color: $gray;
     }
 
     .right {
@@ -55,12 +57,20 @@
       padding: 10px 10px 10px 0;
       box-sizing: border-box;
 
-      a {
+      .show_info {
         display: block;
         width: 28px;
         height: 28px;
         background: asset-url('direction-down.svg') no-repeat;
         margin: auto;
+      }
+
+      .hide_info {
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: auto;
+        background: asset-url('direction-top.svg') no-repeat;
       }
     }
 
@@ -74,6 +84,7 @@
 
       p {
         padding-bottom: 10px;
+        line-height: 1.2;
       }
     }
   }

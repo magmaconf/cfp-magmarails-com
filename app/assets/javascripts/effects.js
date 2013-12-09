@@ -42,6 +42,14 @@ $(document).ready(function() {
     $('.magma_logo').css('margin', '10% auto 1%');
     $('.cfp').css('width', '60%');
     $('.wellcome').css('margin-bottom', 0);
+  } else if (height < width && width < 760) {
+    $('#cont_lists, #lists, .counting, .important').css('display', 'none');
+    $('.circle').css('top', '497px');
+    $('#list_phone .numbers a').css('padding-bottom', '20px');
+  }
+
+  if (width < 1370 && width > 768 && height < 800) {
+    $('.circle').css('top', '510px');
   }
 
   $('.open_propos_phone').click(function(e) {
@@ -56,18 +64,38 @@ $(document).ready(function() {
 
   $('.info_phone').click(function(e) {
     e.preventDefault();
-    $('#info_phone').fadeIn();
+    $('#info_phone').animate({
+      left: '0%',
+      opacity: 1
+    });
   });
 
   $('.close_info_phone').click(function(e) {
     e.preventDefault();
-    $('#info_phone').fadeOut();
+    $('#info_phone').animate({
+      left: '-100%',
+      opacity: 0
+    });
   });
 
+  var state = true;
+
   $('.show_info').click(function(e) {
-    e.preventDefault();
-    $(e.target).parents('article').find('.info_hidden').slideToggle();
-    $(this).addClass('hide_info');
+    state = !state;
+
+    if(state) {
+      e.preventDefault();
+      $(e.target).parents('article').find('.info_hidden').slideToggle();
+      $(e.target).parents('article').find('.left').css('color', '#8b8a89');
+      $(this).removeClass('hide_info');
+      $(this).addClass('show_info');
+    } else {
+      e.preventDefault();
+      $(e.target).parents('article').find('.info_hidden').slideToggle();
+      $(e.target).parents('article').find('.left').css('color', '#000');
+      $(this).removeClass('show_info');
+      $(this).addClass('hide_info');
+    }
   });
 
   // Pagination
