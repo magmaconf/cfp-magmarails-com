@@ -41,7 +41,7 @@ $(document).ready(function() {
     $('.circle').css('top', middle - 80);
     $('.magma_logo').css('margin', '10% auto 1%');
     $('.cfp').css('width', '60%');
-    $('.wellcome').css('margin-bottom', 0);
+    $('.welcome').css('margin-bottom', 0);
   } else if (height < width && width < 760) {
     $('#cont_lists, #lists, .counting, .important').css('display', 'none');
     $('.circle').css('top', '497px');
