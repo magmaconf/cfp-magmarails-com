@@ -17,6 +17,5 @@
 //= require jquery.popupoverlay
 //= require jquery.ui.tabs
 //= require cfp/application
-//= require swipe
 //= require_tree .
 //
