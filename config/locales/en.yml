@@ -119,6 +119,7 @@ en:
       small: "%b/%d/%y"
 
   proposals-list:
+    name: 'Proposals'
     show: 'Proposals and counting'
     link: 'Check them out!'
     hide: 'Back to sign in'

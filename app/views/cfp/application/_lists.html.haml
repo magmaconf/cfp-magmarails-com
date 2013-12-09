@@ -19,3 +19,23 @@
         %span
           &copy;
           = t('copyright')
+
+#list_phone
+  .numbers
+    %span= @propos.total_entries
+    %p= t('proposals-list.show')
+    = link_to t('proposals-list.link'), '#', class: 'open_propos_phone'
+  #proposals_phone
+    %header
+      %p= "#{@propos.total_entries} #{t('proposals-list.name')}"
+      = link_to '#', class: 'close_propos_phone' do
+        = image_tag 'direction-top.svg'
+    %article
+      %ul
+        - num = @propos.total_entries + 1
+        - @propos_phone.each do |proposal|
+          %li
+            .left
+              %span.num= num = num - 1
+            .right
+              %span= proposal.title

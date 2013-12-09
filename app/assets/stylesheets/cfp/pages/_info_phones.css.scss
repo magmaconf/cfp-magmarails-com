@@ -1,0 +1,101 @@
+// STYLES TO IMPORTANT INFORMATION ON PHONES VERSIONS
+
+#info_phone {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  background: asset-url('bkg.png');
+  z-index: 5;
+
+  header {
+    background: $top;
+    color: $white;
+    overflow: hidden;
+    border-bottom: 3px solid $white;
+
+    p {
+      box-sizing: border-box;
+      float: left;
+      width: 85%;
+      font: 100 1.5em/1 'Oswald', sans-serif;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    a {
+      float: left;
+      width: 15%;
+      padding-top: 7px;
+      text-align: center;
+    }
+  }
+
+  article {
+    overflow: hidden;
+    font: 300 1.3em/1 'Roboto', sans-serif;
+    border-bottom: 1px solid $white;
+
+    .left {
+      width: 80%;
+      margin-right: 0;
+      float: left;
+      line-height: 1.2;
+      padding: 15px 0 10px 20px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      color: $gray;
+    }
+
+    .right {
+      width: 20%;
+      margin-left: 0;
+      float: left;
+      text-align: right;
+      padding: 10px 10px 10px 0;
+      box-sizing: border-box;
+
+      .show_info {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background: asset-url('direction-down.svg') no-repeat;
+        margin: auto;
+      }
+
+      .hide_info {
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: auto;
+        background: asset-url('direction-top.svg') no-repeat;
+      }
+    }
+
+    .info_hidden {
+      display: none;
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+      background: $white;
+      padding: 20px;
+
+      p {
+        padding-bottom: 10px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  footer {
+    font: 300 1.3em /1.2 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+
+    img {
+      width: 45%;
+    }
+  }
+}

@@ -117,6 +117,7 @@ es:
       small: "%b/%d/%y"
 
   proposals-list:
+    name: 'Propuestas'
     show: 'Propuestas y contando'
     link: 'Checalas!'
     hide: 'Regresar a sign in'

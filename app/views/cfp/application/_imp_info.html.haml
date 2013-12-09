@@ -1,0 +1,62 @@
+// IMPORTANT INFORMATION FOR PHONES VERSION
+
+#info_phone
+  %header
+    %p= t('popup.title')
+    = link_to '#', class: 'close_info_phone' do
+      = image_tag 'direction-right.svg'
+  %article
+    .left
+      %p= t('popup.magma.title')
+    .right
+      = link_to '', '#', class: 'show_info'
+    %section.info_hidden
+      %p= t('popup.magma.one')
+      %p= t('popup.magma.two')
+      %p= t('popup.magma.three')
+  %article
+    .left
+      %p= t('popup.topics.title')
+    .right
+      = link_to '', '#', class: 'show_info'
+    %section.info_hidden
+      %p= t('popup.topics.one')
+      %p= t('popup.topics.two')
+      %p= t('popup.topics.three')
+      %p= t('popup.topics.four')
+      %p= t('popup.topics.five')
+      %p= t('popup.topics.six')
+      %p= t('popup.topics.seven')
+      %p= t('popup.topics.eight')
+      %p= t('popup.topics.nine')
+  %article
+    .left
+      %p= t('popup.sponsors.title')
+    .right
+      = link_to '', '#', class: 'show_info'
+    %section.info_hidden
+      %p= t('popup.sponsors.one')
+      %p=raw t('popup.sponsors.two')
+  %article
+    .left
+      %p= t('popup.judges.title')
+    .right
+      = link_to '', '#', class: 'show_info'
+    %section.info_hidden
+      %p= t('popup.judges.one')
+      %p= t('popup.judges.two')
+      %p=raw t('popup.judges.three')
+      %p= t('popup.judges.four')
+      %p= t('popup.judges.five')
+  %article
+    .left
+      %p= t('popup.speakers.title')
+    .right
+      = link_to '', '#', class: 'show_info'
+    %section.info_hidden
+      %p= raw t('popup.terms.one')
+      %p= t('popup.terms.two')
+      %p= t('popup.terms.three')
+  %footer
+    = image_tag 'crowd-1.svg'
+    %p= t('copyright')

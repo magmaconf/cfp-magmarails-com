@@ -80,15 +80,18 @@
       margin-left: 40%;
     }
   }
+
+  #list_phone { display: none; }
+  a.info_phone { display: none; }
 }
 
 @media screen and (max-height: 801px) {
-  footer .centered-eight span {
+  #lists footer .centered-eight span {
     color: transparent !important;
   }
 
-  footer .centered-six img {
-    opacity: 0;;
+  #lists footer .centered-six img {
+    opacity: 0;
   }
 
   .mask {
@@ -104,7 +107,7 @@
   }
 
   .circle {
-    top: 510px !important;
+    top: 510px;
   }
 }
 

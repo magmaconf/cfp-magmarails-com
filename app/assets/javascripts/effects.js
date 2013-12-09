@@ -3,6 +3,7 @@
 $(document).ready(function() {
   var height = $(window).height();
   var width = $(window).width();
+  var middle = height / 2;
   var lst = 0;
 
   $('#my_modal').popup();
@@ -25,8 +26,7 @@ $(document).ready(function() {
     $('#lists').css('margin-top', height - 740);
     $('#home-top').css('height', 650);
     $('.mask').css('width', '40%');
-    $('.important').css('top', 685);
-    $('.counting').css('top', 685);
+    $('.important, .counting').css('top', 685);
   }
 
   if (width == 1024 && height == 768) {
@@ -34,9 +34,67 @@ $(document).ready(function() {
     $('.mask').css('width', '50%');
   }
 
-  $(this).keyup(function(e) {
-    if ((event.which == 27) && ($('#cont_lists').is(':visible'))) {
-      close_popup();
+  // MOBILE VERSION
+  if (height > width && width < 760) {
+    $('#cont_lists, #lists, .counting, .important, .ready, .you, .mask').css('display', 'none');
+    $('#home-top').css('height', middle);
+    $('.circle').css('top', middle - 80);
+    $('.magma_logo').css('margin', '10% auto 1%');
+    $('.cfp').css('width', '60%');
+    $('.wellcome').css('margin-bottom', 0);
+  } else if (height < width && width < 760) {
+    $('#cont_lists, #lists, .counting, .important').css('display', 'none');
+    $('.circle').css('top', '497px');
+    $('#list_phone .numbers a').css('padding-bottom', '20px');
+  }
+
+  if (width < 1370 && width > 768 && height < 800) {
+    $('.circle').css('top', '510px');
+  }
+
+  $('.open_propos_phone').click(function(e) {
+    e.preventDefault();
+    $('#proposals_phone').slideDown();
+  });
+
+  $('.close_propos_phone').click(function(e) {
+    e.preventDefault();
+    $('#proposals_phone').slideUp();
+  });
+
+  $('.info_phone').click(function(e) {
+    e.preventDefault();
+    $('#info_phone').animate({
+      left: '0%',
+      opacity: 1
+    });
+  });
+
+  $('.close_info_phone').click(function(e) {
+    e.preventDefault();
+    $('#info_phone').animate({
+      left: '-100%',
+      opacity: 0
+    });
+  });
+
+  var state = true;
+
+  $('.show_info').click(function(e) {
+    state = !state;
+
+    if(state) {
+      e.preventDefault();
+      $(e.target).parents('article').find('.info_hidden').slideToggle();
+      $(e.target).parents('article').find('.left').css('color', '#8b8a89');
+      $(this).removeClass('hide_info');
+      $(this).addClass('show_info');
+    } else {
+      e.preventDefault();
+      $(e.target).parents('article').find('.info_hidden').slideToggle();
+      $(e.target).parents('article').find('.left').css('color', '#000');
+      $(this).removeClass('show_info');
+      $(this).addClass('hide_info');
     }
   });
 
