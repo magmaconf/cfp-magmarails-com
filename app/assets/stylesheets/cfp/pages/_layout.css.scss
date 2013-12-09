@@ -1,4 +1,13 @@
 // Layout
+#swipe {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
 #home-top {
   background: asset-url('bkg.jpg') no-repeat top center fixed $top;
   border-bottom: 10px solid $white;
@@ -42,7 +51,7 @@
     margin: 0 0 10px;
   }
 
-  .wellcome {
+  .welcome {
     @extend .you;
     font-size: 1.3em;
   }

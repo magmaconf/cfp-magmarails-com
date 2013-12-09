@@ -37,11 +37,11 @@ $(document).ready(function() {
   // MOBILE VERSION
   if (height > width && width < 760) {
     $('#cont_lists, #lists, .counting, .important, .ready, .you, .mask').css('display', 'none');
-    $('#home-top').css('height', middle);
+    $('#home-top').css({height: middle, 'border-bottom': '5px solid #fff'});
     $('.circle').css('top', middle - 80);
-    $('.magma_logo').css('margin', '10% auto 1%');
+    $('.magma_logo').css('margin', '5% auto 1%');
     $('.cfp').css('width', '60%');
-    $('.wellcome').css('margin-bottom', 0);
+    $('.welcome').css('margin-bottom', 0);
   } else if (height < width && width < 760) {
     $('#cont_lists, #lists, .counting, .important').css('display', 'none');
     $('.circle').css('top', '497px');
@@ -65,36 +65,34 @@ $(document).ready(function() {
   $('.info_phone').click(function(e) {
     e.preventDefault();
     $('#info_phone').animate({
-      left: '0%',
-      opacity: 1
+      left: '0%'
     });
   });
 
   $('.close_info_phone').click(function(e) {
     e.preventDefault();
     $('#info_phone').animate({
-      left: '-100%',
-      opacity: 0
+      left: '-100%'
     });
   });
 
   var state = true;
 
-  $('.show_info').click(function(e) {
+  $('.head').click(function(e) {
     state = !state;
 
     if(state) {
       e.preventDefault();
       $(e.target).parents('article').find('.info_hidden').slideToggle();
       $(e.target).parents('article').find('.left').css('color', '#8b8a89');
-      $(this).removeClass('hide_info');
-      $(this).addClass('show_info');
+      $(e.target).parents('article').find('a').removeClass('hide_info');
+      $(e.target).parents('article').find('a').addClass('show_info');
     } else {
       e.preventDefault();
       $(e.target).parents('article').find('.info_hidden').slideToggle();
       $(e.target).parents('article').find('.left').css('color', '#000');
-      $(this).removeClass('show_info');
-      $(this).addClass('hide_info');
+      $(e.target).parents('article').find('a').removeClass('show_info');
+      $(e.target).parents('article').find('a').addClass('hide_info');
     }
   });
 

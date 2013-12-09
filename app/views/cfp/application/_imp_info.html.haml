@@ -5,7 +5,7 @@
     %p= t('popup.title')
     = link_to '#', class: 'close_info_phone' do
       = image_tag 'direction-right.svg'
-  %article
+  %article.head
     .left
       %p= t('popup.magma.title')
     .right
@@ -14,7 +14,7 @@
       %p= t('popup.magma.one')
       %p= t('popup.magma.two')
       %p= t('popup.magma.three')
-  %article
+  %article.head
     .left
       %p= t('popup.topics.title')
     .right
@@ -29,7 +29,7 @@
       %p= t('popup.topics.seven')
       %p= t('popup.topics.eight')
       %p= t('popup.topics.nine')
-  %article
+  %article.head
     .left
       %p= t('popup.sponsors.title')
     .right
@@ -37,7 +37,7 @@
     %section.info_hidden
       %p= t('popup.sponsors.one')
       %p=raw t('popup.sponsors.two')
-  %article
+  %article.head
     .left
       %p= t('popup.judges.title')
     .right
@@ -48,7 +48,7 @@
       %p=raw t('popup.judges.three')
       %p= t('popup.judges.four')
       %p= t('popup.judges.five')
-  %article
+  %article.head
     .left
       %p= t('popup.speakers.title')
     .right
