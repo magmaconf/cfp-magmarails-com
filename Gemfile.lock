@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/cfp.git
-  revision: 393d1bd4c7aefd92965e23d5919416692ad4a8ca
+  revision: 829e33607e4fc77bcd8ad3ec4d620c82109ba0e8
   specs:
     cfp (0.2.1)
       coffee-script
