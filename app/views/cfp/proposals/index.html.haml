@@ -16,7 +16,7 @@
 .eight-columns.lists
   %ul
     =render @proposals
-    - if cfp_open? and !current_user.can_review?
+    - if cfp_open? and !current_user.can_review? and available?
       %li.three-columns
         = link_to new_proposal_path, class: 'btn-ring' do
           .aro
