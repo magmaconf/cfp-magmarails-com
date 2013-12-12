@@ -83,6 +83,12 @@
 
   #list_phone { display: none; }
   a.info_phone { display: none; }
+
+  .pagination_sp nav {
+    span, a {
+      margin: 20px 23px;
+    }
+  }
 }
 
 @media screen and (max-height: 801px) {

@@ -1,5 +1,5 @@
 - content_for :header_title do
-  %h3= t('proposals.my')
+  %h3= "#{@propos.total_entries} #{t('proposals.my')}"
 
 .eight-columns
   = form_for @proposal do |form|

@@ -25,4 +25,8 @@ module ApplicationHelper
     current_user.can_review? ? proposal_comments_path(proposal) : proposal_path(proposal)
   end
 
+  def available?
+    !(remaining_days.to_i < 0)
+  end
+
 end

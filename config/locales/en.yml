@@ -37,6 +37,7 @@ en:
     profile: My profile
     update: Update
   proposals:
+    all: 'Proposals'
     about_author: About the author
     add_html: 'Add<br/>proposal'
     attributes:
