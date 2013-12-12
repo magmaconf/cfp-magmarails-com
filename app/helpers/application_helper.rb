@@ -26,9 +26,7 @@ module ApplicationHelper
   end
 
   def available?
-    dat = (Date.new(2013, 12, 30) - Date.today).to_i
-    dat.to_s.rjust(2, '0')
-    true unless dat < 0
+    !(remaining_days.to_i < 0)
   end
 
 end
