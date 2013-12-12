@@ -1,5 +1,5 @@
 - content_for :header_title do
-  %h3= current_user.can_review? ? t('proposals.rate') : t('proposals.mine')
+  %h3= current_user.can_review? ? "#{@proposals.total_entries} #{t('proposals.all')}" : t('proposals.mine')
 
 - if current_user.can_review?
   .nine-columns.sub-titles
@@ -23,7 +23,15 @@
             %span +
             %span
               = t('proposals.add_html')
-
+  .container
+    .centered-six.pagination_sp
+      - if current_user.can_review?
+        %nav
+          = will_paginate(@proposals)
+    .centered-six.current_pages
+      %span= @proposals.current_page
+      %span /
+      %span= @proposals.total_pages
 
 .one-column.days-left
   %p= remaining_days
