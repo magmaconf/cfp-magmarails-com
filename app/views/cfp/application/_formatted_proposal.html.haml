@@ -12,10 +12,10 @@
       %p.tags= "Tags: #{@proposal.tags}"
     .content
       %h3= t('proposals.attributes.description')
-      = @proposal.description_html
+      = sanitize @proposal.description_html
 
       %h3= t('proposals.attributes.notes')
-      = @proposal.abstract_html
+      = sanitize @proposal.abstract_html
 
     - if current_user.can_review?
       %footer
