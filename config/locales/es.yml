@@ -109,9 +109,9 @@ es:
       five: Comité de MagmaConf
     terms:
       title: Terms
-      one: '<span>MagmaConf will grant one entrance</span> plus <span>3 meals a day</span> during the event to all speakers. However, <span>transportation and housing will not be included.</span>'
-      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
-      three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
+      one: '<span>MagmaConf dará una entrada/span> con <span>3 comidas por día</span> durante todo el evento a todos los ponentes. Aclarando, <span>que el transporte y hospedaje no está incluido.</span>'
+      two: 'En el caso que un ponente no pueda asistir a la conferencia, se seleccionará alguien más de la lista de aplicantes, quien esté con el puntaje más alto de acuerdo al sistema de puntuación utilizado por el Comité Interno. Si existe un empate, el comité será quien tome la decisión  y será irrevocable.'
+      three: 'Todos los ponentes tendrán 40 minutos para su plática, incluida la sesión de Preguntas y Respuestas. Proponemos que hagas una charla interesante, atrapadora, divertida y, si es posible, interactiva.'
     button: 'Entendido'
   time:
     formats:
