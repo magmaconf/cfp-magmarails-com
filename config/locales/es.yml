@@ -50,6 +50,8 @@ es:
     comments: Comentarios
     create: Crear
     days: DÍAS RESTANTES
+    last_day: ÚLTIMO DIA
+    day_over: TERMINÓ EL TIEMPO
     from_company: 'De %{company}'
     github_profile: Perfil de Github
     levels:
