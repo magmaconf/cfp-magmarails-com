@@ -5,11 +5,14 @@ module Cfp
   class ProposalsController < BaseController
     before_filter :load_proposal, :only => [:edit, :update, :destroy, :show]
 
+    helper_method :remainder
+
     def index
       @proposals = Proposal.scoped_for(current_user).paginate(page: params[:page], per_page: 16, :order => "created_at DESC")
     end
 
     def new
+      redirect_to :proposals unless remainder.to_i > -1
       @proposal = Proposal.new
     end
 
@@ -40,6 +43,11 @@ module Cfp
     end
 
     def show ; end
+
+    def remainder
+      t = Time.now
+      (Time.new(2013, 12, 30) - Time.new(t.year, t.month, t.day)).to_i / (86400)
+    end
 
     private
     def load_proposal

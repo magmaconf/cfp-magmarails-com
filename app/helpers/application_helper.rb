@@ -17,8 +17,7 @@ module ApplicationHelper
   end
 
   def remaining_days
-    t = Time.now
-    date_to_go = (Time.new(2013, 12, 30) - Time.new(t.year, t.month, t.day)).to_i / (86400)
+    date_to_go = remainder.to_i
     date_to_go.to_s.rjust(1, '0')
   end
 
