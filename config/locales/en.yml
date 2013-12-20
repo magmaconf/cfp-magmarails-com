@@ -3,6 +3,7 @@
 
 en:
   comments:
+    placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
     created_by: '%{date} By %{author}'
     new: 'Comment'

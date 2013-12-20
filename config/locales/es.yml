@@ -1,6 +1,7 @@
 
 es:
   comments:
+    placeholder: 'Puedes usar Markdown para darle algo de formato'
     back_to_proposals: '<< Regresar a propuestas'
     created_by: '%{date} Por %{author}'
     new: Comentar
