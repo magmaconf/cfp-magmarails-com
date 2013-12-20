@@ -31,13 +31,13 @@
         %span.s-left
           %i
       - else
-        = link_to proposal_comments_path(@prev), class: 'a-left' do
+        = link_to proposal_comments_path(@prev, anchor: 'title_rate'), class: 'a-left' do
           %i
       - unless @next
         %span.s-right
           %i
       - else
-        = link_to proposal_comments_path(@next), class: 'a-right' do
+        = link_to proposal_comments_path(@next, anchor: 'title_rate'), class: 'a-right' do
           %i
 
     .gray-background.group#comments

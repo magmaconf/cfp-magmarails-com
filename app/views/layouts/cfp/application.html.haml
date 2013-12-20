@@ -41,7 +41,7 @@
                 = t('copyright')
 
         .nine-columns
-          .titles
+          #title_rate.titles
             .left-section
               = content_for?(:header_title) ? yield(:header_title) : content_tag('h3', t('devise.profiles.complete'))
             .right-section
