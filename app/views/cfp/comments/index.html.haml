@@ -53,7 +53,7 @@
         %h3.com-h3= t('comments.thoughts')
       .com-three
         = form_for [@proposal, Cfp::Comment.new] do |form|
-          = form.text_area :body, rows: '5'
+          = form.text_area :body, rows: '5', placeholder: t('comments.placeholder')
           .btn-comment
             = form.submit t('comments.new'), class: 'aro', disabled: true
 
