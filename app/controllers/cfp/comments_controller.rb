@@ -5,8 +5,8 @@ Cfp::CommentsController.class_eval do
   def index
     @comments = @proposal.comments
     @score    = Cfp::Rank.for_proposal_user(@proposal, current_user)
-    @prev = Cfp::Proposal.first(:conditions => ["id < ?", @proposal.id], :order => "id desc")
-    @next = Cfp::Proposal.first(:conditions => ["id > ?", @proposal.id], :order => "id asc")
+    @next = Cfp::Proposal.first(:conditions => ["id < ?", @proposal.id], :order => "id desc")
+    @prev = Cfp::Proposal.first(:conditions => ["id > ?", @proposal.id], :order => "id asc")
   end
 
 end
