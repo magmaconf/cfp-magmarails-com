@@ -61,10 +61,11 @@
   .twelve-columns {
     .image {
       width: 22% !important;
+      margin-right: 4%;
     }
 
     .info, .body, .email {
-      width: 74% !important;
+      width: 70% !important;
     }
   }
 
@@ -87,6 +88,11 @@
 
     .a-left, .s-left {
       margin-left: -53px;
+      margin-right: 35px;
+    }
+
+    .s-right {
+      margin-left: 0px;
     }
   }
 

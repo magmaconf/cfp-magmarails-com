@@ -3,6 +3,7 @@
 
 en:
   comments:
+    placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
     created_by: '%{date} By %{author}'
     new: 'Comment'
@@ -52,6 +53,8 @@ en:
     create: Create
     comments: Comments
     days: DAYS LEFT
+    last_day: LAST DAY
+    day_over: TIME IS OVER
     from_company: 'From %{company}'
     github_profile: Github profile
     levels:

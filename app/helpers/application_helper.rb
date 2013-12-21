@@ -17,8 +17,8 @@ module ApplicationHelper
   end
 
   def remaining_days
-    date_to_go = (Date.new(2013, 12, 30) - Date.today).to_i
-    date_to_go.to_s.rjust(2, '0')
+    date_to_go = remainder.to_i
+    date_to_go.to_s.rjust(1, '0')
   end
 
   def user_based_proposal_path(proposal)

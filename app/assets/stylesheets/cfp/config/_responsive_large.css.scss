@@ -53,6 +53,12 @@
     }
   }
 
+  .direction {
+    .a-left, .s-left {
+      margin-right: 30px;
+    }
+  }
+
   #list_phone { display: none; }
   a.info_phone { display: none; }
 }

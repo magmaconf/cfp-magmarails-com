@@ -166,7 +166,6 @@
   .a-left {
     @extend .a-right;
     position: relative;
-    margin-right: 30px;
 
     i {
       background: asset-url('left-big.svg');
@@ -179,6 +178,7 @@
 
   .s-left {
     display: inline-block;
+    opacity: 0;
     width: 50px;
     height: 50px;
     background: $white;
@@ -188,7 +188,6 @@
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    margin-right: 30px;
     line-height: 3.1;
 
     i {

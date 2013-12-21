@@ -2,7 +2,7 @@
   .image
     = image_tag comment.user.gravatar_url(size: 65)
   .body
-    = comment.body
+    = comment.body_html
   .email
     = t('comments.created_by',
     date: comment.created_at.strftime('%b/%d/%y'),
