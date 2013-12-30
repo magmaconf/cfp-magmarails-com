@@ -45,8 +45,8 @@ module Cfp
     def show ; end
 
     def remainder
-      t = Time.now
-      ((Time.new(2013, 12, 30) - Time.new(t.year, t.month, t.day)).to_i - 21600) / (86400)
+      t = Time.now - 21600
+      (Time.new(2013, 12, 30) - Time.new(t.year, t.month, t.day)).to_i / (86400)
     end
 
     private
