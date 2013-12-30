@@ -5,6 +5,7 @@ $(document).ready(function() {
   var width = $(window).width();
   var middle = height / 2;
   var lst = 0;
+  var big_height = $(document).height() - height - 26;
 
   $('#my_modal').popup();
 
@@ -30,7 +31,6 @@ $(document).ready(function() {
   }
 
   if (width == 1024 && height == 768) {
-    alert('hello');
     $('.mask').css('width', '50%');
   }
 
@@ -101,8 +101,8 @@ $(document).ready(function() {
     $('#pagination').html(render("cfp/application/pagin"));
   }
 
-  function down(s) {
-    $('#cont_lists').css('margin-top', '-' + s + 'px');
+  function down() {
+    $(document).scrollTop();
   }
 
   function top(s) {
@@ -113,7 +113,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
       st = $(this).scrollTop();
 
-      st > lst ? down(st) : top(st);
+      st > lst ? down() : top(st);
     });
   }
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
   $('.lists_open').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
-      scrollTop: '488'
+      scrollTop: '900'
     });
   });
 });
