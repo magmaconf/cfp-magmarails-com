@@ -52,14 +52,23 @@
   }
 
   .welcome {
-    @extend .you;
-    font-size: 1.3em;
+    display: block;
+    color: #b3a797;
+    width: 200px;
+    margin: 12px auto 0;
+    font: 100 1em/1.1 'Oswald';
+    text-transform: uppercase;
   }
 
   .magma_logo {
     display: block;
-    margin: auto;
+    margin: 20px auto 0;
     padding: 5px 0 10px 0;
+  }
+
+  .blog {
+    width: 68%;
+    margin: -10px auto 0;
   }
 
   .cfp {
