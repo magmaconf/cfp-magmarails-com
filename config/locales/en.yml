@@ -20,6 +20,9 @@ en:
     ready: ARE YOU READY?
     you: YOUR MASK IS WAITING AT
     welcome: 'Welcome to our'
+    thanks: 'Thanks!'
+    for_participate: 'For participating in our'
+    work: 'We have a lot of work to do. Meanwhile, please checkout ...'
   languages:
     en: English
     es: Spanish
@@ -124,7 +127,7 @@ en:
 
   proposals-list:
     name: 'Proposals'
-    show: 'Proposals and counting'
+    show: 'Proposals submitted'
     link: 'Check them out!'
     hide: 'Back to sign in'
     header:

@@ -18,6 +18,9 @@ es:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
     welcome: 'Bienvenido a nuestro'
+    thanks: '¡Gracias!'
+    for_participate: 'Por participar en nuestro'
+    work: 'Tenemos mucho trabajo por hacer. Mientras tanto, por favor checa esto ...'
   languages:
     en: Inglés
     es: Español
@@ -122,7 +125,7 @@ es:
 
   proposals-list:
     name: 'Propuestas'
-    show: 'Propuestas y contando'
+    show: 'Propuestas enviadas'
     link: 'Checalas!'
     hide: 'Regresar a sign in'
     header:
