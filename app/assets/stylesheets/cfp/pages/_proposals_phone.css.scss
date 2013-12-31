@@ -35,6 +35,8 @@
       font: 100 2em/1 'Oswald';
       box-shadow: 0 0 0 3px $white;
       @include border_radius(50%);
+
+      img { width: 100%; }
     }
 
     p, a {
