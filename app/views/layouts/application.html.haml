@@ -34,12 +34,12 @@
         .centered-seven
           =link_to '#', class: 'info_phone' do
             = image_tag 'info.svg'
-          %p.ready= t('home.ready')
-          %p.you= t('home.you')
           = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
-          = image_tag 'mask.svg', alt: 'Mask of magma', class: 'mask'
-          %p.welcome= t('home.welcome')
+          = image_tag 'blog-image.svg', alt: 'Reylero', class: 'mask'
+          %p.ready= t('home.thanks')
+          %p.you= t('home.for_participate')
           = image_tag 'cfp.svg', alt: 'Call for papers', class: 'cfp'
+          %p.welcome= t('home.work')
 
       = yield
 
