@@ -22,9 +22,9 @@
 
 #list_phone
   .numbers
-    %span= @propos.total_entries
-    %p= t('proposals-list.show')
-    = link_to t('proposals-list.link'), '#', class: 'open_propos_phone'
+    %span= image_tag 'mask-01.svg'
+    %p= t('home.signin')
+    = link_to t('home.login'), '/auth/github'
   #proposals_phone
     %header
       %p= "#{@propos.total_entries} #{t('proposals-list.name')}"

@@ -12,7 +12,7 @@
         = image_tag 'info.svg'
     .counting
       .cir
-        %span= @propos.total_entries
+        = image_tag 'mask-01.svg', class: 'minimask'
       %p
-        = t('proposals-list.show')
-        = link_to t('proposals-list.link'), '#', class: 'lists_open'
+        = t('home.signin')
+        = link_to t('home.login'), '/auth/github'

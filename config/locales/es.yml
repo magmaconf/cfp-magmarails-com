@@ -21,6 +21,8 @@ es:
     thanks: '¡Gracias!'
     for_participate: 'Por participar en nuestro'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, por favor checa esto ...'
+    signin: '¿Ya eres un usuario?'
+    login: 'Por favor entra'
   languages:
     en: Inglés
     es: Español

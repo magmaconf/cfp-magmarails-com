@@ -23,6 +23,8 @@ en:
     thanks: 'Thanks!'
     for_participate: 'For participating in our'
     work: 'We have a lot of work to do. Meanwhile, please checkout ...'
+    signin: 'Are you already a user?'
+    login: 'Please sign in'
   languages:
     en: English
     es: Spanish
