@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
     session[:user_name]  = auth["info"]["name"]
     session[:user_email] = auth["info"]["email"]
 
-    if user
+    if user && user.can_review?
       url = request_path_params || root_url
       sign_in_and_redirect(:user, user)
     end
