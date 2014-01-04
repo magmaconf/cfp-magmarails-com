@@ -4,7 +4,7 @@
 
 - @comments.each do |proposal, comments|
   - unless comments.empty?
-    %h3= proposal.title
+    %h3= link_to proposal.title, cfp.proposal_comments_url(proposal)
     %h4 Comments
     - comments.each do |comment|
       %div= comment.body
