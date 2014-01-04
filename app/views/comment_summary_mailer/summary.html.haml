@@ -1,0 +1,13 @@
+%h1 Magmaconf CFP Comments
+
+%h2= @today
+
+- @comments.each do |proposal, comments|
+  - unless comments.empty?
+    %h3= proposal.title
+    %h4 Comments
+    - comments.each do |comment|
+      %div= comment.body
+      %div
+        %b By #{comment.user.name}
+      %hr/
