@@ -23,7 +23,7 @@ group :development do
   gem 'sqlite3'
   gem 'pry-debugger'
   gem 'heroku'
-  gem 'heroku_pull', '0.0.2'
+  gem 'heroku_pull', '0.0.3'
 end
 
 group :production, :stage do

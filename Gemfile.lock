@@ -96,7 +96,7 @@ GEM
       rubyzip
     heroku-api (0.3.15)
       excon (~> 0.25.1)
-    heroku_pull (0.0.2)
+    heroku_pull (0.0.3)
       railties
     hike (1.2.3)
     httpauth (0.2.0)
@@ -223,7 +223,7 @@ DEPENDENCIES
   gravtastic
   haml-rails
   heroku
-  heroku_pull (= 0.0.2)
+  heroku_pull (= 0.0.3)
   jquery-rails
   jquery-ui-rails
   newrelic_rpm
