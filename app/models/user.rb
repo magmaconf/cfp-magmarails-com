@@ -21,4 +21,8 @@ class User < ActiveRecord::Base
       user.nickname = auth['info']['nickname']
     end
   end
+
+  def self.reviewers
+    all.select { |u| u.roles.include?(:reviewer) }
+  end
 end
