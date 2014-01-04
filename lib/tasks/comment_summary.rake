@@ -3,8 +3,8 @@ namespace :cfp do
   task comment_summary: :environment do
     users = User.reviewers
     users.each do |u|
-      puts "Will send email to #{u.profile.email}..."
       CommentSummaryMailer.summary(u).deliver
     end
+    Cfp::Comment.mark_as_notified
   end
 end

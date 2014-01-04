@@ -5,9 +5,9 @@ class CommentSummaryMailer < ActionMailer::Base
     email = user.profile && user.profile.email
     @today = Date.today.to_s(:db)
     subject = "Magmaconf - Comment Summary for #{@today}"
-    @comments = Cfp::Comment.all.group_by(&:proposal)
+    @comments = Cfp::Comment.where(notified: false).group_by(&:proposal)
 
-    if email
+    if email && !@comments.empty?
       mail(to: email, subject: subject)
     end
   end
