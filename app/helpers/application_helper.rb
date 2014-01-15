@@ -29,4 +29,8 @@ module ApplicationHelper
     !(remaining_days.to_i < 0)
   end
 
+  def proposal_author(proposal)
+    User.find(proposal[:talk][:user_id]).name
+  end
+
 end

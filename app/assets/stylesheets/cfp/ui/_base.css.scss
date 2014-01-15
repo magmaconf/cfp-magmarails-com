@@ -108,3 +108,26 @@ label {
   text-align: center;
   margin-top: 30px;
 }
+
+table.rank-list {
+  thead {
+    border-bottom: 2px solid #c5c1bd;
+    th {
+      font-size: 15px;
+    }
+  }
+
+  tbody {
+    td {
+      min-width: 200px;
+      text-align: center;
+      padding: 5px 10px;
+      &:last-child {
+        min-width: 50px;
+      }
+    }
+    tr:nth-child(odd) {
+      background: #f8f5ef;
+    }
+  }
+}

@@ -10,7 +10,10 @@ CfpMagmaCom::Application.routes.draw do
   get "sessions/destroy"
   get "/talks/:page" => "talks#index", as: 'talks'
 
-  devise_for :users
+  scope module: 'cfp' do
+    get '/ranked-proposals' => 'ranked_proposals#index'
+  end
 
+  devise_for :users
 
 end
