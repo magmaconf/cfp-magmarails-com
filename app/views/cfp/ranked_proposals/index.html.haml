@@ -1,0 +1,25 @@
+- content_for :header_title do
+  %h3 Top Ranked Proposals
+  = link_to t('proposals.back_to_proposals'), proposals_path, class: 'no-shadow'
+
+
+.nine-columns
+  - if current_user.can_review?
+    %table.rank-list
+      %thead
+        %tr
+          %th
+            Title
+          %th
+            Author
+          %th
+            Votes
+      %tbody
+        - @ranked_proposals.each do |proposal|
+          %tr
+            %td
+              = link_to "#{proposal[:talk][:title]}", proposal_path(proposal[:talk][:id])
+            %td
+              = proposal_author(proposal)
+            %td
+              = proposal[:rank]
