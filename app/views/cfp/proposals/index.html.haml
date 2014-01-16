@@ -1,12 +1,10 @@
 - content_for :header_title do
   %h3= current_user.can_review? ? "#{@proposals.total_entries} #{t('proposals.all')}" : t('proposals.mine')
 
-
-.nine-columns.sub-titles
-  - if current_user.is_admin?
+- if current_user.can_review?
+  .nine-columns.sub-titles
     %span
       = link_to 'View Top Ranked Proposals', '/ranked-proposals'
-  - if current_user.can_review?
     %span
       %i.fa.fa-star
       = t('proposals.rank')
