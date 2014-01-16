@@ -3,7 +3,7 @@
 
 - if current_user.can_review?
   .nine-columns.sub-titles
-    - if !current_user.is_organizer?
+    - if current_user.is_organizer?
       %span
         = link_to 'View Top Ranked Proposals', '/ranked-proposals'
     %span
