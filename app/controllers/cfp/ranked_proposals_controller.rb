@@ -3,11 +3,21 @@ require_dependency Cfp::Engine.root.join('app', 'controllers', 'cfp', 'applicati
 module Cfp
   class RankedProposalsController < BaseController
 
-  respond_to :js, :html
+    before_filter :verify_admin
+
+    respond_to :js, :html
 
     def index
       redirect_to :proposals unless current_user.is_organizer?
       @ranked_proposals = Proposal.ranked_and_sorted
     end
+
+    private
+
+    def verify_admin
+      redirect_to proposals_path unless current_user.is_admin?
+    end
+
   end
 end
+
