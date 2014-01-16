@@ -18,8 +18,8 @@
         - @ranked_proposals.each do |proposal|
           %tr
             %td
-              = link_to "#{proposal[:talk][:title]}", proposal_path(proposal[:talk][:id])
+              = link_to "#{proposal.title}", proposal_path(proposal)
             %td
               = proposal_author(proposal)
             %td
-              = proposal[:rank]
+              = proposal.average_ranking

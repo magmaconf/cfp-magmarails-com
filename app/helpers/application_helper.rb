@@ -30,7 +30,7 @@ module ApplicationHelper
   end
 
   def proposal_author(proposal)
-    User.find(proposal[:talk][:user_id]).name
+    proposal.user.name
   end
 
 end
