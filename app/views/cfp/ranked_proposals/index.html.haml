@@ -9,14 +9,18 @@
       %thead
         %tr
           %th
+            \#
+          %th
             Title
           %th
             Author
           %th
             Votes
       %tbody
-        - @ranked_proposals.each do |proposal|
+        - @ranked_proposals.each_with_index do |proposal, i|
           %tr
+            %td
+              = (i + 1)
             %td
               = link_to "#{proposal.title}", proposal_path(proposal)
             %td
