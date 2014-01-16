@@ -25,4 +25,13 @@ class User < ActiveRecord::Base
   def self.reviewers
     all.select { |u| u.roles.include?(:reviewer) }
   end
+
+  def is_organizer?
+    roles.include?(:organizer)
+  end
+
+  def make_organizer
+    roles << :organizer
+    save
+  end
 end

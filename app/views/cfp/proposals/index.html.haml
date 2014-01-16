@@ -3,8 +3,9 @@
 
 - if current_user.can_review?
   .nine-columns.sub-titles
-    %span
-      = link_to 'View Top Ranked Proposals', '/ranked-proposals'
+    - if !current_user.is_organizer?
+      %span
+        = link_to 'View Top Ranked Proposals', '/ranked-proposals'
     %span
       %i.fa.fa-star
       = t('proposals.rank')
