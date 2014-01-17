@@ -24,5 +24,5 @@
           = image_tag @proposal.user.gravatar_url(size: 65)
         .info
           %p.name= @proposal.user_name
-          %p=  t('proposals.from_company', company: @proposal.user.company)
+          %p=  t('proposals.from_company', company: @proposal.user.profile_company)
           =link_to t('proposals.github_profile'), "http://www.github.com/#{@proposal.user.nickname}"

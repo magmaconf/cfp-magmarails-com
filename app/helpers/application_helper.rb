@@ -34,11 +34,11 @@ module ApplicationHelper
   end
 
   def proposal_author_email(proposal)
-    proposal.user.profile.email
+    proposal.user.profile_email
   end
 
   def proposal_author_company(proposal)
-    proposal.user.profile.company
+    proposal.user.profile_company
   end
 
 

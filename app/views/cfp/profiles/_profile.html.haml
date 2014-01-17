@@ -7,9 +7,9 @@
   .pic
     = image_tag current_user.gravatar_url(size: 150)
   .user_name
-    = current_user.name
+    = current_user.profile_name
   .company
-    = current_user.company
+    = current_user.profile_company
   .email
     = current_user.profile_email
   - unless profile_new?
