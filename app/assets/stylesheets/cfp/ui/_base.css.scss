@@ -121,6 +121,9 @@ table.rank-list {
     td {
       text-align: center;
       padding: 5px 10px;
+      max-width: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
       &:last-child {
         min-width: 50px;
       }

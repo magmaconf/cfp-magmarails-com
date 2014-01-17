@@ -33,4 +33,13 @@ module ApplicationHelper
     proposal.user.name
   end
 
+  def proposal_author_email(proposal)
+    proposal.user.profile_email
+  end
+
+  def proposal_author_company(proposal)
+    proposal.user.profile_company
+  end
+
+
 end

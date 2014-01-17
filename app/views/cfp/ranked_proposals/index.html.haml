@@ -15,6 +15,10 @@
           %th
             Author
           %th
+            Email
+          %th
+            Company
+          %th
             Votes
       %tbody
         - @ranked_proposals.each_with_index do |proposal, i|
@@ -25,5 +29,9 @@
               = link_to "#{proposal.title}", proposal_path(proposal)
             %td
               = proposal_author(proposal)
+            %td
+              = proposal_author_email(proposal)
+            %td
+              = proposal_author_company(proposal)
             %td
               = proposal.average_ranking
