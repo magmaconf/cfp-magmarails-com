@@ -8,7 +8,7 @@ module Cfp
     helper_method :remainder
 
     def index
-      @proposals = Proposal.all.paginate(page: params[:page], per_page: 16, :order => "created_at DESC")
+      @proposals = Proposal.scoped_for(current_user).paginate(page: params[:page], per_page: 16, :order => "created_at DESC")
     end
 
     def new

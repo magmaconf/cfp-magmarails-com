@@ -1,5 +1,5 @@
 - content_for :header_title do
-  %h3= current_user.can_review? ? "#{@proposals.total_entries} #{t('proposals.all')}" : t('proposals.mine')
+  %h3= current_user.can_review? ? t('proposals.all', count: @proposals.total_entries) : t('proposals.mine')
 
 
 .nine-columns.sub-titles
