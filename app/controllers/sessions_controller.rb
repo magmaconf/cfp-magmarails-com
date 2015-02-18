@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
     session[:user_name]  = auth["info"]["name"]
     session[:user_email] = auth["info"]["email"]
 
-    if user && (!cfp_open? && user.can_review?)
+    if user
       url = request_path_params || root_url
       sign_in_and_redirect(:user, user)
     end
