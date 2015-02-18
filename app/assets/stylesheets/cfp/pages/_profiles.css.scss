@@ -2,13 +2,15 @@
   text-align: center;
 
   .profile-in {
-    background: $profile-bkg;
-    border-left: 1px solid $line;
-    border-right: 1px solid $line;
+    background: #ff6666;
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
     line-height: 2em;
     margin: auto;
-    outline: 6px solid $profile-bkg;
+    outline: 6px solid #ff6666;
     width: 95%;
+
+    h4 { color: #a02e2e }
 
     .logo-magma {
       margin-top: 35px;
@@ -16,27 +18,56 @@
     }
 
     .line {
-      background: $line;
-      height: 2px;
-      margin: 5px 5% 20px 5%;
-      width: 90%;
+      background: #ee5c5d;
+      height: 3px;
+      margin: 5px auto 20px auto;
+      width: 65%;
     }
 
     .pic {
-      border: 3px solid $white;
+      border: 6px solid #f76162;
       height: 150px;
       margin: 20px auto;
       overflow: hidden;
       width: 150px;
       -webkit-border-radius: 50%;
-         -moz-border-radius: 50%;
-              border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
 
       img { width: 100%; }
     }
 
+    .user_name {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4em;
+      text-transform: capitalize;
+
+      &:before, &:after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+
+        color: #FFBF00;
+        content: '\f005';
+        font-family: FontAwesome;
+        font-size: .9em;
+        font-weight: normal;
+      }
+    }
+
+    .company {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .email {
+      color: #fff;
+      font-style: italic;
+      font-size: .9em;
+    }
+
     .complete a {
-      color: $anchor-hover;
+      color: #a02e2e;
       font-size: 1.2em;
     }
 
