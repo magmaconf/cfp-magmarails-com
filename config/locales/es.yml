@@ -41,7 +41,9 @@ es:
     profile: Mi perfil
     update: Actualizar
   proposals:
-    all: 'Propuestas'
+    all:
+      one: '%{count} Propuesta'
+      other: '%{count} Propuestas'
     about_author: Acerca del autor
     add_html: 'Añadir<br/>Propuesta'
     attributes:

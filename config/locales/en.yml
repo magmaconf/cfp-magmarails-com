@@ -43,7 +43,9 @@ en:
     profile: My profile
     update: Update
   proposals:
-    all: 'Proposals'
+    all:
+      one: '%{count} Proposal'
+      other: '%{count} Proposals'
     about_author: About the author
     add_html: 'Add<br/>proposal'
     attributes:
