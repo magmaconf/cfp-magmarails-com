@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+#ruby '2.0.0'
 
 gem 'rails', '4.0.2'
 
 gem 'airbrake', '~> 3.1.6'
 gem 'cactu', '~> 0.0.16'
-gem 'cfp', git: 'git://github.com/crowdint/cfp.git'
+gem 'cfp',
+  git: 'git://github.com/crowdint/cfp.git',
+  ref: 'ef214590be558fa653c7093156b274730650fb5a'
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'gravtastic'
@@ -16,14 +18,15 @@ gem 'jquery-ui-rails'
 gem 'newrelic_rpm'
 gem 'omniauth'
 gem 'omniauth-github'
-gem 'rails_12factor'
 gem 'will_paginate'
+gem 'figaro'
 
 group :development do
   gem 'sqlite3'
-  gem 'pry-debugger'
+  #gem 'pry-debugger'
   gem 'heroku'
-  gem 'heroku_pull', '0.0.3'
+  gem 'heroku_pull'
+  gem 'quiet_assets'
 end
 
 group :production, :stage do

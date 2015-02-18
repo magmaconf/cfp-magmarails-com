@@ -16,3 +16,6 @@
 
 config/database.yml
 .powrc
+
+# Ignore application configuration
+/config/application.yml
