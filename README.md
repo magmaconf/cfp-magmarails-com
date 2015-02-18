@@ -2,6 +2,13 @@
 
 Website used to organize the MagmaConf Call For Papers
 
+## 2015
+
+Current demo version lives at:
+
+url: https://magmacfp-demo.herokuapp.com
+git: https://git.heroku.com/magmacfp-demo.git
+
 
 ## Basic Configuration
 
