@@ -8,7 +8,7 @@ module Cfp
     helper_method :remainder
 
     def index
-      @proposals = Proposal.scoped_for(current_user).paginate(page: params[:page], per_page: 16, :order => "created_at DESC")
+      @proposals = Proposal.all.paginate(page: params[:page], per_page: 16, :order => "created_at DESC")
     end
 
     def new
@@ -46,7 +46,7 @@ module Cfp
 
     def remainder
       t = Time.now - 21600
-      (Time.new(2013, 12, 30) - Time.new(t.year, t.month, t.day)).to_i / (86400)
+      (ending_date - Time.new(t.year, t.month, t.day)).to_i / (86400)
     end
 
     private
@@ -58,6 +58,10 @@ module Cfp
     private
     def proposal_params
       params.require(:proposal).permit :title, :abstract, :tags, :level, :language, :description
+    end
+
+    def ending_date
+      Figaro.env.CFP_ENDING_DATE.to_time
     end
   end
 end
