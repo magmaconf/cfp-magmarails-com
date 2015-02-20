@@ -12,7 +12,7 @@
     = stylesheet_link_tag    'cfp/application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
+    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Teko:300,500|Roboto:400,100,300|Oswald:400,300,700&subset=latin' }
     %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}"}
 
     :javascript
@@ -54,16 +54,15 @@
             CFP closes until Match 4 2015
           #cir
             = image_tag 'info.svg', id: 'info'
-          %br
           %p.important-terms
             = t('terms.important')
-          %br
+
           = link_to t('terms.show'), '#', class: 'my_modal_open must-know'
 
         .centered-six
           = image_tag 'crowd-1.svg', class: 'crowd-logo'
         .centered-eight
-          %span
+          .copyright
             &copy;
             = t('copyright')
     = render 'cfp/application/lists'

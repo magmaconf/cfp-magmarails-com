@@ -116,12 +116,12 @@
           display: block;
           width: 24px;
           height: 23px;
-          background: asset-url('left-big.svg');
+          background: image_url('left-big.svg');
         }
 
         .next {
           @extend .prev;
-          background: asset-url('right-big.svg');
+          background: image_url('right-big.svg');
         }
       }
       a {
