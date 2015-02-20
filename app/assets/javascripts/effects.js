@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('#lists').css('margin-top', height - 690);
   } else if (height > 897) {
     $('#lists').css('margin-top', height - 740);
-    $('#home-top').css('height', 650);
+    // $('#home-top').css('height', 650);
     $('.mask').css('width', '40%');
     $('.important, .counting').css('top', 685);
   }
