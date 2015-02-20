@@ -98,27 +98,19 @@
 }
 
 .days-left {
-  font: 300 3.6em/0.4 'Oswald';
-  color: $days;
-  text-align: center;
+  font-family: 'Teko', sans-serif;
+  float: right;
 
-  p {
-    width: 50px;
-    height: 50px;
-    padding: 7px;
-    line-height: 1.1em;
-    margin: 0 auto 20px;
-    line-height: 0.95;
-    border: 1px solid $days;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+  .count {
+    font-size: 40px;
+    font-weight: 400;
+    color: #ff6666;
+    margin: 7px 0 0 0;
   }
 
   span {
-    font-size: 0.34em;
-    position: relative;
-    top: -25px;
+    font-size: 18px;
+    font-weight: 300;
   }
 }
 

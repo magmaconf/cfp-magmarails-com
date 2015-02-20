@@ -110,6 +110,12 @@
     content: " | ";
     color: $anchor;
   }
+
+  a {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
 }
 
 .magma_conferences_logo {
