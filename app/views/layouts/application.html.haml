@@ -34,7 +34,8 @@
         .centered-six
           =link_to '#', class: 'info_phone' do
             = image_tag 'info.svg'
-          = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
+          = link_to 'http://magmaconf.com' do
+            = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
           = image_tag 'cfp-image.svg', alt: 'Reylero', class: 'mask'
           %hr.ready-hr
           %p.ready
