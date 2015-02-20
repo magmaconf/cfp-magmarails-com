@@ -98,11 +98,12 @@
 
 @media screen and (max-height: 801px) {
   #lists footer .centered-eight span {
-    color: transparent !important;
+    /*color: transparent !important;*/
   }
 
   #lists footer .centered-six img {
-    opacity: 0;
+    /*opacity: 0;*/
+    height: 30px;
   }
 
   .mask {

@@ -2,17 +2,17 @@
   .centered-six
     .circle
       .login-up
-        %a{href: "http://blog.magmaconf.com", class: "sign-in"}
+        = link_to '/auth/github' do
           = image_tag 'blog.svg', class: 'blog'
-    .important
+    -#.important
       %p
         = t('terms.important')
         = link_to t('terms.show'), '#', class: 'my_modal_open'
       .cir
         = image_tag 'info.svg'
-    .counting
-      .cir
-        = image_tag 'mask-01.svg', class: 'minimask'
-      %p
-        = t('home.signin')
-        = link_to t('home.login'), '/auth/github'
+    -#.counting
+      -#.cir
+        -#= image_tag 'mask-01.svg', class: 'minimask'
+      -#%p
+        -#= t('home.signin')
+        -#= link_to t('home.login'), '/auth/github'

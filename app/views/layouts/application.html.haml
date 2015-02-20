@@ -36,17 +36,24 @@
             = image_tag 'info.svg'
           = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
           = image_tag 'blog-image.svg', alt: 'Reylero', class: 'mask'
-          %p.ready= t('home.thanks')
-          %p.you= t('home.for_participate')
+          %p.ready SUBMIT YOUR PROPOSAL
+          %p.you FOR #MAGMACONF 2015 ARENA!
           = image_tag 'cfp.svg', alt: 'Call for papers', class: 'cfp'
-          %p.welcome= t('home.work')
 
       = yield
 
     #lists.container
       %footer.row
         .centered-six
-          = image_tag 'crowd-1.svg'
+          .cir= image_tag 'info.svg'
+          %br
+          %p
+            = t('terms.important')
+          %br
+          = link_to t('terms.show'), '#', class: 'my_modal_open'
+
+        .centered-six
+          = image_tag 'crowd-1.svg', class: 'crowd-logo'
         .centered-eight
           %span
             &copy;

@@ -9,8 +9,7 @@
 }
 
 #home-top {
-  background: asset-url('bkg.jpg') no-repeat top center fixed $top;
-  border-bottom: 10px solid $white;
+  background: #ee5c5d;
 
   .circle {
     position: absolute;
@@ -62,64 +61,19 @@
 
   .magma_logo {
     display: block;
+    height: 36px;
     margin: 20px auto 0;
     padding: 5px 0 10px 0;
   }
 
   .blog {
-    width: 68%;
-    margin: -10px auto 0;
+    /*width: 68%;*/
+    /*margin: -10px auto 0;*/
   }
 
   .cfp {
     width: 35%;
     margin-top: 0;
-  }
-
-  .important {
-    width: 220px;
-    position: absolute;
-
-    p {
-      float: left;
-      width: 165px;
-      text-align: right;
-      font: 300 1.2em/1.3em 'Roboto';
-
-      a {
-        color: $anchor-hover;
-        text-decoration: underline;
-        font: 300 1em/1em 'Roboto';
-
-        &:hover {
-          color: $anchor;
-          text-decoration: none;
-        }
-      }
-    }
-
-    .cir {
-      float: left;
-      width: 35px;
-      height: 35px;
-      background: $white;
-      border: 1px solid $radio;
-      box-shadow: 0 0 0 2px $white;
-      margin: -7px 0 0 13px;
-      @include border_radius(50%);
-
-      img {
-        margin: 10px auto 0;
-      }
-
-      .minimask { margin-top: 6px; }
-
-      span {
-        display: block;
-        font: 300 1.5em/1 'Oswald';
-        margin-top: 7px;
-      }
-    }
   }
 
   .counting {
@@ -234,3 +188,51 @@ footer {
     display: none;
   }
 }
+
+.crowd-logo { height: 30px }
+
+
+  .important {
+    width: 220px;
+    position: absolute;
+
+    p {
+      font: 300 1.2em/1.3em 'Roboto';
+
+      a {
+        color: $anchor-hover;
+        text-decoration: underline;
+        font: 300 1em/1em 'Roboto';
+
+        &:hover {
+          color: $anchor;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .cir {
+      float: left;
+      width: 35px;
+      height: 35px;
+      background: $white;
+      border: 1px solid $radio;
+      box-shadow: 0 0 0 2px $white;
+      margin: -7px 0 0 13px;
+      @include border_radius(50%);
+      overflow: hidden;
+
+      img {
+        margin: 10px auto 0;
+      }
+
+      .minimask { margin-top: 6px; }
+
+      span {
+        display: block;
+        font: 300 1.5em/1 'Oswald';
+        margin-top: 7px;
+      }
+    }
+  }
+
