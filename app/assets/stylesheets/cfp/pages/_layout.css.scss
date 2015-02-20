@@ -63,10 +63,7 @@ a {
   }
 
   .magma_logo {
-    display: block;
-    height: 36px;
     margin: 20px auto 0;
-    padding: 5px 0 10px 0;
   }
 
   .blog {
@@ -298,4 +295,11 @@ footer {
     margin: 10px 5px;
     padding: 12px;
   }
+}
+
+.magma_logo {
+  display: block;
+  height: 36px;
+  margin: 0 auto;
+  padding: 5px 0 10px 0;
 }
