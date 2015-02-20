@@ -9,8 +9,18 @@
     margin: auto;
     outline: 6px solid #ff6666;
     width: 95%;
+    font-family: 'Open Sans', sans-serif;
 
-    h4 { color: #a02e2e }
+    h4 {
+      font-family: 'Teko', sans-serif;
+      font-weight: 300;
+      color: #a02e2e;
+      font-size: 30px;
+    }
+
+    a{
+      font-family: 'Open Sans', sans-serif;
+    }
 
     .logo-magma {
       margin-top: 35px;

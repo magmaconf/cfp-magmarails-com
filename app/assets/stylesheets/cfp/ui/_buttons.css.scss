@@ -84,8 +84,8 @@
 
 .btn-ring {
   @extend .btn-aro;
-  width: 145px;
-  height: 145px;
+  width: 180px;
+  height: 180px;
   background: $anchor-hover;
   display: block;
   padding: 1px;
@@ -96,8 +96,8 @@
 
   .aro {
     @extend .btn-aro.aro;
-    width: 130px;
-    height: 130px;
+    width: 165px;
+    height: 165px;
     color: $white;
     border: 1px solid $white;
 

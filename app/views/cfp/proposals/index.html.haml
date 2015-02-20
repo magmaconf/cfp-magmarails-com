@@ -27,7 +27,7 @@
       %span= t('proposals.days')
 
 
-.eight-columns.lists
+.nine-columns.lists
   %ul
     =render @proposals
     - if cfp_open? and !current_user.can_review? and available?
