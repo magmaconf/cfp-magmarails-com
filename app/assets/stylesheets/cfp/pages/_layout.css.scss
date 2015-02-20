@@ -156,7 +156,7 @@
 }
 
 #home-down {
-  background-image: url('/assets/bkg.png');
+  background-image: asset_url('/assets/bkg.png');
 }
 
 .lath-image {
@@ -266,7 +266,7 @@ footer {
 
 .proposal {
   &:after, &:before {
-    background: url("/assets/star.svg");
+    background: asset_url("/assets/star.svg");
     content: ' ';
     display: inline-block;
     margin: 10px 5px;

@@ -38,6 +38,9 @@
       h2 {
         padding-bottom: 10px;
         float: left;
+        font-family: 'Teko', sans-serif;
+        font-weight: 300;
+        font-size: 50px;
       }
 
       a {
@@ -53,7 +56,9 @@
         span {
           position: relative;
           top: -9px;
-          font-family: sans-serif;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          color: #a02d2e;
         }
       }
 
@@ -72,22 +77,14 @@
     }
 
     main {
-      .num {
-        width: 20px;
-        height: 20px;
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-        padding: 5px;
-        border: 1px solid $line;
-        -webkit-border-radius: 50%;
-           -moz-border-radius: 50%;
-                border-radius: 50%;
-      }
 
-      .title, .tag {
+      .title, .tag, .num {
         display: block;
-        margin: 15px 0 5px;
+        margin: 20px 0 23px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #312926;
       }
     }
 
@@ -98,14 +95,16 @@
 
       em {
         font-style: normal;
-        color: $gray;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #312925;
       }
 
       span, a {
         width: 25px;
         height: 25px;
         padding: 10px;
-        border: 1px solid $anchor-hover;
+        border: 1px solid #a73d3e;
         margin: 20px;
         vertical-align: middle;
         -webkit-border-radius: 50%;
@@ -116,33 +115,33 @@
           display: block;
           width: 24px;
           height: 23px;
-          background: image_url('left-big.svg');
+          background: asset_url('left-big.svg');
         }
 
         .next {
           @extend .prev;
-          background: image_url('right-big.svg');
+          background: asset_url('right-big.svg');
         }
       }
       a {
-        background: $white;
-        border: 1px solid $anchor-hover;
+        background: #f8f8f8;
+        border: 1px solid #a02d2e;
         box-shadow: 0 0 0 5px $white;
 
         &:hover {
-          background: $anchor-hover;
+          background: #a02d2e;
           color: $white;
 
           .prev {
             display: block;
             width: 24px;
             height: 23px;
-            background: asset-url('left-on.svg');
+            background: asset_url('left-on.svg');
           }
 
           .next {
             @extend .prev;
-            background: asset-url('right-on-big.svg');
+            background: asset_url('right-on-big.svg');
           }
         }
       }
@@ -152,6 +151,15 @@
       color: $gray;
 
       .centered-eight {margin-top: 20px; }
+
+      .copyright {
+        color: $footer-color;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 0 65px 0;
+      }
     }
   }
 }
