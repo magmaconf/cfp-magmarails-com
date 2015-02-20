@@ -282,7 +282,7 @@ footer {
 
 .proposal {
   &:after, &:before {
-    background: asset_url("/assets/star.svg");
+    background: asset_url("star.svg");
     content: ' ';
     display: inline-block;
     margin: 10px 5px;
