@@ -38,10 +38,10 @@
           = image_tag 'blog-image.svg', alt: 'Reylero', class: 'mask'
           %hr.ready-hr
           %p.ready
-            SUBMIT YOUR
+            = t('proposal.submit')
             %br
-            %span.proposal PROPOSAL
-          %p.you FOR #MAGMACONF 2015 ARENA!
+            %span.proposal= t('proposal.proposal')
+          %p.you= t('magmaconf_arena')
           %hr.ready-hr
           = image_tag 'cfp.svg', alt: 'Call for papers', class: 'cfp'
 
@@ -51,7 +51,7 @@
       %footer.row
         .centered-six
           %p.closing-date
-            CFP closes until March 13, 2015
+            = t('closing_date')
           #cir
             = image_tag 'info.svg', id: 'info'
           %p.important-terms

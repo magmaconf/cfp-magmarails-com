@@ -2,6 +2,11 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 
 en:
+  proposal:
+    submit: SUBMIT YOUR
+    proposal: PROPOSAL
+  magmaconf_arena: 'FOR #MAGMACONF 2015 ARENA!'
+  closing_date: CFP closes until March 13, 2015
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
@@ -14,7 +19,7 @@ en:
       worst: It can be better
     title: Rate Proposal
     thoughts: Leave your thoughts
-  copyright: 2013, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+  copyright: 2015, This site is protected by Copyright. Under U.S and international law. All rights reserved.
   delete_confirm: Are you sure?
   home:
     ready: ARE YOU READY?
@@ -102,7 +107,8 @@ en:
       six: Startups that use technology in a very interesting way, solving a difficult problem or changing the way things are currently done.
       seven: Fun stuff. Show us how you have fun while working, and you remain productive.  Show your code or the way you program to achieve results.
       eight: 'Interesting hacks. We are suckers for innovative ways to hack stuff. If you work with code that does something different: show us!'
-      nine: Got a different subject you’d like to talk about?  Go ahead! We’ll look into it and evaluate it with an open mind.
+      nine: 'Productivity and Happiness at work: any best practice that works for you and you think the world should know about. Extra points if it makes us happier!'
+      ten: 'Got a different subject you’d like to talk about?  Go ahead! We’ll look into it and evaluate it with an open mind.'
     speakers:
       title: Speakers
       one: What do speakers get?
