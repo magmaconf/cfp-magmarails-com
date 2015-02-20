@@ -31,13 +31,18 @@
     = render 'cfp/application/imp_info'
     %section#home-top.container
       .row
-        .centered-seven
+        .centered-six
           =link_to '#', class: 'info_phone' do
             = image_tag 'info.svg'
           = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
           = image_tag 'blog-image.svg', alt: 'Reylero', class: 'mask'
-          %p.ready SUBMIT YOUR PROPOSAL
+          %hr.ready-hr
+          %p.ready
+            SUBMIT YOUR
+            %br
+            %span.proposal PROPOSAL
           %p.you FOR #MAGMACONF 2015 ARENA!
+          %hr.ready-hr
           = image_tag 'cfp.svg', alt: 'Call for papers', class: 'cfp'
 
       = yield
@@ -45,12 +50,15 @@
     #lists.container
       %footer.row
         .centered-six
-          .cir= image_tag 'info.svg'
+          %p.closing-date
+            CFP closes until Match 4 2015
+          #cir
+            = image_tag 'info.svg', id: 'info'
           %br
-          %p
+          %p.important-terms
             = t('terms.important')
           %br
-          = link_to t('terms.show'), '#', class: 'my_modal_open'
+          = link_to t('terms.show'), '#', class: 'my_modal_open must-know'
 
         .centered-six
           = image_tag 'crowd-1.svg', class: 'crowd-logo'

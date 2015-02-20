@@ -10,10 +10,11 @@
 
 #home-top {
   background: #ee5c5d;
+  height: 720px;
 
   .circle {
     position: absolute;
-    top: 570px;
+    top: 620px;
     left: 50%;
     margin-left: -85px;
     z-index: 2;
@@ -35,19 +36,15 @@
   }
 
   .ready {
+    color: #fff3cc;
     display: block;
-    color: $white;
-    font: 400 3.5em/1.1em 'Oswald' Helvetica 'Arial';
-    margin-top: 25px;
+    font: 63px 'Oswald' Helvetica 'Arial';
+    line-height: 1;
   }
 
   .you {
     @extend .ready;
-    font: 100 1.5em/1.1em 'Oswald' Helvetica 'Arial';
-    letter-spacing: 3px;
-    color: #b3a797;
-    padding: 5px 0;
-    margin: 0 0 10px;
+    font: 30px 'Oswald' Helvetica 'Arial';
   }
 
   .welcome {
@@ -72,8 +69,8 @@
   }
 
   .cfp {
-    width: 35%;
-    margin-top: 0;
+    margin: 25px auto;
+    height: 44px;
   }
 
   .counting {
@@ -126,8 +123,8 @@
     cursor: pointer;
     border: 10px solid $white;
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
   }
 
   p {
@@ -192,47 +189,80 @@ footer {
 .crowd-logo { height: 30px }
 
 
-  .important {
-    width: 220px;
-    position: absolute;
+.important {
 
-    p {
-      font: 300 1.2em/1.3em 'Roboto';
+  p {
+    font: 300 1.2em/1.3em 'Roboto';
 
-      a {
-        color: $anchor-hover;
-        text-decoration: underline;
-        font: 300 1em/1em 'Roboto';
+    a {
+      color: $anchor-hover;
+      text-decoration: underline;
+      font: 300 1em/1em 'Roboto';
 
-        &:hover {
-          color: $anchor;
-          text-decoration: none;
-        }
-      }
-    }
-
-    .cir {
-      float: left;
-      width: 35px;
-      height: 35px;
-      background: $white;
-      border: 1px solid $radio;
-      box-shadow: 0 0 0 2px $white;
-      margin: -7px 0 0 13px;
-      @include border_radius(50%);
-      overflow: hidden;
-
-      img {
-        margin: 10px auto 0;
-      }
-
-      .minimask { margin-top: 6px; }
-
-      span {
-        display: block;
-        font: 300 1.5em/1 'Oswald';
-        margin-top: 7px;
+      &:hover {
+        color: $anchor;
+        text-decoration: none;
       }
     }
   }
+}
 
+.closing-date {
+  color: #ee5c5d;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.important-terms {
+  color: #ee5c5d;
+  font-size: 18px;
+
+}
+
+.must-know {
+  color: #a02d2e;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 38px;
+  display: block;
+}
+
+#cir {
+  width: 35px;
+  height: 35px;
+  background: $white;
+  border: 1px solid $radio;
+  box-shadow: 0 0 0 2px $white;
+  margin: 10px auto;
+  @include border_radius(50%);
+  overflow: hidden;
+
+  img#info {
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  .minimask { margin-top: 6px; }
+
+  span {
+    display: block;
+    font: 300 1.5em/1 'Oswald';
+    margin-top: 7px;
+  }
+}
+
+.ready-hr {
+  border: 2px solid #a02d2e;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.proposal {
+  &:after, &:before {
+    background: url("/assets/star.svg");
+    content: ' ';
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px;
+  }
+}

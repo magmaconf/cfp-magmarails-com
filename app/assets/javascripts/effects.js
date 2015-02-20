@@ -14,12 +14,12 @@ $(document).ready(function() {
   window.currentLocale = "#{I18n.locale}";
 
   if (height > 727 && height < 897) {
-    $('#home-top').css('height', 600);
+    //$('#home-top').css('height', 600);
     $('.mask').css({
       'width': '30%',
       'margin-top': '10px'
     });
-    $('.circle').css('top','535px');
+    //$('.circle').css('top','535px');
     $('.important').css('top','650px');
     $('.counting').css('top','650px');
     $('#lists').css('margin-top', height - 690);
@@ -44,12 +44,12 @@ $(document).ready(function() {
     $('.welcome').css('margin-bottom', 0);
   } else if (height < width && width < 760) {
     $('#cont_lists, #lists, .counting, .important').css('display', 'none');
-    $('.circle').css('top', '497px');
+    //$('.circle').css('top', '497px');
     $('#list_phone .numbers a').css('padding-bottom', '20px');
   }
 
   if (width < 1370 && width > 768 && height < 800) {
-    $('.circle').css('top', '510px');
+    //$('.circle').css('top', '510px');
   }
 
   $('.open_propos_phone').click(function(e) {
