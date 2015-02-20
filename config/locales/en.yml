@@ -6,7 +6,7 @@ en:
     submit: SUBMIT YOUR
     proposal: PROPOSAL
   magmaconf_arena: 'FOR #MAGMACONF 2015 ARENA!'
-  closing_date: CFP closes until March 13, 2015
+  closing_date: Call for Papers closes March 13, 2015
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
