@@ -54,8 +54,8 @@ a {
   }
 
   .welcome {
-    display: block;
-    color: #b3a797;
+    display: inline-block;
+    color: #a02d2e;
     width: 200px;
     margin: 12px auto 0;
     font: 100 1em/1.1 'Oswald';
@@ -72,8 +72,16 @@ a {
   }
 
   .cfp {
-    margin: 25px auto;
-    height: 44px;
+    color: #a02d2e;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    img {
+      display: inline;
+      height: 25px;
+      margin: 0 0 0 5px;
+    }
   }
 
   .counting {
