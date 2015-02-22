@@ -1,9 +1,17 @@
 .login-up {
-  background: $white;
-  width: 170px;
-  height: 170px;
   margin: auto auto 15px auto;
   @include border_radius(50%);
+
+  a {
+    width: 250px;
+    height: 250px;
+    background: asset_url('github-login.svg');
+    display: inline-block;
+
+    &:hover {
+      background: asset_url('github-login-hover.svg');
+    }
+  }
 }
 
 .easy {
