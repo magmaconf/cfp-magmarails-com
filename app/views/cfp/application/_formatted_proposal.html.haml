@@ -9,7 +9,7 @@
     %header
       %h3= t('proposals.attributes.title')
       %p.title= @proposal.title
-      %p.tags= "Tags: #{@proposal.tags}"
+      -#%p.tags= "Tags: #{@proposal.tags}"
     .content
       %h3= t('proposals.attributes.description')
       = sanitize @proposal.description_html
