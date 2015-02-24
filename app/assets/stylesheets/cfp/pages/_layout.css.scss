@@ -14,17 +14,19 @@ a {
 
 #home-top {
   background: #ee5c5d;
-  height: 720px;
+  height: 650px;
 
   .circle {
     position: absolute;
-    top: 620px;
+    top: 567px;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -83px;
     z-index: 2;
+
     a:hover {
       text-decoration: none;
     }
+
     & > a {
       text-decoration: underline;
     }
@@ -32,25 +34,25 @@ a {
 
   img {
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 10px auto 0 auto;
   }
 
   .mask {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .ready {
     color: #fff3cc;
-    display: block;
     font-family: 'Teko', sans-serif;
-    font-size: 63px;
+    font-size: 50px;
     font-weight: 500;
-    line-height: 1;
+    margin: 20px 0 0 0;
   }
 
   .you {
     @extend .ready;
-    font-size: 30px;
+    font-size: 24px;
+    margin: 5px 0 0 0;
   }
 
   .welcome {
@@ -74,12 +76,12 @@ a {
   .cfp {
     color: #a02d2e;
     font-family: 'Teko', sans-serif;
-    font-size: 30px;
+    font-size: 18px;
     text-transform: uppercase;
 
     img {
       display: inline;
-      height: 25px;
+      height: 20px;
       margin: 0 0 0 5px;
     }
   }
@@ -132,7 +134,7 @@ a {
 }
 
 #lists {
-  margin-top: 90px;
+  margin-top: 130px;
 
   img {
     margin: -10px 0 0 -49px;
@@ -293,7 +295,7 @@ footer {
 .ready-hr {
   border: 2px solid #a02d2e;
   margin: 10px auto;
-  width: 65%;
+  width: 45%;
 }
 
 .proposal {
