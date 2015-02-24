@@ -1,19 +1,25 @@
 %fieldset{ class: klass }
-  .nine-columns
+  .nine-columns.required
     = form.label :title, t('proposals.attributes.title')
+    .error.left-arrow ! This field is required
     = form.text_field :title, required: 'true'
-  .four-columns
+  .six-columns
     = form.label :level, t('proposals.attributes.level')
     = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t(l, scope: 'proposals.levels'), l]}
-  .four-columns
+  .six-columns
     = form.label :language, t('proposals.attributes.language')
     = form.select :language, Cfp::Proposal::LANGUAGE
-  .four-columns
-    = form.label :tags, t('proposals.attributes.tags')
-    = form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
-  .seven-columns
+  -#.four-columns
+    -#= form.label :tags, t('proposals.attributes.tags')
+    -#= form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
+  .seven-columns.required
     = form.label :description, t('proposals.attributes.description')
+    .error.left-arrow ! This field is required
     = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description'), required: 'true'
-  .five-columns
+  .five-columns.required
     = form.label :abstract, t('proposals.attributes.abstract')
+    .error.left-arrow ! This field is required
     = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract'), required: 'true'
+
+:coffee
+  $ -> new Cfp.FormValidation $('form')
