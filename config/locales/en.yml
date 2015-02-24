@@ -6,7 +6,8 @@ en:
     submit: SUBMIT YOUR
     proposal: PROPOSAL
   magmaconf_arena: 'FOR #MAGMACONF 2015 ARENA!'
-  closing_date: Call for Papers closes March 13, 2015
+  closing_date: Call for Papers closes
+  closing_date_2: March 13, 2015
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
@@ -30,6 +31,8 @@ en:
     work: 'We have a lot of work to do. Meanwhile, please checkout ...'
     signin: 'Are you already a user?'
     login: 'Please sign in'
+    have_question: 'Have a question about MagmaConf or how to participate?'
+    check_out: 'Check out what we are looking for'
   languages:
     en: English
     es: Spanish

@@ -64,18 +64,22 @@
         .centered-six
           %p.closing-date
             = t('closing_date')
+            %br
+            %strong= t('closing_date_2')
 
           %p.important-terms
-            = t('terms.important')
+            = t('home.have_question')
 
-          = link_to t('terms.show'), '#', class: 'my_modal_open must-know'
+          = link_to '#', class: 'check-out' do
+            = t('home.check_out')
+            %span
 
-        .centered-six
-          = image_tag 'crowd-1.svg', class: 'crowd-logo'
         .centered-eight
           .copyright
             &copy;
             = t('copyright')
+
+          = image_tag 'crowd-1.svg', class: 'crowd-logo'
 
     =# render 'cfp/application/lists'
 
