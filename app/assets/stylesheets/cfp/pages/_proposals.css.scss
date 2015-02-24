@@ -26,14 +26,14 @@
 }
 
 .your-proposal{
-	color: #20353B;
-	font-size: 26px;
-	font-weight: lighter;
+  color: #20353B;
+  font-size: 26px;
+  font-weight: lighter;
 }
 
 
 .btn-big-proposals{
-	@extend .btn-proposals;
+  @extend .btn-proposals;
   font-size: 26px;
   padding: 9px 29px;
   float: none;
@@ -163,8 +163,8 @@
       img {
         border: 2px solid $line;
         -webkit-border-radius: 50%;
-           -moz-border-radius: 50%;
-                border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
       }
     }
 
@@ -231,3 +231,89 @@
   top: -88px;
   position: relative;
 }
+
+
+/* 2015 styles overrides */
+
+.new_proposal {
+  label {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .required label {
+    &:after {
+      content: '*';
+      color: #F00;
+      padding: 0 5px;
+    }
+  }
+}
+
+.error {
+  border: 2px solid #F00;
+  color: #F00;
+  display: none;
+  font-size: 13px;
+  overflow: visible;
+  padding: 5px;
+  position: relative;
+
+  .invalid & { display: inline-block }
+}
+
+
+/* Arrows */
+.arrow {
+  &:before, &:after {
+    border-color: #F00 rgba(0, 0, 0, 0);
+    border-style: solid;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+  }
+
+  &:before { border-color: #F00 rgba(0, 0, 0, 0) }
+  &:after { border-color: #FFF rgba(0, 0, 0, 0) }
+}
+
+.bottom-arrow {
+  @extend .arrow;
+
+  &:before {
+    bottom: -5px;
+    left: 10px;
+    border-width: 5px 5px 0;
+  }
+
+  &:after {
+    bottom: -3px;
+    left: 5px;
+    border-width: 10px 10px 0;
+  }
+
+}
+
+.left-arrow {
+  @extend .arrow;
+  margin-left: 10px;
+
+  &:before, &:after {
+    border-width: 5px 10px 5px 0;
+    bottom: auto;
+    top: 10px;
+  }
+
+  &:before{
+    border-color: rgba(0, 0, 0, 0) red;
+    left: -10px;
+  }
+
+  &:after {
+    border-color: rgba(0, 0, 0, 0) #FFF;
+    left: -7px;
+  }
+}
+
