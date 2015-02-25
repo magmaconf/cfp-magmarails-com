@@ -134,7 +134,7 @@ a {
 }
 
 #lists {
-  margin-top: 55px;
+  margin-top: 65px;
   padding-bottom: 90px;
 
   p {
@@ -186,7 +186,7 @@ a {
 
     li {
       padding-left: 1em;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       text-indent: -.7em;
 
       &:before {
@@ -240,6 +240,37 @@ a {
           background-size: 50px;
         }
       }
+    }
+  }
+
+  input {
+    color: #792222;
+    height: 38px;
+    padding: 0 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+  }
+
+  input[type=text] {
+    background-color: #ebebeb !important;
+    border: 1px solid #ee5c5d;
+    width: 185px;
+  }
+
+  input[type=submit] {
+    background-color: #ffc200 !important;
+    border: 1px solid #ffc200;
+    text-transform: uppercase;
+    text-align: center;
+    width: 195px;
+  }
+
+  label {
+    font-size: 18px;
+
+    &:after {
+      color: #ff0000;
+      content: ' *';
     }
   }
 }
