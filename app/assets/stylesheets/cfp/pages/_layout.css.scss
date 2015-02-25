@@ -135,11 +135,11 @@ a {
 
 #lists {
   margin-top: 55px;
+  padding-bottom: 90px;
 
   p {
     display: inline-block;
     padding: 8px 0 10px 0;
-    cursor: pointer;
   }
 
   footer {
@@ -156,7 +156,92 @@ a {
 }
 
 #home-down {
-  background-image: asset_url('/assets/bkg.png');
+  background: #ffffff;
+  padding: 60px 0 0 0;
+
+  hr {
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px auto 20px auto;
+  }
+
+  .ready-hr {
+    width: 100%;
+  }
+
+  p {
+    display: inline-block;
+    padding: 8px 0 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding-left: 1em;
+      padding-bottom: 10px;
+      text-indent: -.7em;
+
+      &:before {
+        content: "• ";
+        color: #e65253;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .title {
+    color: #ee5c5d;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .header {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .back-to-sig-in {
+    margin-top: 15px;
+
+    a {
+      color: #a02d2e;
+      float: right;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+
+      span {
+        background: asset_url('arrows.svg') no-repeat -37px 0px;
+        width: 13px;
+        height: 14px;
+        display: inline-block;
+        background-size: 50px;
+        margin: 10px 0 0 0;
+      }
+
+      &:hover {
+        color: #ff6666;
+
+        span {
+          background: asset_url('arrows.svg') no-repeat -37px -28px;
+          background-size: 50px;
+        }
+      }
+    }
+  }
 }
 
 .lath-image {
@@ -264,11 +349,7 @@ footer {
 
     span {
       background: asset_url('arrows.svg') no-repeat 0px -28px;
-      width: 13px;
-      height: 14px;
-      display: block;
       background-size: 50px;
-      margin: 10px auto;
     }
   }
 }
@@ -327,4 +408,29 @@ footer {
   height: 36px;
   margin: 0 auto;
   padding: 5px 0 10px 0;
+}
+
+body > footer {
+  background: #ffffff;
+  padding: 0 0 15px 0;
+
+  hr {
+    border: 1px solid #312926;
+    margin: 0 0 25px 0;
+    opacity: .1;
+  }
+
+  .cfp-footer-logo {
+    width: 112px;
+  }
+
+  .magma-footer-logo {
+    width: 74px;
+  }
+
+  span {
+    color: #d7d7d7;
+    font-size: 14px;
+    margin: 0 15px 0 10px;
+  }
 }

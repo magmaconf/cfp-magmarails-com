@@ -84,6 +84,73 @@
     =# render 'cfp/application/lists'
 
     #home-down.container
+      .row
+        .six-columns.header
+          Something you should know
+        .back-to-sig-in
+
+          =link_to '#' do
+            %span
+            Back to sign in
+
+        %hr.ready-hr
+
+        .four-columns
+          .title= t('popup.magma.title')
+
+          %p=raw t('popup.magma.one')
+          %p= t('popup.magma.two')
+          %p= t('popup.magma.three')
+
+        .four-columns
+          .title= t('popup.terms.title')
+
+          %p= raw t('popup.terms.one')
+          %p= t('popup.terms.two')
+          %p= t('popup.terms.three')
+
+        .four-columns
+          .title= t('popup.judges.title')
+
+          %p=raw t('popup.judges.one')
+          %p= t('popup.judges.two')
+          %p=raw t('popup.judges.three')
+          %p= t('popup.judges.four')
+          %p= t('popup.judges.five')
+
+      .row
+        %hr
+
+        .eight-columns
+          .title= t('popup.topics.title')
+
+          %p=raw t('popup.topics.one')
+
+          %ul
+            %li= t('popup.topics.two')
+            %li= t('popup.topics.three')
+            %li= t('popup.topics.four')
+            %li= t('popup.topics.five')
+            %li= t('popup.topics.six')
+            %li= t('popup.topics.seven')
+            %li= t('popup.topics.eight')
+            %li= t('popup.topics.nine')
+
+        .four-columns
+          .title= t('popup.sponsors.title')
+
+          %p=raw t('popup.sponsors.one')
+          %p=raw t('popup.sponsors.two')
+
+
+    %footer
+      .row
+        %hr
+        .centered-six
+          = image_tag 'callforpapers.svg', class: 'cfp-footer-logo'
+          %span
+            of
+          = image_tag 'callforpapers-magma.svg', class: 'magma-footer-logo'
 
     :javascript
       'effects'

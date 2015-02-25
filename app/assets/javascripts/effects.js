@@ -130,4 +130,15 @@ $(document).ready(function() {
       scrollTop: '900'
     });
   });
+
+  $('.check-out').click(function(event) {
+    event.preventDefault();
+    $("body, html").animate({scrollTop: 1097}, 600);
+  });
+
+  $('.back-to-sig-in').click(function(event) {
+    event.preventDefault();
+    $("body, html").animate({scrollTop: 480}, 600);
+  });
 });
+
