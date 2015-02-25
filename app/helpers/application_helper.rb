@@ -41,5 +41,7 @@ module ApplicationHelper
     proposal.user.profile_company
   end
 
-
+  def reylero_fallback
+    asset_url 'avatar.jpg'
+  end
 end

@@ -1,5 +1,5 @@
 .eight-columns
-  = form_for @profile, url:profile_path do |form|
+  = form_for @profile, url:profile_path, html: { novalidate: true } do |form|
     = render 'form', form: form
 
     .three-columns.offset-five

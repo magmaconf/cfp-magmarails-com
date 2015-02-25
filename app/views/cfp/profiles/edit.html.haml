@@ -2,7 +2,7 @@
   %h3= t('profiles.profile')
 
 .eight-columns
-  = form_for @profile, url: profile_path, html: { id: 'edit_profile' } do |form|
+  = form_for @profile, url: profile_path, html: { id: 'edit_profile', novalidate: true } do |form|
     = render 'form', form: form
 
     .three-columns.offset-five

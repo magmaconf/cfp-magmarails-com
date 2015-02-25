@@ -5,7 +5,7 @@
   .line
   %h4= t('profiles.profile')
   .pic
-    = image_tag current_user.gravatar_url(size: 150)
+    = image_tag current_user.gravatar_url(size: 150, default: reylero_fallback)
   .user_name
     = current_user.nickname
   .company

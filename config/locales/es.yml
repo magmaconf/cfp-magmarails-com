@@ -36,7 +36,7 @@ es:
     es: Español
   profiles:
     attributes:
-      bio: Bio
+      bio: Un poco acerca de tí
       company: Empresa
       email: E-mail
       language: Idioma
@@ -64,7 +64,7 @@ es:
       title: Título
     back_to_proposals: '<< Regresar a propuestas'
     comments: Comentarios
-    create: Crear
+    create: Enviar
     days: DÍAS RESTANTES
     last_day: ÚLTIMO DIA
     day_over: TERMINÓ EL TIEMPO

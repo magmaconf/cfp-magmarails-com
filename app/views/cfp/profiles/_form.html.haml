@@ -1,26 +1,38 @@
-= form.label :name, t('profiles.attributes.name')
-= form.text_field :name, class: 'name', required: 'true', tabindex: '1', maxlength: 40
+%fieldset.form-with-errors
+  .nine-columns.required
+    = form.label :name, t('profiles.attributes.name')
+    .error.left-arrow ! This field is required
+    = form.text_field :name, class: 'name', required: 'true', tabindex: '1', maxlength: 40
 
-.left
-  = form.label :title, t('profiles.attributes.title')
-  = form.text_field :title, tabindex: '2', maxlength: 40
+  .six-columns.required
+    = form.label :title, t('profiles.attributes.title')
+    .error.left-arrow ! This field is required
+    = form.text_field :title, tabindex: '2', maxlength: 40
 
-  = form.label :email, t('profiles.attributes.email')
-  = form.text_field :email, type: 'email', required: 'true', tabindex: '4'
+  .six-columns.required
+    = form.label :company, t('profiles.attributes.company')
+    .error.left-arrow ! This field is required
+    = form.text_field :company, tabindex: '3', maxlength: 40
 
-.right
-  = form.label :company, t('profiles.attributes.company')
-  = form.text_field :company, tabindex: '3', maxlength: 40
+  .six-columns.required
+    = form.label :email, t('profiles.attributes.email')
+    .error.left-arrow ! This field is required
+    = form.text_field :email, type: 'email', required: 'true', tabindex: '4'
 
-  = form.label :language, t('profiles.attributes.language')
-  = form.select :locale, languages
+  .six-columns.required
+    = form.label :language, t('profiles.attributes.language')
+    .error.left-arrow ! This field is required
+    %br
+    = form.select :locale, languages, prompt: 'Please select...'
 
-= form.label :bio, t('profiles.attributes.bio')
-= form.text_area :bio, rows: 6, class: 'input-block-level title', tabindex: '6'
+  .twelve-columns
+    = form.label :bio, t('profiles.attributes.bio')
+    = form.text_area :bio, rows: 6, class: 'input-block-level title', tabindex: '6'
 
 - content_for :scripts do
   :javascript
     $(document).ready(function() {
       form = $('#edit_profile');
-      new Cfp.Views.FormEditView({ el: $('#edit_profile') })
+      new Cfp.Views.FormEditView({ el: form })
+      new Cfp.FormValidation(form)
     });

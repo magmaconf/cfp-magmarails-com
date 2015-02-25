@@ -38,7 +38,7 @@ en:
     es: Spanish
   profiles:
     attributes:
-      bio: Bio
+      bio: A litte bit about you
       company: Company
       email: E-mail
       language: Language
@@ -65,7 +65,7 @@ en:
       tags: Tags
       title: Title
     back_to_proposals: '<< Back to proposals'
-    create: Create
+    create: Submit
     comments: Comments
     days: DAYS LEFT
     last_day: LAST DAY

@@ -26,7 +26,7 @@
       %span= t('proposals.days')
 
 .nine-columns
-  = form_for @proposal do |form|
+  = form_for @proposal, html: { novalidate: true } do |form|
     = render 'form', form: form, klass: 'gray-background'
 
     .three-columns.offset-five.move-buttons
