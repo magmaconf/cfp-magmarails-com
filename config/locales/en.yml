@@ -35,7 +35,7 @@ en:
     es: Spanish
   profiles:
     attributes:
-      bio: Bio
+      bio: A litte bit about you
       company: Company
       email: E-mail
       language: Language

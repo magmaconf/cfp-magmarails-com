@@ -235,7 +235,7 @@
 
 /* 2015 styles overrides */
 
-.new_proposal {
+.form-with-errors {
   label {
     display: inline-block;
     width: auto;
@@ -252,6 +252,7 @@
 }
 
 .error {
+  background: white;
   border: 2px solid #F00;
   color: #F00;
   display: none;

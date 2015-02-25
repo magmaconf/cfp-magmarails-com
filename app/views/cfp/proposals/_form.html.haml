@@ -1,4 +1,4 @@
-%fieldset{ class: klass }
+%fieldset.form-with-errors{ class: klass }
   .nine-columns.required
     = form.label :title, t('proposals.attributes.title')
     .error.left-arrow ! This field is required
@@ -23,5 +23,6 @@
     .error.left-arrow ! This field is required
     = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract'), required: 'true'
 
-:coffee
-  $ -> new Cfp.FormValidation $('form')
+- content_for :scripts do
+  :coffee
+    $ -> new Cfp.FormValidation $('form')

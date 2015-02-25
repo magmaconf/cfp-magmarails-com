@@ -33,7 +33,7 @@ es:
     es: Español
   profiles:
     attributes:
-      bio: Bio
+      bio: Un poco acerca de tí
       company: Empresa
       email: E-mail
       language: Idioma
