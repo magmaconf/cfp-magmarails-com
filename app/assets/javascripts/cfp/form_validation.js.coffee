@@ -9,7 +9,7 @@ class Cfp.FormValidation
     !@invalidFields.length
 
   requiredFields: =>
-    @$form.find('.required').find('input, textarea')
+    @$form.find('.required').find('input, textarea, select')
 
   isValid: (field) ->
     @invalidFields.push $(field) unless !!$(field).val()
