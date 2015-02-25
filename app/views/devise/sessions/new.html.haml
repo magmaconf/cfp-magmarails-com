@@ -2,8 +2,7 @@
   .centered-six
     .circle
       .login-up
-        = link_to '/auth/github' do
-          = image_tag 'blog.svg', class: 'blog'
+        = link_to 'login', '/auth/github', class: 'github-login'
     -#.important
       %p
         = t('terms.important')
