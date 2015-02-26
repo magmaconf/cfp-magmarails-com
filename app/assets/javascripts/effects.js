@@ -15,23 +15,12 @@ $(document).ready(function() {
 
   if (height > 727 && height < 897) {
     //$('#home-top').css('height', 600);
-    $('.mask').css({
-      'width': '30%',
-      'margin-top': '10px'
-    });
     //$('.circle').css('top','535px');
     $('.important').css('top','650px');
     $('.counting').css('top','650px');
-    $('#lists').css('margin-top', height - 690);
   } else if (height > 897) {
-    $('#lists').css('margin-top', height - 740);
     // $('#home-top').css('height', 650);
-    $('.mask').css('width', '40%');
     $('.important, .counting').css('top', 685);
-  }
-
-  if (width == 1024 && height == 768) {
-    $('.mask').css('width', '50%');
   }
 
   // MOBILE VERSION
