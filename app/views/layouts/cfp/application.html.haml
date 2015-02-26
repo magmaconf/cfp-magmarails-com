@@ -36,11 +36,10 @@
           = render 'cfp/profiles/profile'
           .lath-image
           %footer.prof
+            = image_tag 'crowd-gray-logo.svg', alt: 'Crowd Interactive Logo', class: 'crowd-footer-logo'
             %p
-              = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo', class: 'crowd-logo'
-              %span
-                &copy;
-                = t('copyright')
+              &copy;
+              = t('copyright')
 
         .nine-columns
           #title_rate.titles
