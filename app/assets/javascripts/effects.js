@@ -140,5 +140,13 @@ $(document).ready(function() {
     event.preventDefault();
     $("body, html").animate({scrollTop: 480}, 600);
   });
+
+  $(document).ajaxSuccess(function(data, jqXHR, options) {
+    console.log(options)
+    if(options.url = '/send_mail') {
+      console.log(":D")
+      $('#sponsor-form .required input').val('')
+    }
+  });
 });
 

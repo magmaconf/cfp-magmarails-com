@@ -197,6 +197,12 @@ a {
     }
   }
 
+  .sponsors {
+    a {
+      color: #ff6666;
+    }
+  }
+
   .title {
     color: #ee5c5d;
     font-family: 'Teko', sans-serif;
@@ -251,7 +257,7 @@ a {
     font-size: 21px;
   }
 
-  input[type=text] {
+  input {
     background-color: #ebebeb !important;
     border: 1px solid #ee5c5d;
     width: 185px;
@@ -267,11 +273,22 @@ a {
 
   label {
     font-size: 18px;
+    display: inline-block;
+    width: 100px;
 
     &:after {
       color: #ff0000;
       content: ' *';
     }
+  }
+
+  .left-arrow {
+    margin-left: 110px;
+    top: 33px;
+  }
+
+  .invalid .error {
+    display: inline;
   }
 }
 

@@ -16,4 +16,6 @@ CfpMagmaCom::Application.routes.draw do
 
   devise_for :users
 
+  match '/send_mail', to: 'contact#send_mail', via: 'post'
+
 end
