@@ -2,7 +2,6 @@
   = link_to user_based_proposal_path(proposal), class: 'btn-proposal', title: proposal.title do
     = already_reviewed(proposal)
     .aro
-      %span
       %span.tit-prop= truncate(proposal.title, separator: ' ')
       - if current_user.can_review?
         %span.gold
