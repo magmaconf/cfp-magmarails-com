@@ -63,7 +63,7 @@
 
 .new-proposal, .gray-background {
   background: $profile-bkg;
-  padding: 10px 0 100px;
+  padding: 10px 0 10px;
   margin-bottom: 20px;
 
   #proposal_title { width: 90% }
@@ -237,10 +237,12 @@
 /* 2015 styles overrides */
 
 .form-with-errors {
+  div { overflow: visible }
+
   label {
     display: inline-block;
-    width: auto;
     vertical-align: middle;
+    width: auto;
   }
 
   .required label {
@@ -259,10 +261,18 @@
   display: none;
   font-size: 13px;
   overflow: visible;
-  padding: 5px;
+  padding: 5px 10px;
   position: relative;
+  top: -8px;
 
   .invalid & { display: inline-block }
+}
+
+.invalid {
+  input[type=text], select, textarea {
+    border: 1px solid #F66;
+    background-color: #ffd9d9;
+  }
 }
 
 
@@ -300,12 +310,12 @@
 
 .left-arrow {
   @extend .arrow;
-  margin-left: 10px;
+  margin-left: 5px;
 
   &:before, &:after {
     border-width: 5px 10px 5px 0;
     bottom: auto;
-    top: 10px;
+    top: 12px;
   }
 
   &:before{
@@ -319,3 +329,25 @@
   }
 }
 
+
+.required-fields-message {
+  padding: 13px 0px;
+
+  small:before {
+    content: '*';
+    border-radius: 50%;
+    border: 2px solid #F66;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+    color: #F66;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  hr {
+    border-bottom: 1px solid #F66;
+    margin: 5px 0;
+  }
+}

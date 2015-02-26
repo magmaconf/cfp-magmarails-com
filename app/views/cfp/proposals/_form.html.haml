@@ -1,16 +1,21 @@
 %fieldset.form-with-errors{ class: klass }
-  .nine-columns.required
+  .twelve-columns.required-fields-message
+    %small All of the following fields are required
+    %hr
+  .six-columns.required
     = form.label :title, t('proposals.attributes.title')
     .error.left-arrow ! This field is required
     = form.text_field :title, required: 'true'
-  .six-columns.required
+  .three-columns.required
     = form.label :level, t('proposals.attributes.level')
+    .error.left-arrow !
+    %br
     = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t(l, scope: 'proposals.levels'), l]}, prompt: 'Please select...'
-    .error.left-arrow ! This field is required
-  .six-columns.required
+  .three-columns.required
     = form.label :language, t('proposals.attributes.language')
+    .error.left-arrow !
+    %br
     = form.select :language, Cfp::Proposal::LANGUAGE, prompt: 'Please select...'
-    .error.left-arrow ! This field is required
   -#.four-columns
     -#= form.label :tags, t('proposals.attributes.tags')
     -#= form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')

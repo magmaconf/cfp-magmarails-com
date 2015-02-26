@@ -29,9 +29,9 @@
   = form_for @proposal, html: { novalidate: true } do |form|
     = render 'form', form: form, klass: 'new-proposal'
 
-    .three-columns.offset-five.move-buttons
+    .one-columns.offset-four
       .btn-cancel
         = link_to t('profiles.cancel'), proposals_path, class: 'aro'
-    .four-columns.move-buttons
+    .three-columns
       .btn-aro
         = form.submit t('proposals.create'), class: 'aro'
