@@ -80,11 +80,13 @@ ul.proposals {
       line-height: 1;
       padding: 20px 0;
       margin-right: 15px;
+
+      .fa {border: 0;}
     }
 
     .tit-prop {
       display: inline-block;
-      padding: 23px 0;
+      vertical-align: middle;
       width: 500px;
 
       a {

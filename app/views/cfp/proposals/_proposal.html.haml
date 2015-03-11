@@ -1,5 +1,6 @@
 %li.twelve-columns{ class: reviewed(proposal) ? 'reviewed' : ''}
-  .rank 1
+  .rank
+    %i.fa.fa-asterisk
   .tit-prop
     = link_to user_based_proposal_path(proposal), title: proposal.title do
       = already_reviewed(proposal)
