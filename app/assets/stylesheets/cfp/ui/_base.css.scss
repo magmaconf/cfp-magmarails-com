@@ -78,10 +78,13 @@ ul.proposals {
       font-size: 30px;
       color: #dc484b;
       line-height: 1;
-      padding: 20px 0;
+      padding: 15px 0;
       margin-right: 15px;
 
-      .fa {border: 0;}
+      .fa {
+        border: 0;
+        margin: 0;
+      }
     }
 
     .tit-prop {
