@@ -54,32 +54,96 @@ label {
           border-radius: 50%;
 }
 
-.tit-prop {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  height: 55px;
-  display: inline-block;
+ul.proposals {
+  li {
+    background-color: #ffffff;
+    height: 70px;
+    margin-bottom: 10px;
+    list-style: none;
+
+    &.reviewed {
+      background-color: #fbfbfb;
+
+      .review-btn {
+        color: #989898;
+      }
+    }
+
+    .rank {
+      float: left;
+      width: 67px;
+      background-color: #fbfbfb;
+      text-align: center;
+      font-family: 'Teko', sans-serif;
+      font-size: 30px;
+      color: #dc484b;
+      line-height: 1;
+      padding: 20px 0;
+      margin-right: 15px;
+    }
+
+    .tit-prop {
+      display: inline-block;
+      padding: 23px 0;
+      width: 500px;
+
+      a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    .review-btn {
+      color: #ff6666;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      margin-left: 41px;
+      padding: 25px 0;
+      text-align: center;
+      width: 130px;
+
+      span {
+        background: asset_url('arrows-right.svg') 0 22px;
+        width: 17px;
+        height: 20px;
+        display: inline-block;
+        margin: 0 20px 0 0;
+        float: right;
+      }
+
+      &:hover {
+        background-color: #ff6666;
+        color: #ffffff;
+        text-decoration: none;
+
+        span {
+          background-position: 0px -1px;
+        }
+      }
+    }
+  }
 }
 
 .silver {
   font-size: 10px !important;
   width: 40%;
-  float: left;
   padding: 0 !important;
   font-weight: 300;
   position: relative;
   bottom: 1px;
 
   i {
+    color: #d2d2d2;
     border: 0;
   }
 }
 
 .gold {
   @extend .silver;
-  margin-left: 9px;
-  border-right: 1px solid $silver;
+  margin-right: 20px;
 
   i {
     color: $gold;

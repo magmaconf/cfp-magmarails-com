@@ -28,7 +28,7 @@
 
 
 .nine-columns.lists
-  %ul
+  %ul.proposals
     =render @proposals
     - if cfp_open? and !current_user.can_review? and available?
       %li.three-columns
