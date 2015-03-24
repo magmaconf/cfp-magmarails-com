@@ -1,18 +1,23 @@
 %li.twelve-columns{ class: reviewed(proposal) ? 'reviewed' : ''}
-  .rank
-    %i.fa.fa-asterisk
+  - if reviewed(proposal)
+    .check
+      = already_reviewed(proposal)
+  - else
+    .rank
+      %i.fa.fa-asterisk
   .tit-prop
     = link_to user_based_proposal_path(proposal), title: proposal.title do
-      = already_reviewed(proposal)
       = proposal.title
-  - if current_user.can_review?
-    %span.gold
-      %i.fa.fa-star
-      = proposal.average_ranking
-    %span.silver
-      %i.fa.fa-comment
-      = comments_count(proposal)
-  = link_to user_based_proposal_path(proposal), class: 'review-btn' do
-    = reviewed(proposal) ? 'Reviewed' : 'Review'
-    %span
+  #controls
+    - if current_user.can_review?
+      %span.gold
+        %i.fa.fa-star
+        = proposal.average_ranking
+      %span.silver
+        %i.fa.fa-comment
+        = comments_count(proposal)
+
+    = link_to user_based_proposal_path(proposal), class: 'review-btn' do
+      = reviewed(proposal) ? 'Reviewed' : 'Review'
+      %span
 

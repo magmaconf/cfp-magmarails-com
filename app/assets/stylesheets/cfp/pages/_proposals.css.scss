@@ -87,6 +87,15 @@
   ul li {
     margin-bottom: 20px;
 
+    .check {
+      background-color: #fbfbfb;
+      display: inline-block;
+      float: left;
+      margin-top: 22px;
+      text-align: center;
+      width: 67px;
+    }
+
     .raked {
       background: $checked;
       border: 0;
@@ -190,6 +199,11 @@
       }
     }
   }
+}
+
+#controls {
+  display: inline-block;
+  float: right;
 }
 
 #ranking {
