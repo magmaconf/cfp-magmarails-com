@@ -90,7 +90,7 @@ ul.proposals {
     .tit-prop {
       display: inline-block;
       vertical-align: middle;
-      width: 500px;
+      width: 495px;
 
       a {
         font-family: 'Open Sans', sans-serif;
@@ -148,7 +148,7 @@ ul.proposals {
 
 .gold {
   @extend .silver;
-  margin-right: 20px;
+  margin-right: 18px;
 
   i {
     color: $gold;
