@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 gem 'pg', '~> 0.18.3'
+gem 'puma', '~> 2.14.0'
 
 gem 'airbrake', '~> 3.1.6'
 gem 'cactu', '~> 0.0.16'
@@ -32,7 +33,6 @@ end
 
 group :production, :stage do
   gem 'rails_12factor'
-  gem 'thin'
 end
 
 group :assets do
