@@ -25,7 +25,7 @@ gem 'will_paginate'
 gem 'figaro'
 
 group :development do
-  #gem 'pry-debugger'
+  gem 'pry-byebug', '~> 3.2.0'
   gem 'quiet_assets'
 end
 
