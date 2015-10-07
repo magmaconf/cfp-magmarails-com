@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
 
+gem 'pg', '~> 0.18.3'
+
 gem 'airbrake', '~> 3.1.6'
 gem 'cactu', '~> 0.0.16'
 gem 'cfp',
@@ -22,7 +24,6 @@ gem 'will_paginate'
 gem 'figaro'
 
 group :development do
-  gem 'sqlite3'
   #gem 'pry-debugger'
   gem 'heroku'
   gem 'heroku_pull'
@@ -30,7 +31,6 @@ group :development do
 end
 
 group :production, :stage do
-  gem 'pg'
   gem 'rails_12factor'
   gem 'thin'
 end
