@@ -26,8 +26,6 @@ gem 'figaro'
 
 group :development do
   #gem 'pry-debugger'
-  gem 'heroku'
-  gem 'heroku_pull'
   gem 'quiet_assets'
 end
 
