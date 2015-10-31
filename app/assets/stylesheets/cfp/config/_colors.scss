@@ -1,0 +1,33 @@
+/*
+ * Base colors
+ */
+
+// New
+$maize: #F5D2AA;
+$tan: #D2AA80;
+$coffee: #736458;
+$carnation: #F0505A;
+$wild-sand: unquote("#F5F5F5"); // Bug with sass not preserving author's color https://github.com/sass/sass/issues/363
+
+// Legacy
+$gray: #8b8a89;
+$gold: #ffbf00;
+$silver: #c5c1bc;
+$white: #fff;
+
+/*
+ * Section colors
+ */
+$anchor: #554a45;
+$anchor-hover: #ff6666;
+$btn-ios-bkg: #9ed2ea;
+$btn-ios-hover: #7cc3e3;
+$top: #312926;
+$line: #c5c1bd;
+$profile-bkg: #ffffff;
+$days: #676659;
+$checked: #07b4b4;
+$lines: #c7c3bf;
+$borders: #a2a2a2;
+$radio: #b4a797;
+$footer-color: #a02d2e;

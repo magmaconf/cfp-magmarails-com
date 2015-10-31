@@ -13,14 +13,18 @@ a {
 }
 
 #home-top {
-  background: #ee5c5d;
-  height: 650px;
+  background: $maize;
+  height: 685px;
+
+  .row > *:first-child {
+    margin-top: 35px;
+  }
 
   .circle {
     position: absolute;
-    top: 567px;
+    top: 605px;
     left: 50%;
-    margin-left: -83px;
+    margin-left: -75px;
     z-index: 2;
 
     a:hover {
@@ -34,7 +38,6 @@ a {
 
   img {
     display: block;
-    margin: 10px auto 0 auto;
   }
 
   .mask {
@@ -42,31 +45,36 @@ a {
     width: 30%;
   }
 
+  .mask.placeholder {
+    background-color: $tan;
+    border-radius: 100%;
+    display: block;
+    height: 250px;
+    margin: 35px auto 25px auto;
+    width: 250px;
+  }
+
   .ready {
-    color: #fff3cc;
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
-    font-weight: 500;
-    margin: 20px 0 0 0;
+    img {
+      margin: 0 auto;
+    }
   }
 
   .you {
     @extend .ready;
-    font-size: 24px;
-    margin: 5px 0 0 0;
+    color: $carnation;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: -60px;
   }
 
   .welcome {
     display: inline-block;
     color: #a02d2e;
     width: 200px;
-    margin: 12px auto 0;
+    margin: 10px auto 0;
     font: 100 1em/1.1 'Oswald';
     text-transform: uppercase;
-  }
-
-  .magma_logo {
-    margin: 20px auto 0;
   }
 
   .blog {
@@ -75,15 +83,16 @@ a {
   }
 
   .cfp {
-    color: #a02d2e;
-    font-family: 'Teko', sans-serif;
-    font-size: 18px;
+    color: $coffee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
     text-transform: uppercase;
 
     img {
       display: inline;
-      height: 20px;
-      margin: 0 0 0 5px;
+      height: 14px;
+      padding: 3px 0;
+      vertical-align: top;
     }
   }
 
@@ -135,59 +144,59 @@ a {
 }
 
 #lists {
-  margin-top: 65px;
-  padding-bottom: 90px;
-
-  p {
-    display: inline-block;
-    padding: 8px 0 10px 0;
-  }
+  background-color: $wild-sand;
+  padding-top: 70px;
+  padding-bottom: 25px;
 
   footer {
+    .logo {
+      margin: 20px 20px 0;
+    }
     .copyright {
-      color: $footer-color;
+      color: $coffee;
+      display: inline;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
       font-size: 12px;
-      text-transform: uppercase;
-      padding: 10px 0 30px 10px;
-      float: right;
+      margin-top: 25px;
     }
   }
 }
 
 #home-down {
   background: #ffffff;
-  padding: 60px 0 0 0;
+  padding: 35px 0 40px 0;
 
-  hr {
-    border-width: 1px;
-    border-style: solid;
-    margin: 10px auto 20px auto;
+  .three-columns.override {
+    width: 305px;
   }
 
   .ready-hr {
-    width: 100%;
+    width: 970px;
+    border-top-width: 1px;
+    border: 1px solid $carnation;
+    margin: 10px auto 15px;
   }
 
   p {
     display: inline-block;
-    padding: 8px 0 10px 0;
-    font-size: 14px;
-    font-weight: 400;
+    color: $coffee;
+    padding-bottom: 15px;
+    font-size: 13px;
 
     a {
-      font-size: 14px;
-      font-weight: 400;
+      font-size: 13px;
     }
   }
 
   ul {
+    color: $coffee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
     list-style: none;
 
     li {
       padding-left: 1em;
-      padding-bottom: 20px;
+      padding-bottom: 12px;
       text-indent: -.7em;
 
       &:before {
@@ -205,30 +214,35 @@ a {
   }
 
   .title {
-    color: #ee5c5d;
-    font-family: 'Teko', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
+    color: $carnation;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
     text-transform: uppercase;
   }
 
+  .title + p {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
   .header {
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
-    font-weight: 300;
+    color: $coffee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
     line-height: 1;
     text-transform: uppercase;
   }
 
-  .back-to-sig-in {
-    margin-top: 15px;
+  .back-to-sign-in {
+    margin-top: 40px;
+    height: 20px;
+    margin-bottom: 10px;
 
     a {
-      color: #a02d2e;
+      color: $carnation;
       float: right;
       font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 13px;
 
       span {
         background: asset_url('arrows.svg') no-repeat -37px 0px;
@@ -236,7 +250,7 @@ a {
         height: 14px;
         display: inline-block;
         background-size: 50px;
-        margin: 10px 0 0 0;
+        margin-right: 10px;
       }
 
       &:hover {
@@ -251,31 +265,34 @@ a {
   }
 
   input {
+    background-color: $wild-sand;
+    border: 1px solid $tan;
     color: #792222;
-    height: 38px;
-    padding: 0 5px;
-    font-family: 'Teko', sans-serif;
-    font-size: 21px;
-  }
-
-  input {
-    background-color: #ebebeb !important;
-    border: 1px solid #ee5c5d;
-    width: 185px;
+    height: 30px;
+    font-size: 15px;
+    width: 95%;
   }
 
   input[type=submit] {
-    background-color: #ffc200 !important;
-    border: 1px solid #ffc200;
+    background-color: $carnation;
+    border: 1px solid $carnation;
+    color: white;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 25px;
     text-transform: uppercase;
     text-align: center;
-    width: 195px;
+    width: 100%;
   }
 
   label {
-    font-size: 18px;
     display: inline-block;
-    width: 100px;
+    color: $coffee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
 
     &:after {
       color: #ff0000;
@@ -343,15 +360,6 @@ footer {
   }
 }
 
-.crowd-logo {
-  height: 30px;
-  float: right;
-}
-
-.crowd-footer-logo {
-  height: 30px;
-}
-
 .important {
 
   p {
@@ -371,38 +379,37 @@ footer {
 }
 
 .closing-date {
-  color: #ee5c5d;
-  font-size: 16px;
-  margin: 6px 0;
+  color: $carnation;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .important-terms {
-  color: #792323;
+  color: $coffee;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  display: block !important;
+  font-weight: 400px;
+  margin-top: 20px;
 }
 
 .check-out {
-  color: #a02d2e;
+  color: $coffee;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  margin-top: 10px;
   text-decoration: underline;
 
   span {
-    background: asset_url('arrows.svg') no-repeat 0px 0px;
+    background: asset_url('arrows_down.png') no-repeat;
     width: 13px;
-    height: 14px;
+    height: 15px;
     display: block;
-    background-size: 50px;
-    margin: 10px auto;
+    margin: 17px auto 0 auto;
   }
 
   &:hover {
     text-decoration: none;
-
-    span {
-      background: asset_url('arrows.svg') no-repeat 0px -28px;
-      background-size: 50px;
-    }
   }
 }
 
@@ -439,10 +446,11 @@ footer {
   }
 }
 
-.ready-hr {
-  border: 2px solid #a02d2e;
-  margin: 10px auto;
-  width: 45%;
+.last-hr {
+  border: 1px solid $tan;
+  border-top-width: 0;
+  margin: 15px auto 30px;
+  width: 970px;
 }
 
 .proposal {
@@ -456,24 +464,19 @@ footer {
 }
 
 .magma_logo {
-  display: block;
-  height: 36px;
   margin: 0 auto;
-  padding: 5px 0 10px 0;
 }
 
 body > footer {
   background: #ffffff;
   padding: 0 0 15px 0;
 
-  hr {
-    border: 1px solid #312926;
-    margin: 0 0 25px 0;
-    opacity: .1;
+  hr.last-hr {
+    margin-bottom: 20px;
   }
 
   .cfp-footer-logo {
-    width: 112px;
+    padding: 0 30px 5px 0;
   }
 
   .magma-footer-logo {

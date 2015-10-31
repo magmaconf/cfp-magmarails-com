@@ -2,7 +2,8 @@
   .centered-six
     .circle
       .login-up
-        = link_to 'login', '/auth/github', class: 'github-login'
+        = link_to '/auth/github', class: 'github-login' do
+          %span Login
     -#.important
       %p
         = t('terms.important')

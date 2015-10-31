@@ -33,27 +33,30 @@
           =link_to '#', class: 'info_phone' do
             = image_tag 'info.svg'
           = link_to 'http://magmaconf.com' do
-            = image_tag 'magma.svg', class: 'magma_logo', alt: 'Magma Conference'
-          = image_tag 'cfp-image.svg', alt: 'Reylero', class: 'mask'
-          %hr.ready-hr
+            = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
+          -#= image_tag 'cfp-image.svg', alt: 'Reylero', class: 'mask'
+          #sign-in.mask.placeholder
           .ready
-            = t('proposal.submit')
+            -#= t('proposal.submit')
+            = image_tag 'submit.png'
             %br
-            %span.proposal= t('proposal.proposal')
+            -#%span.proposal= t('proposal.proposal')
           .you= t('magmaconf_arena')
-          %hr.ready-hr
           .cfp
             %span
-              welcome to our
-            = image_tag 'cfp.svg', alt: 'Call for papers'
+              Welcome to our
+            = image_tag 'logo_callforpapers.png', alt: 'Call for papers'
 
           .please-login
-            please login with
+            Please login with
             %br
             %strong
-              your github account
-              %br
-            to submit your proposal
+              your GitHub
+            Or
+            %strong
+              E-mail account
+            %br
+            To submit a proposal
 
       = yield
 
@@ -73,53 +76,51 @@
             %span
 
         .centered-eight
+          = image_tag 'logo_magmalabs.png', class: 'logo'
           .copyright
             &copy;
             = t('copyright')
-
-          = image_tag 'crowd-1.svg', class: 'crowd-logo'
 
     =# render 'cfp/application/lists'
 
     #home-down.container
       .row
-        .six-columns.header
+        .offset-one.eight-columns.header
           Something you should know
-        .back-to-sig-in
 
-          =link_to '#' do
+        .two-columns.back-to-sign-in
+          =link_to '#sign-in' do
             %span
             Back to sign in
 
         %hr.ready-hr
 
-        .four-columns
+        .offset-one.three-columns.override
           .title= t('popup.magma.title')
 
           %p=raw t('popup.magma.one')
           %p= t('popup.magma.two')
           %p= t('popup.magma.three')
 
-        .four-columns
-          .title= t('popup.terms.title')
+        .three-columns.override
+          .title= t('popup.speakers.title')
 
-          %p= raw t('popup.terms.one')
-          %p= t('popup.terms.two')
-          %p= t('popup.terms.three')
+          %p= raw t('popup.speakers.one')
+          %p= t('popup.speakers.two')
+          %p= t('popup.speakers.three')
 
-        .four-columns
+        .three-columns.override
           .title= t('popup.judges.title')
 
           %p=raw t('popup.judges.one')
           %p= t('popup.judges.two')
           %p=raw t('popup.judges.three')
           %p= t('popup.judges.four')
-          %p= t('popup.judges.five')
 
       .row
-        %hr
+        %hr.last-hr
 
-        .eight-columns
+        .offset-one.seven-columns
           .title= t('popup.topics.title')
 
           %p=raw t('popup.topics.one')
@@ -133,8 +134,9 @@
             %li= t('popup.topics.seven')
             %li= t('popup.topics.eight')
             %li= t('popup.topics.nine')
+            %li= t('popup.topics.ten')
 
-        .four-columns.sponsors
+        .three-columns.sponsors
           .title= t('popup.sponsors.title')
 
           %p=raw t('popup.sponsors.one')
@@ -157,11 +159,9 @@
 
     %footer
       .row
-        %hr
+        %hr.last-hr
         .centered-six
-          = image_tag 'callforpapers.svg', class: 'cfp-footer-logo'
-          %span
-            of
+          = image_tag 'logo_callforpapers_gris.png', class: 'cfp-footer-logo'
           = image_tag 'callforpapers-magma.svg', class: 'magma-footer-logo'
 
     :javascript

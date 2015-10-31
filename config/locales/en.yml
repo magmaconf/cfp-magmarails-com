@@ -5,9 +5,9 @@ en:
   proposal:
     submit: SUBMIT YOUR
     proposal: PROPOSAL
-  magmaconf_arena: 'FOR #MAGMACONF 2015 ARENA!'
+  magmaconf_arena: 'FOR #MAGMACONF 2016 ARENA!'
   closing_date: Call for Papers closes
-  closing_date_2: March 13, 2015
+  closing_date_2: January 15th, 2016
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: '<< Back to all proposals'
@@ -20,7 +20,7 @@ en:
       worst: It can be better
     title: Rate Proposal
     thoughts: Leave your thoughts
-  copyright: 2015, This site is protected by Copyright. Under U.S and international law. All rights reserved.
+  copyright: 2016, This site is protected by Copyright. Under U.S and international law. All rights reserved.
   delete_confirm: Are you sure?
   home:
     ready: ARE YOU READY?
@@ -114,25 +114,19 @@ en:
       ten: 'Got a different subject you’d like to talk about?  Go ahead! We’ll look into it and evaluate it with an open mind.'
     speakers:
       title: Speakers
-      one: What do speakers get?
-      two: Unfortunately, we cannot sponsor your traveling costs or hosting. However, we are prepared to grant all chosen speakers a free entrance to the event, and 3 meals per day, during the event.
-      three: If your company can support your travel and hosting costs, we are more than glad to add them as Sponsors of the event.  We can assist on the arrival/departure to Manzanillo’s airport, and housing logistics.
+      one: '<strong>MagmaConf will grant one entrance plus 3 meals</strong> a day during the event to all speakers. However, <strong>transportation and housing will not be included.</strong>'
+      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
+      three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     sponsors:
       title: Sponsors
       one: <strong>Want to sponsor the event?</strong>
-      two: 'Shoot us an email at <a href="mailto:info@magmaconf.com" target="_top">info@magmaconf.com</a> and we’ll send you the prospectus, and work out a way to expose your company in an original and effective way with the attendees; not only at the event, but also before and after it.'
+      two: 'Use this form or shoot us an email at <a href="mailto:info@magmaconf.com" target="_top">info@magmaconf.com</a> and we’ll send you the prospectus, and work out a way to expose your company in an original and effective way with the attendees; not only at the event, but also before and after it.'
     judges:
       title: Judges
       one: <strong>Who will choose the talks?</strong>
       two: We’re inviting Dev Community leaders and Entrepreneurs that have experience with conferences.  We want to have an inclusive jury, so we are still awaiting for confirmation on many peeps that we’ve invited to be part of it. Oh, and yes, we’re including females and males in the group.
       three: 'If you have any more questions, would like more feedback about your submissions or the event, please contact us at <a href="mailto:info@magmaconf.com" target="_top">info@magmaconf.com</a> '
       four: Best of luck!
-      five: The Magma Conf Committee.
-    terms:
-      title: Terms
-      one: '<strong>MagmaConf will grant one entrance plus 3 meals a day</strong> during the event to all speakers. However, <strong>transportation and housing will not be included.</strong>'
-      two: 'In the case of a speaker not being able to attend the conference, we will select someone else from the pool of applicants, whoever has the highest score according to the point system used by the Internal Committee. If there is a tie, the committee will make the decision and that will be irrevocable.'
-      three: 'All speakers have a 40-minute slot for their talk, including a Q&A session. We encourage you to make your talk interesting, engaging, fun and, if possible, interactive.'
     button: 'Got it'
   time:
     formats:
