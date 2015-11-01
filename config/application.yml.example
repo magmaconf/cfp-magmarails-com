@@ -4,6 +4,8 @@ CFP_APP_SECRET: ae896afe193632e02271450f9e72131f3aaef4db
 
 CFP_ENDING_DATE: '3000-12-30'
 
+CFP_CONTACT_EMAIL: "cfp@example.com"
+
 DEVISE_SECRET_KEY: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 SECRET_KEY_BASE: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
