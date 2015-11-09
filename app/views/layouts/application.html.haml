@@ -145,16 +145,16 @@
           = form_tag '/send_mail', remote: true, method: :post, id: 'sponsor-form', novalidate: true do
             .required
               %label Name
-              .error.left-arrow ! This field is required
-              %input{type: 'text', name: 'name', required: 'true'}
+              .error.left-arrow
+              %input{type: 'text', name: 'name', required: 'true', data: error_messages }
             .required
               %label Company
-              .error.left-arrow ! This field is required
-              %input{type: 'text', name: 'company', required: 'true'}
+              .error.left-arrow
+              %input{type: 'text', name: 'company', required: 'true', data: error_messages }
             .required
               %label E-mail
-              .error.left-arrow ! This field is required
-              %input{type: 'email', name: 'email', required: 'true'}
+              .error.left-arrow
+              %input{type: 'email', name: 'email', required: 'true', data: error_messages }
             %input{type: 'submit', value: 'Email me'}
 
     %footer
@@ -163,10 +163,3 @@
         .centered-six
           = image_tag 'logo_callforpapers_gris.png', class: 'cfp-footer-logo'
           = image_tag 'logo_magmaconf_gris.png', class: 'magma-footer-logo'
-
-    :javascript
-      'effects'
-      $(document).ready(function() {
-        form = $('#sponsor-form');
-        new Cfp.FormValidation(form)
-      });

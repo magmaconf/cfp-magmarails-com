@@ -9,10 +9,12 @@ class Cfp.FormValidation
     !@invalidFields.length
 
   requiredFields: =>
-    @$form.find('.required').find('input, textarea, select')
+    @$form.find(':required')
 
   isValid: (field) ->
-    @invalidFields.push $(field) unless !!$(field).val()
+    if $(field).is(':required') and !field.checkValidity()
+      @invalidFields.push $(field)
+
 
   cleanFields: =>
     @invalidFields = []
@@ -20,4 +22,6 @@ class Cfp.FormValidation
 
   displayErrors: =>
     for field in @invalidFields
+
+      field.prev('.error').text(field[0].validationMessage)
       field.parent('.required').addClass('invalid')

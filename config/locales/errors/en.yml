@@ -1,0 +1,7 @@
+---
+en:
+  errors:
+    # Look at https://github.com/javanto/civem.js#api
+    form:
+      value_missing: Is required
+      type_mismatch: Is invalid

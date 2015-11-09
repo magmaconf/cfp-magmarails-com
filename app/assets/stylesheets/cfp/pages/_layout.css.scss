@@ -167,7 +167,9 @@ a {
   padding: 35px 0 40px 0;
 
   .three-columns.override {
-    width: 305px;
+    @media screen and (min-width: 1200px) {
+      width: 305px;
+    }
   }
 
   .ready-hr {
