@@ -93,6 +93,10 @@ en:
   terms:
     important: 'Important information'
     show: 'You must know'
+  contact:
+    greeting:
+      title: Thanks for contacting us
+      body: We are going to send you <br> <span>our prospectus soon.</span>
   popup:
     title: 'Important information'
     magma:

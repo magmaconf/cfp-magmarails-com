@@ -91,6 +91,10 @@ es:
   terms:
     important: 'Información importante'
     show: 'Tú debes saber'
+  contact:
+    greeting:
+      title: Gracias por contactarnos
+      body: Te enviaremos nuestro prospecto pronto.
   popup:
     title: Información importante
     magma:

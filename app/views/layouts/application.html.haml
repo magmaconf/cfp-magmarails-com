@@ -137,10 +137,11 @@
             %li= t('popup.topics.ten')
 
         .three-columns.sponsors
-          .title= t('popup.sponsors.title')
+          .content
+            .title= t('popup.sponsors.title')
 
-          %p=raw t('popup.sponsors.one')
-          %p=raw t('popup.sponsors.two')
+            %p=raw t('popup.sponsors.one')
+            %p=raw t('popup.sponsors.two')
 
           = form_tag '/send_mail', remote: true, method: :post, id: 'sponsor-form', novalidate: true do
             .required
@@ -156,6 +157,12 @@
               .error.left-arrow
               %input{type: 'email', name: 'email', required: 'true', data: error_messages }
             %input{type: 'submit', value: 'Email me'}
+
+          #sponsor-contact-greeting{style: "display: none"}
+            .circle
+            .text
+              %p.title= t("contact.greeting.title")
+              %p.body= raw t("contact.greeting.body")
 
     %footer
       .row
