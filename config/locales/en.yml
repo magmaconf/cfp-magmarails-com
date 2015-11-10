@@ -95,7 +95,7 @@ en:
     show: 'You must know'
   contact:
     greeting:
-      title: Thanks for contacting us
+      title: ★  Thanks for ★ <br>contacting us
       body: We are going to send you <br> <span>our prospectus soon.</span>
   popup:
     title: 'Important information'

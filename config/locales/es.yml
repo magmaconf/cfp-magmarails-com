@@ -93,7 +93,7 @@ es:
     show: 'Tú debes saber'
   contact:
     greeting:
-      title: Gracias por contactarnos
+      title: ★  Gracias por ★ <br>contactarnos
       body: Te enviaremos nuestro prospecto pronto.
   popup:
     title: Información importante
