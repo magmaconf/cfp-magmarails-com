@@ -31,12 +31,11 @@
   %ul.proposals
     =render @proposals
     - if cfp_open? and !current_user.can_review? and available?
-      %li.three-columns
-        = link_to new_proposal_path, class: 'btn-ring' do
-          .aro
-            %span.plus +
-            %span
-              = t('proposals.add_html')
+      %li.twelve-columns.new-proposal
+        = link_to new_proposal_path do
+          .btn-new-proposal
+            %span.plus
+          %span.text= t('proposals.add_html')
   .container
     .centered-six.pagination_sp
       - if current_user.can_review?

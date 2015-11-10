@@ -3,18 +3,17 @@
   %head
     %title MagmaConf: Call For Papers
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0' }
-    %meta{ name: "author", content: "Crowd Interactive - http://crowdint.com" }
+    %meta{ name: "author", content: "Magma Labs - http://www.magmalabs.io" }
     %meta{ content: ' MagmaConf: Call For Papers', property: 'og:title' }
     %meta{ content: 'http://cfp.magmaconf.com', property: 'og:url' }
-
-    %meta{content: 'Call for Papers of MagmaConf 2015. MagmaConf is an annual Web Development Conference happening June 18, 19 & 20 2015 in the coastline city Manzanillo, Colima, Mexico', name: 'description'}
-    %meta{content: 'Call for Papers of MagmaConf 2015. MagmaConf is an annual Web Development Conference happening June 18, 19 & 20 2015 in the coastline city Manzanillo, Colima, Mexico', property: 'og:description'}
-    %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2015, june, junio, github, sinatra, design, conferencia, tecnologia"}
+    %meta{content: 'Call for Papers of MagmaConf 2016. MagmaConf is an annual Web Development Conference happening June 1, 2 &amp;amp; 3 2016 in the coastline city Manzanillo, Colima, Mexico.', name: 'description'}
+    %meta{content: 'Call for Papers of MagmaConf 2016. MagmaConf is an annual Web Development Conference happening June 1, 2 &amp;amp; 3 2016 in the coastline city Manzanillo, Colima, Mexico.', property: 'og:description'}
+    %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2016, june, junio, github, sinatra, design, conferencia, tecnologia"}
 
     = stylesheet_link_tag 'cfp/application', media: 'all'
     = render 'cfp/application/javascripts'
     = csrf_meta_tags
-    %link{rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Open+Sans:600,400|Oswald:400,300,700&subset=latin' }
+    %link{rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Open+Sans:600,400|Oswald:400,300,700|Teko:300,400,600&subset=latin' }
     %link{ rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}" }
 
     :javascript
@@ -35,7 +34,7 @@
           = render 'cfp/profiles/profile'
           .lath-image
           %footer.prof
-            = image_tag 'crowd-gray-logo.svg', alt: 'Crowd Interactive Logo', class: 'crowd-footer-logo'
+            = image_tag 'logo_magmalabs.png', alt: 'Magma Labs Logo', class: 'footer-logo'
             %p
               &copy;
               = t('copyright')
@@ -48,14 +47,6 @@
               = render 'cfp/application/menu'
 
         = yield
-
-        .five-columns
-          %footer.bottom
-            %p
-              = image_tag 'crowd-1.svg', alt: 'Crowd Interactive Logo', class: 'crowd-logo'
-              %span
-                &copy;
-                = t('copyright')
 
     = render 'cfp/application/popup'
     = yield :scripts

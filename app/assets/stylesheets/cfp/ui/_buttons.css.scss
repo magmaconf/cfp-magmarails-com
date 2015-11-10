@@ -82,6 +82,36 @@
   }
 }
 
+.proposals .new-proposal {
+  padding: 0;
+
+  .btn-new-proposal {
+    background-color: $carnation;
+    display: inline-block;
+    height: 65px;
+    width: 50px;
+
+    .plus {
+      @extend .fa;
+      @extend .fa-plus;
+      border: none;
+      color: white;
+      font-size: 28px;
+      margin: 18px 0 0 9px;
+    }
+  }
+
+  .text {
+    color: $coffee;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+}
+
 .btn-ring {
   @extend .btn-aro;
   background: $anchor-hover;

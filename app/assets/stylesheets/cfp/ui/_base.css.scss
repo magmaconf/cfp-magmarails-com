@@ -57,7 +57,7 @@ label {
 ul.proposals {
   li {
     background-color: #ffffff;
-    height: 70px;
+    height: 65px;
     margin-bottom: 10px;
     list-style: none;
 
@@ -89,19 +89,27 @@ ul.proposals {
 
     .tit-prop {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 10px;
       vertical-align: middle;
       width: 495px;
 
       a {
+        color: $coffee;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 16px;
       }
-    }
 
-    .review-btn {
-      color: #ff6666;
+      .tags {
+        color: $coffee;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        padding-bottom: 10px;
+      }
+    }
+    .action-btn {
+      color: $carnation;
       display: inline-block;
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;
@@ -111,12 +119,13 @@ ul.proposals {
       width: 130px;
 
       span {
-        background: asset_url('arrows-right.svg') 0 22px;
-        width: 17px;
-        height: 20px;
+        background: asset_url('arrows_right_red.png') 0 22px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 15px;
+        height: 13px;
         display: inline-block;
-        margin: 0 20px 0 0;
-        float: right;
+        margin: 3px 0 0 0;
       }
 
       &:hover {
@@ -125,9 +134,14 @@ ul.proposals {
         text-decoration: none;
 
         span {
-          background-position: 0px -1px;
+          background: asset_url('arrows_right_white.png') 0 22px;
+          background-position: 0px 0px;
         }
       }
+    }
+
+    .edit-btn, .review-btn {
+      @extend .action-btn;
     }
   }
 }

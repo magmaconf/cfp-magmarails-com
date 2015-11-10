@@ -105,19 +105,21 @@
 }
 
 .days-left {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Oswald', sans-serif;
   float: right;
 
   .count {
-    font-size: 40px;
+    color: $carnation;
+    font-size: 30px;
     font-weight: 400;
-    color: #ff6666;
     margin: 7px 0 0 0;
+    line-height: 100%;
   }
 
   span {
-    font-size: 18px;
-    font-weight: 300;
+    color: $coffee;
+    font-size: 13px;
+    font-weight: 200;
   }
 }
 

@@ -5,7 +5,7 @@ es:
     proposal: PROPUESTA
   magmaconf_arena: 'LA ARENA #MAGMACONF 2015!'
   closing_date: Call for Papers cierra en
-  closing_date_2: Marzo 13, 2015
+  closing_date_2: Enero 15, 2016
   comments:
     placeholder: 'Puedes usar Markdown para darle algo de formato'
     back_to_proposals: '<< Regresar a propuestas'
@@ -18,7 +18,7 @@ es:
       worst: Puede mejorar
     title: Calificar Propuesta
     thoughts: Deja tus comentarios
-  copyright: 2015, Este sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
+  copyright: 2016, Este sitio esta protegido por Derechos de autor. Bajo leyes de U.S. e internacionales. Todos los derechos reservados.
   delete_confirm: ¿Estás seguro?
   home:
     ready: '¿Estás listo?'
@@ -53,7 +53,7 @@ es:
       one: '%{count} Propuesta'
       other: '%{count} Propuestas'
     about_author: Acerca del autor
-    add_html: 'Añadir<br/>Propuesta'
+    add_html: Enviar otra propuesta
     attributes:
       abstract: Resumen
       description: Descripción
