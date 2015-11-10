@@ -71,7 +71,7 @@ ul.proposals {
 
     .rank {
       float: left;
-      width: 67px;
+      width: 67px !important;
       background-color: #fbfbfb;
       text-align: center;
       font-family: 'Teko', sans-serif;
@@ -91,7 +91,7 @@ ul.proposals {
       display: inline-block;
       margin-top: 10px;
       vertical-align: middle;
-      width: 495px;
+      max-width: 495px;
 
       a {
         color: $coffee;
