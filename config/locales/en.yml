@@ -55,7 +55,7 @@ en:
       one: '%{count} Proposal'
       other: '%{count} Proposals'
     about_author: About the author
-    add_html: 'Add<br/>proposal'
+    add_html: Add proposal
     attributes:
       abstract: Abstract
       description: Description
