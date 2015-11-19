@@ -2,13 +2,19 @@
  * Base colors
  */
 
-// New
-$maize: #F5D2AA;
-$tan: #D2AA80;
-$coffee: #736458;
-$carnation: #F0505A;
-$wild-sand: unquote("#F5F5F5"); // Bug with sass not preserving author's color https://github.com/sass/sass/issues/363
+/* There's a Bug with sass not preserving author's color
+ * See  https://github.com/sass/sass/issues/363
+ * Avoid it using unquote("#<color hex code>")
+ */
 
+// New
+$carnation: unquote("#F0505A");
+$coffee: unquote("#736458");
+$dusty-gray: unquote("#9B9B9B");
+$maize: unquote("#F5D2AA");
+$mercury: unquote("#E1E1E1");
+$tan: unquote("#D2AA80");
+$wild-sand: unquote("#F5F5F5");
 // Legacy
 $gray: #8b8a89;
 $gold: #ffbf00;
