@@ -221,6 +221,9 @@
 
 .btn-cancel {
   @extend .btn-aro;
+  background-color: $mercury;
+  border: $dusty-gray;
+  color: $dusty-gray;
   width: 80px;
   height: 80px;
   margin-top: 30px;

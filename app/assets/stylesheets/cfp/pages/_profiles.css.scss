@@ -169,12 +169,12 @@
   text-shadow: 2px 2px 1px $white;
 }
 
-.name {
-  width: 45%;
-}
-
 form {
   margin: 0px;
+
+  .actions {
+    margin-top: 20px;
+  }
 }
 .white_background {
   padding: 20px;
