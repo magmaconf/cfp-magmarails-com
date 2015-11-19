@@ -1,7 +1,7 @@
 GIT
-  remote: git://github.com/crowdint/cfp.git
+  remote: git://github.com/joiggama/cfp.git
   revision: ef214590be558fa653c7093156b274730650fb5a
-  ref: ef214590be558fa653c7093156b274730650fb5a
+  tag: v0.1.0
   specs:
     cfp (0.3.0)
       coffee-script
@@ -132,8 +132,6 @@ GEM
       byebug (~> 5.0)
       pry (~> 0.10)
     puma (2.14.0)
-    quiet_assets (1.1.0)
-      railties (>= 3.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -208,9 +206,11 @@ DEPENDENCIES
   pg (~> 0.18.3)
   pry-byebug (~> 3.2.0)
   puma (~> 2.14.0)
-  quiet_assets
   rails (= 4.0.2)
   rails_12factor
   sass-rails (~> 4.0.0)
   uglifier (>= 1.0.3)
   will_paginate
+
+BUNDLED WITH
+   1.10.5
