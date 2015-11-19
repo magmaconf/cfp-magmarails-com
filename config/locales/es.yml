@@ -81,6 +81,7 @@ es:
     rank: Calificación
     rate: Calificar Propuestas
     rated: Calificado
+    required: Todos los campos con asterisco son requeridos
     title: 'Actualizar: %{title}'
     update: Actualizar
     edit: 'Editar'

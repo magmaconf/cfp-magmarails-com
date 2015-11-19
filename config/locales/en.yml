@@ -83,6 +83,7 @@ en:
     rank: Rank
     rate: Rate proposals
     rated: Rated
+    required: All of the following fields are required
     title: 'Update: %{title}'
     update: Update
     edit: 'Edit'
