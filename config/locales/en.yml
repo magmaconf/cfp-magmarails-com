@@ -41,7 +41,7 @@ en:
       bio: A litte bit about you
       company: Company
       email: E-mail
-      language: Lang
+      language: Language
       name: Name
       title: Job Position
     cancel: Cancel
@@ -59,7 +59,7 @@ en:
     attributes:
       abstract: Abstract
       description: Description
-      language: Language
+      language: Lang
       level: Level
       notes: Notes
       tags: Tags
