@@ -41,7 +41,7 @@ en:
       bio: A litte bit about you
       company: Company
       email: E-mail
-      language: Language
+      language: Lang
       name: Name
       title: Job Position
     cancel: Cancel

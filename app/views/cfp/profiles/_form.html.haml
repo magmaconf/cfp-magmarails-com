@@ -27,7 +27,7 @@
 
   .twelve-columns
     = form.label :bio, t('profiles.attributes.bio')
-    = form.text_area :bio, rows: 6, class: 'input-block-level title', tabindex: '6', data: error_messages
+    = form.text_area :bio, cols: 39, rows: 6, class: 'input-block-level title', tabindex: '6', data: error_messages
 
 - content_for :scripts do
   :javascript

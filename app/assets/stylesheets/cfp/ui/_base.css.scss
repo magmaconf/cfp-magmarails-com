@@ -39,6 +39,11 @@ h4 { font-size: 2em; }
 h5 { font-size: 1.5em; }
 h6 { font-size: 1em; }
 
+hr {
+  border: solid 1px $tan;
+  border-top-width: 0;
+}
+
 label {
   font: 400 18px  'Oswald', sans-serif;
   color: $coffee;
