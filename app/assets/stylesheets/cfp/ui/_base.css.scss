@@ -54,10 +54,6 @@ label {
 .fa {
   padding: 5px;
   margin-right: 5px;
-  border: 1px solid $line - 50;
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-          border-radius: 50%;
 }
 
 ul.proposals {
@@ -179,6 +175,7 @@ ul.proposals {
 }
 
 .container-rate {
+  background-color: white;
   overflow: hidden;
 }
 

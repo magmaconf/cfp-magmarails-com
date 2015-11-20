@@ -8,7 +8,7 @@ es:
   closing_date_2: Enero 15, 2016
   comments:
     placeholder: 'Puedes usar Markdown para darle algo de formato'
-    back_to_proposals: '<< Regresar a propuestas'
+    back_to_proposals: Regresar a propuestas
     created_by: '%{date} Por %{author}'
     new: Comentar
     proposals:
@@ -80,7 +80,7 @@ es:
     num: 50
     rank: Calificación
     rate: Calificar Propuestas
-    rated: Calificado
+    ranked: Calificado
     required: Todos los campos con asterisco son requeridos
     title: 'Actualizar: %{title}'
     update: Actualizar

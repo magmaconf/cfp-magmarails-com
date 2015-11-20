@@ -10,7 +10,7 @@ en:
   closing_date_2: January 15th, 2016
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
-    back_to_proposals: '<< Back to all proposals'
+    back_to_proposals: Back to all proposals
     created_by: '%{date} By %{author}'
     new: 'Comment'
     proposals:
@@ -82,7 +82,7 @@ en:
     num: 50
     rank: Rank
     rate: Rate proposals
-    rated: Rated
+    ranked: Ranked
     required: All of the following fields are required
     title: 'Update: %{title}'
     update: Update
