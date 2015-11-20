@@ -2,36 +2,36 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails',          '4.0.2'
+gem 'rails',                           '4.2.5'
 
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'activerecord-deprecated_finders', '~> 1.0.4'
 
-group :assets do
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'sass-rails',   '~> 4.0.0'
-  gem 'uglifier',     '>= 1.0.3'
-end
+gem 'coffee-rails',                    '~> 4.1.0'
+gem 'haml-rails',                      '~> 0.9.0'
+gem 'sass-rails',                      '~> 5.0.4'
 
-gem 'airbrake',         '~> 3.1.6'
-gem 'cactu',            '~> 0.0.16'
-gem 'cfp',              github: 'joiggama/cfp', tag: 'v0.1.0'
-gem 'devise'
-gem 'font-awesome-sass'
-gem 'gravtastic'
-gem 'newrelic_rpm'
-gem 'omniauth'
-gem 'omniauth-github'
-gem 'pg',               '~> 0.18.3'
-gem 'puma',             '~> 2.14.0'
-gem 'will_paginate'
-gem 'figaro'
+gem 'cactu',                           '0.0.16'
+gem 'font-awesome-sass',               '4.4.0'
+gem 'jquery-rails',                    '~> 4.0.5'
+gem 'jquery-ui-rails',                 '~> 5.0.5'
+gem 'uglifier',                        '~> 2.7.2'
+
+gem 'airbrake',                        '~> 3.1.6'
+gem 'cfp',                             github: 'joiggama/cfp', tag: 'v0.3.1'
+gem 'devise',                          '~> 3.5.2'
+gem 'gravtastic',                      '~> 3.2.6'
+gem 'newrelic_rpm',                    '~> 3.14.0'
+gem 'omniauth',                        '~> 1.2.2'
+gem 'omniauth-github',                 '~> 1.1.2'
+gem 'pg',                              '~> 0.18.4'
+gem 'puma',                            '~> 2.15.3'
+gem 'will_paginate',                   '~> 3.0.7'
+gem 'figaro',                          '~> 1.1.1'
 
 group :development do
-  gem 'pry-byebug',     '~> 3.2.0'
+  gem 'pry-byebug',                    '~> 3.2.0'
 end
 
 group :production do
-  gem 'rails_12factor'
+  gem 'rails_12factor',                '~> 0.0.3'
 end
