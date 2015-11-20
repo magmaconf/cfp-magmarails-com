@@ -209,13 +209,18 @@
 
 .btn-comment {
   @extend .btn-aro;
-  height: 110px;
-  width: 110px;
+  background-color: $wild-sand;
+  height: 100px;
+  margin-left: 30px;
+  width: 100px;
 
   .aro {
-    height: 95px;
-    width: 95px;
-    font-size: 1.3em;
+    color: $carnation;
+    background-color: $wild-sand;
+    font: 600 14px 'Open Sans';
+    height: 88px;
+    width: 88px;
+    margin: 6px;
   }
 }
 

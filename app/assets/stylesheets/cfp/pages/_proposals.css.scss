@@ -254,7 +254,8 @@
   overflow: hidden;
 
   h3 {
-    font: 100 1.2em/1.1em 'Oswald';
+    color: $coffee;
+    font: 400 18px 'Oswald';
   }
 
   [class *="-column"] {
@@ -266,12 +267,12 @@
   }
 
   #rank-list {
-    font-size: 0.8em;
+    font-size: 14px;
 
     label {
-      font-size: 15px;
-      font-family: 'Roboto';
-      font-weight: 300;
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
       padding-left: 10px;
     }
   }

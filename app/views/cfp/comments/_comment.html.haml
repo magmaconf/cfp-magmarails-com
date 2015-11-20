@@ -1,9 +1,12 @@
-%li.comment
-  .image
-    = image_tag comment.user.gravatar_url(size: 65)
-  .body
-    = comment.body_html
-  .email
-    = t('comments.created_by',
-    date: comment.created_at.strftime('%b/%d/%y'),
-    author: comment.user.profile.name)
+%li.comment.twelve-columns
+  .two-columns
+    .image
+      = image_tag comment.user.gravatar_url(size: 70)
+  .ten-columns
+    .body
+      = comment.body_html
+  .ten-columns.offset-two
+    .email
+      = t('comments.created_by',
+      date: comment.created_at.strftime('%b/%d/%y'),
+      author: comment.user.profile.name)

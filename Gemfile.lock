@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/joiggama/cfp.git
-  revision: 42e00cea4e0be664f81dc7c1cba73c0e90623800
-  tag: v0.3.1
+  revision: c63d49a2bedb6f76f6298dd03354d8bacd7f239f
+  tag: v0.4.0.alpha
   specs:
-    cfp (0.3.1)
+    cfp (0.4.0.alpha)
       coffee-script
       devise
       haml-rails

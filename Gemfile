@@ -17,7 +17,7 @@ gem 'jquery-ui-rails',                 '~> 5.0.5'
 gem 'uglifier',                        '~> 2.7.2'
 
 gem 'airbrake',                        '~> 3.1.6'
-gem 'cfp',                             github: 'joiggama/cfp', tag: 'v0.3.1'
+gem 'cfp',                             github: 'joiggama/cfp', tag: 'v0.4.0.alpha'
 gem 'devise',                          '~> 3.5.2'
 gem 'gravtastic',                      '~> 3.2.6'
 gem 'newrelic_rpm',                    '~> 3.14.0'

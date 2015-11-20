@@ -5,7 +5,7 @@
 html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif !important;
-  background: #ebebeb;
+  background: $wild-sand;
 }
 
 a {
@@ -43,6 +43,10 @@ hr {
   border: solid 1px $tan;
   border-top-width: 0;
   margin-bottom: 20px;
+
+  &.double {
+    border-top-width: 1px;
+  }
 }
 
 label {
@@ -172,11 +176,6 @@ ul.proposals {
 
 .no-shadow {
   text-shadow: 0 0 0;
-}
-
-.container-rate {
-  background-color: white;
-  overflow: hidden;
 }
 
 .group {
