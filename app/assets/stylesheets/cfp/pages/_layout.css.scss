@@ -41,17 +41,12 @@ a {
   }
 
   .mask {
-    margin-bottom: 10px;
-    width: 30%;
-  }
-
-  .mask.placeholder {
     background-color: $tan;
     border-radius: 100%;
     display: block;
-    height: 250px;
+    height: 240px;
     margin: 35px auto 25px auto;
-    width: 250px;
+    width: 240px;
   }
 
   .ready {
@@ -307,7 +302,7 @@ a {
 
   #sponsor-contact-greeting {
     .circle {
-      background-color: $wild-sand;
+      background-image: asset_url('reylero_crossed.png');
       border-radius: 50%;
       height: 250px;
       margin: 65px auto 20px;
