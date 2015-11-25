@@ -9,7 +9,7 @@
     background: asset-url('octocat_login.png') no-repeat center 25px;
     background-color: white;
     background-size: 95px;
-    box-shadow: 3px 3px 3px $coffee;
+    box-shadow: 3px 3px 3px rgba($coffee, 0.5);
     border-radius: 50%;
     display: inline-block;
     height: 100%;
