@@ -1,6 +1,12 @@
-DEVISE_SECRET_KEY: 9e75957d6869c35e51603747ad7fd8e3139730128e4e977849b541a7a06465b22c4897a7b11b4343a08dcbefc3c266542ba85bf5408ef48609b49237e6ef1d30
-# These github app id and secret will be waiting for your app to run at http://magmaconf.ngrok.com
-CFP_APP_ID: d1d3a686cf9b2e8a2ebd
-CFP_APP_SECRET: ae896afe193632e02271450f9e72131f3aaef4db
-CFP_ENDING_DATE: '2016-12-30'
+GITHUB_CLIENT_ID:     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GITHUB_CLIENT_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+GOOGLE_CLIENT_ID:     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GOOGLE_CLIENT_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+CFP_ENDING_DATE:      3000-12-30
+CFP_CONTACT_EMAIL:    info@example.com
+
+DEVISE_SECRET_KEY:    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+SECRET_KEY_BASE:      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

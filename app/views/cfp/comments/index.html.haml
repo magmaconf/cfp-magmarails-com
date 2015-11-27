@@ -1,61 +1,67 @@
 - content_for :header_title do
   %h3= t('comments.title')
-  = link_to t('comments.back_to_proposals'), proposals_path, class: 'no-shadow'
+
+.three-columns.offset-six
+  .back-to-proposals
+    = link_to proposals_path, class: 'no-shadow' do
+      %span
+      = t('comments.back_to_proposals')
 
 .nine-columns.proposal-show
   .container-rate
-
     = render 'cfp/application/formatted_proposal'
 
-    .gray-background.group#rnk
-      #ranking
-        .grid-com-one.tit
-          %h3= t('comments.proposals.rate')
-        .grid-com-two
-          .less
-            %span= t('comments.proposals.worst')
+    .gray-background.group
+      #ranking.twelve-columns
+        %h3= t('comments.proposals.rate')
+        .three-columns.block
+          %span= t('comments.proposals.worst')
 
-          .rank
-            #rank-list
-              - Cfp::Proposal::RANK_SCALE.each do |rank|
-                %label{ style: 'display:inline' }
-                  = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
-                  = rank
-          .more
-            %span= t('comments.proposals.best')
-        .grid-com-one
+        .four-columns.block
+          #rank-list
+            - Cfp::Proposal::RANK_SCALE.each do |rank|
+              %label{ style: 'display:inline' }
+                = rank
+                = radio_button_tag rank, rank, (@score ? rank == @score.value : false), name: 'rank'
+        .three-columns.block
+          %span= t('comments.proposals.best')
+        .two-columns.block{style: 'margin-top: -10px'}
           .btn-rank
             = button_tag t('comments.proposals.rank'), class: 'aro', id: 'submit-rank', disabled: true
-    .eight-centered.direction
-      - unless @prev
-        %span.s-left
-          %i
-      - else
-        = link_to proposal_comments_path(@prev, anchor: 'title_rate'), class: 'a-left' do
-          %i
-      - unless @next
-        %span.s-right
-          %i
-      - else
-        = link_to proposal_comments_path(@next, anchor: 'title_rate'), class: 'a-right' do
-          %i
+    .eight-centered.direction.navigation
+      .one-column.offset-four
+        - if @prev
+          = link_to '', proposal_comments_path(@prev, anchor: 'title_rate'), class: 'a-left'
+        - else
+          %a.a-left.disabled
+      .two-columns.index
+        = proposal_position(@proposal)
+      .one-column
+        - if @next
+          = link_to '', proposal_comments_path(@next, anchor: 'title_rate'), class: 'a-right'
+        - else
+          %a.a-right.disabled
 
     .gray-background.group#comments
       .twelve-columns
         %h3.com-h3
           %i.fa.fa-comment
           = "#{@comments.size} #{t('proposals.comments')}"
-        %ul
-          = render @comments.reverse
+        - if @comments.empty?
+          %hr.double
+        -else
+          %ul
+            = render @comments.reverse
 
     .gray-background.leave-comment
-      .com-one
+      .two-columns
         %h3.com-h3= t('comments.thoughts')
-      .com-three
+      .ten-columns
         = form_for [@proposal, Cfp::Comment.new] do |form|
-          = form.text_area :body, rows: '5', placeholder: t('comments.placeholder')
-          .btn-comment
-            = form.submit t('comments.new'), class: 'aro', disabled: true
+          = form.text_area :body, rows: 8, placeholder: t('comments.placeholder'), class: 'nine-columns'
+          .three-columns
+            .btn-comment
+              = form.submit t('comments.new'), class: 'aro', disabled: true
 
 - content_for :scripts do
   :javascript

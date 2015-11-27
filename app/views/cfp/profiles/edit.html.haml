@@ -1,15 +1,18 @@
 - content_for :header_title do
   %h3= t('profiles.profile')
 
-.eight-columns
+.nine-columns
   = form_for @profile, url: profile_path, html: { id: 'edit_profile', novalidate: true } do |form|
-    = render 'form', form: form
 
-    .three-columns.offset-five
-      .btn-cancel
-        = link_to t('profiles.cancel'), proposals_path, class: 'aro'
-    .four-columns
-      .btn-aro
-        = form.submit t('profiles.new'), class: 'aro'
+    .white_background
+      = render 'form', form: form
+
+    .actions
+      .two-columns.offset-three
+        .btn-cancel
+          = link_to t('profiles.cancel'), proposals_path, class: 'aro'
+      .one-columns.offset-one
+        .btn-aro
+          = form.submit t('profiles.update'), class: 'aro'
 
 .one-column

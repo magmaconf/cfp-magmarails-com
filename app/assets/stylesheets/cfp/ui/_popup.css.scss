@@ -1,29 +1,49 @@
 // Popup
 #my_modal {
-  width: 52%;
-  padding: 30px 50px 10px;
-  background: #ebebeb;
+  width: 800px;
+  height: 500px;
+  background: white;
   border: 0;
   outline: 0;
 
   h2 {
+    color: $coffee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
     text-align: center;
-    padding: 0 0 30px;
+    margin-top: 40px;
+  }
+
+  #tabs {
+    margin-top: 65px;
+  }
+
+  #content {
+    width: 700px;
+    margin: 0 auto;
   }
 
   p {
-    font-size: 1.3em;
-    font-family: 'Roboto';
-    font-weight: 300;
+    color: $coffee;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     margin-top: 5%;
+    strong:not(.not-so-strong) {
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   .btn-aro {
     position: relative;
-    top: 40px;
+    top: -25px;
 
     .aro {
       background: $white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
 
       &:hover {
         background: $anchor-hover;
@@ -53,17 +73,24 @@
 
 .ui-tabs-nav {
   text-align: center;
+  margin: 0 auto;
+  height: 38px;
+  width: 700px;
 
   li {
     display: inline;
-    text-transform: uppercase;
-    font-weight: 300;
-    padding: 10px 22px;
+    padding: 8px 15px 4px 15px;
     margin: 0;
+    border-bottom: solid 2px $tan;
 
     a {
+      color: $tan;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
       font-weight: 400;
-      color: $line;
+      margin: 0 auto;
+      padding: 0;
+      text-transform: uppercase;
 
       &:hover {
         color: #333;
@@ -73,10 +100,10 @@
   }
 
   .ui-state-active {
-    background: $line;
+    background: $tan;
 
     a {
-      color: #333;
+      color: $coffee;
     }
   }
 }

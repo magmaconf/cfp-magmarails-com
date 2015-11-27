@@ -82,6 +82,36 @@
   }
 }
 
+.proposals .new-proposal {
+  padding: 0;
+
+  .btn-new-proposal {
+    background-color: $carnation;
+    display: inline-block;
+    height: 65px;
+    width: 50px;
+
+    .plus {
+      @extend .fa;
+      @extend .fa-plus;
+      border: none;
+      color: white;
+      font-size: 28px;
+      margin: 18px 0 0 9px;
+    }
+  }
+
+  .text {
+    color: $coffee;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+}
+
 .btn-ring {
   @extend .btn-aro;
   background: $anchor-hover;
@@ -93,7 +123,7 @@
   }
 
   .aro {
-    @extend .btn-aro.aro;
+    @extend .btn-aro;
     color: $white;
     border: 1px solid $white;
     display: table-cell;
@@ -119,7 +149,7 @@
   background: $profile-bkg;
 
   .aro {
-    @extend .btn-ring.aro;
+    @extend .btn-ring;
     border: 1px solid $line;
     color: $anchor;
 
@@ -179,18 +209,26 @@
 
 .btn-comment {
   @extend .btn-aro;
-  height: 110px;
-  width: 110px;
+  background-color: $wild-sand;
+  height: 100px;
+  margin-left: 30px;
+  width: 100px;
 
   .aro {
-    height: 95px;
-    width: 95px;
-    font-size: 1.3em;
+    color: $carnation;
+    background-color: $wild-sand;
+    font: 600 14px 'Open Sans';
+    height: 88px;
+    width: 88px;
+    margin: 6px;
   }
 }
 
 .btn-cancel {
   @extend .btn-aro;
+  background-color: $mercury;
+  border: $dusty-gray;
+  color: $dusty-gray;
   width: 80px;
   height: 80px;
   margin-top: 30px;

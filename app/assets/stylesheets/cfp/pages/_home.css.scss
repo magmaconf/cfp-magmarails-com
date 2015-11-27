@@ -1,21 +1,32 @@
 .login-up {
   background: transparent;
-  width: 166px;
-  height: 180px;
-  margin: auto auto 15px auto;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
   @include border_radius(50%);
 
-
   .github-login {
-    text-indent: -10000px;
-    background: asset-url('github-login.svg') no-repeat center;
-    display: block;
-    width: 100%;
+    background: asset-url('octocat_login.png') no-repeat center 25px;
+    background-color: white;
+    background-size: 95px;
+    box-shadow: 3px 3px 3px rgba($coffee, 0.5);
+    border-radius: 50%;
+    display: inline-block;
     height: 100%;
+    text-transform: uppercase;
+    width: 100%;
 
-    &:hover {
-      background: asset-url('github-login-hover.svg') no-repeat center;
+    span {
+      color: $coffee;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      position: relative;
+      top: 110px;
     }
+  }
+
+  &:hover .github-login span {
+    color: $carnation;
   }
 }
 
@@ -38,12 +49,21 @@
 }
 
 .please-login {
-  color: #ffffff;
+  color: $coffee;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  line-height: 1;
-  margin: 15px 0 0 0;
+  line-height: 1.4;
+  margin: 20px 0 0 0;
   text-transform: uppercase;
+
+  a, strong{
+    color: $coffee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    text-decoration: underline;
+    font-weight: 600;
+  }
 }
 
 .octo-login {

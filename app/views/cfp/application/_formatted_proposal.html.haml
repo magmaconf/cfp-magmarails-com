@@ -9,7 +9,7 @@
     %header
       %h3= t('proposals.attributes.title')
       %p.title= @proposal.title
-      -#%p.tags= "Tags: #{@proposal.tags}"
+      %p.tags= "Tags: #{@proposal.tags}"
     .content
       %h3= t('proposals.attributes.description')
       = sanitize @proposal.description_html
@@ -24,5 +24,8 @@
           = image_tag @proposal.user.gravatar_url(size: 65)
         .info
           %p.name= @proposal.user_name
-          %p=  t('proposals.from_company', company: @proposal.user.profile_company)
-          =link_to t('proposals.github_profile'), "http://www.github.com/#{@proposal.user.nickname}"
+          %p.org=  t('proposals.from_company', company: @proposal.user.profile_company)
+          = link_to t('proposals.github_profile'),
+                    "http://www.github.com/#{@proposal.user.nickname}",
+                    class: 'github-profile'
+%hr

@@ -1,4 +1,4 @@
-class Cfp::Proposal < ActiveRecord::Base
+Cfp::Proposal.class_eval do
   after_create do
     SubmissionMailer.submitted(self).deliver
   end

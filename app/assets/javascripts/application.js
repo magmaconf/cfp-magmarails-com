@@ -14,8 +14,9 @@
 //= require jquery_ujs
 //= require underscore.js
 //= require backbone.js
+//= require civem
 //= require jquery.popupoverlay
-//= require jquery.ui.tabs
+//= require jquery-ui/tabs
 //= require cfp/application
 //= require_tree .
 //

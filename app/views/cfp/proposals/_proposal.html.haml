@@ -8,6 +8,9 @@
   .tit-prop
     = link_to user_based_proposal_path(proposal), title: proposal.title do
       = proposal.title
+    %br
+    %span.tags
+      Tags: #{proposal.tags}
   #controls
     - if current_user.can_review?
       %span.gold
@@ -17,7 +20,13 @@
         %i.fa.fa-comment
         = comments_count(proposal)
 
-    = link_to user_based_proposal_path(proposal), class: 'review-btn' do
-      = reviewed(proposal) ? 'Reviewed' : 'Review'
-      %span
+    - if current_user.can_review?
+      = link_to user_based_proposal_path(proposal), class: 'review-btn' do
+        = reviewed(proposal) ? 'Reviewed' : 'Review'
+        %span
+    - else
+      = link_to  edit_proposal_path(proposal), class: 'edit-btn' do
+        = t("proposals.edit")
+        %span
+
 

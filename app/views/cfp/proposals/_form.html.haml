@@ -1,32 +1,49 @@
 %fieldset.form-with-errors{ class: klass }
   .twelve-columns.required-fields-message
-    %small All of the following fields are required
+    %small= t("proposals.required")
     %hr
   .six-columns.required
     = form.label :title, t('proposals.attributes.title')
-    .error.left-arrow ! This field is required
-    = form.text_field :title, required: 'true'
+    .error.left-arrow
+    = form.text_field :title, required: true, size: 50, data: error_messages
+
   .three-columns.required
     = form.label :level, t('proposals.attributes.level')
-    .error.left-arrow !
-    %br
-    = form.select :level, Cfp::Proposal::TALK_LEVEL.collect {|l| [t(l, scope: 'proposals.levels'), l]}, prompt: 'Please select...'
+    .error.left-arrow
+    = form.select :level,
+                  Cfp::Proposal::TALK_LEVEL.collect {|l| [t(l, scope: 'proposals.levels'), l]},
+                  { prompt: 'Please select...'},
+                  required: true,
+                  data: error_messages
+
   .three-columns.required
     = form.label :language, t('proposals.attributes.language')
-    .error.left-arrow !
-    %br
-    = form.select :language, Cfp::Proposal::LANGUAGE, prompt: 'Please select...'
+    .error.left-arrow
+    = form.select :language, Cfp::Proposal::LANGUAGE, {prompt: 'Please select...'}, required: true, data: error_messages
   -#.four-columns
     -#= form.label :tags, t('proposals.attributes.tags')
     -#= form.text_field :tags, placeholder: t('helpers.placeholder.proposal.tags')
-  .seven-columns.required
+  .twelve-columns
+
+  .six-columns.required
     = form.label :description, t('proposals.attributes.description')
-    .error.left-arrow ! This field is required
-    = form.text_area :description, rows: 8, placeholder: t('helpers.placeholder.proposal.description'), required: 'true'
-  .five-columns.required
+    .error.left-arrow
+    = form.text_area :description,
+                     cols: 49,
+                     rows: 8,
+                     placeholder: t('helpers.placeholder.proposal.description'),
+                     required: true,
+                     data: error_messages
+
+  .six-columns.required
     = form.label :abstract, t('proposals.attributes.abstract')
-    .error.left-arrow ! This field is required
-    = form.text_area :abstract, rows: 8, placeholder: t('helpers.placeholder.proposal.abstract'), required: 'true'
+    .error.left-arrow
+    = form.text_area :abstract,
+                     cols: 49,
+                     rows: 8,
+                     placeholder: t('helpers.placeholder.proposal.abstract'),
+                     required: true,
+                     data: error_messages
 
 - content_for :scripts do
   :coffee

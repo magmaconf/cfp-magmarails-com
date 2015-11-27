@@ -14,34 +14,35 @@
           = link_to t('popup.judges.title'), '#judges'
         %li
           = link_to t('popup.speakers.title'), '#speakers'
-      #magma
-        %p= t('popup.magma.one')
-        %p= t('popup.magma.two')
-        %p= t('popup.magma.three')
-      #topics
-        %p= t('popup.topics.one')
-        %p= t('popup.topics.two')
-        %p= t('popup.topics.three')
-        %p= t('popup.topics.four')
-        %p= t('popup.topics.five')
-        %p= t('popup.topics.six')
-        %p= t('popup.topics.seven')
-        %p= t('popup.topics.eight')
-        %p= t('popup.topics.nine')
-        %p= t('popup.topics.ten')
-      #sponsors
-        %p= t('popup.sponsors.one')
-        %p=raw t('popup.sponsors.two')
-      #judges
-        %p= t('popup.judges.one')
-        %p= t('popup.judges.two')
-        %p=raw t('popup.judges.three')
-        %p= t('popup.judges.four')
-        %p= t('popup.judges.five')
-      #speakers
-        %p= raw t('popup.terms.one')
-        %p= t('popup.terms.two')
-        %p= t('popup.terms.three')
+      #content
+        #magma
+          %p= raw t('popup.magma.one')
+          %p= t('popup.magma.two')
+          %p= t('popup.magma.three')
+        #topics
+          %p= raw t('popup.topics.one')
+          %p= t('popup.topics.two')
+          %p= t('popup.topics.three')
+          %p= t('popup.topics.four')
+          %p= t('popup.topics.five')
+          %p= t('popup.topics.six')
+          %p= t('popup.topics.seven')
+          %p= t('popup.topics.eight')
+          %p= t('popup.topics.nine')
+          %p= t('popup.topics.ten')
+        #sponsors
+          %p= raw t('popup.sponsors.one')
+          %p=raw t('popup.sponsors.two')
+        #judges
+          %p= raw t('popup.judges.one')
+          %p= t('popup.judges.two')
+          %p=raw t('popup.judges.three')
+          %p= t('popup.judges.four')
+          %p= t('popup.judges.five')
+        #speakers
+          %p.not-so-strong= raw t('popup.speakers.one')
+          %p= t('popup.speakers.two')
+          %p= t('popup.speakers.three')
 
     .btn-aro
       %button.my_modal_close.aro

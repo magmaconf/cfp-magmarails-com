@@ -1,7 +1,7 @@
 - content_for :header_title do
   %h3= t('proposals.new_title')
 
-.nine-columns.sub-titles
+.nine-columns
   - if current_user.is_admin?
     %span
       = link_to 'View Top Ranked Proposals', '/ranked-proposals'
@@ -16,16 +16,6 @@
       %i.fa.fa-check
       = t('proposals.rated')
 
-  .two-column.days-left
-    .count= remaining_days.to_i < 0 ? '0' : remaining_days
-    - if remaining_days.to_i < 0
-      %span= t('proposals.day_over')
-    - elsif remaining_days == '0'
-      %span= t('proposals.last_day')
-    - else
-      %span= t('proposals.days')
-
-.nine-columns
   = form_for @proposal, html: { novalidate: true } do |form|
     = render 'form', form: form, klass: 'new-proposal'
 

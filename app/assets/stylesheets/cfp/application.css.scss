@@ -1,8 +1,10 @@
-@import 'font-awesome';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import 'cactu';
 
 @import 'mixins';
 //@import 'bootstrap_import';
+@import 'config/colors';
 @import 'config/variables';
 @import 'config/responsive_large';
 @import 'config/responsive_medium';

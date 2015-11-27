@@ -1,8 +1,0 @@
-- content_for :header_title do
-  %h3= t('proposals.my')
-  = link_to t('proposals.back_to_proposals'), proposals_path, class: 'no-shadow'
-
-.nine-columns.proposal-show
-  .container-rate
-    = render 'cfp/application/formatted_proposal'
-

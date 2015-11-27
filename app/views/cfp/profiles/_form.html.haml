@@ -1,38 +1,36 @@
 %fieldset.form-with-errors
-  .nine-columns.required
+  .twelve-columns.required
     = form.label :name, t('profiles.attributes.name')
-    .error.left-arrow ! This field is required
-    = form.text_field :name, class: 'name', required: 'true', tabindex: '1', maxlength: 40
+    .error.left-arrow
+    = form.text_field :name, class: 'name', required: true, tabindex: '1', maxlength: 40, data: error_messages
 
-  .six-columns.required
+  .six-columns
     = form.label :title, t('profiles.attributes.title')
-    .error.left-arrow ! This field is required
-    = form.text_field :title, tabindex: '2', maxlength: 40
+    .error.left-arrow
+    = form.text_field :title, tabindex: '2', maxlength: 40, data: error_messages
 
-  .six-columns.required
+  .six-columns
     = form.label :company, t('profiles.attributes.company')
-    .error.left-arrow ! This field is required
-    = form.text_field :company, tabindex: '3', maxlength: 40
+    .error.left-arrow
+    = form.text_field :company, tabindex: '3', maxlength: 40, data: error_messages
 
   .six-columns.required
     = form.label :email, t('profiles.attributes.email')
-    .error.left-arrow ! This field is required
-    = form.text_field :email, type: 'email', required: 'true', tabindex: '4'
+    .error.left-arrow
+    = form.text_field :email, type: 'email', required: true, tabindex: '4', maxlength: 40,  data: error_messages
 
   .six-columns.required
     = form.label :language, t('profiles.attributes.language')
-    .error.left-arrow ! This field is required
-    %br
-    = form.select :locale, languages, prompt: 'Please select...'
+    .error.left-arrow
+    = form.select :locale, languages, { prompt: 'Please select...' }, required: true, data: error_messages, style: 'display: block'
 
   .twelve-columns
     = form.label :bio, t('profiles.attributes.bio')
-    = form.text_area :bio, rows: 6, class: 'input-block-level title', tabindex: '6'
+    = form.text_area :bio, cols: 39, rows: 6, class: 'input-block-level title', tabindex: '6', data: error_messages
 
 - content_for :scripts do
   :javascript
     $(document).ready(function() {
-      form = $('#edit_profile');
-      new Cfp.Views.FormEditView({ el: form })
+      form = $('#edit_profile, #new_profile');
       new Cfp.FormValidation(form)
     });

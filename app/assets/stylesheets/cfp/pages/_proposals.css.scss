@@ -1,3 +1,24 @@
+.back-to-proposals a {
+  span {
+    background: asset_url('arrows_left.png') 0 22px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 13px;
+    margin: 3px 0 0 0;
+    width: 15px;
+  }
+  color: $carnation;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+#proposal_level, #proposal_language {
+  width: 168px;
+}
+
 .btn-proposals {
   @include gradient(#f48d5d, #d97246);
   border: 0px;
@@ -63,10 +84,8 @@
 
 .new-proposal, .gray-background {
   background: $profile-bkg;
-  padding: 10px 0 10px;
+  padding: 20px 25px;
   margin-bottom: 20px;
-
-  #proposal_title { width: 90% }
 
   textarea { resize: none }
 }
@@ -105,19 +124,21 @@
 }
 
 .days-left {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Oswald', sans-serif;
   float: right;
 
   .count {
-    font-size: 40px;
+    color: $carnation;
+    font-size: 30px;
     font-weight: 400;
-    color: #ff6666;
     margin: 7px 0 0 0;
+    line-height: 100%;
   }
 
   span {
-    font-size: 18px;
-    font-weight: 300;
+    color: $coffee;
+    font-size: 13px;
+    font-weight: 200;
   }
 }
 
@@ -138,60 +159,82 @@
   padding-bottom: 10px;
 
   h3 {
-    font: $comments-h3;
+    color: $coffee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   p {
+    color: $coffee;
     padding: 10px 0 30px 0px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
   }
 
   .title {
+    color: $coffee;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
 
   .tags {
-    font-size: 14px;
-    font-weight: 300;
-    color: $anchor + 50;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: $coffee;;
   }
 
   footer {
     padding-top: 0;
 
     .image {
-      width: 8%;
+      background-color: white;
+      border-radius: 50%;
+      border: solid 2px $wild-sand;
       float: left;
-      padding: 2% 0 2% 2%;
+      height: 110px;
+      margin-top: 10px;
+      width: 110px;
 
       img {
-        border: 2px solid $line;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
+        border: 1px solid $line;
         border-radius: 50%;
+        height: 100px;
+        margin: 4px 0 0 4px;
+        width: 100px;
       }
     }
 
     .info {
-      @extend .image;
-      width: 88%;
+      margin-left: 130px;
+      margin-top: 10px;
 
       p {
         padding: 0;
         text-align: left;
         font-size: 1.2em;
-
       }
 
       .name {
-        color: #000;
+        color: $coffee;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
       }
 
-      a {
-        color: $anchor-hover;
+      .org {
+        @extend .name;
+        font-weight: 400;
+      }
+
+      a.github-profile {
+        color: $carnation;
+        font-size: 13px;
+        font-style: italic;
 
         &:hover {
           color: $anchor;
@@ -211,7 +254,8 @@
   overflow: hidden;
 
   h3 {
-    font: 100 1.2em/1.1em 'Oswald';
+    color: $coffee;
+    font: 400 18px 'Oswald';
   }
 
   [class *="-column"] {
@@ -223,12 +267,12 @@
   }
 
   #rank-list {
-    font-size: 0.8em;
+    font-size: 14px;
 
     label {
-      font-size: 15px;
-      font-family: 'Roboto';
-      font-weight: 300;
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
       padding-left: 10px;
     }
   }
@@ -253,6 +297,7 @@
 
   label {
     display: inline-block;
+    margin-bottom: 15px;
     vertical-align: middle;
     width: auto;
   }
@@ -360,7 +405,6 @@
   }
 
   hr {
-    border-bottom: 1px solid #b7b7b7;
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
