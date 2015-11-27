@@ -3,7 +3,7 @@ es:
   proposal:
     submit: ENVIA TU
     proposal: PROPUESTA
-  magmaconf_arena: 'LA ARENA #MAGMACONF 2015!'
+  magmaconf_arena: 'LA ARENA #MAGMACONF 2016!'
   closing_date: Call for Papers cierra en
   closing_date_2: Enero 27, 2016
   comments:
@@ -24,13 +24,20 @@ es:
     ready: '¿Estás listo?'
     you: TU MÁSCARA TE ESTÁ ESPERANDO EN
     welcome: 'Bienvenido a nuestro'
+    or: o
+    your: tu cuenta de
+    account: ''
     thanks: '¡Gracias!'
+    to: Para enviar una propuesta
     for_participate: 'Por participar en nuestro'
     work: 'Tenemos mucho trabajo por hacer. Mientras tanto, por favor checa esto ...'
     signin: '¿Ya eres un usuario?'
-    login: 'Por favor entra'
+    login: 'Por favor entra con'
     have_question: '¿Tiene alguna pregunta sobre MagmaConf o cómo participar?'
     check_out: 'Echa un vistazo a lo que estamos buscando'
+    about: Algo que debes saber
+    login_github: Entrar
+    back_to_signin: Regresar al inicio
   languages:
     en: Inglés
     es: Español
@@ -93,6 +100,11 @@ es:
     important: 'Información importante'
     show: 'Tú debes saber'
   contact:
+    attributes:
+      name: Nombre
+      company: Empresa
+      email: Correo electrónico
+    email_me: Envíame un correo
     greeting:
       title: ★  Gracias por ★ <br>contactarnos
       body: Te enviaremos nuestro prospecto pronto.

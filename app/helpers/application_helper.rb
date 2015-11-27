@@ -46,6 +46,6 @@ module ApplicationHelper
   end
 
   def reylero_fallback
-    asset_url 'avatar.jpg'
+    raw(asset_url 'reylero_crossed.png')
   end
 end

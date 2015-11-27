@@ -2,7 +2,7 @@
   .twelve-columns.required
     = form.label :name, t('profiles.attributes.name')
     .error.left-arrow
-    = form.text_field :name, class: 'name', required: 'true', tabindex: '1', maxlength: 40, data: error_messages
+    = form.text_field :name, class: 'name', required: true, tabindex: '1', maxlength: 40, data: error_messages
 
   .six-columns
     = form.label :title, t('profiles.attributes.title')
@@ -17,13 +17,12 @@
   .six-columns.required
     = form.label :email, t('profiles.attributes.email')
     .error.left-arrow
-    = form.text_field :email, type: 'email', required: 'true', tabindex: '4', maxlength: 40,  data: error_messages
+    = form.text_field :email, type: 'email', required: true, tabindex: '4', maxlength: 40,  data: error_messages
 
   .six-columns.required
     = form.label :language, t('profiles.attributes.language')
     .error.left-arrow
-    %br
-    = form.select :locale, languages, prompt: 'Please select...', data: error_messages
+    = form.select :locale, languages, { prompt: 'Please select...' }, required: true, data: error_messages, style: 'display: block'
 
   .twelve-columns
     = form.label :bio, t('profiles.attributes.bio')
@@ -32,7 +31,6 @@
 - content_for :scripts do
   :javascript
     $(document).ready(function() {
-      form = $('#edit_profile');
-      new Cfp.Views.FormEditView({ el: form })
+      form = $('#edit_profile, #new_profile');
       new Cfp.FormValidation(form)
     });

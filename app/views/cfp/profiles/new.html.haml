@@ -1,12 +1,17 @@
-.eight-columns
-  = form_for @profile, url:profile_path, html: { novalidate: true } do |form|
-    = render 'form', form: form
+- content_for :header_title do
+  %h3= t('profiles.new')
 
-    .three-columns.offset-five
-      .btn-cancel
-        = link_to t('profiles.cancel'), proposals_path, class: 'aro'
-    .four-columns
-      .btn-aro
-        = form.submit t('profiles.new'), class: 'aro'
+.nine-columns
+  = form_for @profile, url:profile_path, html: { novalidate: true } do |form|
+    .white_background
+      = render 'form', form: form
+
+    .actions
+      .two-columns.offset-three
+        .btn-cancel
+          = link_to t('profiles.cancel'), proposals_path, class: 'aro'
+      .one-columns.offset-one
+        .btn-aro
+          = form.submit t('profiles.continue'), class: 'aro'
 
 .one-colum

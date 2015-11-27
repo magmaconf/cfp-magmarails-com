@@ -42,19 +42,21 @@
           .you= t('magmaconf_arena')
           .cfp
             %span
-              Welcome to our
+            = t('home.welcome')
             = image_tag 'logo_callforpapers.png', alt: 'Call for papers'
 
           .please-login
-            Please login with
+            = t('home.login')
             %br
+            = t('home.your')
             %strong
-              your GitHub
-            Or
+              GitHub
+            = t('home.or')
             %strong
-              E-mail account
+              = link_to "Google", "/auth/google_oauth2"
+            = t('home.account')
             %br
-            To submit a proposal
+            = t('home.to')
 
       = yield
 
@@ -84,12 +86,12 @@
     #home-down.container
       .row
         .offset-one.eight-columns.header
-          Something you should know
+          = t('home.about')
 
         .two-columns.back-to-sign-in
           =link_to '#sign-in' do
             %span
-            Back to sign in
+            = t('home.back_to_signin')
 
         %hr.ready-hr
 
@@ -143,18 +145,18 @@
 
           = form_tag '/send_mail', remote: true, method: :post, id: 'sponsor-form', novalidate: true do
             .required
-              %label Name
+              %label= t('contact.attributes.name')
               .error.left-arrow
               %input{type: 'text', name: 'name', required: 'true', data: error_messages }
             .required
-              %label Company
+              %label= t('contact.attributes.company')
               .error.left-arrow
               %input{type: 'text', name: 'company', required: 'true', data: error_messages }
             .required
-              %label E-mail
+              %label= t('contact.attributes.email')
               .error.left-arrow
               %input{type: 'email', name: 'email', required: 'true', data: error_messages }
-            %input{type: 'submit', value: 'Email me'}
+            %input{type: 'submit', value: t('contact.email_me')}
 
           #sponsor-contact-greeting{style: "display: none"}
             .circle

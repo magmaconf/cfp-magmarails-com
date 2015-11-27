@@ -5,13 +5,16 @@
   .line
   %h4= t('profiles.profile')
   .pic
-    = image_tag current_user.gravatar_url(size: 150, default: reylero_fallback)
+    - if current_user.profile
+      = image_tag current_user.gravatar_url(size: 150)
+    - else
+      = image_tag 'reylero_crossed.png', size: 150
   .name
-    = current_user.name
+    = current_user.profile ? current_user.name : @profile.name
   .company
     = current_user.profile_company
   .email
-    = current_user.profile_email
+    = current_user.profile ? current_user.profile_email : @profile.email
   - unless profile_new?
     .complete
       = link_to t('profiles.edit'), edit_profile_path
