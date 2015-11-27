@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   before_filter :load_settings
   before_filter :load_talks
 
+  force_ssl
+
 
   def load_settings
     Cfp::Config.load_from_persistance if Rails.env.development?
