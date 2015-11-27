@@ -1,27 +1,32 @@
-# cfp.magmarails.com
+# MagmaConf CFP
 
-Website used to organize the MagmaConf Call For Papers
-
-## 2015
-
-Current demo version lives at:
-
-url: https://magmacfp-demo.herokuapp.com
-git: https://git.heroku.com/magmacfp-demo.git
-
+App used to organize the MagmaConf Call For Papers
 
 ## Basic Configuration
 
-###ENV VARIABLES
+### ENV VARIABLES
 
 - DEVISE_SECRET_KEY
-  ```rake secret``` would do the trick
+  `rake secret` would do the trick
 
-- CFP_APP_ID
-  Github App Id
+- GITHUB_CLIENT_ID
+  Github Client Id
 
-- CFP_APP_SECRET
-  Github App Secret
+- GITHUB_CLIENT_SECRET
+  Github Client Secret
+
+
+- GOOGLE_CLIENT_ID
+  Github Client Id
+
+- GOOGLE_CLIENT_SECRET
+  Github Client Secret
+
+- CFP_CONTACT_EMAIL
+  Contact email used to mail users.
 
 - CFP_ENDING_DATE
   Last date for paper submission. Format: yyy-mm-dd
+
+- SECRET_KEY_BASE
+  `rake secret` would do the trick

@@ -23,13 +23,15 @@ gem 'gravtastic',                      '~> 3.2.6'
 gem 'newrelic_rpm',                    '~> 3.14.0'
 gem 'omniauth',                        '~> 1.2.2'
 gem 'omniauth-github',                 '~> 1.1.2'
+gem 'omniauth-google-oauth2',          '~> 0.2.8'
 gem 'pg',                              '~> 0.18.4'
 gem 'puma',                            '~> 2.15.3'
 gem 'will_paginate',                   '~> 3.0.7'
 gem 'figaro',                          '~> 1.1.1'
 
 group :development do
-  gem 'pry-byebug',                    '~> 3.2.0'
+  gem 'pry-byebug',                    '~> 1.3.3'
+  gem 'pry-remote',                    '~> 0.1.8'
 end
 
 group :production do
