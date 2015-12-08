@@ -53,10 +53,10 @@ a {
       width: 100%;
       margin: 0 auto;
     }
+    min-height: 150px;
   }
 
   .you {
-    @extend .ready;
     color: $carnation;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
