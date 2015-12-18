@@ -343,7 +343,7 @@ a {
   width: 100%;
   height: 60px;
   position: relative;
-  top: -37px;
+  top: -43px;
 }
 
 .lath-image:after, .lath-image:before {
@@ -355,11 +355,11 @@ a {
   width: 0;
 }
 .lath-image:after {
-    border-right: 135px solid #ebebeb;
+    border-right: 135px solid $wild-sand;
     left: 0;
 }
 .lath-image:before {
-    border-left: 135px solid #ebebeb;
+    border-left: 135px solid $wild-sand;
     right: 0;
 }
 
