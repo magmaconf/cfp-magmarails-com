@@ -35,6 +35,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate',                      '~> 2.6.10'
   gem 'pry-byebug',                    '~> 1.3.3'
   gem 'pry-remote',                    '~> 0.1.8'
 end

@@ -55,6 +55,9 @@ GEM
     airbrake (3.1.17)
       builder
       multi_json
+    annotate (2.6.10)
+      activerecord (>= 3.2, <= 4.3)
+      rake (~> 10.4)
     arel (6.0.3)
     bcrypt (3.1.10)
     builder (3.2.2)
@@ -279,6 +282,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders (~> 1.0.4)
   airbrake (~> 3.1.6)
+  annotate (~> 2.6.10)
   cactu (= 0.0.16)
   capybara (~> 2.5.0)
   cfp!
