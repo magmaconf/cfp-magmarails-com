@@ -29,6 +29,11 @@ gem 'puma',                            '~> 2.15.3'
 gem 'will_paginate',                   '~> 3.0.7'
 gem 'figaro',                          '~> 1.1.1'
 
+group :development, :test do
+  gem 'fabrication',                   '~> 2.14.1'
+  gem 'rspec-rails',                   '~> 3.4.0'
+end
+
 group :development do
   gem 'pry-byebug',                    '~> 1.3.3'
   gem 'pry-remote',                    '~> 0.1.8'
@@ -36,4 +41,10 @@ end
 
 group :production do
   gem 'rails_12factor',                '~> 0.0.3'
+end
+
+group :test do
+  gem 'capybara',                      '~> 2.5.0'
+  gem 'poltergeist',                   '~> 1.8.1'
+  gem 'simplecov',                     '~> 0.11.1', require: false
 end
