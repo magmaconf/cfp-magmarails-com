@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: cfp_proposals
+#
+#  id          :integer          not null, primary key
+#  user_id     :integer
+#  title       :string(255)
+#  level       :string(255)
+#  abstract    :text
+#  description :text
+#  language    :string(255)
+#  tags        :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  approved    :boolean          default(FALSE)
+#
+
+require_dependency Cfp::Engine.root.join("app", "models", "cfp", "proposal")
+
 Cfp::Proposal.class_eval do
   after_create do
     SubmissionMailer.submitted(self).deliver
