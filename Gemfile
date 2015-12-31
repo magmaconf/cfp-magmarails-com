@@ -16,18 +16,16 @@ gem 'jquery-rails',                    '~> 4.0.5'
 gem 'jquery-ui-rails',                 '~> 5.0.5'
 gem 'uglifier',                        '~> 2.7.2'
 
-gem 'airbrake',                        '~> 3.1.6'
 gem 'cfp',                             github: 'joiggama/cfp', tag: 'v0.4.0.alpha'
 gem 'devise',                          '~> 3.5.2'
+gem 'figaro',                          '~> 1.1.1'
 gem 'gravtastic',                      '~> 3.2.6'
-gem 'newrelic_rpm',                    '~> 3.14.0'
 gem 'omniauth',                        '~> 1.2.2'
 gem 'omniauth-github',                 '~> 1.1.2'
 gem 'omniauth-google-oauth2',          '~> 0.2.8'
 gem 'pg',                              '~> 0.18.4'
 gem 'puma',                            '~> 2.15.3'
 gem 'will_paginate',                   '~> 3.0.7'
-gem 'figaro',                          '~> 1.1.1'
 
 group :development, :test do
   gem 'fabrication',                   '~> 2.14.1'
@@ -41,7 +39,9 @@ group :development do
 end
 
 group :production do
+  gem 'airbrake',                      '~> 3.1.6'
   gem 'rails_12factor',                '~> 0.0.3'
+  gem 'newrelic_rpm',                  '~> 3.14.0'
 end
 
 group :test do
