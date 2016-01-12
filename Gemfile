@@ -36,6 +36,8 @@ group :development do
   gem 'annotate',                      '~> 2.6.10'
   gem 'pry-byebug',                    '~> 1.3.3'
   gem 'pry-remote',                    '~> 0.1.8'
+  gem 'powder',                        '~> 0.3.0'
+  gem 'tunnelss',                      '~> 0.1.3'
 end
 
 group :production do
