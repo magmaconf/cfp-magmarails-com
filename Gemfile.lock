@@ -44,7 +44,6 @@ GEM
       activemodel (= 4.2.5)
       activesupport (= 4.2.5)
       arel (~> 6.0)
-    activerecord-deprecated_finders (1.0.4)
     activesupport (4.2.5)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -285,7 +284,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-deprecated_finders (~> 1.0.4)
   airbrake (~> 3.1.6)
   annotate (~> 2.6.10)
   cactu (= 0.0.16)
