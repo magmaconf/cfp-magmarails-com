@@ -1,8 +1,6 @@
-# Be sure to restart your server when you modify this file.
+# Be sure to restart your server when you modify this fiR.config.session_store :cookie_store, key: '_cfp_session'
 
-CfpMagmaCom::Application.config.session_store :cookie_store, key: '_cfp_session'
-
-# Use the database for sessions instead of the cookie-based default,
+Rails.application.config.session_store :cookie_store, key: '_cfp_session'
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
 # CfpMagmaCom::Application.config.session_store :active_record_store

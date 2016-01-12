@@ -1,4 +1,4 @@
-CfpMagmaCom::Application.routes.draw do
+Rails.application.routes.draw do
   mount Cfp::Engine => '/'
   root :to => "proposals#index"
   get '/auth/:provider/callback', to: 'sessions#create'
