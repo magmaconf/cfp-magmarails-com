@@ -20,3 +20,20 @@
 //= require cfp/application
 //= require_tree .
 //
+
+$(document).ready(function(){
+
+  $('a[href^="#"]').click(function(event) {
+    event.preventDefault();
+
+    var url = new URL(this.href);
+    var target = $(url.hash);
+
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+
+});

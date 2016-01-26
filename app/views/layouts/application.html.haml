@@ -30,7 +30,7 @@
     %section#home-top.container
       .row
         .centered-six
-          = link_to 'http://magmaconf.com' do
+          = link_to root_url do
             = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
           #sign-in.mask
             = image_tag 'reylero_ok.png'
@@ -71,7 +71,7 @@
           %p.important-terms
             = t('home.have_question')
 
-          = link_to '#', class: 'check-out' do
+          = link_to '#check-out', class: 'check-out' do
             = t('home.check_out')
             %span
 
@@ -81,12 +81,10 @@
             &copy;
             = t('copyright')
 
-    =# render 'cfp/application/lists'
-
     #home-down.container
       .row
         .offset-one.eight-columns.header
-          = t('home.about')
+          #check-out= t('home.about')
 
         .two-columns.back-to-sign-in
           =link_to '#sign-in' do
