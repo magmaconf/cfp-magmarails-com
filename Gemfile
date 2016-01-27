@@ -23,6 +23,7 @@ gem 'omniauth-github',                 '~> 1.1.2'
 gem 'omniauth-google-oauth2',          '~> 0.2.8'
 gem 'pg',                              '~> 0.18.4'
 gem 'puma',                            '~> 2.15.3'
+gem 'rails-i18n',                      '~> 4.0.8'
 gem 'will_paginate',                   '~> 3.0.7'
 
 group :development, :test do

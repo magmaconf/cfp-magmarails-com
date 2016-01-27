@@ -66,7 +66,7 @@
           %p.closing-date
             = t('closing_date')
             %br
-            %strong= t('closing_date_2')
+            %strong= l Date.parse(ENV['CFP_ENDING_DATE']), format: :long
 
           %p.important-terms
             = t('home.have_question')

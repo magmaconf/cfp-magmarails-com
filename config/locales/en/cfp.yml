@@ -7,7 +7,6 @@ en:
     proposal: PROPOSAL
   magmaconf_arena: 'FOR #MAGMACONF 2016 ARENA!'
   closing_date: Call for Papers closes
-  closing_date_2: January 27, 2016
   comments:
     placeholder: 'You can use Markdown to give it a little formatting.'
     back_to_proposals: Back to all proposals
