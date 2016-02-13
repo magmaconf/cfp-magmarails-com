@@ -33,17 +33,7 @@
           = link_to root_url do
             = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
           #sign-in.mask
-            = image_tag 'reylero_ok.png'
-          .ready
-            -#= t('proposal.submit')
-            = image_tag 'submit.png'
-            %br
-            -#%span.proposal= t('proposal.proposal')
-          .you= t('magmaconf_arena')
-          .cfp
-            %span
-            = t('home.welcome')
-            = image_tag 'logo_callforpapers.png', alt: 'Call for papers'
+            = image_tag '105.svg'
 
           .please-login
             = t('home.login')
@@ -55,19 +45,11 @@
             %strong
               = link_to "Google", "/auth/google_oauth2"
             = t('home.account')
-            %br
-            = t('home.to')
-
       = yield
 
     #lists.container
       %footer.row
         .centered-six
-          %p.closing-date
-            = t('closing_date')
-            %br
-            %strong= l Date.parse(ENV['CFP_ENDING_DATE']), format: :long
-
           %p.important-terms
             = t('home.have_question')
 
