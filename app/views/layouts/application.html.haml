@@ -34,33 +34,35 @@
             = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
           #sign-in.mask
             = image_tag 'reylero_ok.png'
-          .ready
-            -#= t('proposal.submit')
-            = image_tag 'submit.png'
-            %br
-            -#%span.proposal= t('proposal.proposal')
-          .you= t('magmaconf_arena')
-          .cfp
-            %span
-            = t('home.welcome')
-            = image_tag 'logo_callforpapers.png', alt: 'Call for papers'
-
+          .our-2nd
+            Our 2nd
+          .cfp-alternate-img
+          .is-now-open
+            %span.span-color-1 Is
+            %span.span-color-2 Now
+            %span.span-color-1 Open 
+          .submit-your
+            %span.span-text-1 Submit 
+            %span.span-text-2 Your 
+          .proposal-text
+            Proposal
+          .before-than
+            %span.span-color-3 Before
+            %span.span-color-4 October 21
+          .cfp-separator-koromiko
           .please-login
-            = t('home.login')
-            %br
-            = t('home.your')
-            %strong
-              GitHub
-            = t('home.or')
-            %strong
-              = link_to "Google", "/auth/google_oauth2"
-            = t('home.account')
-            %br
-            = t('home.to')
-
+            Login with
+          .login-buttons
+            = link_to "Github", "/auth/github", class: "login_link btn-github"
+            = link_to "Gmail", "/auth/google_oauth2", class: "login_link btn-gmail"
+          .cfp-separator-koromiko
+          = link_to '#', class: 'check-out' do
+            %span.checkout Check out
+            %span.what-were-looking what we are looking for
+            %span.arrow
       = yield
 
-    #lists.container
+    -#lists.container
       %footer.row
         .centered-six
           %p.closing-date

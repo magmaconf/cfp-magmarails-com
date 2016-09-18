@@ -4,12 +4,12 @@
 #
 #  id          :integer          not null, primary key
 #  user_id     :integer
-#  title       :string(255)
-#  level       :string(255)
+#  title       :string
+#  level       :string
 #  abstract    :text
 #  description :text
-#  language    :string(255)
-#  tags        :string(255)
+#  language    :string
+#  tags        :string
 #  created_at  :datetime
 #  updated_at  :datetime
 #  approved    :boolean          default(FALSE)

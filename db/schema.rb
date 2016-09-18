@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140104043322) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cfp_comments", force: true do |t|
+  create_table "cfp_comments", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "proposal_id"
     t.text     "body"
@@ -25,12 +25,12 @@ ActiveRecord::Schema.define(version: 20140104043322) do
     t.boolean  "notified",    default: false
   end
 
-  create_table "cfp_configs", force: true do |t|
+  create_table "cfp_configs", force: :cascade do |t|
     t.string "var"
     t.string "value"
   end
 
-  create_table "cfp_profiles", force: true do |t|
+  create_table "cfp_profiles", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
     t.string   "title"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20140104043322) do
     t.string   "email"
   end
 
-  create_table "cfp_proposals", force: true do |t|
+  create_table "cfp_proposals", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "title"
     t.string   "level"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20140104043322) do
     t.boolean  "approved",    default: false
   end
 
-  create_table "cfp_ranks", force: true do |t|
+  create_table "cfp_ranks", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "proposal_id"
     t.integer  "value"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140104043322) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",                  default: "", null: false

@@ -13,8 +13,8 @@ a {
 }
 
 #home-top {
-  background: $maize;
-  height: 700px;
+  background: $stratos;
+  height: auto;
 
   .row > *:first-child {
     margin-top: 35px;
@@ -91,6 +91,11 @@ a {
     }
   }
 
+  .cfp-alternate-img {
+    @include sprite-icon('assets_02', -75, -440, 46, 274);
+    margin: 10px auto;
+  }
+
   .counting {
     @extend .important;
     width: 260px;
@@ -104,6 +109,88 @@ a {
       margin: -7px 13px 0 0;
       border: 1px solid #000;
     }
+  }
+
+  .our-2nd {
+    @include span-cfp($bittersweet, 81.4px, 'Oswald', bold, uppercase);
+  }
+
+  .is-now-open {
+    border-bottom: 2px solid $bittersweet; 
+    border-top: 2px solid $bittersweet; 
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 280px;
+  }
+
+  .span-color-1 {
+    @include span-cfp($wild-sand-2, 57px, 'Oswald', bold, uppercase);
+  }
+
+  .span-color-2 {
+    @include span-cfp($bittersweet, 57px, 'Oswald', bold, uppercase);
+  }
+
+  .submit-your {
+    padding: 10px;
+  }
+  
+  .span-text-1 {
+    @include span-cfp($bittersweet, 51px, 'Oswald', bold, uppercase);
+  }
+
+  .span-text-2 {
+    @include span-cfp($wild-sand-2, 51px, 'Oswald', bold, uppercase);
+  }
+
+  .proposal-text {
+    @include span-cfp($koromiko, 69px, 'Oswald', bold, uppercase);
+  }
+
+  .before-than {
+    padding: 10px;
+  }
+
+  .span-color-3 {
+    @include span-cfp($wild-sand-2, 39px, 'Oswald', 300, uppercase);
+  }
+
+  .span-color-4 {
+    @include span-cfp($bittersweet, 37px, 'Oswald', bold, uppercase);
+  }
+
+  .please-login {
+    @include span-cfp($wild-sand-2, 46px, 'Open sans', bold, uppercase);
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .login-buttons {
+    margin: 20px auto 30px; 
+  }
+
+  .btn-github {
+    background-color: $lochmara;
+    border-radius: 4.5px;
+    color: $wild-sand-2;
+    padding: 10px 40px;
+  }
+
+  .btn-gmail {
+    background-color: $pacific-blue;
+    border-radius: 4.5px;
+    color: $wild-sand-2;
+    margin-left: 10px;
+    padding: 10px 40px;
+  }
+
+  .checkout {
+    @include span-cfp($koromiko, 17px, 'Open sans', 300, none);
+  }
+
+  .what-were-looking {
+    @include span-cfp($wild-sand-2, 17px, 'Open sans', 300, none);
   }
 }
 
@@ -139,7 +226,7 @@ a {
 }
 
 #lists {
-  background-color: $wild-sand;
+  background-color: $stratos;
   padding-top: 70px;
   padding-bottom: 25px;
 
@@ -429,7 +516,7 @@ footer {
   margin-top: 10px;
   text-decoration: underline;
 
-  span {
+  span.arrow {
     background: asset_url('arrows_down.png') no-repeat;
     width: 13px;
     height: 15px;
@@ -517,4 +604,11 @@ body > footer {
     font-size: 14px;
     margin: 0 15px 0 10px;
   }
+}
+
+.cfp-separator-koromiko {
+  background-color: $koromiko;
+  height: 2px;
+  margin: 0 auto;
+  width: 290px;
 }
