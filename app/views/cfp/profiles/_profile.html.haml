@@ -1,7 +1,7 @@
 .profile-in
   %header
     = link_to root_path do
-      = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
+      = image_tag 'magma_white_logo.png', class: 'magma_logo', alt: 'Magma Conference'
   .line
   %h4= t('profiles.profile')
   .pic
@@ -19,4 +19,4 @@
     .complete
       = link_to t('profiles.edit'), edit_profile_path
   .cfp-logo
-    = image_tag 'logo_callforpapers_perfil.png'
+    .cfp-logo-perfil
