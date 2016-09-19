@@ -336,9 +336,9 @@
 /* Arrows */
 .arrow {
   &:before, &:after {
-    border-color: #F00 rgba(0, 0, 0, 0);
-    border-style: solid;
-    content: "";
+    //border-color: #F00 rgba(0, 0, 0, 0);
+    //border-style: solid;
+    content: " ";
     display: block;
     position: absolute;
     width: 0;

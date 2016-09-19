@@ -27,13 +27,14 @@
       })();
 
   %body
+    .landing-main-section
     %section#home-top.container
       .row
         .centered-six
           = link_to 'http://magmaconf.com' do
-            = image_tag 'logo_magmaconf.png', class: 'magma_logo', alt: 'Magma Conference'
+            = image_tag 'magma_white_logo.png', class: 'magma_logo', alt: 'Magma Conference'
           #sign-in.mask
-            = image_tag 'reylero_ok.png'
+            = image_tag 'reylero_ok.png', class: 'reylero-ok'
           .our-2nd
             Our 2nd
           .cfp-alternate-img
@@ -55,11 +56,11 @@
           .login-buttons
             = link_to "Github", "/auth/github", class: "login_link btn-github"
             = link_to "Gmail", "/auth/google_oauth2", class: "login_link btn-gmail"
-          .cfp-separator-koromiko
-          = link_to '#', class: 'check-out' do
+          .cfp-separator-koromiko.mb30
+          -#= link_to '#', class: 'check-out' do
             %span.checkout Check out
             %span.what-were-looking what we are looking for
-            %span.arrow
+            %span.arrow-->
       = yield
 
     -#lists.container
@@ -91,7 +92,7 @@
           = t('home.about')
 
         .two-columns.back-to-sign-in
-          =link_to '#sign-in' do
+          -#=link_to '#sign-in' do
             %span
             = t('home.back_to_signin')
 
@@ -166,8 +167,8 @@
               %p.body= raw t("contact.greeting.body")
 
     %footer
-      .row
-        %hr.last-hr
-        .centered-six
-          = image_tag 'logo_callforpapers_gris.png', class: 'cfp-footer-logo'
-          = image_tag 'logo_magmaconf_gris.png', class: 'magma-footer-logo'
+      .row.pt30
+        .offset-four.two-columns
+          .cfp-footer-logo
+        .two-columns
+          = image_tag 'page-1@2x.png', class: 'magma-footer-logo'

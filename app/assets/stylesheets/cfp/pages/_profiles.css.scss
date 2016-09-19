@@ -2,7 +2,7 @@
   text-align: center;
 
   .profile-in {
-    background: $maize;
+    background: $stratos;
     line-height: 2em;
     margin: auto;
     width: 95%;
@@ -23,8 +23,8 @@
     h4 {
       font-family: 'Oswald', sans-serif;
       font-weight: 400;
-      color: $coffee;
-      font-size: 18px;
+      color: $bittersweet;
+      font-size: 30px;
     }
 
     a {
@@ -37,14 +37,14 @@
     }
 
     .line {
-      background: $coffee;
+      background: $koromiko;
       height: 3px;
       margin: 5px auto 20px auto;
       width: 65%;
     }
 
     .pic {
-      border: 1px solid $coffee;
+      border: 1px solid $bittersweet;
       border-radius: 50%;
       height: 150px;
       margin: 20px auto;
@@ -60,7 +60,7 @@
     }
 
     .name {
-      color: $coffee;
+      color: $wild-sand-2;
       display: inline;
       font-family: 'Open Sans', sans-serif;
       font-size: 21px;
@@ -75,7 +75,7 @@
     }
 
     .email {
-      color: $coffee;
+      color: $wild-sand-2;
       font-style: italic;
       font-size: 14px;
     }
@@ -101,7 +101,7 @@
 }
 
 .titles {
-  border-bottom: 1px solid $tan;
+  border-bottom: 1px solid $stratos;
   display: inline-block;
   margin-bottom: 4px;
   padding: 40px 0 10px 0;
@@ -112,9 +112,9 @@
     width: 70%;
 
     h3 {
-      color: $coffee;
+      color: $stratos;
       font-family: 'Oswald', sans-serif;
-      font-size: 33px;
+      font-size: 40px;
       font-weight: 400;
       display: inline;
       margin-right: 10px;
@@ -217,4 +217,9 @@ a.btn-cfp:hover {
   position: relative;
   top: 77px;
   left: 150px;
+}
+
+.cfp-logo-perfil {
+  @include sprite-icon("assets_02", -75, -510, 24, 141);
+  margin: 0 auto;
 }

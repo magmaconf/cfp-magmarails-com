@@ -4,5 +4,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 
 if Rails.env.development?
-  OmniAuth.config.full_host = "https://cfp.magmaconf.dev"
+  OmniAuth.config.full_host = "http://cfp.magmaconf.dev"
 end

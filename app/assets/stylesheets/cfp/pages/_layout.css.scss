@@ -16,10 +16,6 @@ a {
   background: $stratos;
   height: auto;
 
-  .row > *:first-child {
-    margin-top: 35px;
-  }
-
   .circle {
     position: absolute;
     top: 615px;
@@ -36,15 +32,15 @@ a {
     }
   }
 
-  img {
-    display: block;
+  .centered-six {
+    margin-top: 35px;
   }
 
   .mask {
     border-radius: 100%;
     display: block;
     height: 240px;
-    margin: 35px auto 25px auto;
+    margin: 35px auto 70px auto;
     width: 240px;
   }
 
@@ -263,9 +259,14 @@ a {
 
   p {
     display: inline-block;
-    color: $coffee;
+    color: $gray-lt;
     padding-bottom: 15px;
     font-size: 13px;
+
+    strong {
+      color: $stratos;
+      font-weight: bold;
+    }
 
     a {
       font-size: 13px;
@@ -300,7 +301,7 @@ a {
   .title {
     color: $carnation;
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     text-transform: uppercase;
   }
 
@@ -310,9 +311,9 @@ a {
   }
 
   .header {
-    color: $coffee;
+    color: $stratos;
     font-family: 'Oswald', sans-serif;
-    font-size: 28px;
+    font-size: 42px;
     line-height: 1;
     text-transform: uppercase;
   }
@@ -517,11 +518,11 @@ footer {
   text-decoration: underline;
 
   span.arrow {
-    background: asset_url('arrows_down.png') no-repeat;
-    width: 13px;
-    height: 15px;
+    background: asset_url('arrows-down.svg') no-repeat;
+    width: 21px;
+    height: 26px;
     display: block;
-    margin: 17px auto 0 auto;
+    margin: 17px auto 17px auto;
   }
 
   &:hover {
@@ -581,10 +582,11 @@ footer {
 
 .magma_logo {
   margin: 0 auto;
+  position: relative;
 }
 
 body > footer {
-  background: #ffffff;
+  background: $stratos;
   padding: 0 0 15px 0;
 
   hr.last-hr {
@@ -592,11 +594,12 @@ body > footer {
   }
 
   .cfp-footer-logo {
+    @include sprite-icon('assets_02', -75, -510, 24, 141);
     padding: 0 30px 5px 0;
   }
 
   .magma-footer-logo {
-    width: 74px;
+    width: 95px;
   }
 
   span {
@@ -611,4 +614,25 @@ body > footer {
   height: 2px;
   margin: 0 auto;
   width: 290px;
+}
+
+.sponsored-by {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: $wild-sand-2;
+}
+
+.magmalabs-logo-footer {
+  position: relative;
+}
+
+.landing-main-section {
+  @include sprite-icon('assets_02', -77, -813, 317, 1027);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.reylero-ok {
+  position: relative;
 }

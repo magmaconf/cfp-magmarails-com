@@ -118,6 +118,7 @@
             <rect id="Rectangle-7-Copy-3" fill="#00609E" x="235" y="307" width="121" height="41" rx="4.5"></rect>
             <rect id="Rectangle-7-Copy" fill="#00ACBC" x="370" y="255" width="121" height="41" rx="4.5"></rect>
             <rect id="Rectangle-7-Copy-2" fill="#0098A6" x="370" y="307" width="121" height="41" rx="4.5"></rect>
+            <path d="M78,800.356473 C172.823801,987.163967 366.762054,1115.17558 590.599021,1115.17558 C814.578338,1115.17558 1008.6209,987.001097 1103.37883,800 C935.398043,799.999998 197.987732,800 78,800.356473 Z" id="Oval-3" fill="#FF6666"></path>
         </g>
     </g>
 </svg>
