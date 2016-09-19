@@ -1,11 +1,11 @@
 // Layout
 #swipe {
-  width: 50%;
   height: 100%;
+  overflow: hidden;
   position: absolute;
   top: 0;
   visibility: hidden;
-  overflow: hidden;
+  width: 50%;
 }
 
 a {
@@ -17,10 +17,10 @@ a {
   height: auto;
 
   .circle {
-    position: absolute;
-    top: 615px;
     left: 50%;
     margin-left: -75px;
+    position: absolute;
+    top: 615px;
     z-index: 2;
 
     a:hover {
@@ -54,18 +54,18 @@ a {
 
   .you {
     color: $carnation;
-    font-size: 18px;
     font-family: 'Oswald', sans-serif;
+    font-size: 18px;
     margin-top: -60px;
   }
 
   .welcome {
-    display: inline-block;
     color: #a02d2e;
-    width: 200px;
-    margin: 10px auto 0;
+    display: inline-block;
     font: 100 1em/1.1 'Oswald';
+    margin: 10px auto 0;
     text-transform: uppercase;
+    width: 200px;
   }
 
   .blog {
@@ -97,13 +97,13 @@ a {
     width: 260px;
 
     p {
-      width: 200px;
       text-align: left;
+      width: 200px;
     }
 
     .cir {
-      margin: -7px 13px 0 0;
       border: 1px solid #000;
+      margin: -7px 13px 0 0;
     }
   }
 
@@ -191,10 +191,10 @@ a {
 }
 
 .top {
-  width: 100%;
-  height: 50px;
   background: $top;
   border-bottom: 10px solid $white;
+  height: 50px;
+  width: 100%;
 }
 
 .main-menu {
@@ -251,10 +251,10 @@ a {
   }
 
   .ready-hr {
-    width: 970px;
     border-top-width: 1px;
     border: 1px solid $carnation;
     margin: 10px auto 15px;
+    width: 970px;
   }
 
   p {
@@ -319,9 +319,9 @@ a {
   }
 
   .back-to-sign-in {
-    margin-top: 40px;
     height: 20px;
     margin-bottom: 10px;
+    margin-top: 40px;
 
     a {
       color: $carnation;
@@ -331,11 +331,11 @@ a {
 
       span {
         background: asset_url('arrows.svg') no-repeat -37px 0px;
-        width: 13px;
-        height: 14px;
-        display: inline-block;
         background-size: 50px;
+        display: inline-block;
+        height: 14px;
         margin-right: 10px;
+        width: 13px;
       }
 
       &:hover {
@@ -354,8 +354,8 @@ a {
       background-color: $wild-sand;
       border: 1px solid $tan;
       color: #792222;
-      height: 30px;
       font-size: 15px;
+      height: 30px;
       width: 95%;
     }
 
@@ -363,19 +363,19 @@ a {
       background-color: $carnation;
       border: 1px solid $carnation;
       color: white;
-      font-size: 18px;
       font-family: 'Oswald', sans-serif;
+      font-size: 18px;
       font-weight: 400;
       height: 40px;
       margin-top: 25px;
-      text-transform: uppercase;
       text-align: center;
+      text-transform: uppercase;
       width: 100%;
     }
 
     label {
-      display: inline-block;
       color: $coffee;
+      display: inline-block;
       font-family: 'Oswald', sans-serif;
       font-size: 15px;
       font-weight: 200;
@@ -428,10 +428,10 @@ a {
 }
 
 .lath-image {
-  width: 100%;
   height: 60px;
   position: relative;
   top: -43px;
+  width: 100%;
 }
 
 .lath-image:after, .lath-image:before {
@@ -443,12 +443,12 @@ a {
   width: 0;
 }
 .lath-image:after {
-    border-right: 135px solid $wild-sand;
-    left: 0;
+  border-right: 135px solid $wild-sand;
+  left: 0;
 }
 .lath-image:before {
-    border-left: 135px solid $wild-sand;
-    right: 0;
+  border-left: 135px solid $wild-sand;
+  right: 0;
 }
 
 footer {
@@ -462,9 +462,9 @@ footer {
   }
 
   span {
+    margin-left: 10px;
     position: relative;
     top: -6px;
-    margin-left: 10px;
   }
 
   &.prof {
@@ -484,8 +484,8 @@ footer {
 
     a {
       color: $anchor-hover;
-      text-decoration: underline;
       font: 300 1em/1em 'Roboto';
+      text-decoration: underline;
 
       &:hover {
         color: $anchor;
@@ -519,10 +519,10 @@ footer {
 
   span.arrow {
     background: asset_url('arrows-down.svg') no-repeat;
-    width: 21px;
-    height: 26px;
     display: block;
+    height: 26px;
     margin: 17px auto 17px auto;
+    width: 21px;
   }
 
   &:hover {
@@ -532,21 +532,21 @@ footer {
 
 .must-know {
   color: #a02d2e;
+  display: block;
   font-size: 18px;
   font-weight: 400;
-  text-decoration: underline;
   margin-bottom: 38px;
-  display: block;
+  text-decoration: underline;
 }
 
 #cir {
-  width: 35px;
-  height: 35px;
+  @include border_radius(50%);
   background: $white;
   border: 1px solid #ff6666;
   box-shadow: 0 0 0 2px $white;
+  height: 35px;
   margin: 26px auto 10px auto;
-  @include border_radius(50%);
+  width: 35px;
   overflow: hidden;
 
   img#info {
@@ -617,9 +617,9 @@ body > footer {
 }
 
 .sponsored-by {
+  color: $wild-sand-2;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  color: $wild-sand-2;
 }
 
 .magmalabs-logo-footer {

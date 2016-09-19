@@ -8,6 +8,7 @@
     margin: 3px 0 0 0;
     width: 15px;
   }
+
   color: $carnation;
   float: right;
   font-family: 'Open Sans', sans-serif;
@@ -23,9 +24,9 @@
   @include gradient(#f48d5d, #d97246);
   border: 0px;
   color: white;
+  float: right;
   font-family: 'Open Sans', sans-serif;
   padding: 8px 15px;
-  float: right;
   &:hover {
     text-decoration: none;
   }
@@ -55,9 +56,9 @@
 
 .btn-big-proposals{
   @extend .btn-proposals;
+  float: none;
   font-size: 26px;
   padding: 9px 29px;
-  float: none;
 }
 
 .form-actions {
@@ -78,14 +79,14 @@
 }
 
 .total {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .new-proposal, .gray-background {
   background: $profile-bkg;
-  padding: 20px 25px;
   margin-bottom: 20px;
+  padding: 20px 25px;
 
   textarea { resize: none }
 }
@@ -131,8 +132,8 @@
     color: $carnation;
     font-size: 30px;
     font-weight: 400;
-    margin: 7px 0 0 0;
     line-height: 100%;
+    margin: 7px 0 0 0;
   }
 
   span {
@@ -167,10 +168,10 @@
 
   p {
     color: $coffee;
-    padding: 10px 0 30px 0px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0 30px 0px;
   }
 
   .title {
@@ -182,10 +183,10 @@
   }
 
   .tags {
+    color: $coffee;;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: 200;
-    color: $coffee;;
   }
 
   footer {
@@ -201,8 +202,8 @@
       width: 110px;
 
       img {
-        border: 1px solid $line;
         border-radius: 50%;
+        border: 1px solid $line;
         height: 100px;
         margin: 4px 0 0 4px;
         width: 100px;
@@ -214,9 +215,9 @@
       margin-top: 10px;
 
       p {
+        font-size: 1.2em;
         padding: 0;
         text-align: left;
-        font-size: 1.2em;
       }
 
       .name {
@@ -279,14 +280,14 @@
 }
 
 .cancel-new-proposal {
-  position: relative;
   left: 150px;
+  position: relative;
   top: -42px;
 }
 
 .move-buttons {
-  top: -88px;
   position: relative;
+  top: -88px;
 }
 
 
@@ -352,15 +353,15 @@
   @extend .arrow;
 
   &:before {
+    border-width: 5px 5px 0;
     bottom: -5px;
     left: 10px;
-    border-width: 5px 5px 0;
   }
 
   &:after {
+    border-width: 10px 10px 0;
     bottom: -3px;
     left: 5px;
-    border-width: 10px 10px 0;
   }
 
 }
