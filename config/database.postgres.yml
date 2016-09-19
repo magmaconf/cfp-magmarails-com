@@ -1,0 +1,13 @@
+development: &default
+  adapter: postgresql
+  database: magmarails
+  pool: 5
+  timeout: 5000
+  host: localhost
+
+test:
+  <<: *default
+  database: magmarails_test
+
+production:
+  <<: *default
