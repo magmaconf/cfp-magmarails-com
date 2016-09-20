@@ -7,7 +7,7 @@
   outline: 0;
 
   h2 {
-    color: $coffee;
+    color: $stratos;
     font-family: 'Oswald', sans-serif;
     font-size: 33px;
     text-align: center;
@@ -24,7 +24,7 @@
   }
 
   p {
-    color: $coffee;
+    color: $gray-lt;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -81,10 +81,10 @@
     display: inline;
     padding: 8px 15px 4px 15px;
     margin: 0;
-    border-bottom: solid 2px $tan;
+    border-bottom: solid 2px $koromiko;
 
     a {
-      color: $tan;
+      color: $koromiko;
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       font-weight: 400;
@@ -100,10 +100,10 @@
   }
 
   .ui-state-active {
-    background: $tan;
+    background: $koromiko;
 
     a {
-      color: $coffee;
+      color: $stratos;
     }
   }
 }
