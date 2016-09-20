@@ -72,16 +72,16 @@
 }
 
 .ui-tabs-nav {
-  text-align: center;
-  margin: 0 auto;
   height: 38px;
+  margin: 0 auto;
+  text-align: center;
   width: 700px;
 
   li {
-    display: inline;
-    padding: 8px 15px 4px 15px;
-    margin: 0;
     border-bottom: solid 2px $koromiko;
+    display: inline;
+    margin: 0;
+    padding: 8px 15px 4px 15px;
 
     a {
       color: $koromiko;
