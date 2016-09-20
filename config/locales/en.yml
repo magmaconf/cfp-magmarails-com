@@ -63,7 +63,7 @@ en:
       one: '%{count} Proposal'
       other: '%{count} Proposals'
     about_author: About the author
-    add_html: Add proposal
+    add_html: Submit proposal
     attributes:
       abstract: Abstract
       description: Description
