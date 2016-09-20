@@ -171,6 +171,10 @@ a {
     border-radius: 4.5px;
     color: $wild-sand-2;
     padding: 10px 40px;
+
+    &:hover {
+      background-color: $bahama;
+    }
   }
 
   .btn-gmail {
@@ -179,6 +183,10 @@ a {
     color: $wild-sand-2;
     margin-left: 10px;
     padding: 10px 40px;
+
+    &:hover {
+      background-color: $bondi-blue;
+    }
   }
 
   .checkout {
