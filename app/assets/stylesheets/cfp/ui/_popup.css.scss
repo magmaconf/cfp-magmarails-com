@@ -7,7 +7,7 @@
   outline: 0;
 
   h2 {
-    color: $coffee;
+    color: $stratos;
     font-family: 'Oswald', sans-serif;
     font-size: 33px;
     text-align: center;
@@ -24,7 +24,7 @@
   }
 
   p {
-    color: $coffee;
+    color: $gray-lt;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -72,19 +72,19 @@
 }
 
 .ui-tabs-nav {
-  text-align: center;
-  margin: 0 auto;
   height: 38px;
+  margin: 0 auto;
+  text-align: center;
   width: 700px;
 
   li {
+    border-bottom: solid 2px $koromiko;
     display: inline;
-    padding: 8px 15px 4px 15px;
     margin: 0;
-    border-bottom: solid 2px $tan;
+    padding: 8px 15px 4px 15px;
 
     a {
-      color: $tan;
+      color: $koromiko;
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       font-weight: 400;
@@ -100,10 +100,10 @@
   }
 
   .ui-state-active {
-    background: $tan;
+    background: $koromiko;
 
     a {
-      color: $coffee;
+      color: $stratos;
     }
   }
 }
