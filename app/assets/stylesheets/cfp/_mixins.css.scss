@@ -42,11 +42,15 @@
   width: #{$width}px;
 }
 
-@mixin span-cfp($color, $font-size, $font-family, $font-weight, $text-transform) {
+@mixin span-cfp($color, $font-size, $font-family, $font-weight, $text-transform, $font-size-sm: $font-size) {
   color: $color;
   font-family: $font-family, sans-serif;
   line-height: 1;
   font-size: $font-size;
   font-weight: $font-weight;
   text-transform: $text-transform;
+
+  @media screen and (max-width: 350px) {
+    font-size: $font-size-sm;
+  }
 }
