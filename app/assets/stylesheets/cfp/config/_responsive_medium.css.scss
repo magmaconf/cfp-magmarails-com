@@ -132,9 +132,29 @@
   }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width :1024px) {
+@media only screen and (min-width : 768px) and (max-width :1024px) {
 
   #home-top .circle {
     top: 690px !important;
+  }
+
+  input[type="text"] {
+    width: 95% !important;
+  }
+
+  #proposal_level, #proposal_language {
+    width: 120px !important;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  .lath-image {
+    &:after {
+      border-right: 88px solid $wild-sand !important;
+    }
+
+    &:before {
+      border-left: 88px solid $wild-sand !important;
+    }
   }
 }
