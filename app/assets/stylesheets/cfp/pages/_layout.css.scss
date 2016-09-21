@@ -656,3 +656,41 @@ body > footer {
 .reylero-ok {
   position: relative;
 }
+
+.social-icons-container {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.social-shares {
+  display: inline-block;
+  float: left;
+  height: 60px;
+  width: 65px;
+}
+
+.facebook {
+  @include sprite-icon('assets_02', -435, -441, 43, 43);
+  @extend .social-shares;
+  margin-right: 10px;
+  &:hover {
+    @include sprite-icon('assets_02', -588, -441, 43, 43);
+  }
+}
+
+.twitter {
+  @include sprite-icon('assets_02', -505, -441, 43, 43);
+  @extend .social-shares;
+  &:hover {
+    @include sprite-icon('assets_02', -658, -441, 43, 43);
+  }
+}
+
+.info {
+  color: $wild-sand;
+  padding-top: 5px;
+
+  a {
+    color: $bittersweet;
+  }
+}
