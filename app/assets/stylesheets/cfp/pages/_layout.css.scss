@@ -1,4 +1,8 @@
 // Layout
+html {
+  overflow-x: hidden;
+}
+
 #swipe {
   height: 100%;
   overflow: hidden;
@@ -108,7 +112,7 @@ a {
   }
 
   .our-2nd {
-    @include span-cfp($bittersweet, 81.4px, 'Oswald', bold, uppercase);
+    @include span-cfp($bittersweet, 81.4px, 'Oswald', bold, uppercase, 78px);
   }
 
   .is-now-open {
@@ -120,11 +124,11 @@ a {
   }
 
   .span-color-1 {
-    @include span-cfp($wild-sand-2, 57px, 'Oswald', bold, uppercase);
+    @include span-cfp($wild-sand-2, 57px, 'Oswald', bold, uppercase, 54px);
   }
 
   .span-color-2 {
-    @include span-cfp($bittersweet, 57px, 'Oswald', bold, uppercase);
+    @include span-cfp($bittersweet, 57px, 'Oswald', bold, uppercase, 54px);
   }
 
   .submit-your {
@@ -132,15 +136,15 @@ a {
   }
   
   .span-text-1 {
-    @include span-cfp($bittersweet, 51px, 'Oswald', bold, uppercase);
+    @include span-cfp($bittersweet, 51px, 'Oswald', bold, uppercase, 47px);
   }
 
   .span-text-2 {
-    @include span-cfp($wild-sand-2, 51px, 'Oswald', bold, uppercase);
+    @include span-cfp($wild-sand-2, 51px, 'Oswald', bold, uppercase, 47px);
   }
 
   .proposal-text {
-    @include span-cfp($koromiko, 69px, 'Oswald', bold, uppercase);
+    @include span-cfp($koromiko, 69px, 'Oswald', bold, uppercase, 64px);
   }
 
   .before-than {
@@ -148,15 +152,15 @@ a {
   }
 
   .span-color-3 {
-    @include span-cfp($wild-sand-2, 39px, 'Oswald', 300, uppercase);
+    @include span-cfp($wild-sand-2, 39px, 'Oswald', 300, uppercase, 36px);
   }
 
   .span-color-4 {
-    @include span-cfp($bittersweet, 37px, 'Oswald', bold, uppercase);
+    @include span-cfp($bittersweet, 37px, 'Oswald', bold, uppercase, 34px);
   }
 
   .please-login {
-    @include span-cfp($wild-sand-2, 46px, 'Open sans', bold, uppercase);
+    @include span-cfp($wild-sand-2, 46px, 'Open sans', bold, uppercase, 41px);
     letter-spacing: 2px;
     margin-top: 0;
     padding: 10px;
@@ -175,6 +179,10 @@ a {
     &:hover {
       background-color: $bahama;
     }
+
+    @media screen and (max-width: 350px) {
+      padding: 10px 36px;
+    }
   }
 
   .btn-gmail {
@@ -186,6 +194,10 @@ a {
 
     &:hover {
       background-color: $bondi-blue;
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: 10px 36px;
     }
   }
 
@@ -364,7 +376,7 @@ a {
       color: #792222;
       font-size: 15px;
       height: 30px;
-      width: 95%;
+      width: 92%;
     }
 
     input[type=submit] {
