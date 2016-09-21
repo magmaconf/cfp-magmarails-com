@@ -169,7 +169,14 @@
 
     %footer
       .row.pt30
-        .offset-four.two-columns
+        .offset-two.two-columns
           .cfp-footer-logo
         .two-columns
           = image_tag 'page-1@2x.png', class: 'magma-footer-logo'
+        .two-columns
+          %p.info
+            = link_to 'info@magmaconf.com', 'mailto:info@magmaconf.com'
+        .two-columns
+          .social-icons-container
+            = link_to '', 'https://www.facebook.com/MagmaConf', target: "_blank", class: 'facebook'
+            = link_to '', 'https://twitter.com/magmaconference', target: "_blank",  class: 'twitter'
