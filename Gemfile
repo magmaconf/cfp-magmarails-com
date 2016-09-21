@@ -4,6 +4,8 @@ ruby '2.2.3'
 
 gem 'rails',                           '4.2.5'
 
+gem 'activerecord-deprecated_finders', '~> 1.0.4'
+
 gem 'coffee-rails',                    '~> 4.1.0'
 gem 'haml-rails',                      '~> 0.9.0'
 gem 'sass-rails',                      '~> 5.0.4'
