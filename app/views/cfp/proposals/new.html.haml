@@ -19,7 +19,7 @@
   = form_for @proposal, html: { novalidate: true } do |form|
     = render 'form', form: form, klass: 'new-proposal'
 
-    .one-columns.offset-four
+    .one-columns-medium.offset-four
       .btn-cancel
         = link_to t('profiles.cancel'), proposals_path, class: 'aro'
     .three-columns

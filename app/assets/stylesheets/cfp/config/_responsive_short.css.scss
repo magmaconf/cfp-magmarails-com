@@ -11,6 +11,12 @@
 
   .lath-image {
     background: asset-url('liston_bg_2.png') no-repeat center !important;
+    margin: 0 auto;
+    width: 95% !important;
+
+    &:after, &:before {
+      border-top: none !important;
+    }
   }
 
   .prof {
@@ -25,6 +31,10 @@
   .titles {
     .left-section, .right-section {
       width: 100% !important;
+    }
+
+    h3 {
+      line-height: 1 !important;
     }
   }
 
@@ -104,5 +114,15 @@
     span, a {
       margin: 20px 25px;
     }
+  }
+
+  .new-proposal {
+    textarea {
+      width: 100% !important;
+    }
+  }
+
+  input[type="text"] {
+    width: 100% !important;
   }
 }
