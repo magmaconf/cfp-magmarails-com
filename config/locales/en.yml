@@ -116,7 +116,7 @@ en:
     magma:
       title: MagmaConf
       one: <strong>What are we looking for?</strong>
-      two: Magma Conf is a community organized web development and design conference that focuses on cutting edge technologies, mostly revolving around Ruby and Rails.  However, if you feel that there is an interesting talk that you would like to present that is not related to it, please go ahead and submit it.
+      two: MagmaConf is one of the most important community tech conferences in Mexico. We showcase innovative Software Development, UX/UI Design and Mobile sessions for engineers and designers that build cutting edge websites and applications. However, if you feel that there is an interesting talk that you would like to present that is not related to it, please go ahead and submit it.
       three: We’re open to hear about testing, scaling, API design and implementation, entrepreneurship in the tech sphere, startups that are awesome, development communities that are growing and focused in particular subjects… you get the point.
     topics:
       title: Topics
