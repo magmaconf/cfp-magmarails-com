@@ -125,4 +125,31 @@
   input[type="text"] {
     width: 100% !important;
   }
+
+  .social-icons-container {
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+  }
+
+  .ta-sm {
+    text-align: center;
+  }
+
+  .left-sm {
+    float: left;
+    width: 50%;
+  }
+
+  .right-sm {
+    float: right;
+    width: 50%;
+  }
+
+  .magma-footer-logo {
+    @include redimention-image();
+  }
+
+  .cfp-footer-logo {
+    @include redimention-image();
+  }
 }
