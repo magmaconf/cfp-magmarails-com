@@ -48,6 +48,7 @@
   line-height: 1;
   font-size: $font-size;
   font-weight: $font-weight;
+  display: inline-block;
   text-transform: $text-transform;
 
   @media screen and (max-width: 350px) {
