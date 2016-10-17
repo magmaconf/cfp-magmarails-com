@@ -13,7 +13,7 @@
     = stylesheet_link_tag    'cfp/application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Open+Sans:600,400|Oswald:400,300,700&subset=latin' }
+    %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Open+Sans:600,400,300|Oswald:400,300,700&subset=latin' }
     %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}"}
 
     :javascript
@@ -52,13 +52,19 @@
             %span.span-color-4 Results
             %span.soon-text Soon
             %span.involve-to-evolve #InvolveToEvolve
-          .cfp-separator-koromiko
-          .please-login
-            Login with
+          .double-check
+            %span.want-to
+              Want to double check your proposal?
+            %span.access-to
+              Access with your account
           .login-buttons
             = link_to "Github", "/auth/github", class: "login_link btn-github"
             = link_to "Google", "/auth/google_oauth2", class: "login_link btn-gmail"
-          .cfp-separator-koromiko.mb30
+          .cfp-text
+            %span.access-to
+              More info at
+            = link_to 'magmaconf.com','http://magmaconf.com', class: 'link-to-magmaconf'
+            .cfp-separator-bittersweet.mb30
           -#= link_to '#', class: 'check-out' do
             %span.checkout Check out
             %span.what-were-looking what we are looking for

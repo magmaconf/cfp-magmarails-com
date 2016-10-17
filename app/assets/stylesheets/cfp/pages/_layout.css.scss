@@ -130,6 +130,12 @@ a {
     width: 283px;
   }
 
+  .double-check {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 283px;
+  }
+
   .span-color-1 {
     @include span-cfp($wild-sand-2, 47px, 'Oswald', bold, uppercase, 45px);
     &.font-s {
@@ -180,11 +186,25 @@ a {
     margin-top: 5px;
   }
 
+  .want-to {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', bold, none, 14px);
+    letter-spacing: -0.6px;
+  }
+
+  .access-to {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', 300, none, 14px);
+    letter-spacing: -0.5px;
+  }
+
+  .link-to-magmaconf {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', 700, none, 14px);
+  }
+
   .involve-to-evolve {
     @include span-cfp($bittersweet, 43px , 'Oswald', bold, capitalize, 40px);
     margin-top: 10px;
   }
-
+  
   .stay-tuned-img {
     margin: 10px 0 auto;
     position: relative;
@@ -665,6 +685,17 @@ body > footer {
   height: 2px;
   margin: 0 auto;
   width: 290px;
+}
+
+.cfp-text {
+  margin-top: 60px;
+}
+
+.cfp-separator-bittersweet {
+  background-color: $bittersweet;
+  height: 2px;
+  margin: 0 auto;
+  width: 215px;
 }
 
 .sponsored-by {
