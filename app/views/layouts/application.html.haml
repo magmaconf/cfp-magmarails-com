@@ -58,7 +58,8 @@
             %span.access-to
               Access with your account
           .login-buttons
-            = link_to "Github", "/auth/github", class: "login_link btn-github"
+            = link_to "/auth/github", class: "login_link btn-github" do
+              = image_tag 'github_logo.png', class: 'magma_logo', alt: 'GitHub'
             = link_to "Google", "/auth/google_oauth2", class: "login_link btn-gmail"
           .cfp-text
             %span.access-to
