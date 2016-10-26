@@ -113,6 +113,7 @@ a {
 
   .our-2nd {
     @include span-cfp($bittersweet, 81.4px, 'Oswald', bold, uppercase, 78px);
+    letter-spacing: -2.3px;
   }
 
   .is-now-open {
@@ -123,12 +124,33 @@ a {
     width: 280px;
   }
 
+  .thanks-for-participating {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 283px;
+  }
+
+  .double-check {
+    margin: 10px auto;
+    padding: 5px 0;
+    width: 283px;
+  }
+
   .span-color-1 {
-    @include span-cfp($wild-sand-2, 57px, 'Oswald', bold, uppercase, 54px);
+    @include span-cfp($wild-sand-2, 47px, 'Oswald', bold, uppercase, 45px);
+    &.font-s {
+      font-size: 47px;
+      letter-spacing: -1.3px;
+      margin-top: 5px;
+    }
   }
 
   .span-color-2 {
-    @include span-cfp($bittersweet, 57px, 'Oswald', bold, uppercase, 54px);
+    @include span-cfp($bittersweet, 47px, 'Oswald', bold, uppercase, 45px);
+    &.font-s {
+      font-size: 58px;
+      letter-spacing: -1.6px;
+    }
   }
 
   .submit-your {
@@ -152,11 +174,40 @@ a {
   }
 
   .span-color-3 {
-    @include span-cfp($wild-sand-2, 39px, 'Oswald', 300, uppercase, 36px);
+    @include span-cfp($wild-sand-2, 42px, 'Oswald', bold, uppercase, 36px);
   }
 
   .span-color-4 {
-    @include span-cfp($bittersweet, 37px, 'Oswald', bold, uppercase, 34px);
+    @include span-cfp($bittersweet, 42px, 'Oswald', bold, uppercase, 34px);
+  }
+
+  .soon-text {
+    @include span-cfp($koromiko, 132px, 'Oswald', bold, uppercase, 100px);
+    margin-top: 5px;
+  }
+
+  .want-to {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', bold, none, 14px);
+    letter-spacing: -0.1px;
+  }
+
+  .access-to {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', 300, none, 14px);
+    letter-spacing: -0.5px;
+  }
+
+  .link-to-magmaconf {
+    @include span-cfp($wild-sand-2, 16px, 'Open Sans', 700, none, 14px);
+  }
+
+  .involve-to-evolve {
+    @include span-cfp($bittersweet, 43px , 'Oswald', bold, capitalize, 40px);
+    margin-top: 10px;
+  }
+  
+  .stay-tuned-img {
+    margin: 10px 0 auto;
+    position: relative;
   }
 
   .please-login {
@@ -167,7 +218,7 @@ a {
   }
 
   .login-buttons {
-    margin: 20px auto 30px; 
+    margin: 30px auto 30px; 
   }
 
   .btn-github {
@@ -189,6 +240,7 @@ a {
     background-color: $pacific-blue;
     border-radius: 4.5px;
     color: $wild-sand-2;
+    font-weight: bold;
     margin-left: 10px;
     padding: 10px 40px;
 
@@ -634,6 +686,17 @@ body > footer {
   height: 2px;
   margin: 0 auto;
   width: 290px;
+}
+
+.cfp-text {
+  margin: 60px;
+}
+
+.cfp-separator-bittersweet {
+  background-color: $bittersweet;
+  height: 2px;
+  margin: 0 auto;
+  width: 215px;
 }
 
 .sponsored-by {

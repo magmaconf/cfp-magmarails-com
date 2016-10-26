@@ -1,19 +1,19 @@
 !!!
 %html
   %head
-    %title MagmaConf 2017 | Our 2nd Call for Papers is now open!
+    %title MagmaConf 2017 | Our 2nd Call for Papers is now closed!
     %meta{name: 'viewport', content: 'initial-scale=1 maximum-scale=1, minimum-scale=1, user-scalable=no'}
     %meta{name: "author", content: "Magma Labs - http://www.magmalabs.io"}
-    %meta{content: ' MagmaConf 2017 | Our 2nd Call for Papers is now open!', property: 'og:title'}
+    %meta{content: ' MagmaConf: Call For Papers', property: 'og:title' }
     %meta{content: 'http://cfp.magmaconf.com', property: 'og:url'}
-    %meta{content: 'MagmaConf is one of the best community tech conferences in Mexico. Submit your talk before October 21, 2016 to join our speaker panel!', name: 'description'}
-    %meta{content: 'MagmaConf is one of the best community tech conferences in Mexico. Submit your talk before October 21, 2016 to join our speaker panel! ', property: 'og:description'}
+    %meta{content: 'MagmaConf is one of the best community tech conferences in Mexico. Thanks for submiting your talk to join our speaker panel. Stay tuned for the results!', name: 'description'}
+    %meta{content: 'MagmaConf is one of the best community tech conferences in Mexico. Thanks for submiting your talk to join our speaker panel. Stay tuned for the results!', property: 'og:description'}
     %meta{name: "keywords", content: "magmaconf, magmaconference, magmarails, web development conference, development talk, ruby on rails event, ruby on rails conference, software development conference, UX UI design conference, UX UI design talk, digital conference, technology conference"}
     %meta{content: "#{image_url('preview_CFP2017.jpg')}", property: "og:image"}
     = stylesheet_link_tag    'cfp/application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Open+Sans:600,400|Oswald:400,300,700&subset=latin' }
+    %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Open+Sans:600,400,300|Oswald:400,300,700&subset=latin' }
     %link{rel: "shortcut icon", type: "image/vnd.microsoft.icon", href: "#{image_path 'favicon.ico'}"}
 
     :javascript
@@ -36,28 +36,36 @@
             = image_tag 'magma_white_logo.png', class: 'magma_logo', alt: 'Magma Conference'
           #sign-in.mask
             = image_tag 'reylero_ok.png', class: 'reylero-ok'
+          .thanks-for-participating
+            %span.span-color-2.font-s Thanks for
+            %span.span-color-1.font-s Participating!
           .our-2nd
             Our 2nd
           .cfp-alternate-img
           .is-now-open
             %span.span-color-1 Is
             %span.span-color-2 Now
-            %span.span-color-1 Open 
-          .submit-your
-            %span.span-text-1 Submit&nbsp; 
-            %span.span-text-2 Your 
-          .proposal-text
-            Proposal
+            %span.span-color-1 Closed
+          = image_tag 'stay_tuned.png', class: 'stay-tuned-img', alt: 'Stay tuned'
           .before-than
-            %span.span-color-3 Before
-            %span.span-color-4 October 21
-          .cfp-separator-koromiko
-          .please-login
-            Login with
+            %span.span-color-3 For the
+            %span.span-color-4 Results
+            %span.soon-text Soon
+            %span.involve-to-evolve #InvolveToEvolve
+          .double-check
+            %span.want-to
+              Want to double check your proposal?
+            %span.access-to
+              Access with your account
           .login-buttons
-            = link_to "Github", "/auth/github", class: "login_link btn-github"
+            = link_to "/auth/github", class: "login_link btn-github" do
+              = image_tag 'github_logo.png', class: 'magma_logo', alt: 'GitHub'
             = link_to "Google", "/auth/google_oauth2", class: "login_link btn-gmail"
-          .cfp-separator-koromiko.mb30
+          .cfp-text
+            %span.access-to
+              More info at
+            = link_to 'magmaconf.com','http://magmaconf.com', class: 'link-to-magmaconf'
+            .cfp-separator-bittersweet.mb30
           -#= link_to '#', class: 'check-out' do
             %span.checkout Check out
             %span.what-were-looking what we are looking for
